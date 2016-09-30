@@ -171,7 +171,7 @@ html_static_path = ['_static']
 #html_show_sourcelink = True
 
 # If true, "Created using Sphinx" is shown in the HTML footer. Default is True.
-#html_show_sphinx = True
+html_show_sphinx = False
 
 # If true, "(C) Copyright ..." is shown in the HTML footer. Default is True.
 #html_show_copyright = True
@@ -212,8 +212,6 @@ latex_documents = [
 ]
 
 latex_preamble_elements = [ r'\usepackage[utf8]{inputenc}',
-                            r'\setmainfont{Arial}',
-                            r'\setmonofont{Courier New}',
                             r'\pagestyle{plain}',
                             r'\pagenumbering{arabic}' ]
 
