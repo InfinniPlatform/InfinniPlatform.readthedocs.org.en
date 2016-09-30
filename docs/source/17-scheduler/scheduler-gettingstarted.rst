@@ -1,10 +1,10 @@
-Начало работы
-=============
+Getting Started with Job Scheduler
+==================================
 
 Ниже приведена краткая инструкция для начала работы с планировщиком заданий InfinniPlatform.
 
-Установка планировщика заданий
-------------------------------
+Installing Job Scheduler
+------------------------
 
 Планировщик заданий InfinniPlatform выполнен в виде отдельного NuGet-пакета ``InfinniPlatform.Scheduler``,
 который необходимо установить, выполнив следующую команду в `Package Manager Console`_.
@@ -13,8 +13,9 @@
 
     PM> Install-Package InfinniPlatform.Scheduler -Pre
 
-Пример простого обработчика заданий
------------------------------------
+
+Job Handling Example
+--------------------
 
 Добавьте в проект файл ``SomeJobHandler.cs`` с одноименным классом :doc:`обработчика заданий </17-scheduler/scheduler-jobhandler>`.
 

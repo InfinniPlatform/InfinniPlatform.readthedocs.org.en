@@ -1,7 +1,7 @@
 .. index:: IJobScheduler
 
-Управление планировщиком заданий
-================================
+Job Scheduler Management
+========================
 
 Управление планировщиком заданий осуществляется с помощью методов интерфейса ``InfinniPlatform.Scheduler.Contract.IJobScheduler``.
 Все методы, описанные ниже применяются не к отдельному узлу кластера, в котором они были вызваны, а ко всем узлам кластера.
@@ -11,8 +11,8 @@
 .. index:: IJobScheduler.AddOrUpdateJob
 .. index:: IJobScheduler.AddOrUpdateJobs
 
-Добавление и обновление заданий
--------------------------------
+Adding and Updating Jobs
+------------------------
 
 Метод ``AddOrUpdateJob()`` добавляет или обновляет :doc:`информацию о запланированных заданиях </17-scheduler/scheduler-jobinfo>`.
 В результате работы этого метода информация о задании сохраняется в :doc:`постоянном хранилище </08-document-storage/index>`,
@@ -33,8 +33,8 @@
 .. index:: IJobScheduler.DeleteJobs
 .. index:: IJobScheduler.DeleteAllJobs
 
-Удаление заданий
-----------------
+Deleting Jobs
+-------------
 
 Метод ``DeleteJob()`` позволяет удалить указанное задание. Удаление задания означает не только
 прекращение его планирования, но и удаление :doc:`информации об этом задании </17-scheduler/scheduler-jobinfo>`
@@ -52,8 +52,8 @@
 .. index:: IJobScheduler.PauseJobs
 .. index:: IJobScheduler.PauseAllJobs
 
-Приостановка планирования заданий
----------------------------------
+Pausing Jobs
+------------
 
 Метод ``PauseJob()`` приостанавливает планирование указанного задания. Если :doc:`информация об этом задании </17-scheduler/scheduler-jobinfo>`
 была сохранена в :doc:`постоянном хранилище </08-document-storage/index>`, она будет обновлена. :ref:`Возобновить планирование <resume-job>`
@@ -68,8 +68,8 @@
 .. index:: IJobScheduler.ResumeJobs
 .. index:: IJobScheduler.ResumeAllJobs
 
-Возобновление планирования заданий
-----------------------------------
+Resuming Jobs
+-------------
 
 Метод ``ResumeJob()`` возобновляет планирование указанного задания. Если :doc:`информация об этом задании </17-scheduler/scheduler-jobinfo>`
 была сохранена в :doc:`постоянном хранилище </08-document-storage/index>`, она будет обновлена.
@@ -83,8 +83,8 @@
 .. index:: IJobScheduler.TriggerJobs
 .. index:: IJobScheduler.TriggerAllJob
 
-Досрочное выполнение заданий
-----------------------------
+Triggering Jobs
+---------------
 
 Метод ``TriggerJob()`` вызывает досрочное выполнение указанного задания. Перед выполнением этого метода нужно убедиться,
 что задание было :ref:`добавлено <add-or-update-job>` и находится в запланированном состоянии - ``JobState.Planned``.
@@ -99,8 +99,8 @@
 .. index:: IJobScheduler.IsStarted
 .. index:: IJobScheduler.GetStatus
 
-Определение состояния планировщика
-----------------------------------
+Getting Job Scheduler Status
+----------------------------
 
 Планировщик заданий также предоставляет два дополнительных метода, позволяющих определить его состояние во время работы приложения.
 

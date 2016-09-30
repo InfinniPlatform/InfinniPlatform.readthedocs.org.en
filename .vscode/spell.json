@@ -42,7 +42,12 @@
         "csv",
         "cron",
         "PrintView",
-        "NuGet"
+        "NuGet",
+        "IoC",
+        "Redis",
+        "RabbitMQ",
+        "AMQP",
+        "UI"
     ],
     "languageIDs": [
         "markdown",

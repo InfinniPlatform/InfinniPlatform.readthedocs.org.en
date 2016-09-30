@@ -1,2 +1,4 @@
-Развертывание приложения
-========================
+Deployment
+==========
+
+This part will be described soon.

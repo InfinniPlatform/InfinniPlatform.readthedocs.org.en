@@ -1,5 +1,5 @@
-Документация InfinniPlatform
-============================
+Welcome to InfinniPlatform Documentation!
+=========================================
 
 .. image:: _images/logo.png
 
@@ -20,6 +20,9 @@ InfinniPlatform является проектом с открытым исход
 InfinniPlatform предоставляется по лицензии AGPLv3_. Это значит, что вы можете использовать это
 решение абсолютно бесплатно и без ограничений. Более того, те программные продукты, которые мы
 используем, также являются бесплатными и свободными в использовании.
+
+.. warning:: We started to translate our documentation to English. So, you need a little patience.
+   We apologize for that inconvenience but we hope to your understanding.
 
 .. toctree::
    :maxdepth: 2
@@ -45,11 +48,10 @@ InfinniPlatform предоставляется по лицензии AGPLv3_. Э
    18-deploy/index.rst
    release-notes/index.rst
 
-Указатель и содержание
-======================
+Indices and tables
+==================
 
 * :ref:`genindex`
-* :ref:`modindex`
 * :ref:`search`
 
 .. _MongoDB: https://www.mongodb.com/download-center

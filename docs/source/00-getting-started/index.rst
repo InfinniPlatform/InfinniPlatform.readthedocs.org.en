@@ -1,9 +1,9 @@
-Начало работы
-=============
+Getting Started
+===============
 
 Данная статья поможет сделать необходимые предустановки для начала разработки на базе InfinniPlatform.
 
-Пример приложения
+Examples of Using
 -----------------
 
 Склонируйте пример приложения:
@@ -20,8 +20,8 @@
 
     > curl http://localhost:9900
 
-Пример развертывания
---------------------
+Examples of Deploy
+------------------
 
 Установите утилиту Infinni.Node для развертывания приложений на базе InfinniPlatform
 (:download:`скачать скрипт установки Infinni.Node для Windows <../_files/Infinni_Node_Install.bat>`).
@@ -63,31 +63,31 @@
 
     > curl http://localhost:9900
 
-Необходимые предустановки
--------------------------
+System Requirements
+-------------------
 
-Для разработчика
-~~~~~~~~~~~~~~~~
+For Sevelopers
+~~~~~~~~~~~~~~
 
 - Клиент `Git`_
 - Клиент `NuGet`_
 - Утилита `curl`_
 - `Visual Studio Community`_
 
-Для развертывания в Windows
-~~~~~~~~~~~~~~~~~~~~~~~~~~~
+For Deploy on Windows
+~~~~~~~~~~~~~~~~~~~~~
 
 - Windows Server 2008 R2 SP1 (или SP2) x64, Windows Server 2012 (или 2012 R2) x64
 - `Microsoft .NET Framework 4.5`_
 
-Для развертывания в Linux
-~~~~~~~~~~~~~~~~~~~~~~~~~
+For Deploy on Linux
+~~~~~~~~~~~~~~~~~~~
 
 - Ubuntu 14.04.4 LTS x64
 - `Mono 4.2`_
 
-Дополнительное окружение
-~~~~~~~~~~~~~~~~~~~~~~~~
+Additional Environments
+~~~~~~~~~~~~~~~~~~~~~~~
 
 - `MongoDB`_ (при использовании хранилища документов)
 - `RabbitMQ`_ (при использовании шины сообщений)

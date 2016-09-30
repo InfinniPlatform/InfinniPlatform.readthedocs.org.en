@@ -1,2 +1,4 @@
-Мониторинг и диагностика
-========================
+Monitoring and Diagnostics
+==========================
+
+This part will be described soon.

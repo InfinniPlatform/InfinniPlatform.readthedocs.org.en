@@ -1,5 +1,5 @@
-Установка Redis
-===============
+Installing Redis
+================
 
 #. Скачать дистрибутив `Redis для Windows <https://github.com/MSOpenTech/redis/releases/latest>`_.
 #. Установить с настройками по умолчанию.
