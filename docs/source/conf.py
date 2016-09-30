@@ -221,7 +221,7 @@ latex_elements = {
     # Additional stuff for the LaTeX preamble.
     'preamble': '\n'.join(latex_preamble_elements),
 
-    # English and Russian characters
+    # English and Russian characters (http://sphinx-ru.readthedocs.io/ru/latest/)
     'babel': '\\usepackage[russian]{babel}',
     'cmappkg': '\\usepackage{cmap}',
     'fontenc': '\usepackage[T1,T2A]{fontenc}',
