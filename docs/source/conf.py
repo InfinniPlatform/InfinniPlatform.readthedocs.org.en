@@ -229,6 +229,9 @@ latex_elements = {
     # Additional stuff for the LaTeX preamble.
     'preamble': '\n'.join(latex_preamble_elements),
 
+    # Encoding is empty because it was overridden above.
+    'inputenc': '',
+
     # The font size ('10pt', '11pt' or '12pt').
     'pointsize': '10pt',
 
@@ -262,6 +265,7 @@ latex_logo = None
 
 # A list of document names to append as an appendix to all manuals.
 latex_appendices = []
+
 
 # -- Options for manual page output ---------------------------------------
 
