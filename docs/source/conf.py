@@ -217,6 +217,9 @@ latex_preamble_elements = [ r'\DeclareUnicodeCharacter{FF04}{\$}',
                             r'\DeclareUnicodeCharacter{2713}{Y}',
                             r'\PassOptionsToPackage{hyphens}{url}',
                             r'\usepackage{upquote}',
+                            r'\usepackage{pstricks}',
+                            r'\usepackage[postscript]{ucs}',
+                            r'\usepackage[utf8x]{inputenc}',
                             r'\pagestyle{plain}',
                             r'\pagenumbering{arabic}' ]
 
