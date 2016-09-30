@@ -211,7 +211,7 @@ latex_documents = [
     (master_doc, 'InfinniPlatform.tex', u'InfinniPlatform', copyright, 'manual'),
 ]
 
-latex_preamble_elements = [ r'\usepackage{fontspec}',
+latex_preamble_elements = [ r'\usepackage[utf8]{inputenc}',
                             r'\setmainfont{Arial}',
                             r'\setmonofont{Courier New}',
                             r'\pagestyle{plain}',
@@ -223,14 +223,11 @@ latex_elements = {
     # Additional stuff for the LaTeX preamble.
     'preamble': '\n'.join(latex_preamble_elements),
 
-    # Disable font and encoding inclusion because they were overridden above.
-    'fontpkg': '',
-    'fontenc': '',
-    'inputenc': '',
-    'utf8extra': '',
-
     # English and Russian characters
-    'babel': '\usepackage[english,russian]{babel}',
+    'babel': '\\usepackage[russian]{babel}',
+    'cmappkg': '\\usepackage{cmap}',
+    'fontenc': '\usepackage[T1,T2A]{fontenc}',
+    'utf8extra':'\\DeclareUnicodeCharacter{00A0}{\\nobreakspace}',
 
     # The font size ('10pt', '11pt' or '12pt').
     'pointsize': '10pt',
