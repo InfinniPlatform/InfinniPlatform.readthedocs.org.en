@@ -42,7 +42,7 @@ templates_path = ['_templates']
 source_suffix = '.rst'
 
 # The encoding of source files.
-source_encoding = 'utf-8-sig'
+# source_encoding = 'utf-8-sig'
 
 # The master toctree document.
 master_doc = 'index'
@@ -209,47 +209,67 @@ htmlhelp_basename = 'InfinniPlatformdoc'
 
 # -- Options for LaTeX output ---------------------------------------------
 
+# Grouping the document tree into LaTeX files. List of tuples
+# (source start file, target name, title, author,
+# documentclass [howto, manual, or own class]).
+#latex_documents = [
+#    (master_doc, 'InfinniPlatform.tex', u'InfinniPlatform Documentation',
+#     u'Infinnity Solutions', 'manual'),
+#]
+
+latex_documents = []
+
+if 'pdfs' in conf.system.files.data:
+    for pdf in conf.system.files.data.pdfs:
+        latex_documents.append((pdf.source, pdf.output, pdf.title, pdf.author, pdf.doc_class))
+
+latex_preamble_elements = [ r'\DeclareUnicodeCharacter{FF04}{\$}',
+                            r'\DeclareUnicodeCharacter{FF0E}{.}',
+                            r'\DeclareUnicodeCharacter{2713}{Y}',
+                            r'\PassOptionsToPackage{hyphens}{url}',
+                            r'\usepackage{upquote}',
+                            r'\pagestyle{plain}',
+                            r'\pagenumbering{arabic}' ]
+
+# A dictionary that contains LaTeX snippets that override those Sphinx usually puts into the generated .tex files.
+# Keep in mind that backslashes must be doubled in Python string literals to avoid interpretation as escape sequences.
 latex_elements = {
-# The paper size ('letterpaper' or 'a4paper').
-#'papersize': 'letterpaper',
+    # Additional stuff for the LaTeX preamble.
+    'preamble': '\n'.join(latex_preamble_elements),
 
-# The font size ('10pt', '11pt' or '12pt').
-#'pointsize': '10pt',
+    # The font size ('10pt', '11pt' or '12pt').
+    'pointsize': '10pt',
 
-# Additional stuff for the LaTeX preamble.
-#'preamble': '',
+    # The paper size ('letterpaper' or 'a4paper').
+    'papersize': 'a4paper',
 
-# Latex figure (float) alignment
-#'figure_align': 'htbp',
+    # Override if you want to generate a different table of contents or put content between the title page and the TOC.
+    'tableofcontents': '\\textcopyright{ Infinnity Solutions, 2016 } This work is licensed under a \href{http://www.gnu.org/licenses/agpl.html}{GNU Affero General Public License Version 3}\\clearpage\\tableofcontents'
 }
 
-# Grouping the document tree into LaTeX files. List of tuples
-# (source start file, target name, title,
-#  author, documentclass [howto, manual, or own class]).
-latex_documents = [
-    (master_doc, 'InfinniPlatform.tex', u'InfinniPlatform Documentation',
-     u'Infinnity Solutions', 'manual'),
-]
+# The output paper size ('letter' or 'a4').
+latex_paper_size = 'a4'
 
-# The name of an image file (relative to this directory) to place at the top of
-# the title page.
-#latex_logo = None
+# If true, the topmost sectioning unit is parts, else it is chapters.
+latex_use_parts = False
 
-# For "manual" documents, if this is true, then toplevel headings are parts,
-# not chapters.
-#latex_use_parts = False
+# If true, add page references after internal references.
+latex_show_pagerefs = True
 
-# If true, show page references after internal links.
-#latex_show_pagerefs = False
+# Control whether to display URL addresses. The setting can have the following values:
+# * 'no' – do not display URLs (default)
+# * 'footnote' – display URLs in footnotes
+# * 'inline' – display URLs inline in parentheses
+latex_show_urls = 'footnote'
 
-# If true, show URL addresses after external links.
-#latex_show_urls = False
+# If true, generate domain-specific indices in addition to the general index.
+latex_domain_indices = False
 
-# Documents to append as an appendix to all manuals.
-#latex_appendices = []
+# If given, this must be the name of an image file (relative to the configuration directory) that is the logo of the docs.
+latex_logo = None
 
-# If false, no module index is generated.
-#latex_domain_indices = True
+# A list of document names to append as an appendix to all manuals.
+latex_appendices = []
 
 
 # -- Options for manual page output ---------------------------------------
