@@ -118,7 +118,7 @@ html_theme = 'default'
 
 # The name for this set of Sphinx documents.
 # "<project> v<release> documentation" by default.
-#html_title = u'InfinniPlatform v1.5.0'
+#html_title = u'InfinniPlatform'
 
 # A shorter title for the navigation bar.  Default is the same as html_title.
 #html_short_title = None
@@ -208,8 +208,7 @@ htmlhelp_basename = 'InfinniPlatformdoc'
 # (source start file, target name, title, author,
 # documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'InfinniPlatform.tex', u'InfinniPlatform Documentation',
-     author, 'manual'),
+    (master_doc, 'InfinniPlatform.tex', u'InfinniPlatform', copyright, 'manual'),
 ]
 
 latex_preamble_elements = [ r'\usepackage{pstricks}',
@@ -225,8 +224,12 @@ latex_elements = {
     # Additional stuff for the LaTeX preamble.
     'preamble': '\n'.join(latex_preamble_elements),
 
+    # Russian and English characters
+    'babel': '\usepackage[russian,english]{babel}',
+
     # Disable font and encoding inclusion because they were overridden above.
     'inputenc': '',
+    'utf8extra': '',
     'fontpkg': '',
     'fontenc': '',
 
