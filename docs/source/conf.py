@@ -212,14 +212,10 @@ latex_documents = [
      author, 'manual'),
 ]
 
-latex_preamble_elements = [ r'\DeclareUnicodeCharacter{FF04}{\$}',
-                            r'\DeclareUnicodeCharacter{FF0E}{.}',
-                            r'\DeclareUnicodeCharacter{2713}{Y}',
-                            r'\PassOptionsToPackage{hyphens}{url}',
-                            r'\usepackage{upquote}',
-                            r'\usepackage{pstricks}',
+latex_preamble_elements = [ r'\usepackage{pstricks}',
                             r'\usepackage[postscript]{ucs}',
                             r'\usepackage[utf8x]{inputenc}',
+                            r'\usepackage{fontspec}',
                             r'\pagestyle{plain}',
                             r'\pagenumbering{arabic}' ]
 
@@ -229,8 +225,10 @@ latex_elements = {
     # Additional stuff for the LaTeX preamble.
     'preamble': '\n'.join(latex_preamble_elements),
 
-    # Encoding is empty because it was overridden above.
+    # Disable font and encoding inclusion because they were overridden above.
     'inputenc': '',
+    'fontpkg': '',
+    'fontenc': '',
 
     # The font size ('10pt', '11pt' or '12pt').
     'pointsize': '10pt',
