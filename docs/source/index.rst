@@ -3,23 +3,11 @@ Welcome to InfinniPlatform Documentation!
 
 .. image:: _images/logo.png
 
-InfinniPlatform - это высокоуровневое решение, предназначенное для быстрой разработки современных
-и высокопроизводительных программных продуктов. InfinniPlatform предлагает разработчику единое,
-целостное решение, охватывающее большую часть проблем, с которыми можно столкнуться при решении
-прикладных задач. InfinniPlatform это не просто высокоуровневый framework, это в первую очередь
-готовая инфраструктура, которая упрощает не только процесс разработки, но и развертывания. Стек
-решений InfinniPlatform включает специализированные средства, которые позволяют автоматизировать
-процесс развертывания приложений в кластерной инфрастурктуре и удобным образом администрировать
-различные версии ваших приложений.
+InfinniPlatform is a robust high-level framework designed to quickly create and implement modern highly scalable middleware and end-user applications. It proposes to a developer a unified and integer solution which covers majority of challenges the developer may encounter while working on the project. Ready-to-use infrastructure is what makes the platform tick out of the box and significantly eases process of deployment and makes it as simple as a click of the mouse. Administrative tools shall allow you automate the process of application deployment in cluster-ready infrastructure and easily maintain and administer your applications which have versioning control ability.
 
-InfinniPlatform является проектом с открытым исходным кодом и разрабатывается на базе .NET Framework.
-При этом решение является кроссплатформенным и способно работать под Linux/Mono. В основе решения
-лежат самые современные средства и технологии. Вот список основных продуктов, которые мы используем
-в своем решении: MongoDB_, RabbitMQ_, Redis_, ELK_.
+InfinniPlatform is an cross-platform open source project written with .NET Framework and ability to run on Linux/Mono. Based on the most modern and advance components it makes use of state-of-the-art components RabbitMQ, Redis, ELK and MongoDB. This approach ensures you to avoid vendor lock-in in the core components of your application.
 
-InfinniPlatform предоставляется по лицензии AGPLv3_. Это значит, что вы можете использовать это
-решение абсолютно бесплатно и без ограничений. Более того, те программные продукты, которые мы
-используем, также являются бесплатными и свободными в использовании.
+This software is distributed under AGLPv3 license which means you may use it free of charge and in addition all components used are free to use as well to all.
 
 .. warning:: We started to translate our documentation to English. So, you need a little patience.
    We apologize for that inconvenience but we hope to your understanding.
