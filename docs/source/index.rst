@@ -5,9 +5,9 @@ Welcome to InfinniPlatform Documentation!
 
 InfinniPlatform is a robust high-level framework designed to quickly create and implement modern highly scalable middleware and end-user applications. It proposes to a developer a unified and integer solution which covers majority of challenges the developer may encounter while working on the project. Ready-to-use infrastructure is what makes the platform tick out of the box and significantly eases process of deployment and makes it as simple as a click of the mouse. Administrative tools shall allow you automate the process of application deployment in cluster-ready infrastructure and easily maintain and administer your applications which have versioning control ability.
 
-InfinniPlatform is an cross-platform open source project written with .NET Framework and ability to run on Linux/Mono. Based on the most modern and advance components it makes use of state-of-the-art components RabbitMQ, Redis, ELK and MongoDB. This approach ensures you to avoid vendor lock-in in the core components of your application.
+InfinniPlatform is an cross-platform open source project written with .NET Framework and ability to run on Linux/Mono. Based on the most modern and advance components it makes use of state-of-the-art components RabbitMQ_, Redis_, ELK_ and MongoDB_. This approach ensures you to avoid vendor lock-in in the core components of your application.
 
-This software is distributed under AGLPv3 license which means you may use it free of charge and in addition all components used are free to use as well to all.
+This software is distributed under AGLPv3_ license which means you may use it free of charge and in addition all components used are free to use as well to all.
 
 .. warning:: We started to translate our documentation to English. So, you need a little patience.
    We apologize for that inconvenience but we hope to your understanding.
