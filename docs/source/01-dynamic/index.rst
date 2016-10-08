@@ -3,16 +3,13 @@
 Dynamic Objects
 ===============
 
-Динамические объекты предоставляют такие элементы, как свойства и методы, во время выполнения, а не во время компиляции. Это позволяет
-создавать объекты для работы со структурами, не соответствующими статическому типу или формату. Создав экземпляр динамического объекта,
-можно установить для него уникальный набор свойств; получив ссылку на динамический объект, можно обращаться к несуществующим свойствам.
-Подобное поведение становится возможным благодаря позднему связыванию с помощью ключевого слова ``dynamic``. Основной сценарий использования
-динамических объектов - обработка слабоструктурированных или слабоформализованных данных.
+Dinamic objects are structures similar to properties and methods during excecution but not during building. This helps to create objects whicha are not static by type or format. Having created an instance of such object makes possible to bind a set of properties to it; having assigned a link to the dynamic object, one can refer to yet non-described properties.
+This behavior is made possible by 'late binding' with assitance of keyword ``dynamic``.  Basic usage of dynamic objects is processing of non-structured and non-formalized data.
 
 Creating Dynamic Objects
 ------------------------
 
-В InfinniPlatform экземпляры динамических объектов представлены классом ``InfinniPlatform.Sdk.Dynamic.DynamicWrapper``.
+InfinniPlatform has dynamic object represented by ``InfinniPlatform.Sdk.Dynamic.DynamicWrapper``.
 
 .. code-block:: csharp
 
@@ -21,7 +18,7 @@ Creating Dynamic Objects
 Setting Properties of Dynamic Objects
 -------------------------------------
 
-Экземпляр динамического объекта можно создать с предустановленным набором свойств:
+Dynamic object instnce can be created with pre-defined properties:
 
 .. code-block:: csharp
 
@@ -39,7 +36,7 @@ Setting Properties of Dynamic Objects
                            }
                        };
 
-Или установить значение свойства позже:
+or define properties later:
 
 .. code-block:: csharp
 
@@ -50,7 +47,7 @@ Setting Properties of Dynamic Objects
     instance.Property4.SubProperty1 = 456;
     instance.Property4.SubProperty2 = "Def";
 
-Значением свойства также может быть ссылка на делегат:
+Value property may define a link to delegate:
 
 .. code-block:: csharp
 
@@ -59,7 +56,7 @@ Setting Properties of Dynamic Objects
 Getting Properties of Dynamic Objects
 -------------------------------------
 
-Обращение к свойствам динамических объектов ничем не отличается от обращения к свойствам обычных объектов: 
+Defining properties of dynamic obejct is identical to defining properties of regular classes: 
 
 .. code-block:: csharp
 
@@ -74,16 +71,9 @@ Getting Properties of Dynamic Objects
 Recommendations to work with Dynamic Objects
 --------------------------------------------
 
-Динамические объекты упрощают обработку слабоструктурированных данных, но одновременно увеличивает возможность допущения ошибки, поскольку
-выражения, работающие с динамическими объектами, не подвергаются синтаксическому анализу во время компиляции. Результатом любого выражения,
-в котором происходит обращение к динамическому объекту или к его свойствам, является динамический объект. Таким образом, если не указывать
-тип результата динамического выражения, можно получить достаточно большой блок неконтролируемого на этапе компиляции кода. Ситуация усугубляется
-крайне малой информативностью стека исключений, возникающих в рамках динамического кода.
+Dynamic objects simplify processing of non-structured data and simultaneously increases chance of error due to the fact that expressions working with dynamic objects being built are not affected by syntax analysis. Any expression's result which formed by calling to either dynamic object or its properties is the dynamic object itself. Thus if the result type of dynamic object is not defined may cause large chunks of code which is uncontrollable at the building stage.  Also you should bear in mind about lack of information in exception stack that may arise while building dynamic code.
 
-По вышеуказанным причинам рекомендуется, как можно раньше конкретизировать тип результата динамического выражения и использовать ключевое
-слово ``dynamic`` только там, где это действительно нужно. Даже если вы работаете со слабоструктурированными объектами, типы данных отдельно
-взятых свойств чаще всего известны, поэтому будет правильней обозначить свои ожидания сразу. Даже если вы получите ошибку приведения к типу,
-вы будете знать, где и по какой причине она произошла. 
+This is very important, due to mentioned reasons, to excactly define the result type of dynamic expression and use keyword ``dynamic`` where it is indeed applicable. In case you don't use nonstructured data objects, particular properties of data types can be often easily defined. Good rule is to define type in advance to avoid errors of type conversion and even in case of getting one you will be aware of its reasons. 
 
 .. code-block:: csharp
 
@@ -97,6 +87,4 @@ Recommendations to work with Dynamic Objects
     
 Serialization of Dynamic Objects
 --------------------------------
-
-Экземпляры класса ``InfinniPlatform.Sdk.Dynamic.DynamicWrapper`` могут быть успешно сериализованы и десериализованы в JSON. Дополнительную информацию
-по данному вопросу см. в разделе :doc:`/06-serialization/index`.
+Class instances ``InfinniPlatform.Sdk.Dynamic.DynamicWrapper`` can be serialized and deserialized to/from JSON. You my find additional info here :doc:`/06-serialization/index`.
