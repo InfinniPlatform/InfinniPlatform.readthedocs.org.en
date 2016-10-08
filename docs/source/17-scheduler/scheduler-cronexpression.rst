@@ -1,49 +1,41 @@
 CRON Expression
 ===============
 
-Расписание выполнения задания задается в виде выражений в стиле `CRON <https://en.wikipedia.org/wiki/Cron>`_.
-``cron`` - это классический планировщик задач в UNIX-подобных операционных системах, использующийся для
-периодического выполнения заданий в определённое время. Выражения CRON позволяют определить расписание
-выполнения задания в календарном виде. Например, "В 8:00 каждый день с понедельника по пятницу" или
-"В 13:30 каждую последнюю пятницу месяца". Выражения CRON - мощный и одновременно простой инструмент,
-однако требует небольшого экскурса для его освоения.
+Schedule of job execution is defined as `CRON <https://en.wikipedia.org/wiki/Cron>`_ style expression .
+``cron`` is a classical job scheduler in UNIX like OSes utilized to run periodical tasks.  CRON expressions define schedule in calendar style. For instance, "at 8:00 each day from monday to friday" or "at 13:30 each month last friday". CRON expressions is a powerful and simple tool which require not much of efforts to get accustomed to.
 
 
 CRON Expression Syntax
 ----------------------
 
-Выражение CRON представляет собой строку, состоящую из 6 или 7 частей, разделенных пробелом. Каждая
-из частей задает условие расписания, которые объединяются по правилу логического умножения (AND).
-Ниже приведена графическая схема, поясняющая структуру выражения CRON. На этой схеме части
-выражения помечены символом ``*``, а линиями показано назначение каждой из частей.
+CRON expression is a single line consists of 6 or 7 parts devided by spaces. Each part a condition for schedule and all of them get joined in accordance by logical multiplication (AND).
+The scheme below clarifies the structure of CRON expression. Expressions are marked with ``*`` and lines show descriptions.
 
 .. code-block:: csharp
    :emphasize-lines: 9
 
-    ┌───────────── Секунда
-    │ ┌────────────── Минута
-    │ │ ┌─────────────── Час
-    │ │ │ ┌──────────────── День месяца
-    │ │ │ │ ┌───────────────── Месяц
-    │ │ │ │ │ ┌───────────────── День недели
-    │ │ │ │ │ │ ┌───────────────── Год
+    ┌───────────── Second
+    │ ┌────────────── Minute
+    │ │ ┌─────────────── Hour
+    │ │ │ ┌──────────────── Month day
+    │ │ │ │ ┌───────────────── Month
+    │ │ │ │ │ ┌───────────────── Week day
+    │ │ │ │ │ │ ┌───────────────── Year
     │ │ │ │ │ │ │
     * * * * * * *
 
-Части выражения CRON могут содержать только допустимые значения с использованием определенных
-комбинаций специальных символов. Ниже приведена таблица с указанием допустимых значений и
-специальных символов для каждой из частей выражения CRON.
+CRON expression parts can only contain vlaues from tolerance range with combinations of special characters. Table below is to refer to tolerance range and special characters for each CRON expression part.
 
 .. csv-table::
-   :header: "Часть", "Обязательность", "Допустимые значения", "Специальные символы"
+   :header: "Part", "Mandatory", "Tolerance range", "Special symbols"
 
-    "Секунда",     "Да",  "0-59",                  "``,`` ``-`` ``*`` ``/``"
-    "Минута",      "Да",  "0-59",                  "``,`` ``-`` ``*`` ``/``"
-    "Час",         "Да",  "0-23",                  "``,`` ``-`` ``*`` ``/``"
-    "День месяца", "Да",  "1-31",                  "``,`` ``-`` ``*`` ``/`` ``?`` ``L`` ``W``"
-    "Месяц",       "Да",  "1-12 (1 - январь)",     "``,`` ``-`` ``*`` ``/``"
-    "День недели", "Да",  "1-7 (1 - воскресенье)", "``,`` ``-`` ``*`` ``/`` ``?`` ``L`` ``#``"
-    "Год",         "Нет", "1970-2099",             "``,`` ``-`` ``*`` ``/``"
+    "Second",       "Yes",  "0-59",                  "``,`` ``-`` ``*`` ``/``"
+    "Minute",       "Yes",  "0-59",                  "``,`` ``-`` ``*`` ``/``"
+    "Hour",         "Yes",  "0-23",                  "``,`` ``-`` ``*`` ``/``"
+    "Month day",    "Yes",  "1-31",                  "``,`` ``-`` ``*`` ``/`` ``?`` ``L`` ``W``"
+    "Month",        "Yes",  "1-12 (1 - January)",    "``,`` ``-`` ``*`` ``/``"
+    "Week day",     "Yes",  "1-7 (1 - Sunday)",      "``,`` ``-`` ``*`` ``/`` ``?`` ``L`` ``#``"
+    "Year",         "No",   "1970-2099",             "``,`` ``-`` ``*`` ``/``"
 
 
 CRON Special Characters
