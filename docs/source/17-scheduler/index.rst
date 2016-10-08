@@ -1,24 +1,13 @@
 Job Scheduler
 =============
 
-Некоторые приложения могут нуждаться в выполнении определенных заданий по расписанию. Задачи подобного рода решает
-**планировщик заданий** (job scheduler). Планировщик заданий InfinniPlatform выполнен в виде отдельного пакета
-``InfinniPlatform.Scheduler``, который предоставляет исчерпывающий набор функциональных возможностей.
+Some applications may require execution of jobs accordingly particular time schedule.  These tasks can be done by using **job scheduler** and installed as a separate InfinniPlatform package ``InfinniPlatform.Scheduler``.
 
-Планировщик InfinniPlatform предоставляет разработчикам возможность выполнять задания по временному интервалу или по
-времени суток. Двумя ключевыми понятиями планировщика являются :doc:`расписание </17-scheduler/scheduler-cronexpression>`
-и :doc:`обработчик заданий </17-scheduler/scheduler-jobhandler>`. Эти понятия могут быть связаны отношением "один ко многим".
-Расписание описывает время вызова определенного обработчика, в то время, как обработчик может использоваться в нескольких
-расписаниях. Благодаря этому существует возможность повторного использования обработчиков заданий в разных расписаниях.
+InfinniPlatform scheduler can run jobs in accordance with specific time or period. Two key definitions of scheduler :doc:`schedule </17-scheduler/scheduler-cronexpression>` and :doc:`job handler </17-scheduler/scheduler-jobhandler>`. Those can be bound by "one to many" relation. Schedule describes a specific handler call time while the handler may be used in many schedules. This ensures the job handler's reccuring usage in different schedules.
 
-Вызов обработчика задания связан с определенным :ref:`контекстом обработки задания <job-handler-context>`, который содержит информацию
-о расписании, времени вызова обработчика, времени предыдущего и последующего вызова, а также, возможно, дополнительные данные, определенные
-на прикладном уровне и необходимые для обработки задания. Контекст обработки задания также называют **заданием** или **экземпляром задания**.
-Обработка каждого задания осуществляется в фоновом режиме, в рамках отдельного потока.
+Job hanndler's call may expose a specific :ref:`context of job processing <job-handler-context>`, which contain information about schedule, handler call time, the latest and the next call time, additionally it may contain extra data defined by developer. Processing context is specified as **job** or **job instance**. Each job processing is executed in background as a separate thread.
 
-Планировщик InfinniPlatform также учитывает возможность выполнения заданий в *кластерной инфраструктуре*. Данная возможность реализована
-с помощью :doc:`очереди сообщений </12-queues/index>`, благодаря которой обеспечивается гарантированная обработка задания одним из узлов
-кластера. Вместе с этим реализуется равномерное распределение вычислительной нагрузки по узлам кластера.
+Планировщик InfinniPlatform job scheduler may run scheduled tasks in *claster infrustructure*. This feature is delivered by  :doc:`message queue </12-queues/index>` that guarantees processing of the job by one of the clusters nodes while computing power is equally distributed among the cluster nodes to avoid excessive the nodes' high loads.
 
 .. toctree::
 
