@@ -1,7 +1,7 @@
 Application Events
 ==================
 
-Any application may require initialization at the start and de-initialization in the end of app excecution. First this implies that app may have pre-defined settings, for instance allocation of particular resources, data migration, cache pre-filling and so on. Second, at the stage of deinitialization, a reverse process take place, that is purging allocated resources. Both stages are optional and depend on app logic and resources it manipulates.
+Any application may require initialization at the start and de-initialization in the end of app excecution. First this implies that app may have pre-defined settings, for instance allocation of particular resources, data migration, cache pre-filling and so on. Second, at the stage of deinitialization, a reverse process take place, that is disposing allocated resources. Both stages are optional and depend on app logic and resources it manipulates.
 
 Application Events Types
 ------------------------
@@ -19,9 +19,9 @@ Event **after launch** :doc:`app services </07-services/index>` may run backgrun
 
 Event **before stop** :doc:`app services </07-services/index>` helps to handle query to stop the app. For example, an  :doc:`app log </05-logging/index>` record action can be initiated and inform other cluster nodes about this event to prepare app for shutdown.
 
-Event **after stop** :doc:`app services </07-services/index>` ensures activation of pre-defined actions when, for instance, app stops responding. This type event handlers practically command and then manage to correctly shutdown the app. You may free resources, save data retaining in memory and :doc:`inform </12-queues/index>` other cluster's nodes about this event.
+Event **after stop** :doc:`app services </07-services/index>` ensures activation of pre-defined actions when, for instance, app stops responding. This type event handlers practically command and then manage to correctly shutdown the app. You may dispose resources, save data retaining in memory and :doc:`inform </12-queues/index>` other cluster's nodes about this event.
 
-.. note:: You should pay attention that application may stop by exception or forcefully un-loaded by administrative tools. App service stop handles may not tick in such curcmstances one should keep in mind. In this case, the app **restoration logic** should be implemented to help handle those emergencies.
+.. note:: You should pay attention that application may stop by exception or forcefully un-loaded by administrative tools. App service stop handles may not tick in such circumstances one should keep in mind. In this case, the app **restoration logic** should be implemented to help handle those emergencies.
        
 
 .. index:: ApplicationEventHandler
@@ -34,7 +34,7 @@ Event **after stop** :doc:`app services </07-services/index>` ensures activation
 Application Event Handler
 -------------------------
 
-To write an event handler start with ``InfinniPlatform.Sdk.Hosting.IApplicationEventHandler`` interface and 
+To write an event handler to implement ``InfinniPlatform.Sdk.Hosting.IApplicationEventHandler`` interface and 
 :doc:`register </02-ioc/container-builder>` its instance in :doc:`IoC-container module </02-ioc/container-module>`.
 However the most simple way is to inherit the event handler from the abstract class ``InfinniPlatform.Sdk.Hosting.ApplicationEventHandler`` and redefine method that handles each particular event.
 
@@ -45,7 +45,7 @@ Interface ``InfinniPlatform.Sdk.Hosting.IApplicationEventHandler`` describes fou
 * ``OnBeforeStop()`` - to handle events before app stop
 * ``OnAfterStop()`` - to handle events after app stop 
 
-Next example indicates a handler which handles an event before app lauch
+Next example indicates a handler which handles an event before app launch
 
 .. code-block:: csharp
    :emphasize-lines: 1,3,12
@@ -68,9 +68,9 @@ Next example indicates a handler which handles an event before app lauch
 Asynchronous Event Handling
 ---------------------------
 
-All methods defined in the ``InfinniPlatform.Sdk.Hosting.IApplicationEventHandler`` interface are called synchronously that is they don't return result until completed. Exceptions may occur in those methods are recorded in app log. Such behavior is intentionally pre-defined so the app could control the lauch-stop-launch transitions on its own.
+All methods defined in the ``InfinniPlatform.Sdk.Hosting.IApplicationEventHandler`` interface are called synchronously that is they don't return result until completed. Exceptions may occur in those methods are recorded in app log. Such behavior is intentionally pre-defined so the app could control the launch-stop-launch transitions on its own.
 
-In the case when status of event handling is unnecessary you may enclose event handling in ``try/catch`` area, nevertheless it is highly recommended to recored exception into :doc:`app log </05-logging/index>`. If part of logics can be excecuted asynchronously it is recommended to run it in a single thread.
+In the case when status of event handling is unnecessary you may enclose event handling in ``try/catch`` block, nevertheless it is highly recommended to recored exception into :doc:`app log </05-logging/index>`. If part of logics can be excecuted asynchronously it is recommended to run it in a single thread.
 
 :ref:`You can see below <app-events>` listed a number of recommended ways to handle events depending on its type. For example, method code ``OnBeforeStart()`` must be synchronous and excecute mandatory actions before app launch. Method code ``OnAfterStart()`` must be asynchronous and not treat an exception as emergency, in addition to that, excecute optional actions.
 
