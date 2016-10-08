@@ -3,58 +3,36 @@
 Job Info
 ========
 
-Для планирования задания необходимо предоставить информацию со сведениями об обработчике задания
-и времени вызова этого обработчика. Интерфейс ``InfinniPlatform.Scheduler.Contract.IJobInfo``
-определяет структуру с информацией о задании.
+To plan a job task one should refer to information about job handler and handler call time. ``InfinniPlatform.Scheduler.Contract.IJobInfo`` interface defines a structure about task information.
 
 Job Info Properties
 -------------------
 
-* ``Id``. Уникальный идентификатор задания. Обязательный атрибут. Формируется автоматически и представляет
-  собой объединение свойств ``Group`` и ``Name``, разделенных символом ``.`` (точка). Используется при
-  формировании :ref:`уникального идентификатора экземпляра задания <job-handler-context>` в момент вызова
-  :doc:`обработчика </17-scheduler/scheduler-jobhandler>`.
+* ``Id`` is an unique job idenificator. Mandatory attribute. Formed automatically and represents joint properties for ``Group`` and ``Name``, divided by ``.`` symbol. Used to form an :ref:` unique job id instance <job-handler-context>` during the call of  :doc:`handler </17-scheduler/scheduler-jobhandler>`.
 
-* ``Group``. Имя группы заданий. Обязательный атрибут. Используется при формировании уникального
-  идентификатора задания ``Id`` и позволяет логически группировать задания. Если группа не указана,
-  используется константа ``Default``.
+* ``Group``. Job set name. Mandatory attribute. Used to form an unique job ``Id`` and may logically group jobs. If a group is defined then``Default`` attribute is used.
 
-* ``Name``. Имя задания. Обязательный атрибут. Используется при формировании уникального идентификатора
-  задания ``Id``, должно быть уникально в рамках группы ``Group``. Значения по умолчанию нет.
+* ``Name``. Job name. Mandatory attribute. Used to form an unique job ``Id``, must be unique in ``Group``. No default value.
 
-* ``State``. Состояние выполнения задания. Обязательный атрибут. По умолчанию задание всегда запланировано
-  для выполнения - ``JobState.Planned``, однако есть возможность определить задание в приостановленном
-  состоянии - ``JobState.Paused``, чтобы иметь возможность начать его планирование не сразу после добавления
-  в планировщик, а только тогда, когда от приложения поступит соответствующий :ref:`запрос <resume-job>`.
+* ``State``. Job execution state. Mandatory attribute. By default the job is always planned to be executed - ``JobState.Planned`` however one can define job in paused state - ``JobState.Paused`` to further resume it by a trigger or  :ref:`request <resume-job>`.
 
-* ``MisfirePolicy``. Политика обработки пропущенных заданий. Обязательный атрибут. По умолчанию пропущенные
-  задания игнорируются - ``JobMisfirePolicy.DoNothing``, однако есть возможность обработать все пропущенные
-  задания сразу после начала планирования, а далее далее следовать расписанию - ``JobMisfirePolicy.FireAndProceed``.
+* ``MisfirePolicy``. Misfire job policy. Mandatory attribute. By default all misfired jobs are ignored - ``JobMisfirePolicy.DoNothing`` however planner can execute all jobs right away and can further proceed in accordance with schedule - ``JobMisfirePolicy.FireAndProceed``.
 
-* ``HandlerType``. Тип обработчика заданий. Обязательный атрибут. Полное имя типа обработчика заданий, включающее
-  пространство имен и имя сборки, в которой объявлен обработчик. Используется при вызове обработчика.
+* ``HandlerType``. Job handler type. Mandatory attribute. Job handler full name including a names set and container app name in which hanlder is declared. Used to call the handler.
 
-* ``Description``. Описание назначения задания. Необязательный атрибут. Например, детальное описание логики
-  обработки задания. Иначе говоря, все, что может понадобится для понимания происходящих процессов.
+* ``Description``. Job description. Optional attribute. For example, detailed job logic description. Anything that can be needed for understanding of proceedings.
 
-* ``StartTimeUtc``. Время начала планирования задания (в формате UTC). Необязательный атрибут. Если не указано
-  явно, задание начинает планироваться сразу после добавления в планировщик, иначе только начиная с указанного
-  момента времени. Время начала планирования не должно быть больше времени его окончания ``EndTimeUtc``.
+* ``StartTimeUtc``. Start time job planning (UTC). Optional attribute. Planned immediately to be executed as put in the queue otherwise from the defined time. Start time should not exceed end time ``EndTimeUtc``.
 
-* ``EndTimeUtc``. Время окончания планирования задания (в формате UTC). Необязательный атрибут. Если не указано
-  явно, задание планируется до окончания работы приложения, иначе только до указанного момента времени. Время
-  окончания планирования не должно быть меньше времени его начала ``StartTimeUtc``.
+* ``EndTimeUtc``. End time job planning (UTC). Optional attribute. Planned immediately until the end of app execution otherwise till the defined time. End time should be less than its start time ``StartTimeUtc``.
 
-* ``CronExpression``. Расписание вызова обработчика заданий в стиле :doc:`CRON </17-scheduler/scheduler-cronexpression>`.
-  Необязательный атрибут. Позволяет определить расписание в календарном виде. Если не указано, время первого вызова совпадает
-  с временем начала планирования задания ``StartTimeUtc``.
+* ``CronExpression``. Job handler schedule in :doc:`CRON </17-scheduler/scheduler-cronexpression>` style.
+  Optional attribute. Defines schedule in calendar type. First call time coincides with start time ``StartTimeUtc``.
 
-* ``Data``. Данные для выполнения задания. Необязательный атрибут. Значение этого атрибута будет доступно в
-  :ref:`контексте обработки задания <job-handler-context>`. Значение данного атрибута должно быть
-  :doc:`сериализуемым </06-serialization/index>`.
+* ``Data``. Job data. Optional attribute. Value of this attribute is available in
+  :ref:`job data context <job-handler-context>`. Value of this attribute must be :doc:`serializable </06-serialization/index>`.
 
-.. note:: Планировщик заданий учитывает значения всех указанных выше атрибутов,
-          объединяя все условия по правилу логического умножения (AND).
+.. note:: Job planner considers values of all attributes merging all contitions by logical multiplication (AND).
 
 
 .. index:: IJobInfoFactory
@@ -62,10 +40,8 @@ Job Info Properties
 Creating Job Info
 -----------------
 
-Для создания информации о задании используется фабрика ``InfinniPlatform.Scheduler.Contract.IJobInfoFactory``,
-предоставляющая несколько перегрузок метода ``CreateJobInfo()``. Сигнатура метода ``CreateJobInfo()`` использует
-концепцию `DSL`_ (Domain Specific Language - предметно-ориентированного языка), которая реализована в виде
-`fluent interface`_.
+To create info about job the floowing factory is used ``InfinniPlatform.Scheduler.Contract.IJobInfoFactory``,
+offering a few reloads of method ``CreateJobInfo()``. Method signature ``CreateJobInfo()`` uses  `DSL`_ (Domain Specific Language - object-oriented language) concept also known as `fluent interface`_.
 
 .. code-block:: csharp
    :emphasize-lines: 7,8
@@ -74,8 +50,8 @@ Creating Job Info
 
     ...
 
-    // Задание с именем "SomeJob" будет выполняться ежедневно
-    // в 10:35 с помощью обработчика SomeJobHandler
+    // Job name "SomeJob" will be executed daily
+    // at 10:35 by job handler SomeJobHandler
     factory.CreateJobInfo<SomeJobHandler>("SomeJob",
         b => b.CronExpression(e => e.AtHourAndMinuteDaily(10, 35)))
 
