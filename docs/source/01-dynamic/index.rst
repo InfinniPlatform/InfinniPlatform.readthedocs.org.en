@@ -3,7 +3,7 @@
 Dynamic Objects
 ===============
 
-Dynamic objects are structures similar to properties and methods during excecution but not during building. This helps to create objects which are not static by type or format. Having created an instance of such object makes possible to bind a set of properties to it; having assigned a link to the dynamic object, one can refer to yet non-described properties.
+Dynamic objects are structures similar to properties and methods during execution but not during building. This helps to create objects which are not static by type or format. Having created an instance of such object makes possible to bind a set of properties to it; having assigned a link to the dynamic object, one can refer to yet non-described properties.
 This behavior is made possible by 'late binding' with assitance of keyword ``dynamic``.  Basic usage of dynamic objects is processing of non-structured and non-formalized data.
 
 Creating Dynamic Objects
