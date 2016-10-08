@@ -1,19 +1,14 @@
 Controlling Lifetime
 ====================
 
-**Жизненный цикл** компонента определяет то, как долго экземпляр компонента будет доступен для использования в приложении,
-начиная с момента его создания и заканчивая моментом его :ref:`освобождения <dispose>`. По продолжительности жизненного
-цикла компоненты приложения InfinniPlatform можно поделить на следующие типы:
+**Lifetime** of the component is defined by the fact how long the component instance are available to use in application, from the moment of its creation and to the moment of its :ref:`disposal <dispose>`. Accrodingly to lifetime of the InfinniPlatform app components may be divided into the following types:
 
-* Создаются при каждом получении
-* Создаются на время обработки запроса
-* Создаются на время работы приложения
+* Created at each retrieving
+* Created for the time of request processing
+* Created for the time of app execution
 
-Если компонент не имеет внутреннего состояния и используется на протяжении работы приложения, то имеет смысл создать разделяемый
-экземпляр компонента в начале работы приложения и освободить его в конце. Если компонент имеет внутреннее состояние, не связанное
-с обработкой запроса, экземпляр компонента придется создавать перед первым обращением к нему и освобождать сразу после использования.
-При разработке следует стремиться к тому, чтобы компоненты не имели состояния, так как это снизит количество потенциальных ошибок
-и уменьшит количество потребляемых ресурсов. 
+If component has no internal state and being used during app execution then it makes sense to create shareable component instance at the start of app execution and dispose it in the end. Otherwise if component has an internal state but not bound by request processing such instance should be created before first call and be disposed right after its usage.
+It is recommended to created statless components so it will decrease a number of error and reduce resources utilized.
 
 
 .. index:: IContainerRegistrationRule.InstancePerDependency()
@@ -23,28 +18,27 @@ Controlling Lifetime
 Defining Component Lifetime
 ---------------------------
 
-IoC-контейнер осуществляет автоматический контроль жизненного цикла компонентов, поэтому тип их жизненного цикла указывается
-при :doc:`регистрации <container-builder>`. По умолчанию все регистрируемые компоненты создаются при каждом получении. 
+IoC-container performs automatic lifetime components control thus their lifetime is defined during
+:doc:`registration <container-builder>`. All registered components are created each time they are recieved by default.
 
 .. code-block:: csharp
 
-    // Компонент будет создаваться при каждом получении (поведение по умолчанию)
+    // component will be created at each retriving (by default)
     builder.RegisterType<MyComponent>().As<IMyService>().InstancePerDependency();
 
-    // Компонент будет создаваться на время обработки HTTP-запроса
+    // component will be created for the time of HTTP-request execution
     builder.RegisterType<MyComponent>().As<IMyService>().InstancePerRequest();
 
-    // Компонент будет создан единожды на время работы приложения 
+    // component will be created once for the time of the app execution
     builder.RegisterType<MyComponent>().As<IMyService>().SingleInstance();
 
-По окончании жизненного цикла компонента IoC-контейнер :ref:`освобождает <dispose>` экземпляр компонента, и он становится недоступным
-для дальнейшего использования. По этой причине при определении жизненного цикла компонентов обязательно следует учитывать их взаимосвязь.
-Например, компонент типа ``SingleInstance()`` не может напрямую зависеть от компонента типа ``InstancePerDependency()``
+In the end of lifetime cycle IoC-container :ref:`disposes <dispose>` component instance which makes it no longer available for further usage. This is the reason that definition of the lifetime must take into account their dependency. 
+For example, component ``SingleInstance()`` is not able to directly be dependant on component ``InstancePerDependency()``
 
-.. table:: Допустимые прямые зависимости
+.. table:: Possible direct dependecies
 
     +-----------------------------+-------------------------------+
-    | Исходный тип                | Может ссылаться на            |
+    | Initial type                | May refer to                  |
     +=============================+===============================+
     | ``InstancePerDependency()`` | * ``InstancePerDependency()`` |
     |                             | * ``InstancePerRequest()``    |
@@ -56,9 +50,8 @@ IoC-контейнер осуществляет автоматический к�
     | ``SingleInstance()``        | * ``SingleInstance()``        |
     +-----------------------------+-------------------------------+
 
-Если жизненный цикл компонента дольше, чем жизненный цикл компонента, от которого он зависит, для получения зависимости следует использовать
-:ref:`фабричную функцию <resolve-func>`. В следующем примере компонент ``A`` зависит от компонента ``B``, но получает эту зависимость только
-перед ее использованием, поскольку жизненный цикл компонента ``A`` дольше жизненного цикла компонента ``B``.
+If component's lifetime is more than lifetime of the component it depends on to retrieve dependency one should use 
+:ref:`factory function <resolve-func>`. Next example shows component ``A`` depends on component ``B`` but retrieves its dependency right before usage due to the fact that the lifetime of component ``A`` is longer than lifetime of component ``B``.
 
 .. code-block:: csharp
    :emphasize-lines: 1,2,10,17
@@ -92,14 +85,11 @@ IoC-контейнер осуществляет автоматический к�
 Components Disposing
 --------------------
 
-Приложение может обращаться к ресурсам, которые создаются только на время выполнения какой-то работы. Например, подключение к базе данных,
-файловый поток и т.п. Модель .NET предоставляет интерфейс ``IDisposable``, который должны реализовывать все освобождаемые ресурсы.
+App may address resources which temporary created for the time of execution. For example a connection to a database, file stream an so on. .NET model offers ``IDisposable`` interface which brings all resources to be disposed.
 
-По окончании жизненного цикла компонента IoC-контейнер проверяет, реализует ли он интерфейс ``IDisposable``, и, если да, то вызывает
-у него метод ``Dispose()``. После этого текущий экземпляр компонента становится недоступным для дальнейшего использования.
+In the end of component lifetime IoC-contaner checks whether it calls ``IDisposable`` interface and if it does then it calls method ``Dispose()``. Afterwards teh current component instance becomes unavalable for further usage.
 
-Чтобы запретить автоматическое освобождение, при регистрации необходимо явно вызвать метод ``ExternallyOwned()``. Это чаще всего актуально
-при использовании компонентов, жизненный цикл которых контролируется внешними механизмами, например, сторонними компонентами.
+To deny automatic disposal one should directly call method ``ExternallyOwned()``. This may be frequently used when the component lifetime is owned by external component.
 
 .. code-block:: csharp
 
