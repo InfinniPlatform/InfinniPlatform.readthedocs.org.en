@@ -4,7 +4,7 @@ Application Configuration
 =========================
 
 App developers and administrators may configure InfinniPlatform apps using **configuration file**.
-Configuration file is a text file with contains app settings in JSON_ format. Developers may define app parameters in this file which will be taken into account in the app code automatically that make the app highly flexible and configurable. App administrators may change configuration parameters values which define the way the app is executed.
+Configuration file is a text file which contains app settings in JSON_ format. Developers may define app parameters in this file which will be taken into account in the app code automatically that make the app highly flexible and configurable. App administrators may change configuration parameters values which define the way the app is executed.
 
 Application Configuration File
 ------------------------------
@@ -15,10 +15,10 @@ The file must have got name ``AppExtension.json`` and be stored in app's root fo
 .. note:: Name ``AppExtension.json`` refers to that the app is an extention of InfinniPlatform.
 
 Settings are JSON object with many defined properties. Properties of the first level are  **configuration sections** 
-Configuration section is described by "key-value" pairs. Key is a name of property while value is a JSON object of any complexity. Each configuration section reflects particular InfinniPlatform module settings or the app settings.
+which described by "key-value" pairs. Key is a name of property while value is a JSON object of any complexity. Each configuration section reflects particular InfinniPlatform module settings or the app settings.
 
 You can see an example of configuration file common structure below. This contains two sections ``section1`` and ``section2``, each one has its own set of properties. Section properties can be of any JSON compatible type (string type in example).
-Number, name and content of cofiguration section is defined by the app developer however there are a few pre-defined InfinniPlatform configuration sections
+Number, name and content of cofiguration section is defined by the app developer however there are a few pre-defined InfinniPlatform configuration sections.
 
 
 .. code-block:: js
@@ -56,7 +56,7 @@ For the reasons of administration convenience the app configuration file support
     ${variable}
     ${variable=default}
 
-``Variable`` is a variable name in environment while ``default`` is a value by default in case if variable is not defined or its value is not set (null string). Setting the default value is optional. 
+In this example``variable`` is a variable name in environment while ``default`` is a value by default in case if variable is not defined or its value is not set (null string). Setting the default value is optional. 
 
 To define variable value the following search rules are applicable (ranged by priority)
 
@@ -122,7 +122,7 @@ Then retrieving of the settings can be excecuted as in axample below:
         // ...
     }
 
-In this example settings were retrieved as a :doc:`dynamic object </01-dynamic/index>`. However, in cases, when structure of teh configuration section can be described in advance it is recommended to define a class that can clearly describe the section content and use strongly typed reloading of method ``GetSection()`` 
+In this example settings were retrieved as a :doc:`dynamic object </01-dynamic/index>`. However, in cases, when structure of the configuration section can be described in advance it is recommended to define a class that can clearly describe the section content and use strongly typed reloading of method ``GetSection()`` 
 
 .. code-block:: js
    :emphasize-lines: 1,11,13
@@ -154,7 +154,7 @@ In this example settings were retrieved as a :doc:`dynamic object </01-dynamic/i
 Integration with IoC Container
 ------------------------------
 
-While developing own components it is more convenient to retrieve settings using the toolkit and not directly from configuration file. This allows to make the component to be more independent and save time on working with toolkit.
+While developing own components it is more convenient to retrieve settings using the dependency injection (IoC) and not directly from configuration file. 
 To demonstrate this approach you should modify the above example in a very simple way; just move the logic of configuration section retrieving to the level of IoC-contaner module.
 
 .. code-block:: js
