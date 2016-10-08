@@ -1,8 +1,8 @@
 Installing Redis
 ================
 
-#. Скачать дистрибутив `Redis для Windows <https://github.com/MSOpenTech/redis/releases/latest>`_.
-#. Установить с настройками по умолчанию.
-#. Redis готов к использованию.
+#. Download  `Redis for Windows <https://github.com/MSOpenTech/redis/releases/latest>`_.
+#. Install with default settings.
+#. Redis is ready to use.
 
-.. hint:: Для просмотра содержимого Redis можно использовать утилиту `Redis Desktop Manager <https://redisdesktop.com/download>`_.
+.. hint:: To veiw Redis content you may use `Redis Desktop Manager <https://redisdesktop.com/download>`_.
