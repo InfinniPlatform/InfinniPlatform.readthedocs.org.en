@@ -1,20 +1,20 @@
 Getting Started
 ===============
 
-Данная статья поможет сделать необходимые предустановки для начала разработки на базе InfinniPlatform.
+This article will help you getting started with basic settings to begin app development.
 
 Examples of Using
 -----------------
 
-Склонируйте пример приложения:
+Clone app expample:
 
 .. code-block:: bash
 
     > git clone https://github.com/InfinniPlatform/InfinniPlatform.Northwind.git
 
-Откройте файл решения ``InfinniPlatform.Northwind.sln`` в Visual Studio и запустите его на выполнение (``F5``).
+Open a file ``InfinniPlatform.Northwind.sln`` in Visual Studio and build it to run pressing F5 (``F5``).
 
-Проверьте работоспособность приложения:
+Check if it is up and running:
 
 .. code-block:: bash
 
@@ -23,41 +23,41 @@ Examples of Using
 Examples of Deploy
 ------------------
 
-Установите утилиту Infinni.Node для развертывания приложений на базе InfinniPlatform
-(:download:`скачать скрипт установки Infinni.Node для Windows <../_files/Infinni_Node_Install.bat>`).
+Install Infinni.Node utility to continue with deployment InfinniPlatform apps
+(:download:`download a Windows installation script Infinni.Node  <../_files/Infinni_Node_Install.bat>`).
 
-По умолчанию устанавливается последняя версия утилиты:
-
-.. code-block:: bash
-
-    > Infinni_Node_Install.bat # устанавливает последнюю версию утилиты Infinni.Node
-
-Однако можно установить любую `доступную версию <http://nuget.infinnity.ru/packages/Infinni.Node/>`_ утилиты:
+The latest version is installed by default:
 
 .. code-block:: bash
 
-    > Infinni_Node_Install.bat 1.2.0.19-master # устанавливает версию '1.2.0.19-master' утилиты Infinni.Node
+    > Infinni_Node_Install.bat # installs the latest version of Infinni.Node
 
-После выполнения скрипта утилита Infinni.Node будет установлена в каталог с именем ``Infinni.Node.X.`` (где ``X`` - номер версии утилиты)
-на том же уровне, откуда был запущен скрипт установки. Перейдите в этот каталог:
+You can install any `version <http://nuget.infinnity.ru/packages/Infinni.Node/>`_ of utility from the repository:
+
+.. code-block:: bash
+
+    > Infinni_Node_Install.bat 1.2.0.19-master # installs version '1.2.0.19-master' of Infinni.Node
+
+When script finishes Infinni.Node will be placed into the folder ``Infinni.Node.X.`` (where ``X`` - version number)
+in the same folder where script was run. Change folder as in example below:
 
 .. code-block:: bash
 
     > cd Infinni.Node.1.2.0.19-master
 
-Установите нужную версию своего приложения:
+Install the app:
 
 .. code-block:: bash
 
     > Infinni.Node.exe install -i "InfinniPlatform.Northwind" -p
 
-Запустите нужную версию своего приложения:
+Start the app:
 
 .. code-block:: bash
 
     > Infinni.Node.exe start -i "InfinniPlatform.Northwind"
 
-Проверьте работоспособность приложения:
+Check if it is running:
 
 .. code-block:: bash
 
@@ -75,13 +75,13 @@ For Sevelopers
 - Утилита `curl`_
 - `Visual Studio Community`_
 
-For Deploy on Windows
+Requirement for Windows deployment
 ~~~~~~~~~~~~~~~~~~~~~
 
-- Windows Server 2008 R2 SP1 (или SP2) x64, Windows Server 2012 (или 2012 R2) x64
+- Windows Server 2008 R2 SP1 (or SP2) x64, Windows Server 2012 (или 2012 R2) x64
 - `Microsoft .NET Framework 4.5`_
 
-For Deploy on Linux
+Requirement for Linux deployment
 ~~~~~~~~~~~~~~~~~~~
 
 - Ubuntu 14.04.4 LTS x64
@@ -90,10 +90,10 @@ For Deploy on Linux
 Additional Environments
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-- `MongoDB`_ (при использовании хранилища документов)
-- `RabbitMQ`_ (при использовании шины сообщений)
-- `Redis`_ (при развертывании в кластере)
-- `ELK`_ (для мониторинга и диагностики)
+- `MongoDB`_ (in case of 'document store' using )
+- `RabbitMQ`_ (in case of 'message bus' using при использовании шины сообщений)
+- `Redis`_ (in case of cluster deployment)
+- `ELK`_ (in case of utilizing monitoring)
 
 .. _PowerShell: https://msdn.microsoft.com/en-us/powershell
 .. _Git: https://git-scm.com/downloads
