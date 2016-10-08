@@ -66,13 +66,13 @@ Check if it is running:
 System Requirements
 -------------------
 
-For Sevelopers
+For Developers
 ~~~~~~~~~~~~~~
 
-- `PowerShell`_ 3.0 (и выше)
-- Клиент `Git`_
-- Клиент `NuGet`_
-- Утилита `curl`_
+- `PowerShell`_ 3.0 (and up)
+- `Git`_
+- `NuGet`_
+- `curl`_
 - `Visual Studio Community`_
 
 Requirement for Windows deployment
@@ -90,8 +90,8 @@ Requirement for Linux deployment
 Additional Environments
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-- `MongoDB`_ (in case of 'document store' using )
-- `RabbitMQ`_ (in case of 'message bus' using при использовании шины сообщений)
+- `MongoDB`_ (in case of 'document store' using)
+- `RabbitMQ`_ (in case of 'message bus' using)
 - `Redis`_ (in case of cluster deployment)
 - `ELK`_ (in case of utilizing monitoring)
 
