@@ -3,25 +3,18 @@
 IoC Container Module
 ====================
 
-Перед запуском приложения InfinniPlatform осуществляет поиск модулей IoC-контейнера. При этом происходит
-сканирование всех сборок (``*.dll``) текущего каталога приложения и выбираются все классы, реализующие интерфейс
-``InfinniPlatform.Sdk.IoC.IContainerModule``. Эти классы должны быть публичными и иметь конструктор без параметров.
-После этого происходит автоматическое создание модулей и вызов метода загрузки ``Load()``.
-
+Before any InfinniPlatform application is run the platform initiates search of IoC-container modules. It scans all app containers (``*.dll``) in the current app folder and selectively picks up all classes that implement ``InfinniPlatform.Sdk.IoC.IContainerModule`` interface. Those classes must be public and have got parameterless constructor. Then comes automatic module creation and a method ``Load()`` is called in the end of this procedure.
 
 .. index:: IContainerModule.Load()
 
 Loading of IoC Container Module
 -------------------------------
 
-Метод ``Load()`` предназначен для регистрации компонентов приложения и не может содержать какой-либо иной логики,
-поскольку в этот момент приложение находится в несогласованном состоянии. Для регистрации компонентов в метод
-``Load()`` передается интерфейс ``InfinniPlatform.Sdk.IoC.IContainerBuilder``.
+Method ``Load()`` designed to register app components and must not contain any other logic due to the fact it is posed in incoherent state. To Register components into ``Load()`` interface ``InfinniPlatform.Sdk.IoC.IContainerBuilder`` is transferred.
 
-.. note:: Если есть необходимость в выполнении какой-либо логики сразу после запуска приложения, следует использовать
-          механизм, описанный в разделе :doc:`/03-hosting/index`.
+.. note:: If there is necessity to execute some logic immediately after the app is run one should use methods described in the article :doc:`/03-hosting/index`.
 
-Ниже приведена общая структура модуля IoC-контейнера.
+Commom structure of IoC-container module may look like this:
 
 .. code-block:: csharp
 
@@ -29,6 +22,6 @@ Loading of IoC Container Module
     {
         public void Load(InfinniPlatform.Sdk.IoC.IContainerBuilder builder)
         {
-            // Регистрация компонентов...
+            // registering components...
         }
     }
