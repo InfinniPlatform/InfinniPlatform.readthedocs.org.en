@@ -1,13 +1,13 @@
 Getting Started with Job Scheduler
 ==================================
 
-Ниже приведена краткая инструкция для начала работы с планировщиком заданий InfinniPlatform.
+This is a brief manual to get started with the InfinniPlatform job scheduler.
 
 Installing Job Scheduler
 ------------------------
 
-Планировщик заданий InfinniPlatform выполнен в виде отдельного NuGet-пакета ``InfinniPlatform.Scheduler``,
-который необходимо установить, выполнив следующую команду в `Package Manager Console`_.
+InfinniPlatform job scheduler is a NuGet-package ``InfinniPlatform.Scheduler`` which you may install by running
+a command in `Package Manager Console`_.
 
 .. code-block:: bash
 
@@ -17,7 +17,7 @@ Installing Job Scheduler
 Job Handling Example
 --------------------
 
-Добавьте в проект файл ``SomeJobHandler.cs`` с одноименным классом :doc:`обработчика заданий </17-scheduler/scheduler-jobhandler>`.
+Add to the project a file ``SomeJobHandler.cs`` with the same class name :doc:`job handler </17-scheduler/scheduler-jobhandler>`.
 
 .. code-block:: js
    :caption: SomeJobHandler.cs
@@ -36,7 +36,7 @@ Job Handling Example
         }
     }
 
-Добавьте в проект файл ``SomeJobInfoSource.cs`` с одноименным классом :doc:`источника заданий </17-scheduler/scheduler-jobinfosource>`.
+Add to the project a file ``SomeJobInfoSource.cs`` with the same class name :doc:`job info source </17-scheduler/scheduler-jobinfosource>`.
 
 .. code-block:: js
    :caption: SomeJobInfoSource.cs
@@ -62,7 +62,7 @@ Job Handling Example
         }
     }
 
-:doc:`Зарегистрируйте в IoC-контейнере </02-ioc/container-builder>` обработчики и источники заданий приложения.
+:doc:`Register in IoC-container </02-ioc/container-builder>` app handlers and job sources.
 
 .. code-block:: js
    :caption: ContainerModule.cs
@@ -80,7 +80,7 @@ Job Handling Example
             builder.RegisterJobHandlers(assembly);
             builder.RegisterJobInfoSources(assembly);
 
-            // Прочие зависимости...
+            // othe dependencies...
         }
     }
 
