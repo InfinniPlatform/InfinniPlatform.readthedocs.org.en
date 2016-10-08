@@ -4,8 +4,7 @@ Message Queue Types
 Task Queue
 ----------
 
-Сообщения из очереди задач распределяются среди **всех** подписчиков, но каждое сообщение получает и обрабатывает только **один** подписчик.
-Данную очередь можно использовать для организации параллельной обработки задач или данных.
+Messages from the queue are distributed among **all** subscribers but each message is recieved and processed by only **one** subscriber. This queue may be used to organize parallel processinf of tasks or data.
 
 
 .. image:: /_images/taskQueue.png
@@ -13,7 +12,6 @@ Task Queue
 Broadcast Queue
 ---------------
 
-Сообщения из широковещательной очереди получает и обрабатывает **каждый** подписчик. Данную очередь можно использовать при необходимости
-разнородной обработке одного и того же сообщения.
+Broadcasting messages are recieved and processed by **each** subscriber. This queue may be used for heterogenous processing of the same message.
 
 .. image:: /_images/broadcastQueue.png
