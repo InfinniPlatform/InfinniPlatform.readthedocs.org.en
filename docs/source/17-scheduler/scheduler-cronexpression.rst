@@ -27,7 +27,7 @@ The scheme below clarifies the structure of CRON expression. Expressions are mar
 CRON expression parts can only contain vlaues from tolerance range with combinations of special characters. Table below is to refer to tolerance range and special characters for each CRON expression part.
 
 .. csv-table::
-   :header: "Part", "Mandatory", "Tolerance range", "Special symbols"
+   :header: "Part", "Mandatory", "Tolerance range", "Special characters"
 
     "Second",       "Yes",  "0-59",                  "``,`` ``-`` ``*`` ``/``"
     "Minute",       "Yes",  "0-59",                  "``,`` ``-`` ``*`` ``/``"
