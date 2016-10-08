@@ -1,18 +1,18 @@
 Static Content
 ==============
 
-InfinniPlatform включает в себя хостинга статических файлов, таких как HTML, CSS, JavaScript, файлы изображений и прочие.
+InfinniPlatform can host static files such as HTML, CSS, JavaScript, images and so on.
 
-Преимущества:
+Features:
 
-#. Возможность отдавать статический контент клиенту по прямой ссылке.
-#. Использование кэширования файлов браузером, и как следствие уменьшение нагрузки на сервер.
+#. Client can retrieve content by a direct link.
+#. Browser cache will reduce number of requests and accordingly server load.
 
 
 Static Content Configuration
 ----------------------------
 
-В файле конфигурации AppExtension.json в секции ``staticContent`` необходимо задать соответствие физических путей (на диске) и виртуальных (в вебе) путей в ``StaticContentMapping``.
+Configuration file AppExtension.json contains section ``staticContent``  where you must define path mapping for both paths on your hard drive and virtual paths used for web addressing in ``StaticContentMapping``.
 Пример конфигурации по умолчанию:
 
 .. code-block:: json
@@ -24,28 +24,29 @@ Static Content Configuration
     }
   }
 
-Таким образом файлы из папки ``<рабочая папка>\content\metadata`` будут доступны по пути ``http://<адрес приложения>/metadata``.
-Пути до файлов и вложенных папок по умолчанию совпадать со структурой файлов и папок на диске.
+Thus files from the folder ``<working folder>\content\metadata`` will be available at ``http://<app address>/metadata``.
+Paths to files and folders should coincide with files and folder structure on the hard drive.
 
 
-.. important:: В целях безопасности, статические файлы могут находиться только внутри рабочей папки, т.о. пути вида "../content/metadata" - некорректны.
+.. important:: For security reasons static files can only be placed inside of the working folder so paths like "../content/metadata" are invalid.
 
 Static Content Configuration for UI
 -----------------------------------
 
-Механизм хостинга статических файлов можно использовать для хостинга UI, избавляясь таким образом от необходимости в веб-сервере (IIS, nginx).
-Пример конфигурации:
+Hosting engine can be used to host UI making thus redundant usage of web-servers like IIs, nginx.
+
+Configuration example:
 
 .. code-block:: json
 
   "staticContent": {
     "StaticContentMapping": {
-      /* www - папка, содержащая файлы UI */
+      /* www - folder, containing UI files */
       "/": "content/www"
     }
   }
 
-.. warning:: Необходимо явно указывать точку входа, например http//<адрес приложения>/index.html (вместо http//<адрес приложения>/).
+.. warning:: One should clearly define an app entry point, eg http//<app address>/index.html (instead of http//<app address>/).
 
 
 .. _resources-hosting:
@@ -53,8 +54,9 @@ Static Content Configuration for UI
 Static Content Configuration for Resources
 ------------------------------------------
 
-Для хоcтинга файлов, содержащихся в ресурсах сборки, в файле конфигурации AppExtension.json в секции ``staticContent`` небходимо задать соответствие физических путей (на диске) и виртуальных (в вебе) путей в ``ResourceContentMapping``.
-Пример конфигурации:
+To host files stored in the app container resources, configuration file AppExtension.json in section ``staticContent`` should have defined mapping of both physical paths (hard drive) and virtual (web) in ``ResourceContentMapping``.
+
+Example:
 
 .. code-block:: json
 
@@ -65,11 +67,11 @@ Static Content Configuration for Resources
     }
   }
 
-Относительный путь до ресурса получается из пути до ресурса внутри сборки путем замены символов ``'.'`` на ``'/'``.
-Имя сборки заменяется на путь указанный в файле конфигурации.
+Relative path to resource derives the path to resource inside the app by replacing symbols from ``'.'`` to ``'/'``. 
+App container name gets replaced to path defined in the configuration file.
 
-.. csv-table:: Пример преобразования путей до ресурсов сборки
-   :header: "Путь внутри сборки", "Относительный путь"
+.. csv-table:: Path mapping example Пример преобразования путей до ресурсов сборки
+   :header: "Path inside app container", "Relative path"
 
     "Sdk.ResourceFile.txt", "/Resources/Sdk/ResourceFile.txt"
     "ServiceHost.ResourceFolder.ResourceFile.txt", "/ServiceHostResources/ResourceFolder/ResourceFile.txt"
