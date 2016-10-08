@@ -1,14 +1,12 @@
 View Engine
 ===========
 
-InfinniPlatform включает в себя механизм генерации представлений. Его суть состоит в том, что он получает **шаблон** и **модель данных** (опционально),
-на основе которых формирует HTML-документ. На текущий момент поддерживается только `разметка Razor <http://www.w3schools.com/aspnet/razor_intro.asp>`_.
+InfinniPlatform includes a module that can generate presentation layer. It recieves **template** and **data model** (optionally) based on which generates HTML-document. At this moment only ` Razor markup <http://www.w3schools.com/aspnet/razor_intro.asp>`_ is supported.
 
 Creating a View
 ---------------
 
-Можно использовать представления на основе разметки `Razor <http://www.w3schools.com/aspnet/razor_intro.asp>`_.
-Работа с Razor-представлеаниями осуществляется посредством реализации интерфейса ``IHttpService``, которая возвращает экземпляры класса ``ViewHttpResponse``.
+You can start to implement Razor-presentaion by using ``IHttpService`` interface which returns class instances ``ViewHttpResponse`` as the result.
 
 .. code-block:: csharp
 
@@ -17,7 +15,7 @@ Creating a View
         public void Load(IHttpServiceBuilder builder)
         {
             builder.ServicePath = "/razor";
-            // Возвращаем Razor-представление Index.cshtml, передавая динамическую модель данных.
+            // Getting Razor-presentation Index.cshtml, posting dynamic data model.
             builder.Get["/Index"] = httpRequest =>
                                     {
                                         var viewHttpResponce = new ViewHttpResponce("Index", new DynamicWrapper
@@ -30,7 +28,7 @@ Creating a View
                                         return Task.FromResult<object>(viewHttpResponce);
                                     };
 
-            // Возвращаем Razor-представление About.cshtml, не принимающее модель данных.
+            // getting Razor-пpesentation About.cshtml, without posting data model.
             builder.Get["/About"] = httpRequest => Task.FromResult<object>(new ViewHttpResponce("About"));
         }
     }
@@ -44,7 +42,7 @@ View Template Example
     @{
     }
 
-    <!-- Для получения доспута к модели данных используется переменная @Model -->
+    <!-- To get access to data model use variable @Model -->
     <h2>@Model["Title"]</h2>
     <p>'Index' view successfully loaded.</p>
     <p>Data1 field = @Model["Data1"]</p>
