@@ -3,43 +3,37 @@
 Application Configuration
 =========================
 
-Разработчики и администраторы имеют возможность настраивать приложение InfinniPlatform с помощью **файла конфигурации**.
-Файл конфигурации - это текстовый файл с настройками приложения в JSON_-формате. Разработчики могут задавать параметры
-в файле конфигурации, которые будут учитываться в коде приложения, таким образом устраняя необходимость в изменении кода
-при изменении того или иного параметра. Администраторы, в свою очередь, могут изменять значения нужных параметров в файле
-конфигурации, управляя тем самым способом выполнения приложения.
-
+App developers and administrators may configure InfinniPlatform apps using **configuration file**.
+Configuration file is a text file with contains app settings in JSON_ format. Developers may define app parameters in this file which will be taken into account in the app code automatically that make the app highly flexible and configurable. App administrators may change configuration parameters values which define the way the app is executed.
 
 Application Configuration File
 ------------------------------
 
-Файл конфигурации приложения представляет собой текстовый файл в кодировке UTF-8_, который хранит настройки приложения в JSON-формате.
-Файл конфигурации должен иметь имя ``AppExtension.json`` и находится в рабочем каталоге приложения.
+App configuration file supports UTF-8_ text encoding and keeps app settings in JSON format.
+The file must have got name ``AppExtension.json`` and be stored in app's root folder.
 
-.. note:: Название ``AppExtension.json`` связано с тем, что приложение является своего рода расширением InfinniPlatform.
+.. note:: Name ``AppExtension.json`` refers to that the app is an extention of InfinniPlatform.
 
-Сами настройки представляют собой JSON-объект с множеством свойств. Свойства первого уровня вложенности называются **секциями конфигурации**.
-Секция конфигурации представляет собой парку "ключ - значение", где ключ - это наименование свойства, а значение - JSON-объект любой сложности.
-Каждая секция конфигурации отражает настройки определенной подсистемы InfinniPlatform или определенной части приложения.
+Settings are JSON object with many defined properties. Properties of the first level are  **configuration sections** 
+Configuration section is described by "key-value" pairs. Key is a name of property while value is a JSON object of any complexity. Each configuration section reflects particular InfinniPlatform module settings or the app settings.
 
-Ниже приведен пример общей структуры файла конфигурации приложения. В примере определено две секции - ``section1`` и ``section2`` -
-каждая из которых имеет свой набор свойств. Свойства секции конфигурации могут быть любого допустимого JSON-типа (не только строкового,
-как приведено в примере). Количество, наименование и содержимое секции конфигурации определяется на прикладном уровне, за исключением
-предопределенных в InfinniPlatform секций конфигурации.
+You can see an example of configuration file common structure below. This contains two sections ``section1`` and ``section2``, each one has its own set of properties. Section properties can be of any JSON compatible type (string type in example).
+Number, name and content of cofiguration section is defined by the app developer however there are a few pre-defined InfinniPlatform configuration sections
+
 
 .. code-block:: js
    :emphasize-lines: 3,10
    :caption: AppExtension.json
 
     {
-      /* Комментарий для section1 */
+      /* section1 comment */
       "section1": {
         "Property11": "Value11",
         "Property12": "Value12",
         "Property13": "Value13",
         ...
       },
-      /* Комментарий для section2 */
+      /* section2 comment */
       "section2": {
         "Property21": "Value21",
         "Property22": "Value22",
@@ -55,24 +49,22 @@ Application Configuration File
 Environment Variables
 ---------------------
 
-Для удобства администрирования файл конфигурации приложения поддерживает использование переменных окружения. Для этого
-следует использовать специальные подстановки с достаточно простым синтаксисом, который приведен ниже.
+For the reasons of administration convenience the app configuration file supports usage of environment variables. You may use simple substitute syntax in example below:
 
 .. code-block:: bash
 
     ${variable}
     ${variable=default}
 
-Здесь ``variable`` - имя переменной окружения, а ``default`` - значение по умолчанию на случай, если переменная окружения
-не определена или ее значение не задано (пустая строка). Указание значения по умолчанию для переменной окружения необязательно. 
+``Variable`` is a variable name in environment while ``default`` is a value by default in case if variable is not defined or its value is not set (null string). Setting the default value is optional. 
 
-При определении значения переменной окружения используются следующие правила поиска (в порядке приоритета):
+To define variable value the following search rules are applicable (ranged by priority)
 
-#. Поиск среди переменных окружения процесса
-#. Поиск среди переменных окружения пользователя
-#. Поиск среди переменных окружения машины
+#. Process environment variables
+#. User environment variables 
+#. Machine environment variables 
 
-Следующий пример демонстрирует использование переменных окружения в конфигурационном файле.
+Next example shows configuration file environment variables usage: 
 
 .. code-block:: js
    :caption: AppExtension.json
@@ -92,11 +84,10 @@ Environment Variables
 Reading Application Configuration
 ---------------------------------
 
-Для чтения настроек приложения из файла конфигурации необходимо :doc:`получить </02-ioc/index>` реализацию интерфейса
-``InfinniPlatform.Sdk.Settings.IAppConfiguration`` из IoC-контейнера и вызвать одну из перегрузок метода ``GetSection()``,
-передав ему наименование секции конфигурации, которую нужно прочитать.
+To retrieve settings from configuration file it is required to :doc:`get </02-ioc/index>` the interface
+``InfinniPlatform.Sdk.Settings.IAppConfiguration`` from IoC-container and call a method ``GetSection()`` passing to it a section name as a parameter that is about to be retrieved.
 
-Допустим в файле конфигурации определена секция ``myComponent``, как в примере ниже. 
+As an example let's suppose a section ``myComponent`` is defined: 
 
 .. code-block:: js
    :caption: AppExtension.json
@@ -110,7 +101,8 @@ Reading Application Configuration
       ...
     }
 
-Тогда в коде приложения можно выполнить чтение настроек этой секции следующим образом.
+
+Then retrieving of the settings can be excecuted as in axample below:
 
 .. code-block:: js
    :emphasize-lines: 3,5
@@ -130,9 +122,7 @@ Reading Application Configuration
         // ...
     }
 
-В приведенном примере настройки были считаны, как :doc:`динамический объект </01-dynamic/index>`. Однако это не всегда удобно,
-поэтому для случаев, когда структура секции конфигурации известна, рекомендуется явно определить класс, описывающий содержимое
-секции конфигурации, и использовать строготипизированную перегрузку метода ``GetSection()``.
+In this example settings were retrieved as a :doc:`dynamic object </01-dynamic/index>`. However, in cases, when structure of teh configuration section can be described in advance it is recommended to define a class that can clearly describe the section content and use strongly typed reloading of method ``GetSection()`` 
 
 .. code-block:: js
    :emphasize-lines: 1,11,13
@@ -164,10 +154,8 @@ Reading Application Configuration
 Integration with IoC Container
 ------------------------------
 
-При разработке собственных компонентов намного удобней получать настройки сразу в конструкторе, а не осуществлять чтение
-из файла конфигурации. Это позволяет сделать компонент более независимым и избавит от необходимости выполнять дополнительные
-действия в конструкторе. Для реализации этого подхода следует модифицировать вышеуказанный пример, переместив логику чтения
-секции конфигурации на уровень модуля IoC-контейнера. 
+While developing own components it is more convenient to retrieve settings using the toolkit and not directly from configuration file. This allows to make the component to be more independent and save time on working with toolkit.
+To demonstrate this approach you should modify the above example in a very simple way; just move the logic of configuration section retrieving to the level of IoC-contaner module.
 
 .. code-block:: js
    :emphasize-lines: 3,20-22
