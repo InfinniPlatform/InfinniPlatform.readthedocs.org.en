@@ -3,7 +3,7 @@
 Dynamic Objects
 ===============
 
-Dinamic objects are structures similar to properties and methods during excecution but not during building. This helps to create objects whicha are not static by type or format. Having created an instance of such object makes possible to bind a set of properties to it; having assigned a link to the dynamic object, one can refer to yet non-described properties.
+Dynamic objects are structures similar to properties and methods during excecution but not during building. This helps to create objects which are not static by type or format. Having created an instance of such object makes possible to bind a set of properties to it; having assigned a link to the dynamic object, one can refer to yet non-described properties.
 This behavior is made possible by 'late binding' with assitance of keyword ``dynamic``.  Basic usage of dynamic objects is processing of non-structured and non-formalized data.
 
 Creating Dynamic Objects
@@ -56,7 +56,7 @@ Value property may define a link to delegate:
 Getting Properties of Dynamic Objects
 -------------------------------------
 
-Defining properties of dynamic obejct is identical to defining properties of regular classes: 
+Defining properties of dynamic object is identical to defining properties of regular classes: 
 
 .. code-block:: csharp
 
@@ -71,7 +71,7 @@ Defining properties of dynamic obejct is identical to defining properties of reg
 Recommendations to work with Dynamic Objects
 --------------------------------------------
 
-Dynamic objects simplify processing of non-structured data and simultaneously increases chance of error due to the fact that expressions working with dynamic objects being built are not affected by syntax analysis. Any expression's result which formed by calling to either dynamic object or its properties is the dynamic object itself. Thus if the result type of dynamic object is not defined may cause large chunks of code which is uncontrollable at the building stage.  Also you should bear in mind about lack of information in exception stack that may arise while building dynamic code.
+Dynamic objects simplify processing of non-structured data and simultaneously increases chance of error due to the fact that expressions working with dynamic objects being built are not affected by syntax analysis. Any expression's result which formed by calling to either dynamic object or its properties is the dynamic object itself. Thus if the result type of dynamic object is not defined may cause large code blocks which is uncontrollable at the building stage.  Also you should bear in mind about lack of information in exception stack that may arise while building dynamic code.
 
 This is very important, due to mentioned reasons, to excactly define the result type of dynamic expression and use keyword ``dynamic`` where it is indeed applicable. In case you don't use nonstructured data objects, particular properties of data types can be often easily defined. Good rule is to define type in advance to avoid errors of type conversion and even in case of getting one you will be aware of its reasons. 
 
