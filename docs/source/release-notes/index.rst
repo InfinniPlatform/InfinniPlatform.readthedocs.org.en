@@ -1,7 +1,7 @@
 Release Notes
 =============
 
-Этот раздел посвящен описанию изменений в различных версиях InfinniPlatform.
+This sections describes changes in InfinniPlatform versions.
 
 .. toctree::
    :maxdepth: 1
