@@ -155,7 +155,7 @@ Integration with IoC Container
 ------------------------------
 
 While developing own components it is more convenient to retrieve settings using the dependency injection (IoC) and not directly from configuration file. 
-To demonstrate this approach you should modify the above example in a very simple way; just move the logic of configuration section retrieving to the level of IoC-contaner module.
+To demonstrate this approach you should modify the above example in a very simple way; just move the logic of configuration section to the level of IoC-contaner module.
 
 .. code-block:: js
    :emphasize-lines: 3,20-22
