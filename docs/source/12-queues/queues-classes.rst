@@ -1,7 +1,7 @@
 Working with Message Queue
 ==========================
 
-Примеры использования можно посмотреть и попробовать в проекте `InfinniPlatform.Northwind <https://github.com/InfinniPlatform/InfinniPlatform.Northwind>`_
+Samples can be viewed, downloaded and tried free of charge here `InfinniPlatform.Northwind <https://github.com/InfinniPlatform/InfinniPlatform.Northwind>`_
 
 
 .. index:: ITaskProducer
@@ -10,7 +10,7 @@ Working with Message Queue
 Message Producer
 ----------------
 
-Для отправки сообщений в :doc:`очередь задач <queues-types>` следует использовать интерфейс ``ITaskProducer``.
+To send messages in :doc:`task queue <queues-types>` one should use ``ITaskProducer`` interface.
 
 .. code-block:: csharp
    :emphasize-lines: 3,15,18
@@ -28,17 +28,17 @@ Message Producer
         {
             // ...
 
-            // Асинхронный вызов
+            // Asynchrounous call
             await _taskProducer.PublishAsync(message);
 
-            // Синхронный вызов
+            // Synchronous call
             _taskProducer.Publish(message);
 
             // ...
         }
     }
 
-Для отправки сообщений в :doc:`широковещательную очередь <queues-types>` следует использовать интерфейс ``IBroadcastProducer``.
+To send messages to :doc:`broadcast queue <queues-types>` one should use ``IBroadcastProducer`` interface.
 
 .. code-block:: csharp
    :emphasize-lines: 3,15,18
@@ -56,10 +56,10 @@ Message Producer
         {
             // ...
 
-            // Асинхронный вызов
+            // Asynchrounous call
             await _broadcastProducer.PublishAsync(message);
 
-            // Синхронный вызов
+            // Synchronous call
             _broadcastProducer.Publish(message);
 
             // ...
@@ -72,7 +72,7 @@ Message Consumer
 
 .. index:: TaskConsumerBase<T>
 
-Для реализации получателя сообщений из :doc:`очереди задач <queues-types>` следует создать наследник от базового класса ``TaskConsumerBase<T>``.
+To recieve a consumer from :doc:`task queue <queues-types>` one should create successor from base class ``TaskConsumerBase<T>``.
 
 .. code-block:: csharp
    :emphasize-lines: 1,3
@@ -81,13 +81,13 @@ Message Consumer
     {
         protected override async Task Consume(Message<SomeMessage> message)
         {
-            // Логика обработки сообщения
+            // Message logic processing
         }
     }
 
 .. index:: BroadcastConsumerBase<T>
 
-Для реализации получателя сообщений из :doc:`широковещательной очереди <queues-types>` следует создать наследник от базового класса ``BroadcastConsumerBase<T>``.
+To recieve a consumer from :doc:`broadcast queue <queues-types>` следует создать наследник от базового класса ``BroadcastConsumerBase<T>``.
 
 .. code-block:: csharp
    :emphasize-lines: 1,3
@@ -96,13 +96,13 @@ Message Consumer
     {
         protected override async Task Consume(Message<SomeMessage> message)
         {
-            // Логика обработки сообщения
+            // Message logic processing
         }
     }
 
 .. index:: IOnDemandConsumer<T>
 
-Для получения сообщений из :doc:`очереди задач <queues-types>` по запросу следует использовать интерфейс ``IOnDemandConsumer``.
+To recieve message from :doc:`task queue <queues-types>` one should use upon request ``IOnDemandConsumer`` interface.
 
 .. code-block:: csharp
    :emphasize-lines: 3,12
@@ -130,23 +130,23 @@ Message Consumer
 Registering Consumers
 ---------------------
 
-Для :doc:`регистрации в IoC-контейнере </02-ioc/container-builder>` всех получателей, объявленных в сборке, можно использовать метод расширения ``RegisterConsumers()``.
+To :doc:`register in IoC-container </02-ioc/container-builder>` all consumers declared in the app container one may use an extension method ``RegisterConsumers()``.
 
 .. code-block:: csharp
 
     builder.RegisterConsumers(assembly);
 
-Для :doc:`регистрации в IoC-контейнере </02-ioc/container-builder>` определенных получателей следует явно регистрировать их типы, как в примере ниже.
+To :doc:`register in IoC-container </02-ioc/container-builder>` a set of consumers one should publicly register their types as in example below.
 
 .. code-block:: csharp
    :emphasize-lines: 3,8
 
-    // Регистрация получателя сообщений очереди задач
+    // Registration of task queue message consumer 
     builder.RegisterType<SomeTaskConsumer>()
            .As<ITaskConsumer>()
            .SingleInstance();
 
-    // Регистрация получателя сообщений широковещательной очереди
+    // Registration of broadcast queue message consumer
     builder.RegisterType<SomeBroadcastConsumer>()
            .As<IBroadcastConsumer>()
            .SingleInstance();
@@ -157,8 +157,7 @@ Registering Consumers
 Defining Queue Name
 -------------------
 
-Если при отправке и получении сообщений без указания имени очереди действуют определенные соглашения. По умолчанию именем очереди
-является полное имя типа отправляемого сообщения.
+If one sends and recieves messages without declaring queue type some default rules are applied. The queue name is the message full name.
 
 .. code-block:: csharp
 
@@ -166,12 +165,12 @@ Defining Queue Name
     {
         public class SomeMessage
         {
-            /* Сообщения этого типа будут отправлены в очередь с именем
+            /* messages of this type are sent into the queue as
                "InfinniPlatform.Northwind.Queues.SomeMessage" */
         }
     }
 
-Для явного указания имени очереди следует использовать атрибут ``QueueNameAttribute``, которым помечается класс получателя сообщений.
+To define a queue name one should use an attribute ``QueueNameAttribute``  which marks customer class.
 
 .. code-block:: csharp
 
@@ -180,7 +179,7 @@ Defining Queue Name
     {
         protected override async Task Consume(Message<SomeMessage> message)
         {
-            /* Этот получатель будет обрабатывать только сообщения
-               отправленные в очередь с именем "DynamicQueue" */
+            /* This customer will process only those messages that are sent
+               into the queue with name "DynamicQueue" */
         }
     }
