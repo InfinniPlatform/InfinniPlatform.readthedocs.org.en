@@ -1,46 +1,28 @@
 Application Events
 ==================
 
-В любом приложении может возникнуть потребность в этапе инициализации перед началом работы приложения или
-этапе деинициализации перед окончанием работы приложения. При инициализации приложения можно сделать предустановки,
-например, выделить необходимые ресурсы, произвести миграцию данных, осуществить предзаполнение кэша и т.п.
-При деинициализации обычно происходит обратный процесс, например, освобождение ресурсов. Оба этапа, естественно
-являются необязательными и зависят от логики работы приложения и средств, с которыми оно работает.
-
+Any application may require initialization at the start and de-initialization in the end of app excecution. First this implies that app may have pre-defined settings, for instance allocation of particular resources, data migration, cache pre-filling and so on. Second, at the stage of deinitialization, a reverse process take place, that is purging allocated resources. Both stages are optional and depend on app logic and resources it manipulates.
 
 Application Events Types
 ------------------------
 
-Приложения InfinniPlatform имеют возможность обрабатывать следующие события:
+InfinniPlatfrom apps may handle the following events occuring:
 
-* Перед запуском сервисов приложения
-* После запуска сервисов приложения
-* Перед остановкой сервисов приложения
-* После остановки сервисов приложения
+* before app services launch
+* after app services launch
+* before app services stop
+* after app services stop
 
-Событие **перед запуском** :doc:`сервисов приложения </07-services/index>` позволяет сделать необходимые действия перед тем,
-как приложение начнет отвечать на запросы. Обработчики этого события фактически определяют обязательный этап для успешного
-запуска приложения. На этом этапе можно выполнить, например, миграцию данных.
+Event **before launch** :doc:`app services </07-services/index>` empowers creation of configurable actions before app will start to respond the queries. This event handlers define a mandatory stage for successful app launch. For example, to inceptionally perform data migration.
 
-Событие **после запуска** :doc:`сервисов приложения </07-services/index>` позволяет запустить фоновые задачи, необязательные
-для начала работы приложения. На этом этапе можно выполнить, например, предзаполнение :doc:`кэша </11-cache/index>` необходимым
-набором данных или индексацию данных.
+Event **after launch** :doc:`app services </07-services/index>` may run backgrund tasks optional at the app start. For example, :doc:`cache </11-cache/index>` pre-filling with data set or perform indexing can be done at this stage.
 
-Событие **перед остановкой** :doc:`сервисов приложения </07-services/index>` позволяет обработать запрос остановки работы
-приложения. На этом этапе можно сделать запись о событии в :doc:`лог приложения </05-logging/index>`,
-:doc:`оповестить </12-queues/index>` о событии другие узлы кластера, начать подготовку приложения
-к завершению работы.
+Event **before stop** :doc:`app services </07-services/index>` helps to handle query to stop the app. For example, an  :doc:`app log </05-logging/index>` record action can be initiated and inform other cluster nodes about this event to prepare app for shutdown.
 
-Событие **после остановки** :doc:`сервисов приложения </07-services/index>` позволяет сделать необходимые действия после того,
-как приложение перестало отвечать на запросы. Обработчики этого события фактически определяют обязательный этап для корректного
-завершения работы приложения. На этом этапе можно освободить используемые ресурсы, сохранить данные, находящиеся в памяти,
-:doc:`оповестить </12-queues/index>` о событии другие узлы кластера.
+Event **after stop** :doc:`app services </07-services/index>` ensures activation of pre-defined actions when, for instance, app stops responding. This type event handlers practically command and then manage to correctly shutdown the app. You may free resources, save data retaining in memory and :doc:`inform </12-queues/index>` other cluster's nodes about this event.
 
-.. note:: Следует иметь ввиду, что приложение может завершиться аварийно или принудительно выгружено с использованием административных
-          средств. По этой причине не следует рассчитывать, что обработчики событий остановки приложения сработают при любых обстоятельствах.
-          Вместо этого в обработчике события перед запуском приложения следует предусмотреть **логику восстановления** на случай, если последний
-          раз приложение было завершено аварийно или принудительно.
-
+.. note:: You should pay attention that application may stop by exception or forcefully un-loaded by administrative tools. App service stop handles may not tick in such curcmstances one should keep in mind. In this case, the app **restoration logic** should be implemented to help handle those emergencies.
+       
 
 .. index:: ApplicationEventHandler
 .. index:: IApplicationEventHandler
@@ -52,19 +34,18 @@ Application Events Types
 Application Event Handler
 -------------------------
 
-Для написания обработчика событий достаточно реализовать интерфейс ``InfinniPlatform.Sdk.Hosting.IApplicationEventHandler`` и
-:doc:`зарегистрировать </02-ioc/container-builder>` его реализацию в :doc:`модуле IoC-контейнера </02-ioc/container-module>`.
-Однако самый простой вариант - унаследовать обработчик событий от абстрактного класса ``InfinniPlatform.Sdk.Hosting.ApplicationEventHandler``
-и переопределить метод обработки нужного события.
+To write an event handler start with ``InfinniPlatform.Sdk.Hosting.IApplicationEventHandler`` interface and 
+:doc:`register </02-ioc/container-builder>` its instance in :doc:`IoC-container module </02-ioc/container-module>`.
+However the most simple way is to inherit the event handler from the abstract class ``InfinniPlatform.Sdk.Hosting.ApplicationEventHandler`` and redefine method that handles each particular event.
 
-Интерфейс ``InfinniPlatform.Sdk.Hosting.IApplicationEventHandler`` определяет четыре метода обработки для каждого типа события:
+Interface ``InfinniPlatform.Sdk.Hosting.IApplicationEventHandler`` describes four methods of handling for each event type:
 
-* ``OnBeforeStart()`` - для обработки события перед запуском сервисов приложения
-* ``OnAfterStart()`` - для обработки события после запуска сервисов приложения
-* ``OnBeforeStop()`` - для обработки события перед остановкой сервисов приложения
-* ``OnAfterStop()`` - для обработки события после остановки сервисов приложения
+* ``OnBeforeStart()`` - to handle events before app launch
+* ``OnAfterStart()`` - to handle events after app launch
+* ``OnBeforeStop()`` - to handle events before app stop
+* ``OnAfterStop()`` - to handle events after app stop 
 
-В следующем примере определен обработчик, который обрабатывает событие перед запуском сервисов приложения.
+Next example indicates a handler which handles an event before app lauch
 
 .. code-block:: csharp
    :emphasize-lines: 1,3,12
@@ -73,7 +54,7 @@ Application Event Handler
     {
         public override void OnBeforeStart()
         {
-            // Код инициализации приложения
+            // App initialization code
         }
     }
 
@@ -87,35 +68,26 @@ Application Event Handler
 Asynchronous Event Handling
 ---------------------------
 
-Все методы, определенные в интерфейсе ``InfinniPlatform.Sdk.Hosting.IApplicationEventHandler`` вызываются синхронно, то есть
-не возвращают управления до тех пор, пока не будут полностью выполнены. Исключения, которые могут произойти в этих методах,
-записываются в лог приложения, но не игнорируются. Подобное поведение сделано намеренно, чтобы приложение могло самостоятельно
-определять обязательность прохождения определенных этапов при запуске или остановке приложения.
+All methods defined in the ``InfinniPlatform.Sdk.Hosting.IApplicationEventHandler`` interface are called synchronously that is they don't return result until completed. Exceptions may occur in those methods are recorded in app log. Such behavior is intentionally pre-defined so the app could control the lauch-stop-launch transitions on its own.
 
-Если успешность обработки события необязательна, необходимо заключить обработку события в блок ``try/catch``, однако при этом
-настоятельно рекомендуется записывать исключение в :doc:`лог приложения </05-logging/index>`. Если часть логики обработки
-события может быть выполнена асинхронно, рекомендуется выполнять ее в отдельном потоке.
+In the case when status of event handling is unnecessary you may enclose event handling in ``try/catch`` area, nevertheless it is highly recommended to recored exception into :doc:`app log </05-logging/index>`. If part of logics can be excecuted asynchronously it is recommended to run it in a single thread.
 
-:ref:`Ниже <app-events>` приведены рекомендуемые способы обработки событий приложения в зависимости от его типа. Например,
-код метода ``OnBeforeStart()`` должен быть синхронным, не должен игнорировать происходящие исключения, должен выполнять
-обязательные действия, необходимые перед началом работы приложения. Код метода ``OnAfterStart()`` должен быть асинхронным,
-не должен воспринимать исключение, как аварийную ситуацию, должен выполнять необязательные действия.
+:ref:`You can see below <app-events>` listed a number of recommended ways to handle events depending on its type. For example, method code ``OnBeforeStart()`` must be synchronous and excecute mandatory actions before app launch. Method code ``OnAfterStart()`` must be asynchronous and not treat an exception as emergency, in addition to that, excecute optional actions.
 
-.. note:: Следует стараться минимизировать время работы методов ``OnBeforeStart()`` и ``OnAfterStop()``, так как это может
-          сократить соответственно время запуска и остановки приложения. Это в свою очередь позволит ускорить процесс
-          развертывания приложения или его перезапуск.
-
+.. note:: It is the good practice when you minimize excecution time of ``OnBeforeStart()`` и ``OnAfterStop()``, so that can help to reduce launch and stop time. Accordingly this will assist the speed of app deployment and its re-launch.
+      
+      
 .. _app-events:
 
-.. csv-table:: Рекомендуемые способы обработки событий приложения
-   :header: "Метод обработчика", "Способ обработки", "Может бросить исключение"
+.. csv-table:: Recommended ways to handle app events
+   :header: "Handler method", "Handler type", "Can throw exception"
 
-    "``OnBeforeStart()``", "Синхронный", "Да"
-    "``OnAfterStart()``", "Асинхронный", "Нет" 
-    "``OnBeforeStop()``", "Асинхронный", "Нет"
-    "``OnAfterStop()``", "Синхронный", "Нет"
+    "``OnBeforeStart()``", "Synchronous", "Yes"
+    "``OnAfterStart()``", "Asynchronous", "No" 
+    "``OnBeforeStop()``", "Asynchronous", "No"
+    "``OnAfterStop()``", "Synchronous", "No"
 
-Ниже приведен пример асинхронной обработки события ``OnAfterStart()`` с помощью метода `Task.Run()`_.
+You can view an example below of asynchrous event handling ``OnAfterStart()`` using method `Task.Run()`_.
 
 .. code-block:: csharp
    :emphasize-lines: 3,5,13
@@ -128,11 +100,11 @@ Asynchronous Event Handling
                      {
                          try
                          {
-                             // Код инициализации приложения
+                             // Initialize app code
                          }
                          catch (Exception exception)
                          {
-                             // Запись исключения в лог приложения
+                             // Record exception into log
                          }
                      });
         }
