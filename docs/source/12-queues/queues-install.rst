@@ -4,26 +4,26 @@ Installing and Configuring Message Queue
 Installing RabbitMQ
 -------------------
 
-#. Скачать и установить `Erlang OTP 19.0 Windows 64-bit Binary File <http://www.erlang.org/download.html>`_.
-#. Скачать и установить `RabbitMQ Server <https://www.rabbitmq.com/download.html>`_.
-#. RabbitMQ Server готов к использованию.
+#. Download and setup `Erlang OTP 19.0 Windows 64-bit Binary File <http://www.erlang.org/download.html>`_.
+#. Download and setup `RabbitMQ Server <https://www.rabbitmq.com/download.html>`_.
+#. RabbitMQ Server is ready to use.
 
-Инструкции доступны на официальном сайте `для Windows <https://www.rabbitmq.com/install-windows.html>`_
-и `для Ubuntu/Debian <https://www.rabbitmq.com/install-debian.html>`_
+You may read manual at their officail web-site  `for Windows <https://www.rabbitmq.com/install-windows.html>`_
+and `for Ubuntu/Debian <https://www.rabbitmq.com/install-debian.html>`_
 
 
 Enabling Management Plugin
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Для управления и мониторинга состояния RabbitMQ существует специальное расширение - Management Plugin.
-Для его включения необходимо из папки :file:`C:\\Program Files\\RabbitMQ Server\\rabbitmq_server-3.6.2\\sbin` выполнить команду:
+To manage and monitor status of RabbitMQ there is Management Plugin.
+To enable it one should from the folder :file:`C:\\Program Files\\RabbitMQ Server\\rabbitmq_server-3.6.2\\sbin` execute the following command:
 
 .. code-block:: bash
 
     > rabbitmq-plugins enable rabbitmq_management
 
-По адресу http://localhost:15672 будет доступен сайт Management Plugin.
-Инструкции по его использованию доступны `на официальном сайте <https://www.rabbitmq.com/management.html>`_.
+Management Plugin will be accessible at http://localhost:15672 .
+You may download manuals from `the official web site <https://www.rabbitmq.com/management.html>`_.
 
 
 .. _queue-settings:
@@ -31,7 +31,7 @@ Enabling Management Plugin
 Configuring RabbitMQ for Application
 ------------------------------------
 
-Ниже приведен пример настройки RabbitMQ в :doc:`файле конфигурации приложения </04-settings/index>`.
+Example of RabbitMQ settings in :doc:`app configuration file </04-settings/index>`.
 
 .. code-block:: javascript
 
@@ -45,12 +45,12 @@ Configuring RabbitMQ for Application
       "MaxConcurrentThreads": 200
     }
 
-В приведенном примере:
+Where:
 
-* *HostName* - имя сервера, где установлен RabbitMQ.
-* *Port* - номер порта для доступа к RabbitMQ.
-* *UserName* - имя пользователя RabbitMQ.
-* *Password* - пароль пользователя RabbitMQ.
-* *ManagementApiPort* - номер порта для доступа к Management API.
-* *PrefetchCount* - количество сообщений, единовременно передаваемых получателю. При значении 0 очередь будет передавать все доступные сообщения получателю.
-* *MaxConcurrentThreads* - Максимальное количество потоков обработки сообщений.
+* *HostName* - server name where RabbitMQ is installed.
+* *Port* - RabbitMQ port number.
+* *UserName* - RabbitMQ user name.
+* *Password* - RabbitMQ user password.
+* *ManagementApiPort* - Management API port number.
+* *PrefetchCount* - number of messages simultaneously transferred to client. Value 0 will transfer all messages to client. П
+* *MaxConcurrentThreads* - Max number of threads to proccess messages.
