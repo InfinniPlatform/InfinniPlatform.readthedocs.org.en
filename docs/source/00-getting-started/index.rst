@@ -12,7 +12,7 @@ Clone app expample:
 
     > git clone https://github.com/InfinniPlatform/InfinniPlatform.Northwind.git
 
-Open a file ``InfinniPlatform.Northwind.sln`` in Visual Studio and build it to run pressing F5 (``F5``).
+Open a file ``InfinniPlatform.Northwind.sln`` in Visual Studio and build it to run pressing (``F5``).
 
 Check if it is up and running:
 
