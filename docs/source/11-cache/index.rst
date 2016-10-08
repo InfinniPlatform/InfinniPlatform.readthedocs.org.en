@@ -14,7 +14,7 @@ This type of cache is retained in memory while an app is working and disposed as
 Distributed Cache
 ~~~~~~~~~~~~~~~~~
 
-.. important:: To utilize distributed cache you must install Redis (см. :doc:`/11-cache/redis-install`) and RabbitMQ (ref. :doc:`/12-queues/queues-install`).
+.. important:: To utilize distributed cache you must install Redis (ref. :doc:`/11-cache/redis-install`) and RabbitMQ (ref. :doc:`/12-queues/queues-install`).
 
 Cache retained in memory getting duplicated in Redis database which makes it to be accessible by other apps instances and thus be clusterable. 
 
