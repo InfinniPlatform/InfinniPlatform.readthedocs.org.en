@@ -7,7 +7,7 @@ Examples of Using Cache
     {
         public CacheHttpService(ICache cache)
         {
-            //Получаем экземпляр кэша в зависимости от настроек приложения см. :doc:`/11-cache/cache-setup`
+            //Getting cache instance ref. :doc:`/11-cache/cache-setup`
             _cache = cache;
         }
 
@@ -15,7 +15,7 @@ Examples of Using Cache
 
         private void SomeMethod()
         {
-            //Сохраняем ключ и значение в кэш.
+            //Saving key and value to cache.
             _cache.Set("key", "value");
         }
     }
