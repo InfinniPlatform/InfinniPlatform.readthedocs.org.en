@@ -2,7 +2,7 @@ CRON Expression
 ===============
 
 Schedule of job execution is defined as `CRON <https://en.wikipedia.org/wiki/Cron>`_ style expression .
-``cron`` is a classical job scheduler in UNIX like OSes utilized to run periodical tasks.  CRON expressions define schedule in calendar style. For instance, "at 8:00 each day from monday to friday" or "at 13:30 each month last friday". CRON expressions is a powerful and simple tool which require not much of efforts to get accustomed to.
+``cron`` is a classical job scheduler in UNIX like OSes utilized to run periodical tasks.  CRON expressions define schedule in calendar style. For instance, "at 8:00 each day from monday to friday" or "at 13:30 each last friday of month". CRON expressions is a powerful and simple tool which require not much of efforts to get accustomed to.
 
 
 CRON Expression Syntax
@@ -17,9 +17,9 @@ The scheme below clarifies the structure of CRON expression. Expressions are mar
     ┌───────────── Second
     │ ┌────────────── Minute
     │ │ ┌─────────────── Hour
-    │ │ │ ┌──────────────── Month day
+    │ │ │ ┌──────────────── Day of month
     │ │ │ │ ┌───────────────── Month
-    │ │ │ │ │ ┌───────────────── Week day
+    │ │ │ │ │ ┌───────────────── Day of week
     │ │ │ │ │ │ ┌───────────────── Year
     │ │ │ │ │ │ │
     * * * * * * *
@@ -32,45 +32,43 @@ CRON expression parts can only contain vlaues from tolerance range with combinat
     "Second",       "Yes",  "0-59",                  "``,`` ``-`` ``*`` ``/``"
     "Minute",       "Yes",  "0-59",                  "``,`` ``-`` ``*`` ``/``"
     "Hour",         "Yes",  "0-23",                  "``,`` ``-`` ``*`` ``/``"
-    "Month day",    "Yes",  "1-31",                  "``,`` ``-`` ``*`` ``/`` ``?`` ``L`` ``W``"
+    "Day of Month", "Yes",  "1-31",                  "``,`` ``-`` ``*`` ``/`` ``?`` ``L`` ``W``"
     "Month",        "Yes",  "1-12 (1 - January)",    "``,`` ``-`` ``*`` ``/``"
-    "Week day",     "Yes",  "1-7 (1 - Sunday)",      "``,`` ``-`` ``*`` ``/`` ``?`` ``L`` ``#``"
+    "Days of week", "Yes",  "1-7 (1 - Sunday)",      "``,`` ``-`` ``*`` ``/`` ``?`` ``L`` ``#``"
     "Year",         "No",   "1970-2099",             "``,`` ``-`` ``*`` ``/``"
 
 
 CRON Special Characters
 -----------------------
 
-:``*``: Означает все допустимые значения. Например, ``*`` для *минут* означает "каждую минуту".
+:``*``: Implemented to define all possible values. For example, ``*`` for *minutes* means "each minute".
 
-:``,``: Используется для перечисления значений. Например, ``2,4,6`` для *дней недели* означает "понедельник, среда и пятница".
+:``,``: Implemented to enumerate values. For example, ``2,4,6`` for *week days* means "Monday, Wednesday and Friday".
 
-:``-``: Используется для определения диапазона значений. Например, ``10-12`` для *часов* означает "10, 11 и 12 часов".
+:``-``: Implemented to define values range. For example, ``10-12`` for *hours* means "10, 11 and 12 hours".
 
-:``/``: Используется для определения периода повторения. Например, ``0/15`` для *секунд* означает "0, 15, 30 и 45 секунд",
-        а ``5/15`` означает "5, 20, 35 и 50 секунд"; ``1/3`` для *дней месяца* означает "через каждых 3 дня с 1 дня месяца".
+:``/``: Implemented to define period reccurence. For example, ``0/15`` for *seconds* means "0, 15, 30 и 45 seconds" while
+        ``5/15`` means "5, 20, 35 and 50 seconds"; ``1/3`` for *month days* means "every 3 days from 1st day of month".
 
-:``?``: Означает отсутствие определенного значения. Использование этого символа допустимо только в одной из двух частей -
-        *день месяца* или *день недели*, но не в двух сразу. Например, если необходимо выполнять задание 10 числа каждого месяца
-        вне зависимости от дня недели, то в части *дня месяца* нужно указать ``10``, а в части *дня недели* - ``?``.
+:``?``: Represents lack of particular value. Implementation of this character can have only a single entry in each of two           cases *day of month* or *day of week*. For example, to plan a job execution on 10th day of each month and each week 
+        then *day of month* is defined as ``10`` while *day of week* is defined as ``?``.
 
-:``L``: Имеет различный смысл для каждой из двух частей - *день месяца* и *день недели*. Например, значение ``L``
-        для *дня месяца* означает "последний день месяца" (31 для января, 28 для февраля в не високосный год). Это же значение
-        для *дня недели* означает "последний день недели" - ``7`` (суббота). Однако если использовать символ ``L`` в части
-        *дня недели* после определенного значения, это означает "последний указанный день недели месяца". Например, ``6L``
-        означает "последнюю пятницу месяца". Также можно определить смещение относительно последнего дня месяца. Например,
-        ``L-3`` для *дня месяца* означает "за 3 дня до последнего дня месяца".
+:``L``: Has discrepancy in meaning for each of two parts - *day of month* and *day of week*. For example, value ``L``
+        for *day of month* means "last day of month" (31 for January, 29 for February in leap year). The same value for 
+        *day of week* means "last day of week" - ``7`` (Saturday). However if one uses character ``L`` as *day of week*
+        after a specific value this implies "last defined week day of month". For example, ``6L`` means "last friday of
+        month". Relative offset may be also defined for the last day of month. For example, ``L-3`` for *day of month*
+        means "before 3 days until last day of month".
 
-:``W``: Означает рабочий день недели (с понедельника по пятницу включительно), наиболее близкий к указанному
-        дню месяца. Например, ``15W`` для *дня месяца* означает "рабочий день недели, наиболее близкий к 15 числу месяца".
-        Например, если 15-е число - суббота, задание будет обработано 14-го числа в пятницу. Если 15-е число - воскресенье,
-        задание будет обработано 16-го числа в понедельник. Если 15-е число - четверг, задание будет обработано 15-го числа
-        в четверг. Однако, если значение равно ``1W`` и 1-е число - суббота, то событие произойдет 3-го числа в понедельник,
-        поскольку данное правило работает только в рамках одного месяца. Также допустима комбинация ``LW``, означающая
-        комбинация "последний рабочий день месяца".
+:``W``: Represents working day of week (Monday to Friday) most close to the defined day of month. For example, ``15W`` for
+        *day of month* means "working day of week most close to 15 day of month".
+        For example, if 15th is Saturday, job will be executed on 14th on Friday. If 15th is Sunday, job will be executed
+        on 16th on Monday. If 15th is Thursday, job will be execute on 15th on Thursday. However if value is equal ``1W``
+        and 1st is Saturday then job will be executed on 3rd on Monday, one should take into account that this rule works
+        for jobs to be executed within one month. Combination ``LW`` is eligible and means "last working day of month".
 
-:``#``: Используется для определения n-го дня недели в месяце. Например, ``6#3`` для *дня недели* означает "третью
-        пятницу месяца", ``2#1`` - "первый понедельник месяца", ``4#5`` - "пятую среду месяца". 
+:``#``: Implemented to define 'n' day of week in a month. For example, ``6#3`` for *day of week* means "3rd Friday of
+        month", ``2#1`` - "1st Monday of month", ``4#5`` - "5th Wednesday of month". 
 
 
 .. index:: IJobInfoBuilder
@@ -78,9 +76,8 @@ CRON Special Characters
 Defining CRON Expression
 ------------------------
 
-Выражение CRON используются при создании :doc:`информации о здании </17-scheduler/index>`. При этом 
-может быть использована одна из перегрузок метода ``CronExpression()``, который определен в интерфейсе
-``InfinniPlatform.Scheduler.Contract.IJobInfoBuilder``.
+CRON exression is implemented when  :doc:`job info </17-scheduler/index>` is created. In this case one of 
+``CronExpression()`` method reloads can be utilized. This is defined in ``InfinniPlatform.Scheduler.Contract.IJobInfoBuilder`` interface.
 
 .. code-block:: csharp
    :emphasize-lines: 7,8
@@ -89,17 +86,14 @@ Defining CRON Expression
 
     ...
 
-    // Задание с именем "SomeJob" будет выполняться ежедневно
-    // в 10:35 с помощью обработчика SomeJobHandler
+    // Job "SomeJob" will be executed daily
+    // at 10:35 by SomeJobHandler handler
     factory.CreateJobInfo<SomeJobHandler>("SomeJob",
         b => b.CronExpression("0 35 10 * * ?"))
 
-Как видно, выражения CRON просты в использовании, достаточно запомнить основной принцип определения выражений.
-Тем не менее, со временем можно забыть позицию каждой части выражения, назначение специальных символов выражения
-или правила их применения. По этой причине метод ``CronExpression()`` имеет перегрузку с возможностью использования
-специальных методов для построения выражения CRON. Сигнатура этих методов использует концепцию `DSL`_ (Domain Specific
-Language - предметно-ориентированного языка), которая реализована в виде `fluent interface`_. Ниже приведен ранее
-рассмотренный пример, но с использованием DSL-перегрузки метода ``CronExpression()``.
+CRON expressions are simple and main principle of implementation (defifning expressions) is quite clear.
+If one forgets position of each part of expression, special characters and application rules then ``CronExpression()`` has method reloads to build CRON expressions. This method's signature implements `DSL`_ (Domain Specific
+Language - object-oriented language) concept which may be represented as `fluent interface`_. You can observe recently reviewed example below with DSL-method reload implementation ``CronExpression()``.
 
 .. code-block:: csharp
    :emphasize-lines: 7,8
@@ -108,8 +102,8 @@ Language - предметно-ориентированного языка), ко
 
     ...
 
-    // Задание с именем "SomeJob" будет выполняться ежедневно
-    // в 10:35 с помощью обработчика SomeJobHandler
+    // Job "SomeJob" will be executed daily
+    // at 10:35 by SomeJobHandler handler
     factory.CreateJobInfo<SomeJobHandler>("SomeJob",
         b => b.CronExpression(e => e.AtHourAndMinuteDaily(10, 35)))
 
@@ -119,19 +113,18 @@ Language - предметно-ориентированного языка), ко
 CRON Expressions Examples
 -------------------------
 
-Ниже приведены примеры выражений CRON: слева - оригинальное выражение, справа - lambda-выражение для построения
-аналогичного выражения с помощью интерфейса ``InfinniPlatform.Scheduler.Contract.ICronExpressionBuilder``.
+You can view examples of CRON expressions: left - original expression, right - lambda-expression to build the same expression with ``InfinniPlatform.Scheduler.Contract.ICronExpressionBuilder``.
 
 :``* * * * * ?``:
     .. code-block:: csharp
 
-        // Каждую секунду.
+        // Each second.
         b => { }
 
 :``0 0 12 * * ?``:
     .. code-block:: csharp
 
-        // Ежедневно в 12:00.
+        // Dail at 12:00.
         b => b.AtHourAndMinuteDaily(12, 00)
 
 :``0 15 10 * * ?``:
@@ -143,7 +136,7 @@ CRON Expressions Examples
 :``0 * 14 * * ?``:
     .. code-block:: csharp
 
-        // Ежедневно каждую минуту с 14:00 по 14:59.
+        // Daily each minute from 14:00 to 14:59.
         b => b.Hours(i => i.Each(14))
               .Minutes(i => i.Every())
               .Seconds(i => i.Each(0))
@@ -151,7 +144,7 @@ CRON Expressions Examples
 :``0 0/5 14 * * ?``:
     .. code-block:: csharp
 
-        // Ежедневно каждые 5 минут с 14:00 по 14:55.
+        // Daily each 5 minute from 14:00 to 14:55.
         b => b.Hours(i => i.Each(14))
               .Minutes(i => i.Each(0, 5))
               .Seconds(i => i.Each(0))
@@ -159,7 +152,7 @@ CRON Expressions Examples
 :``0 0/5 14,18 * * ?``:
     .. code-block:: csharp
 
-        // Ежедневно каждые 5 минут с 14:00 по 14:55 и с 18:00 по 18:55.
+        // ЕDaily each 5 minutes from 14:00 to 14:55 and from 18:00 to 18:55.
         b => b.Hours(i => i.EachOfSet(14, 18))
               .Minutes(i => i.Each(0, 5))
               .Seconds(i => i.Each(0))
@@ -175,7 +168,7 @@ CRON Expressions Examples
 :``0 10,44 14 * 3 4``:
     .. code-block:: csharp
 
-        // Каждую среду марта в 14:10 и 14:44.
+        // Each Wednesday of March at 14:10 and 14:44.
         b => b.Hours(i => i.Each(14))
               .Minutes(i => i.EachOfSet(10, 44))
               .Seconds(i => i.Each(0))
@@ -185,21 +178,21 @@ CRON Expressions Examples
 :``0 15 10 * * 2-6``:
     .. code-block:: csharp
 
-        // Каждый день с понедельника по пятницу в 10:15.
+        // Each day from Monday to Friday at 10:15.
         b => b.AtHourAndMinuteDaily(10, 15)
               .DayOfWeek(i => i.EachOfRange(DayOfWeek.Monday, DayOfWeek.Friday))
 
 :``0 15 10 15 * *``:
     .. code-block:: csharp
 
-        // 15 числа каждого месяца в 10:15.
+        // 15th each month at 10:15.
         b => b.AtHourAndMinuteDaily(10, 15)
               .DayOfMonth(i => i.Each(15))
 
 :``0 15 10 L * *``:
     .. code-block:: csharp
 
-        // В последний день каждого месяца в 10:15.
+        // Last day of month each month at 10:15.
         b => b.AtHourAndMinuteDaily(10, 15)
               .DayOfMonth(i => i.EachLast())
 
@@ -213,14 +206,14 @@ CRON Expressions Examples
 :``0 15 10 * * 6L``:
     .. code-block:: csharp
 
-        // Каждую последнюю пятницу месяца в 10:15.
+        // Each last Friday of month at 10:15.
         b => b.AtHourAndMinuteDaily(10, 15)
               .DayOfWeek(i => i.EachLast(DayOfWeek.Friday))
 
 :``0 15 10 * * 6L 2016-2020``:
     .. code-block:: csharp
 
-        // Каждую последнюю пятницу месяца в 10:15 с 2016 по 2020 год.
+        // Each last Friday of month at 10:15 from 2016 to 2020 год.
         b => b.AtHourAndMinuteDaily(10, 15)
               .DayOfWeek(i => i.EachLast(DayOfWeek.Friday))
               .Year(i => i.EachOfRange(2016, 2020))
@@ -228,21 +221,21 @@ CRON Expressions Examples
 :``0 15 10 * * 6#3``:
     .. code-block:: csharp
 
-        // Каждую третью пятницу месяца в 10:15.
+        // Each 3rd Friday of month at 10:15.
         b => b.AtHourAndMinuteDaily(10, 15)
               .DayOfWeek(i => i.EachNth(DayOfWeek.Friday, 3))
 
 :``0 0 12 1/5 * *``:
     .. code-block:: csharp
 
-        // Через каждых 5 дней с 1 дня месяца в 12:00.
+        // Each 5 days from 1st day of month at 12:00.
         b => b.AtHourAndMinuteDaily(12, 00)
               .DayOfMonth(i => i.Each(1, 5))
 
 :``0 11 11 11 11 *``:
     .. code-block:: csharp
 
-        // 11 ноября в 11:11.
+        // 11 November at 11:11.
         b => b.AtHourAndMinuteDaily(11, 11)
               .DayOfMonth(i => i.Each(11))
               .Month(i => i.Each(Month.November))
@@ -250,7 +243,7 @@ CRON Expressions Examples
 :``0 15 10 * * 2,4,6``:
     .. code-block:: csharp
 
-        // Каждый понедельник, среду и пятницу в 10:15.
+        // Each Monday, Wdnwsday and Friday at 10:15.
         b => b.AtHourAndMinuteOnGivenDaysOfWeek(10, 15,
                     DayOfWeek.Monday,
                     DayOfWeek.Wednesday,
@@ -259,7 +252,7 @@ CRON Expressions Examples
 :``0 15 10 1,10,15 * *``:
     .. code-block:: csharp
 
-        // 1, 10 и 15 числа в 10:15.
+        // 1, 10 and 15 day at 10:15.
         b => b.AtHourAndMinuteMonthly(10, 15,
                     1, 10, 15)
 
