@@ -1,26 +1,21 @@
 Message Queue
 =============
 
-Очереди сообщений, являются связующим звеном между различными процессами и обеспечивают надежный и масштабируемый
-интерфейс взаимодействия с другими подключенными системами и устройствами.
+Message queues are the linking part between various processes and provide reliable and scalable interface to interact with other connected systems and devices.
 
-Можно выделить следующие преимущества использования очередей:
+A list features can be outlined as advantages of implementing queues:
 
-* **Слабое связывание** - создают неявные интерфейсы обмена данными, что позволяет процессам быть независимыми друг от друга.
+* **Weak binding** creates independent process interfaces of data exchange
 
-* **Масштабируемость** - распределяют процессы обработки информации, что позволяет горизонтально наращивать производительность
-  обработки сообщений очереди.
+* **Scalability** distributes information processing mechanisms which allows to rise performance queue processing
 
-* **Асинхронная обработка** - предоставляют возможность асинхронной обработки данных, что позволяет поместить сообщение в очередь
-  и обработать его позднее при наличии свободных ресурсов.
+* **Asynchronous processing** represents functionality to process data asynchronously which gives ability to put a message in queue and process it later upon allocation of computable resources
 
-Очереди сообщений работают на базе системы `RabbitMQ <https://www.rabbitmq.com/>`_, которая реализует обмен сообщениями между
-компонентами программной системы на основе стандарта `AMQP <http://www.amqp.org/>`_. В связи с этим очереди обладают следующими
-преимуществами:
+InfinniPlatform utilizes `RabbitMQ <https://www.rabbitmq.com/>`_ to exchange messages among its components based on `AMQP <http://www.amqp.org/>`_ standart. Message queueing in InfinniPlatform features the following:
 
-* Устойчивы к потере соединения, то есть состояние очередей и сообщения в них сохраняются при отключении потребителей.
+* Sustainable to connectivity loss that is message states as well as queues are persistently retained if clients are disconnected.
 
-* Устойчивы к ошибкам обработки сообщений, то есть сообщения остаются в очереди до тех пор пока получатель не обработает их успешно.
+* Sustainable to message errors processing that is messages are held in the queue until they get sucessfuly processed. 
 
 .. toctree::
 
