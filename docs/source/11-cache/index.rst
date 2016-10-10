@@ -1,24 +1,22 @@
 Data Caching
 ============
 
-Кэширование позволяет экономить время на генерацию часто запрашиваемых статичных данных.
-InfinniPlatform предоставляет возможность работы с двуми видами кэша:
+Caching allow save time to generate frequently requested static data. InfinniPlatform has functionality to work with both types of cache:
 
-#. Кэш в памяти (Memory).
-#. Распределенный кэш (Shared).
+#. In-memory cache (Memory).
+#. Distributed cache (Shared).
 
 In-memory Cache
 ~~~~~~~~~~~~~~~
 
-Кэш хранится в памяти и очищается при остановке приложения.
+This type of cache is retained in memory while an app is working and disposed as the app is stopped.
 
 Distributed Cache
 ~~~~~~~~~~~~~~~~~
 
-.. important:: Для работы распределенного кэша требуется установленные Redis (см. :doc:`/11-cache/redis-install`) и RabbitMQ (см. :doc:`/12-queues/queues-install`).
+.. important:: To utilize distributed cache you must install Redis (ref. :doc:`/11-cache/redis-install`) and RabbitMQ (ref. :doc:`/12-queues/queues-install`).
 
-Кэш хранится в памяти и дублируется в базе данных Redis. Таким образом, кэш может быть использован другими экземплярами приложения
-и соответственно позволяет разворачивать приложения в кластере.
+Cache retained in memory getting duplicated in Redis database which makes it to be accessible by other apps instances and thus be clusterable. 
 
 .. toctree::
 
