@@ -13,7 +13,7 @@ InfinniPlatform is a cross-platform open source project written with .NET Framew
 industry-grade open source components it makes use of state-of-the-art RabbitMQ_, Redis_, ELK_ and MongoDB_. This approach ensures you avoid vendor
 lock-in for the core parts of both middleware and application.
 
-This software is distributed under AGLPv3_ license which means you may use it free of charge and exceptionally all components employed are free to use
+This software is distributed under AGPLv3_ license which means you may use it free of charge and exceptionally all components employed are free to use
 as well to all.
 
 .. warning:: We started out to prepare our documentation in English. Please have a little patience. We are working on it and make it available to you
