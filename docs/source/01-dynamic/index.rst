@@ -3,8 +3,11 @@
 Dynamic Objects
 ===============
 
-Dynamic objects are structures similar to properties and methods during execution but not during building. This helps to create objects which are not static by type or format. Having created an instance of such object makes possible to bind a set of properties to it; having assigned a link to the dynamic object, one can refer to yet non-described properties.
-This behavior is made possible by 'late binding' with assitance of keyword ``dynamic``.  Basic usage of dynamic objects is processing of non-structured and non-formalized data.
+Dynamic objects expose members such as properties and methods at run time, instead of in at compile time. This enables you to create objects to work
+with structures that do not match a static type or format. Having created an instance of such object makes possible to bind a set of properties to it.
+This behavior is made possible by 'late binding' with using of keyword ``dynamic``. Basic usage of dynamic objects is processing of non-structured and
+non-formalized data.
+
 
 Creating Dynamic Objects
 ------------------------
@@ -15,10 +18,11 @@ InfinniPlatform has dynamic object represented by ``InfinniPlatform.Sdk.Dynamic.
 
     dynamic instance = new DynamicWrapper();
 
+
 Setting Properties of Dynamic Objects
 -------------------------------------
 
-Dynamic object instnce can be created with pre-defined properties:
+Dynamic object instance can be created with pre-defined properties:
 
 .. code-block:: csharp
 
@@ -53,6 +57,7 @@ Value property may define a link to delegate:
 
     instance.Sum = new Func<int, int, int>((a, b) => a + b);
 
+
 Getting Properties of Dynamic Objects
 -------------------------------------
 
@@ -67,13 +72,19 @@ Defining properties of dynamic object is identical to defining properties of reg
     var subProperty1 = property4.SubProperty1; // 456
     var subProperty2 = instance.Property4.SubProperty2; // "Def"
     var sum = instance.Sum(2, 3); // 5
-    
+
+
 Recommendations to work with Dynamic Objects
 --------------------------------------------
 
-Dynamic objects simplify processing of non-structured data and simultaneously increases chance of error due to the fact that expressions working with dynamic objects being built are not affected by syntax analysis. Any expression's result which formed by calling to either dynamic object or its properties is the dynamic object itself. Thus if the result type of dynamic object is not defined may cause large code blocks which is uncontrollable at the building stage.  Also you should bear in mind about lack of information in exception stack that may arise while building dynamic code.
+Dynamic objects simplify processing of non-structured data and at the same time increases chance of error due to the fact that expressions workin with
+dynamic objects being built are not affected by syntax analysis. Any expression's result which formed by calling to either dynamic object or its
+properties is the dynamic object itself. Thus if the result type of dynamic object is not defined may cause large code blocks which is uncontrollable
+at the building stage. Also you should bear in mind about lack of information in exception stack that may arise while building dynamic code.
 
-This is very important, due to mentioned reasons, to excactly define the result type of dynamic expression and use keyword ``dynamic`` where it is indeed applicable. In case you don't use nonstructured data objects, particular properties of data types can be often easily defined. Good rule is to define type in advance to avoid errors of type conversion and even in case of getting one you will be aware of its reasons. 
+This is very important, due to mentioned reasons, to exactly define the result type of dynamic expression and use keyword ``dynamic`` where it is indeed
+applicable. In case you don't use non-structured data objects, particular properties of data types can be often easily defined. Good rule is to define
+type in advance to avoid errors of type conversion and even in case of getting one you will be aware of its reasons. 
 
 .. code-block:: csharp
 
@@ -84,7 +95,10 @@ This is very important, due to mentioned reasons, to excactly define the result 
     int subProperty1 = property4.SubProperty1; // 456
     string subProperty2 = instance.Property4.SubProperty2; // "Def"
     int sum = instance.Sum(2, 3); // 5
-    
+
+
 Serialization of Dynamic Objects
 --------------------------------
-Class instances ``InfinniPlatform.Sdk.Dynamic.DynamicWrapper`` can be serialized and deserialized to/from JSON. You my find additional info here :doc:`/06-serialization/index`.
+
+Class instances ``InfinniPlatform.Sdk.Dynamic.DynamicWrapper`` can be serialized and deserialized to/from JSON. You my find additional info here
+:doc:`/06-serialization/index`.

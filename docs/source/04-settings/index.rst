@@ -3,23 +3,27 @@
 Application Configuration
 =========================
 
-App developers and administrators may configure InfinniPlatform apps using **configuration file**.
-Configuration file is a text file which contains app settings in JSON_ format. Developers may define app parameters in this file which will be taken into account in the app code automatically that make the app highly flexible and configurable. App administrators may change configuration parameters values which define the way the app is executed.
+App developers and administrators may configure InfinniPlatform apps using **configuration file**. Configuration file is a text file which contains
+app settings in JSON_ format. Developers may define app parameters in this file which will be loaded at start time. So configuration parameters can
+be used in the app code. That simple tool makes the app highly flexible and configurable. App administrators may change configuration parameters and
+define the way the app is executed.
+
 
 Application Configuration File
 ------------------------------
 
-App configuration file supports UTF-8_ text encoding and keeps app settings in JSON format.
-The file must have got name ``AppExtension.json`` and be stored in app's root folder.
+App configuration file supports UTF-8_ text encoding and keeps app settings in JSON format. The file must have got name ``AppExtension.json`` and be
+stored in app's root directory.
 
-.. note:: Name ``AppExtension.json`` refers to that the app is an extention of InfinniPlatform.
+.. note:: Name ``AppExtension.json`` refers to that the app is an extension of InfinniPlatform.
 
-Settings are JSON object with many defined properties. Properties of the first level are  **configuration sections** 
-which described by "key-value" pairs. Key is a name of property while value is a JSON object of any complexity. Each configuration section reflects particular InfinniPlatform module settings or the app settings.
+Settings are JSON object with many defined properties. Properties of the first level are  **configuration sections** which described by "key-value"
+pairs. Key is a name of property while value is a JSON object of any complexity. Each configuration section reflects settings of an InfinniPlatform
+subsystem or a particular component.
 
-You can see an example of configuration file common structure below. This contains two sections ``section1`` and ``section2``, each one has its own set of properties. Section properties can be of any JSON compatible type (string type in example).
-Number, name and content of cofiguration section is defined by the app developer however there are a few pre-defined InfinniPlatform configuration sections.
-
+You can see an example of configuration file common structure below. This contains two sections ``section1`` and ``section2``, each one has its own
+set of properties. Section properties can be of any JSON compatible type (string type in example). Number, name and content of configuration section
+is defined by the app developer however there are a few pre-defined InfinniPlatform configuration sections.
 
 .. code-block:: js
    :emphasize-lines: 3,10
@@ -49,22 +53,24 @@ Number, name and content of cofiguration section is defined by the app developer
 Environment Variables
 ---------------------
 
-For the reasons of administration convenience the app configuration file supports usage of environment variables. You may use simple substitute syntax in example below:
+To improve administration of the app configuration file there is support usage of environment variables. You may use next simple expressions to use
+environment variables.
 
 .. code-block:: bash
 
     ${variable}
     ${variable=default}
 
-In this example``variable`` is a variable name in environment while ``default`` is a value by default in case if variable is not defined or its value is not set (null string). Setting the default value is optional. 
+In this example ``variable`` is a variable name in environment while ``default`` is a value by default in case if variable is not defined or its value
+is not set (``null`` or empty string). Setting the default value is optional. 
 
-To define variable value the following search rules are applicable (ranged by priority)
+To retrieve variable value the following search rules are applicable (ordered by priority):
 
-#. Process environment variables
-#. User environment variables 
-#. Machine environment variables 
+* Process environment variables
+* User environment variables 
+* Machine environment variables 
 
-Next example shows configuration file environment variables usage: 
+Next example shows configuration file environment variables usage.
 
 .. code-block:: js
    :caption: AppExtension.json
@@ -84,10 +90,10 @@ Next example shows configuration file environment variables usage:
 Reading Application Configuration
 ---------------------------------
 
-To retrieve settings from configuration file it is required to :doc:`get </02-ioc/index>` the interface
-``InfinniPlatform.Sdk.Settings.IAppConfiguration`` from IoC-container and call a method ``GetSection()`` passing to it a section name as a parameter that is about to be retrieved.
+To retrieve settings from configuration file it is required to :doc:`get </02-ioc/index>` the interface ``InfinniPlatform.Sdk.Settings.IAppConfiguration``
+from IoC-container and call a method ``GetSection()`` passing to it a section name.
 
-As an example let's suppose a section ``myComponent`` is defined: 
+As an example let's suppose a section ``myComponent`` is defined as below. 
 
 .. code-block:: js
    :caption: AppExtension.json
@@ -101,8 +107,7 @@ As an example let's suppose a section ``myComponent`` is defined:
       ...
     }
 
-
-Then retrieving of the settings can be excecuted as in axample below:
+Then retrieving of the settings can be executed as in example below.
 
 .. code-block:: js
    :emphasize-lines: 3,5
@@ -118,11 +123,13 @@ Then retrieving of the settings can be excecuted as in axample below:
     
             // ...
         }
-    
+
         // ...
     }
 
-In this example settings were retrieved as a :doc:`dynamic object </01-dynamic/index>`. However, in cases, when structure of the configuration section can be described in advance it is recommended to define a class that can clearly describe the section content and use strongly typed reloading of method ``GetSection()`` 
+In this example settings were retrieved as a :doc:`dynamic object </01-dynamic/index>`. However, in cases, when structure of the configuration section
+can be described in advance it is recommended to define a class that can explicit describe the section content and use strongly typed reloading of
+method ``GetSection()``. 
 
 .. code-block:: js
    :emphasize-lines: 1,11,13
@@ -133,8 +140,8 @@ In this example settings were retrieved as a :doc:`dynamic object </01-dynamic/i
         public int Property2 { get; set; }
         public string Property3 { get; set; }
     }
-    
-    
+
+
     public class MyComponent
     {
         public MyComponent(InfinniPlatform.Sdk.Settings.IAppConfiguration appConfiguration)
@@ -143,10 +150,10 @@ In this example settings were retrieved as a :doc:`dynamic object </01-dynamic/i
             bool property1 = myComponentSettings.Property1; // true
             int property2 = myComponentSettings.Property2; // 123
             string property3 = myComponentSettings.Property3; // "Abc"
-    
+
             // ...
         }
-    
+
         // ...
     }
 
@@ -154,8 +161,8 @@ In this example settings were retrieved as a :doc:`dynamic object </01-dynamic/i
 Integration with IoC Container
 ------------------------------
 
-While developing own components it is more convenient to retrieve settings using the dependency injection (IoC) and not directly from configuration file. 
-To demonstrate this approach you should modify the above example in a very simple way; just move the logic of configuration section to the level of IoC-contaner module.
+While developing own components it is more naturally to use the dependency injection (IoC) and not directly read from configuration file. To demonstrate
+this approach you should modify the above example in a very simple way; just move the logic of configuration section to the level of IoC-container module.
 
 .. code-block:: js
    :emphasize-lines: 3,20-22
@@ -167,26 +174,27 @@ To demonstrate this approach you should modify the above example in a very simpl
             bool property1 = myComponentSettings.Property1; // true
             int property2 = myComponentSettings.Property2; // 123
             string property3 = myComponentSettings.Property3; // "Abc"
-    
+
             // ...
         }
-    
+
         // ...
     }
-    
-    
+
+
     public class ContainerModule : IContainerModule
     {
         public void Load(IContainerBuilder builder)
         {
-            builder.RegisterFactory(r => r.Resolve<IAppConfiguration>().GetSection<MyComponentSettings>("myComponent"))
+            builder.RegisterFactory(r => r.Resolve<IAppConfiguration>()
+                                          .GetSection<MyComponentSettings>("myComponent"))
                    .As<MyComponentSettings>()
                    .SingleInstance();
-    
+
             builder.RegisterType<MyComponent>()
                    .AsSelf()
                    .SingleInstance();
-    
+
             // ...
         }
     }

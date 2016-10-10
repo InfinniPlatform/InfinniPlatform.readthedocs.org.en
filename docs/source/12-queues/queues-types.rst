@@ -4,7 +4,8 @@ Message Queue Types
 Task Queue
 ----------
 
-Messages from the queue are distributed among **all** subscribers but each message is recieved and processed by only **one** subscriber. This queue may be used to organize parallel processinf of tasks or data.
+Messages from the task queue are distributed among **all** subscribers but each message is received and handled by only **one** subscriber. This queue
+may be used to organize parallel processing of tasks or data.
 
 
 .. image:: /_images/taskQueue.png
@@ -12,6 +13,6 @@ Messages from the queue are distributed among **all** subscribers but each messa
 Broadcast Queue
 ---------------
 
-Broadcasting messages are recieved and processed by **each** subscriber. This queue may be used for heterogenous processing of the same message.
+Messages from the broadcast queue are received and handled by **each** subscriber. This queue may be used for mixed processing of the same message.
 
 .. image:: /_images/broadcastQueue.png

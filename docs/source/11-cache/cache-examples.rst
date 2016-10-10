@@ -7,7 +7,7 @@ Examples of Using Cache
     {
         public CacheHttpService(ICache cache)
         {
-            //Getting cache instance ref. :doc:`/11-cache/cache-setup`
+            // Getting cache instance ref. :doc:`/11-cache/cache-setup`
             _cache = cache;
         }
 
@@ -15,7 +15,7 @@ Examples of Using Cache
 
         private void SomeMethod()
         {
-            //Saving key and value to cache.
+            // Setting key and value to cache
             _cache.Set("key", "value");
         }
     }

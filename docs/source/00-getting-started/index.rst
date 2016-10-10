@@ -6,7 +6,7 @@ This article will help you getting started with basic settings to begin app deve
 Examples of Using
 -----------------
 
-Clone app expample:
+Clone app example:
 
 .. code-block:: bash
 
@@ -38,8 +38,8 @@ You can install any `version <http://nuget.infinnity.ru/packages/Infinni.Node/>`
 
     > Infinni_Node_Install.bat 1.2.0.19-master # installs version '1.2.0.19-master' of Infinni.Node
 
-When script finishes Infinni.Node will be placed into the folder ``Infinni.Node.X.`` (where ``X`` - version number)
-in the same folder where script was run. Change folder as in example below:
+When script finishes Infinni.Node will be placed into the folder ``Infinni.Node.X.`` (where ``X`` - version number) in the same folder where script was
+run. Change folder as in example below:
 
 .. code-block:: bash
 
@@ -69,20 +69,20 @@ System Requirements
 For Developers
 ~~~~~~~~~~~~~~
 
-- `PowerShell`_ 3.0 (and up)
+- `PowerShell`_ 3.0 (and above)
 - `Git`_
 - `NuGet`_
 - `curl`_
 - `Visual Studio Community`_
 
 Requirement for Windows deployment
-~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Windows Server 2008 R2 SP1 (or SP2) x64, Windows Server 2012 (или 2012 R2) x64
 - `Microsoft .NET Framework 4.5`_
 
 Requirement for Linux deployment
-~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 - Ubuntu 14.04.4 LTS x64
 - `Mono 4.2`_

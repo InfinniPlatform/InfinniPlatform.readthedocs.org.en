@@ -6,8 +6,7 @@ This is a brief manual to get started with the InfinniPlatform job scheduler.
 Installing Job Scheduler
 ------------------------
 
-InfinniPlatform job scheduler is a NuGet-package ``InfinniPlatform.Scheduler`` which you may install by running
-a command in `Package Manager Console`_.
+InfinniPlatform job scheduler is a NuGet-package ``InfinniPlatform.Scheduler`` which you may install by running a command in `Package Manager Console`_.
 
 .. code-block:: bash
 
@@ -17,7 +16,7 @@ a command in `Package Manager Console`_.
 Job Handling Example
 --------------------
 
-Add to the project a file ``SomeJobHandler.cs`` with the same class name :doc:`job handler </17-scheduler/scheduler-jobhandler>`.
+Add to the project a file ``SomeJobHandler.cs`` for defining :doc:`job handler </17-scheduler/scheduler-jobhandler>`.
 
 .. code-block:: js
    :caption: SomeJobHandler.cs
@@ -36,7 +35,7 @@ Add to the project a file ``SomeJobHandler.cs`` with the same class name :doc:`j
         }
     }
 
-Add to the project a file ``SomeJobInfoSource.cs`` with the same class name :doc:`job info source </17-scheduler/scheduler-jobinfosource>`.
+Add to the project a file ``SomeJobInfoSource.cs`` for defining :doc:`job info source </17-scheduler/scheduler-jobinfosource>`.
 
 .. code-block:: js
    :caption: SomeJobInfoSource.cs
@@ -53,7 +52,7 @@ Add to the project a file ``SomeJobInfoSource.cs`` with the same class name :doc
         {
             var jobs = new[]
                        {
-                           // Задание будет выполняться через каждые 5 секунд
+                           // Job will be handled every 5 seconds
                            factory.CreateJobInfo<SomeJobHandler>("SomeJob",
                                b => b.CronExpression(e => e.Seconds(i => i.Each(0, 5))))
                        };
@@ -62,7 +61,7 @@ Add to the project a file ``SomeJobInfoSource.cs`` with the same class name :doc
         }
     }
 
-:doc:`Register in IoC-container </02-ioc/container-builder>` app handlers and job sources.
+:doc:`Register in IoC-container </02-ioc/container-builder>` job handlers and job sources.
 
 .. code-block:: js
    :caption: ContainerModule.cs
@@ -80,7 +79,7 @@ Add to the project a file ``SomeJobInfoSource.cs`` with the same class name :doc
             builder.RegisterJobHandlers(assembly);
             builder.RegisterJobInfoSources(assembly);
 
-            // othe dependencies...
+            // Other dependencies...
         }
     }
 

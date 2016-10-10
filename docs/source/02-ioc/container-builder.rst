@@ -3,8 +3,10 @@
 Registration Concepts
 =====================
 
-Interface ``InfinniPlatform.Sdk.IoC.IContainerBuilder`` represents methods family ``Register()``, designed to  register IoC-container componetnts. Registration methods also define the way of creating **instances** of components.
-Instances components may be made via reflection_ by means IoC-container itself; may be represented by beforehand created instance; may be created by a standart function which can be defined in a role of lambda_-expression. Each component may represent one or a few **services** defined with methods family ``As()``. 
+Interface ``InfinniPlatform.Sdk.IoC.IContainerBuilder`` represents a few overloadings of the method ``Register()``, designed to register IoC-container
+components. Registration methods also define the way of creating **instances** of components. Instances components may be made via reflection_ by means
+IoC-container itself; may be represented by beforehand created instance; may be created by a factory function or a lambda_-expression. Each component
+may represent one or a few **services** defined with using one of the methods ``As()``. 
 
 .. code-block:: csharp
    :emphasize-lines: 16
@@ -13,19 +15,19 @@ Instances components may be made via reflection_ by means IoC-container itself; 
     {
         // ...
     }
-    
-    
+
+
     public class MyComponent : IMyService
     {
         // ...
     }
-    
+
     public class ContainerModule : InfinniPlatform.Sdk.IoC.IContainerModule
     {
         public void Load(InfinniPlatform.Sdk.IoC.IContainerBuilder builder)
         {
             builder.RegisterType<MyComponent>().As<IMyService>();
-    
+
             // ...
         }
     }
@@ -36,7 +38,8 @@ Instances components may be made via reflection_ by means IoC-container itself; 
 Register Types
 --------------
 
-Component instances registered with method ``RegisterType()`` created by reflection_ and class constructor with the most number of parameters retrievable from container. 
+Component instances registered with method ``RegisterType()`` created by reflection_ and class constructor with the most number of parameters retrievable
+from container. 
 
 .. code-block:: csharp
 
@@ -52,8 +55,8 @@ Component instances registered with method ``RegisterType()`` created by reflect
 Register Generic Types
 ----------------------
 
-If component presented as generic_-type to register one should use method ``RegisterGeneric()``.
-As in case of regular types, instances of generic-components created by reflection_ and class constructor with the most number of parameters retrievable from container. 
+If component presented as generic_-type to register one should use method ``RegisterGeneric()``. As in case of regular types, instances of
+generic-components created by reflection_ and class constructor with the most number of parameters retrievable from container. 
 
 .. code-block:: csharp
    :emphasize-lines: 7
@@ -72,7 +75,8 @@ As in case of regular types, instances of generic-components created by reflecti
 Register Instances
 ------------------
 
-In some cases you may want to register an instance component created beforehand. For example, if creation of the component requires a lot of resources or is a technically complicated task. To register such components one should use method ``RegisterInstance()``.
+In some cases you may want to register an instance component created beforehand. For example, if creation of the component requires a lot of resources
+or is a technically complicated task. To register such components one should use method ``RegisterInstance()``.
 
 .. code-block:: csharp
 
@@ -84,13 +88,16 @@ In some cases you may want to register an instance component created beforehand.
 Register Factory Functions
 --------------------------
 
-Component may be registered by a standart function or lambda_-expression. This way suits well when creation of component instance should be accompanied by preliminary calculations or is impossible to be created by class constructor. Such components should be registered via method ``RegisterFactory()``. 
+Component may be registered by a factory function or lambda_-expression. This way suits well when creation of component instance should be accompanied
+by preliminary calculations or is impossible to be created by class constructor. Such components should be registered via method ``RegisterFactory()``. 
 
 .. code-block:: csharp
 
     builder.RegisterFactory(r => new MyComponent()).As<IMyService>();
 
-Input parameter ``r`` represents :ref:`context of IoC-container <container-resolver>`, which can be used to get all  dependencies required to create component. This appoach is the most fitting rather than obatining dependencies links via closure because this ensures a unified way of managing the lifecycle of all dependencies.
+Input parameter ``r`` represents :ref:`context of IoC-container <container-resolver>`, which can be used to get all dependencies required to create
+component. This approach is the most fitting rather than obtaining dependencies via closure because this ensures a unified way of managing the life
+cycle of all dependencies.
 
 .. code-block:: csharp
 

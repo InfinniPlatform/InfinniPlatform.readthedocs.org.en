@@ -1,12 +1,14 @@
 View Engine
 ===========
 
-InfinniPlatform includes a module that can generate presentation layer. It recieves **template** and **data model** (optionally) based on which generates HTML-document. At this moment only ` Razor markup <http://www.w3schools.com/aspnet/razor_intro.asp>`_ is supported.
+InfinniPlatform includes a module that can generate presentation layer. It receives **template** and **data model** (optionally) based on which
+generates HTML-document. At this moment only `Razor markup <http://www.w3schools.com/aspnet/razor_intro.asp>`_ is supported.
+
 
 Creating a View
 ---------------
 
-You can start to implement Razor-presentaion by using ``IHttpService`` interface which returns class instances ``ViewHttpResponse`` as the result.
+You can start to implement Razor-presentation by using ``IHttpService`` interface which returns ``ViewHttpResponse`` as the result.
 
 .. code-block:: csharp
 
@@ -15,21 +17,24 @@ You can start to implement Razor-presentaion by using ``IHttpService`` interface
         public void Load(IHttpServiceBuilder builder)
         {
             builder.ServicePath = "/razor";
-            // Getting Razor-presentation Index.cshtml, posting dynamic data model.
-            builder.Get["/Index"] = httpRequest =>
-                                    {
-                                        var viewHttpResponce = new ViewHttpResponce("Index", new DynamicWrapper
-                                                                                             {
-                                                                                                 { "Title", "Title" },
-                                                                                                 { "Data1", "Somedata" },
-                                                                                                 { "Data2", DateTime.Now }
-                                                                                             });
 
-                                        return Task.FromResult<object>(viewHttpResponce);
+            // Getting Razor-presentation Index.cshtml, posting dynamic data model.
+            builder.Get["/Index"] = request =>
+                                    {
+                                        var model = new DynamicWrapper
+                                                    {
+                                                        { "Title", "Title" },
+                                                        { "Data1", "Somedata" },
+                                                        { "Data2", DateTime.Now }
+                                                    };
+
+                                        var view = new ViewHttpResponce("Index", dataModel);
+
+                                        return Task.FromResult<object>(view);
                                     };
 
-            // getting Razor-пpesentation About.cshtml, without posting data model.
-            builder.Get["/About"] = httpRequest => Task.FromResult<object>(new ViewHttpResponce("About"));
+            // Getting Razor-пpesentation About.cshtml, without posting data model.
+            builder.Get["/About"] = request => Task.FromResult<object>(new ViewHttpResponce("About"));
         }
     }
 
