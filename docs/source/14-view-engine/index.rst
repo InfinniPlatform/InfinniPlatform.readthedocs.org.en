@@ -28,7 +28,7 @@ You can start to implement Razor-presentation by using ``IHttpService`` interfac
                                                         { "Data2", DateTime.Now }
                                                     };
 
-                                        var view = new ViewHttpResponce("Index", dataModel);
+                                        var view = new ViewHttpResponce("Index", model);
 
                                         return Task.FromResult<object>(view);
                                     };
