@@ -1,18 +1,14 @@
 Resolving dependencies
 ======================
 
-После :doc:`регистрации </02-ioc/container-builder>` компоненты доступны для получения. Процесс получения
-экземпляра одного компонента другим с использованием IoC-контейнера называется **разрешением зависимости**.
-В приложениях InfinniPlatform все зависимости передаются через конструкторы классов.
+Once components :doc:`registered </02-ioc/container-builder>` they can be retrieved. Retrieving process of a single component instance by another using IoC-container is called **dependency resolving**. In InfinniPlatform apps all dependencies transited via class constructors.
 
 
 Resolving Direct Dependency
 ---------------------------
 
-В большинстве случаев между компонентами установлена прямая зависимость. В следующем примере компонент ``A``
-зависит от компонента ``B``. В тот момент, когда приложению потребуется компонент ``A``, IoC-контейнер сначала
-создаст компонент ``B``, а затем передаст созданный экземпляр в конструктор компонента ``A``. Если компонент ``B``
-зависит от других компонентов, они будут созданы перед его созданием.
+In most cases a direct dependency is defined between components. Next example component ``A`` depends on component ``B``.
+In the very moment when app requests component ``A``. first IoC-container creates component ``B`` then transit newly created component into constructor of component ``A``. If component ``B`` depends on other components they will be created beforehand.
 
 .. code-block:: csharp
    :emphasize-lines: 5
@@ -36,9 +32,7 @@ Resolving Direct Dependency
 Resolving Enumeration of Dependencies
 -------------------------------------
 
-В случае, если необходимо получить набор однотипных компонентов, в конструкторе необходимо указать перечисление
-нужного типа. В следующем примере компонент ``A`` зависит от всех компонентов типа ``B``. Все компоненты типа ``B``
-будут созданы и переданы в конструктор компонента ``A`` в виде перечисления `IEnumerable<T>`_.
+In case if one wants to get a number of typical components one should place a list of required type. Next example component ``A`` is dependant on all components of type ``B``. All components of type ``B`` will be created and transferred to component ``A`` constructor as an enumerator list   `IEnumerable<T>`_.
 
 .. code-block:: csharp
    :emphasize-lines: 5
@@ -65,10 +59,8 @@ Resolving Enumeration of Dependencies
 Resolving with Delayed Instantiation
 ------------------------------------
 
-В случае, если получение зависимости достаточно ресурсоемкая операция или зависимость нечасто используется,
-следует воспользоваться отложенной инициализацией, которая реализована с использованием класса `Lazy<T>`_.
-В следующем примере компонент ``A`` зависит от компонента ``B``, но получает эту зависимость через отложенную
-инициализацию, при первом обращении к свойству `Lazy<T>.Value`_.     
+In case if getting a dependency requires a lot of computing resources or it rarely is  used one should use a postponed initializaton which is made with class  `Lazy<T>`_.
+Next example shows component ``A`` depends on component ``B`` but gets that dependency via postponed initialization while requesting a property `Lazy<T>.Value`_ for the first time.     
 
 .. code-block:: csharp
    :emphasize-lines: 5,12
@@ -94,9 +86,7 @@ Resolving with Delayed Instantiation
 Resolving Factory Functions
 ---------------------------
 
-В случае, если необходимо создать более одного экземпляра зависимости или решение о создании зависимости может быть
-принято только на этапе выполнения, следует использовать фабричную функцию. В следующем примере компонент ``A`` зависит
-от компонента ``B``, но получает эту зависимость только перед ее использованием.
+In case if it is required to create more than one instance of dependecy or decision to create dependency can be done when the app is executed one should use a factory function. Next example shows that component ``A`` depends on component ``B`` however it gets this dependency right before its usage.
 
 .. code-block:: csharp
    :emphasize-lines: 5,12
@@ -122,11 +112,7 @@ Resolving Factory Functions
 Resolving Parameterized Factory Functions
 -----------------------------------------
 
-В случае, если необходимо создать более одного экземпляра зависимости или решение о создании зависимости может быть
-принято только на этапе выполнения, и при этом зависимость не может быть создана без указания одного или нескольких
-параметров, которые известны только на этапе выполнения, следует использовать параметризованную фабричную функцию.
-В следующем примере компонент ``A`` зависит от компонента ``B``, но получает эту зависимость только перед ее
-использованием, передав фабричной функции значение параметра, необходимого для создания компонента ``B``.
+In case if it is required to create more than one instance of dependency or decision to create dependency can be done when app is executed one should use a parameterized factory function. Next component ``A`` depends on component ``B`` but gets this dependency right before its usage having transferred to the factory function parameter values required to create component ``B``.
 
 .. code-block:: csharp
    :emphasize-lines: 5,12
@@ -156,7 +142,7 @@ Resolving Parameterized Factory Functions
         public void DoSomething() { /* ... */ }
     }
 
-Если фабричная функция должна принимать несколько однотипных параметров, нужно определить ее делегат.
+If factory function must create a few typical parameters one should define its delegate.
 
 .. code-block:: csharp
    :emphasize-lines: 5,12,27
@@ -197,11 +183,8 @@ Resolving Parameterized Factory Functions
 Getting Direct Access to IoC Container
 --------------------------------------
 
-В случае, если необходимо реализовать универсальную фабрику компонентов, тип которых известен только на этапе
-выполнения (например, в случае с generic-типами) или логика работы компонента зависит от конфигурации IoC-контейнера,
-можно получить прямой доступ к контейнеру, указав в конструкторе зависимость от интерфейса ``InfinniPlatform.Sdk.IoC.IContainerResolver``.
-В следующем примере компонент ``A`` получает доступ к IoC-контейнеру, поскольку тип компонента, от которого он зависит,
-становится известен только на этапе выполнения.
+In case if it is required to make a univeral factory of components which type is knowable when app being executed, for example as in generic-type case, or working component logic depends on configuration of IoC-container, one can obtain a direct access to container if interface dependency ``InfinniPlatform.Sdk.IoC.IContainerResolver`` is denoted. 
+Next example shows component ``A`` acquires access to IoC-contaner because component type becomes known while being executed.
 
 .. code-block:: csharp
    :emphasize-lines: 5,12
@@ -235,8 +218,7 @@ Resolving dependencies at Runtime
 
 .. index:: IContainerResolver.Resolve()
 
-Интерфейс ``InfinniPlatform.Sdk.IoC.IContainerResolver`` позволяет получить зависимость любым, указанным выше
-способом. Для этих целей служит метод ``Resolve()``, имеющий две перегрузки.
+``InfinniPlatform.Sdk.IoC.IContainerResolver`` interface lets get dependency by any of afore mentioned way. ``Resolve()`` serves those purposes and has two reloads.
 
 .. code-block:: csharp
 
@@ -248,12 +230,11 @@ Resolving dependencies at Runtime
 
 .. index:: IContainerResolver.TryResolve()
 
-Если сервис не зарегистрирован, метод ``Resolve()`` бросит исключение. Эту ситуацию можно обойти двумя способами.
-Первый - с помощью метода ``TryResolve()``.
+If service is not registered, method ``Resolve()`` will throw an exeption. This can be bypassed two ways, first one is to use method ``TryResolve()``.
 
 .. code-block:: csharp
 
-    // Способ 1
+    // Way 1
     
     IMyService myService;
     
@@ -262,7 +243,7 @@ Resolving dependencies at Runtime
         // ...
     }
     
-    // Способ 2
+    // Way 2
     
     object myService;
     
@@ -273,11 +254,11 @@ Resolving dependencies at Runtime
 
 .. index:: IContainerResolver.ResolveOptional()
 
-Второй - с помощью метода ``ResolveOptional()``.
+Second is to use method ``ResolveOptional()``.
 
 .. code-block:: csharp
 
-    // Способ 1
+    // Way 1
     
     IMyService myService = resolver.ResolveOptional<IMyService>();
     
@@ -286,7 +267,7 @@ Resolving dependencies at Runtime
         // ...
     }
     
-    // Способ 2
+    // Way 2
     
     object myService = resolver.ResolveOptional(typeof(IMyService));
     
@@ -302,19 +283,19 @@ Resolving dependencies at Runtime
 Checking registrations
 ~~~~~~~~~~~~~~~~~~~~~~
 
-Для проверки конфигурации IoC-контейнера можно обратиться к списку зарегистрированных сервисов ``Services``.
-Для проверки наличия регистрации определенного сервиса следует использовать метод ``IsRegistered()``. 
+To check the configuration of IoC-container one may call a list of registered services ``Services``.
+To check the status of registration of a particular service one should use method ``IsRegistered()``. 
 
 .. code-block:: csharp
 
-    // Способ 1
+    // Way 1
     
     if (resolver.IsRegistered<IMyService>())
     {
         // ...
     }
     
-    // Способ 2
+    // Way 2
     
     if (resolver.IsRegistered(typeof(IMyService)))
     {
