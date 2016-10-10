@@ -3,12 +3,8 @@
 Registration Concepts
 =====================
 
-Интерфейс ``InfinniPlatform.Sdk.IoC.IContainerBuilder`` предоставляет семейство методов ``Register()``, предназначенных
-для регистрации компонентов IoC-контейнера. Методы регистрации также определяют способ создания **экземпляров** компонентов.
-Экземпляры компонентов могут быть созданы через reflection_, средствами самого IoC-контейнера; могут быть представлены
-заранее созданным экземпляром; могут быть созданы с помощью определенной фабричной функции, в роли которой может выступать
-lambda_-выражение. Каждый компонент может предоставлять один или несколько **сервисов**, определенных с использованием
-семейства методов ``As()``. 
+Interface ``InfinniPlatform.Sdk.IoC.IContainerBuilder`` represents methods family ``Register()``, designed to  register IoC-container componetnts. Registration methods also define the way of creating **instances** of components.
+Instances components may be made via reflection_ by means IoC-container itself; may be represented by beforehand created instance; may be created by a standart function which can be defined in a role of lambda_-expression. Each component may represent one or a few **services** defined with methods family ``As()``. 
 
 .. code-block:: csharp
    :emphasize-lines: 16
@@ -40,8 +36,7 @@ lambda_-выражение. Каждый компонент может пред�
 Register Types
 --------------
 
-Экземпляры компонентов, зарегистрированных с помощью метода ``RegisterType()``, создаются с помощью reflection_,
-с использованием конструктора с наибольшим количеством параметров, которые могут быть получены из контейнера. 
+Component instances registered with method ``RegisterType()`` created by reflection_ and class constructor with the most number of parameters retrievable from container. 
 
 .. code-block:: csharp
 
@@ -57,9 +52,8 @@ Register Types
 Register Generic Types
 ----------------------
 
-Если компонент представлен generic_-типом, для его регистрации следует использовать метод ``RegisterGeneric()``.
-Как и в случае с обычными типами, экземпляры generic-компонентов создаются с помощью reflection_ с использованием
-конструктора с наибольшим количеством параметров, которые могут быть получены из контейнера.
+If component presented as generic_-type to register one should use method ``RegisterGeneric()``.
+As in case of regular types, instances of generic-components created by reflection_ and class constructor with the most number of parameters retrievable from container. 
 
 .. code-block:: csharp
    :emphasize-lines: 7
@@ -78,9 +72,7 @@ Register Generic Types
 Register Instances
 ------------------
 
-В некоторых случаях может возникнуть необходимость зарегистрировать заранее созданный экземпляр компонента.
-Например, в случае, если создание компонента является ресурсоемкой или сложной операцией. Для регистрации
-таких компонентов следует использовать метод ``RegisterInstance()``.
+In some cases you may want to register an instance component created beforehand. For example, if creation of the component requires a lot of resources or is a technically complicated task. To register such components one should use method ``RegisterInstance()``.
 
 .. code-block:: csharp
 
@@ -92,19 +84,13 @@ Register Instances
 Register Factory Functions
 --------------------------
 
-Компонент может быть зарегистрирован с помощью определенной фабричной функции или lambda_-выражения. Данный способ
-хорошо подходит для ситуаций, когда перед созданием экземпляра компонента необходимо выполнить предварительные
-вычисления или компонент невозможно создать, используя конструктор. Для регистрации таких компонентов следует
-использовать метод ``RegisterFactory()``. 
+Component may be registered by a standart function or lambda_-expression. This way suits well when creation of component instance should be accompanied by preliminary calculations or is impossible to be created by class constructor. Such components should be registered via method ``RegisterFactory()``. 
 
 .. code-block:: csharp
 
     builder.RegisterFactory(r => new MyComponent()).As<IMyService>();
 
-Входной параметр ``r`` представляет :ref:`контекст IoC-контейнера <container-resolver>`, через конторый можно
-получить все зависимости, необходимые для создания компонента. Этот подход наиболее приемлем, чем получение
-ссылок на зависимости через замыкание (closure), поскольку гарантирует единый способ управления жизненным
-циклом всех зависимостей.   
+Input parameter ``r`` represents :ref:`context of IoC-container <container-resolver>`, which can be used to get all  dependencies required to create component. This appoach is the most fitting rather than obatining dependencies links via closure because this ensures a unified way of managing the lifecycle of all dependencies.
 
 .. code-block:: csharp
 
