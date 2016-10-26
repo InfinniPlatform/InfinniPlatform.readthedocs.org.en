@@ -38,7 +38,7 @@ You can install any `version <http://nuget.infinnity.ru/packages/Infinni.Node/>`
 
     > Infinni_Node_Install.bat 1.2.0.19-master # installs version '1.2.0.19-master' of Infinni.Node
 
-When script finishes Infinni.Node will be placed into the folder ``Infinni.Node.X.`` (where ``X`` - version number) in the same folder where script was
+When script finishes Infinni.Node will be placed into the folder ``Infinni.Node.X`` (where ``X`` - version number) in the same folder where script was
 run. Change folder as in example below:
 
 .. code-block:: bash
