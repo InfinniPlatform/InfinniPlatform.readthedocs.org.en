@@ -43,7 +43,7 @@ run. Change folder as in example below:
 
 .. code-block:: bash
 
-    > cd Infinni.Node.1.2.0.19-master
+    > cd Infinni.Node.X
 
 Install the app:
 
