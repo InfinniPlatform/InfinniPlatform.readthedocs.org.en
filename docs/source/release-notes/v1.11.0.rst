@@ -147,5 +147,28 @@ SerializerVisibleAttribute
 * ``InfinniPlatform.Sdk.Metadata.Documents`` → ``InfinniPlatform.Sdk.Documents.Metadata``
 
 
+ITenantScope
+------------
+
+Добавлена концепция области работы с данными определенной организации ``InfinniPlatform.Sdk.Session.ITenantScope``. Для ее использования достаточно
+получить зависимость ``InfinniPlatform.Sdk.Session.ITenantScopeProvider`` и определить границы области работы с помощью оператора ``using``, как в
+примере ниже. Ранее доступ к данным организации осуществлялся на основе учетных данных пользователя и, таким образом, не было возможности выполнять
+какую-либо логику за пределами обработки запроса пользователя, кроме как напрямую обращаться к данным, минуя все высокоуровневые абстракции.
+
+.. code-block:: csharp
+   :emphasize-lines: 14
+
+    ITenantScopeProvider scopeProvider;
+
+    // ...
+    
+    using (scopeProvider.BeginTenantScope("<Your Tenant ID>"))
+    {
+        // Work with IDocumentStorage or IDocumentStorage<T>
+    }
+
+Также обеспечена поддержка выполнения асинхронных операций (``async``/``await``) внутри области (``using``).
+
+
 .. _`Package Manager Console`: http://docs.nuget.org/consume/package-manager-console
 .. _`редактор печатных представлений`: https://github.com/InfinniPlatform/InfinniPlatform.PrintViewDesigner
