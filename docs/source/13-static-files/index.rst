@@ -1,14 +1,14 @@
 Static Content
 ==============
 
-InfinniPlatform can host static files such as HTML, CSS, JavaScript, images and so on.
+InfinniPlatform can host static files such as HTML, CSS, JavaScript, images, etc.
 
 * Client can retrieve content by a direct link.
 * Browser cache will reduce number of requests and accordingly server load.
 
 
-Static Content Configuration
-----------------------------
+Configuration
+-------------
 
 Configuration file ``AppExtension.json`` contains section ``staticContent``  where you must define path mapping for both paths on your hard drive and
 virtual paths used for web addressing in ``StaticContentMapping``.
@@ -28,8 +28,8 @@ with structure on the hard drive.
 .. important:: For security reasons static files can only be placed inside of the working folder so paths like ``../content/metadata`` are invalid.
 
 
-Static Content Configuration for UI
------------------------------------
+Configuration for UI hosting
+----------------------------
 
 Hosting engine can be used to host UI making thus redundant usage of web-servers like IIS, nginx.
 
@@ -47,8 +47,8 @@ Hosting engine can be used to host UI making thus redundant usage of web-servers
 
 .. _resources-hosting:
 
-Static Content Configuration for Resources
-------------------------------------------
+Configuration for Resources Hosting
+-----------------------------------
 
 To host files stored in the assembly resources, configuration file ``AppExtension.json`` in section ``staticContent`` should have defined mapping
 of both physical paths (assembly resource) and virtual (url) in ``ResourceContentMapping``.
