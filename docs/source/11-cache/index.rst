@@ -20,5 +20,6 @@ Cache retained in memory getting duplicated in Redis database which makes it to 
 
 .. toctree::
 
+    cache-setup.rst
     redis-install.rst
     cache-examples.rst

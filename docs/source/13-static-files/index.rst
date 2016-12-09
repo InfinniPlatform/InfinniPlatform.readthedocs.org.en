@@ -13,7 +13,7 @@ Static Content Configuration
 Configuration file ``AppExtension.json`` contains section ``staticContent``  where you must define path mapping for both paths on your hard drive and
 virtual paths used for web addressing in ``StaticContentMapping``.
 
-.. code-block:: json
+.. code-block:: javascript
 
   "staticContent": {
     "StaticContentMapping": {
@@ -33,7 +33,7 @@ Static Content Configuration for UI
 
 Hosting engine can be used to host UI making thus redundant usage of web-servers like IIS, nginx.
 
-.. code-block:: json
+.. code-block:: javascript
 
   "staticContent": {
     "StaticContentMapping": {
@@ -53,7 +53,7 @@ Static Content Configuration for Resources
 To host files stored in the assembly resources, configuration file ``AppExtension.json`` in section ``staticContent`` should have defined mapping
 of both physical paths (assembly resource) and virtual (url) in ``ResourceContentMapping``.
 
-.. code-block:: json
+.. code-block:: javascript
 
   "staticContent": {
     "ResourceContentMapping": {

@@ -13,7 +13,7 @@ CRON expression is a single line consists of 6 or 7 parts divided by spaces. Eac
 accordance by logical multiplication (AND). The scheme below shows the structure of CRON expression. Expression parts are marked with ``*`` and
 lines show descriptions.
 
-.. code-block:: csharp
+.. code-block:: bash
    :emphasize-lines: 9
 
     ┌───────────── Second
