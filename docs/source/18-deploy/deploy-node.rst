@@ -62,51 +62,39 @@ Get help for specific command:
 Packages
 --------
 
-Дистрибутив приложения выполняется в виде обычного NuGet-пакета, который
-должен включать необходимый набор файлов и зависимостей. Пакеты могут
-размещаться на любом допустимом NuGet-источнике, включая обычную
-файловую систему.
+Application distributive represents Nuget package that must include necessary
+files and dependencies. Packages can be posted on any valid NuGet source,
+including file system.
 
-В конфигурационном файле утилиты можно указать несколько
-NuGet-источников, которые будут использоваться по умолчанию, если
-команда ``install`` была вызвана без явного указания источника. После
-установки для приложения будет создан отдельный каталог, который будет
-содержать все файлы, содержащиеся в пакете и его зависимостях.
+Infinni.Node's configuration file can contain multiple Nuget sources that
+will be used by default on ``install`` command call without using specified source.
+Installation creates separate directory for files contained in package and it's dependencies.
 
 Sandboxes
 ---------
 
-Утилита поддерживает установку нескольких версий одного и того же
-приложения, а также нескольких экземпляров одной и той же версии. Для
-каждого экземпляра каждой версии каждого приложения при установке
-создается свой рабочий каталог.
+Infinni.Node allows to install multiple versions of the same application,
+as well as multiple instances of the same version. 
+Separate working directory is created for each instance of each version of each application.
 
-Каждое приложение работает в отдельно выделенном процессе под
-управлением ``Infinni.NodeWorker.exe``. В рамках этого процесса для
-приложения создается отдельный домен приложения, который нацелен на
-соответствующий рабочий каталог.
+Each application runs as separate working process under ``Infinni.NodeWorker.exe``.  
+As part of this process, for application creates a separate application domain,
+which is aimed at appropriate working directory.
 
 Windows & Linux
 ---------------
 
-Утилита является кроссплатформенной, поэтому может работать как в
-Windows, так и в Linux. Работа в Linux обеспечивается за счет ``Mono``,
-поэтому вызов утилиты в командной строке Linux должен начинаться с
-команды ``mono``:
+Infinni.Node is a cross-platform utility, so it can run on Windows and Linux operating systems.
+Work on Linux is provided by ``Mono``, therefore, calling the utility on Linux command shell must start with
+command ``mono``:
 
 .. code:: bash
 
     > mono Infinni.Node.exe ...
 
-При установке приложений в Windows они уставливаются, как Windows
-Services. При установке приложений в Linux они уставливаются, как
-Daemons (пока только в виде LSB-совместимого скрипта в init.d). На этом
-основные отличия заканчиваются.
+On Windows applications represents as Windows services.
+On Linux applications represents as deamons (yet only as LSB-compliant script in init.d).
 
-Disclaimer
-----------
-
-Утилита обеспечивает кроссплатформенную инфраструктуру для управления
-приложениями, однако не может гарантировать, что отдельно взятое
-приложение является кроссплатформенным. Платформенная независимость
-приложения должна обеспечиваться разработчиком самого приложения.
+.. note:: Infinni.Node provides cross-platform infrastructure for application management,
+          however, can't guarantee that the individual application is cross-platform.
+          Platform independence for individual application shall be ensured by application developer.
