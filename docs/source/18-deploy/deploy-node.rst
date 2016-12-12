@@ -14,7 +14,7 @@ By default latest version of the utility will be installed:
 
     > Infinni_Node_Install.bat # install latest version of Infinni.Node utility
 
-To install specific version you can pass it as script parameter `доступную версию утилиты <http://nuget.infinnity.ru/packages/Infinni.Node/>`__:
+To install `specific version <http://nuget.infinnity.ru/packages/Infinni.Node/>`__ you can pass it as script parameter:
 
 .. code:: bash
 
