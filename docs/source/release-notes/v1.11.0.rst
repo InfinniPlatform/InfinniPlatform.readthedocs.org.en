@@ -184,28 +184,100 @@ ITenantScope
 Команда Init
 ------------
 
-Добавлена команда ``Init`` в InfinniPlatform.ServiceHost.exe и Infinni.Node.exe. Позволяет запустить логику инициализации приложения, реализованную 
-в интерфейсе `IChetoTam`:
+Добавлена команда ``Init`` в InfinniPlatform.ServiceHost.exe и Infinni.Node.exe. Выполняет логику инициализации приложения, реализованную 
+в методе ``OnInit()`` интерфейса ``IAppEventHandler``:
 
 .. code-block:: csharp
 
-    //code
+    public class ExampleAppInitializer : AppEventHandler
+    {
+        public override void OnInit()
+        {
+            // Declare initialization logic here...
+        }
+    }
 
-Позволяет выполнить операции типа инициализации БД, миграции данных и т.п. без старта самого приложения.
+Позволяет выполнить тяжелые, требовательные ко времени выполнения операции,
+которые необходимо выполнить при первом старте приложения (инициализация БД, миграция данных и т.п.), без запускаа самого приложения.
+Команда поддерживается в утилитах ``Infinni.Node`` и ``InfinniPlatform.ServiceHost``:
+
+.. code-block:: bash
+
+    # Infinni.Node
+
+    # Выполнить `только` инициализацию приложения
+    Infinni.Node.exe init -i <AppName>
+
+    # InfinniPlatform.ServiceHost
+
+    # Выполнить `только` запуск приложения
+    InfinniPlatform.ServiceHost.exe
+    InfinniPlatform.ServiceHost.exe -s
+    InfinniPlatform.ServiceHost.exe --start
+
+    # Выполнить `только` инициализацию приложения
+    InfinniPlatform.ServiceHost.exe -i
+    InfinniPlatform.ServiceHost.exe --init
+
+    # Выполнить инициализацию, затем старт приложения
+    InfinniPlatform.ServiceHost.exe -i -s
+    InfinniPlatform.ServiceHost.exe --init --start
 
 
 JSON-схемы конфигурационных файлов
 ----------------------------------
 
 В файлы конфигурации можно подключить JSON-схему, что позволяет использовать автодополнение в редакторах кода 
-(например Visual Studio, Visual Studio Code), а также получать информацию о секциях, параметрах и их возможных значений. 
+(например Visual Studio, Visual Studio Code), а также получать информацию о секциях, параметрах и их возможных значений.
+Схемы хранятся `в репозитории InfinniPlatform <https://github.com/InfinniPlatform/InfinniPlatform/tree/master/Files/Config/Schema>`_. 
+Для подключения, достаточно добавить в файл конфигурации поле ``$schema``
+с адресом общей схемы (`Common.json`_).
 
+.. code-block:: javascript
+
+    {
+        "$schema": "https://raw.githubusercontent.com/InfinniPlatform/InfinniPlatform/master/Files/Config/Schema/Common.json",
+        ...
+    }
+
+Также схему можно расширить для прикладного проекта и подключать уже расширенный вариант, достаточно унаследоваться
+от общей схемы (`Common.json`_), т.е. указать её в поле ``allOf`` (см. пример ниже):
+
+.. code-block:: javascript
+
+    {
+        "id": "Custom.json",
+        "$schema": "http://json-schema.org/draft-04/schema#",
+        "title": "AppCustom",
+        "description": "Custom application settings.",
+        "allOf": [{
+            "$ref": "https://raw.githubusercontent.com/InfinniPlatform/InfinniPlatform/master/Files/Config/Schema/Common.json"
+        }],
+        "properties": {
+            "customProperty": {
+            "type": "object",
+            "description": "Some custom application setting."
+            }
+        }
+    }
+
+Подробнее о JSON-схемах см. `JSON schema`_ и - `Understanding JSON Schema`_.
 
 Инструменты для администрирования приложений (Infinni.Agent + Infinni.Server)
 -----------------------------------------------------------------------------
 
-Подробнее про :doc:`Infinni.Agent </02-ioc/index>` и про :doc:`Infinni.Server </02-ioc/index>`.
+Выпущены первые версии инструментов для администрирования приложений в кластере: ``Infinni.Agent`` и ``Infinni.Server``.
+
+``Infinni.Agent`` - предоставляет REST API для обращения к утилите :doc:`Infinni.Node </18-deploy/deploy-node>`.
+
+``Infinni.Server`` - предоставляет REST API, а также Web-интерфейс для обращения к экземплярам приложения ``Infinni.Agent``,
+установленных на машинах в кластере.
+
+Подробнее см. соответствующие главы документации: :doc:`Infinni.Agent </18-deploy/deploy-agent>` и про :doc:`Infinni.Server </18-deploy/deploy-server>`.
 
 
 .. _`Package Manager Console`: http://docs.nuget.org/consume/package-manager-console
 .. _`редактор печатных представлений`: https://github.com/InfinniPlatform/InfinniPlatform.PrintViewDesigner
+.. _`Common.json`: https://raw.githubusercontent.com/InfinniPlatform/InfinniPlatform/master/Files/Config/Schema/Common.json
+.. _`JSON schema`: http://json-schema.org/
+.. _`Understanding JSON Schema`: https://spacetelescope.github.io/understanding-json-schema/index.html

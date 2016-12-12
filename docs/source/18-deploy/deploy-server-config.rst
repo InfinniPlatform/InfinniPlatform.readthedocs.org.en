@@ -6,9 +6,7 @@ Server can be configured in ``server`` serction of  ``AppExtension.json`` file:
 .. code-block:: javascript
 
     "server": {
-      "AgentsInfoFilePath": "agents.json",    // Absolute or relative path to agent.json file 
-                                              // that contains information about Infinni.Agent instances      
-
+      "AgentsInfoFilePath": "agents.json"    // Absolute or relative path to agent.json file that contains information about Infinni.Agent instances     
     }
 
 List of known ``Infinni.Agent`` instances contains in ``agent.json`` file.
