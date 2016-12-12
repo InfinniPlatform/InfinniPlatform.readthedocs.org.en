@@ -62,10 +62,10 @@ Infinni.Node log can be open in browser tab or download as file (see gif below, 
 You can get application logs using the same way by clicking ``Events log`` and ``Performance log`` buttons in application panel.
 
 
-Application config view
------------------------
+Application configuration files view
+------------------------------------
 
-Open AppCommon.json for viewing and AppExtension.json for editing.
+Open ``AppCommon.json`` for viewing and ``AppExtension.json`` for editing.
  
 .. image:: /_images/18-deploy/app_config.gif
     :target: ../_images/app_config.gif
