@@ -1,5 +1,5 @@
-Serializing Known Types
-=======================
+Serialization Known Types
+=========================
 
 By default ``JsonObjectSerializer`` does not include any type information into resultant JSON. So if a serializable type contains a property with
 an abstract type serialization will be successful but not deserialization. It is because ``JsonObjectSerializer`` does not have any information

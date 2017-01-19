@@ -1,2 +1,2 @@
-Work with Dynamic Objects
-=========================
+Serialization Dynamic Objects
+=============================

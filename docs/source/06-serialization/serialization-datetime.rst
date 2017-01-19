@@ -1,2 +1,2 @@
-Serializing Dates and Times
-===========================
+Serialization Dates and Times
+=============================
