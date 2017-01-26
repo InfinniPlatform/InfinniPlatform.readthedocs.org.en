@@ -1,3 +1,5 @@
+.. index:: ISerializerErrorHandler
+
 Serialization Error Handling
 ============================
 

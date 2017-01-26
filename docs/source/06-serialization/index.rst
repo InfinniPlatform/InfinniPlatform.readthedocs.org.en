@@ -30,7 +30,7 @@ of the data serialization in an application and customize them in one place.
 
     serialization-attributes.rst
     serialization-knowntypes.rst
-    serialization-convertes.rst
+    serialization-converters.rst
     serialization-errors.rst
     serialization-datetime.rst
     serialization-dynamic.rst

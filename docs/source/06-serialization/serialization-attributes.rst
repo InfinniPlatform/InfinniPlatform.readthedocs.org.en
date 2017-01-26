@@ -30,6 +30,7 @@ exclude properties which can be calculated from other fields.
 
 
 .. index:: SerializerVisibleAttribute
+.. _SerializerVisibleAttribute:
 
 SerializerVisibleAttribute
 --------------------------
@@ -51,6 +52,7 @@ with non-public setters (or without them) are excluded from serialization. This 
 
 
 .. index:: SerializerPropertyNameAttribute
+.. _SerializerPropertyNameAttribute:
 
 SerializerPropertyNameAttribute
 -------------------------------

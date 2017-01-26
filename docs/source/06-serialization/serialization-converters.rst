@@ -1,3 +1,5 @@
+.. index:: IMemberValueConverter
+
 Serialization Convertes
 =======================
 
@@ -107,7 +109,7 @@ Next example converts all ``DateTime`` members to the Unix time during serializa
     var result = serializer.Deserialize<Person>(json);
 
     Console.WriteLine("{0:yyyy/MM/dd}", result.Birthday);
-    // 2000/01/01
+    //2000/01/01
 
 
 .. _`XmlElementAttribute`: https://msdn.microsoft.com/en-US/library/system.xml.serialization.xmlelementattribute(v=vs.110).aspx
