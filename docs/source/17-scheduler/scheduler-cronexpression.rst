@@ -169,7 +169,7 @@ You can see examples of CRON expressions below: left - original CRON expression,
               .Minutes(i => i.EachOfRange(0, 5))
               .Seconds(i => i.Each(0))
 
-:``0 10,44 14 * 3 4``:
+:``0 10,44 14 ? 3 4``:
     .. code-block:: csharp
 
         // Each Wednesday of March at 14:10 and 14:44.
@@ -179,42 +179,42 @@ You can see examples of CRON expressions below: left - original CRON expression,
               .Month(i => i.Each(Month.March))
               .DayOfWeek(i => i.Each(DayOfWeek.Wednesday))
 
-:``0 15 10 * * 2-6``:
+:``0 15 10 ? * 2-6``:
     .. code-block:: csharp
 
         // Each day from Monday to Friday at 10:15.
         b => b.AtHourAndMinuteDaily(10, 15)
               .DayOfWeek(i => i.EachOfRange(DayOfWeek.Monday, DayOfWeek.Friday))
 
-:``0 15 10 15 * *``:
+:``0 15 10 15 * ?``:
     .. code-block:: csharp
 
         // 15th each month at 10:15.
         b => b.AtHourAndMinuteDaily(10, 15)
               .DayOfMonth(i => i.Each(15))
 
-:``0 15 10 L * *``:
+:``0 15 10 L * ?``:
     .. code-block:: csharp
 
         // Last day of month each month at 10:15.
         b => b.AtHourAndMinuteDaily(10, 15)
               .DayOfMonth(i => i.EachLast())
 
-:``0 15 10 L-2 * *``:
+:``0 15 10 L-2 * ?``:
     .. code-block:: csharp
 
         // Before 2 days until last day of every month at 10:15.
         b => b.AtHourAndMinuteDaily(10, 15)
               .DayOfMonth(i => i.EachLast(2))
 
-:``0 15 10 * * 6L``:
+:``0 15 10 ? * 6L``:
     .. code-block:: csharp
 
         // Each last Friday of every month at 10:15.
         b => b.AtHourAndMinuteDaily(10, 15)
               .DayOfWeek(i => i.EachLast(DayOfWeek.Friday))
 
-:``0 15 10 * * 6L 2016-2020``:
+:``0 15 10 ? * 6L 2016-2020``:
     .. code-block:: csharp
 
         // Each last Friday of every month at 10:15 from 2016 to 2020 год.
@@ -222,21 +222,21 @@ You can see examples of CRON expressions below: left - original CRON expression,
               .DayOfWeek(i => i.EachLast(DayOfWeek.Friday))
               .Year(i => i.EachOfRange(2016, 2020))
 
-:``0 15 10 * * 6#3``:
+:``0 15 10 ? * 6#3``:
     .. code-block:: csharp
 
         // Each 3rd Friday of every month at 10:15.
         b => b.AtHourAndMinuteDaily(10, 15)
               .DayOfWeek(i => i.EachNth(DayOfWeek.Friday, 3))
 
-:``0 0 12 1/5 * *``:
+:``0 0 12 1/5 * ?``:
     .. code-block:: csharp
 
         // Each 5 days from 1st day of every month at 12:00.
         b => b.AtHourAndMinuteDaily(12, 00)
               .DayOfMonth(i => i.Each(1, 5))
 
-:``0 11 11 11 11 *``:
+:``0 11 11 11 11 ?``:
     .. code-block:: csharp
 
         // Every 11th November at 11:11.
@@ -244,7 +244,7 @@ You can see examples of CRON expressions below: left - original CRON expression,
               .DayOfMonth(i => i.Each(11))
               .Month(i => i.Each(Month.November))
 
-:``0 15 10 * * 2,4,6``:
+:``0 15 10 ? * 2,4,6``:
     .. code-block:: csharp
 
         // Each Monday, Wednesday and Friday at 10:15.
@@ -253,7 +253,7 @@ You can see examples of CRON expressions below: left - original CRON expression,
                     DayOfWeek.Wednesday,
                     DayOfWeek.Friday)
 
-:``0 15 10 1,10,15 * *``:
+:``0 15 10 1,10,15 * ?``:
     .. code-block:: csharp
 
         // 1th, 10th and 15th day at 10:15.
