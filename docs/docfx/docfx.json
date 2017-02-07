@@ -43,6 +43,10 @@
         ],
         "dest": "../source/_docfx/reference",
         "globalMetadataFiles": [],
+        "globalMetadata": {
+            "_disableNavbar": "true",
+            "_appFooter": "© Copyright Infinnity Solutions Ltd, 2010–2017."
+        },
         "fileMetadataFiles": [],
         "template": [
             "default"
