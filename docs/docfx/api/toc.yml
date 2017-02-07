@@ -1,2 +1,1288 @@
-- name: TO BE REPLACED
-- href: index.md
+### YamlMime:TableOfContent
+- uid: Infinni.Agent.Helpers
+  name: Infinni.Agent.Helpers
+  items:
+  - uid: Infinni.Agent.Helpers.CommandArgsHelper
+    name: CommandArgsHelper
+  - uid: Infinni.Agent.Helpers.InfinniNodeAdapter
+    name: InfinniNodeAdapter
+  - uid: Infinni.Agent.Helpers.StreamHelper
+    name: StreamHelper
+- uid: Infinni.Agent.HttpService
+  name: Infinni.Agent.HttpService
+  items:
+  - uid: Infinni.Agent.HttpService.AgentHttpService
+    name: AgentHttpService
+- uid: Infinni.Agent.IoC
+  name: Infinni.Agent.IoC
+  items:
+  - uid: Infinni.Agent.IoC.AgentContainerModule
+    name: AgentContainerModule
+- uid: Infinni.Agent.Providers
+  name: Infinni.Agent.Providers
+  items:
+  - uid: Infinni.Agent.Providers.ConfigurationFileProvider
+    name: ConfigurationFileProvider
+  - uid: Infinni.Agent.Providers.EnvironmentVariableProvider
+    name: EnvironmentVariableProvider
+  - uid: Infinni.Agent.Providers.IConfigurationFileProvider
+    name: IConfigurationFileProvider
+  - uid: Infinni.Agent.Providers.IEnvironmentVariableProvider
+    name: IEnvironmentVariableProvider
+  - uid: Infinni.Agent.Providers.ILogFilePovider
+    name: ILogFilePovider
+  - uid: Infinni.Agent.Providers.LogFilePovider
+    name: LogFilePovider
+- uid: Infinni.Agent.Settings
+  name: Infinni.Agent.Settings
+  items:
+  - uid: Infinni.Agent.Settings.AgentSettings
+    name: AgentSettings
+- uid: Infinni.Agent.Tasks
+  name: Infinni.Agent.Tasks
+  items:
+  - uid: Infinni.Agent.Tasks.AgentTaskStorage
+    name: AgentTaskStorage
+  - uid: Infinni.Agent.Tasks.IAgentTask
+    name: IAgentTask
+  - uid: Infinni.Agent.Tasks.IAgentTaskStorage
+    name: IAgentTaskStorage
+  - uid: Infinni.Agent.Tasks.TaskStatus
+    name: TaskStatus
+- uid: Infinni.Agent.Tasks.Environment
+  name: Infinni.Agent.Tasks.Environment
+  items:
+  - uid: Infinni.Agent.Tasks.Environment.EnvironmentVariablesTask
+    name: EnvironmentVariablesTask
+- uid: Infinni.Agent.Tasks.Files
+  name: Infinni.Agent.Tasks.Files
+  items:
+  - uid: Infinni.Agent.Tasks.Files.AppLogTask
+    name: AppLogTask
+  - uid: Infinni.Agent.Tasks.Files.ConfigGetTask
+    name: ConfigGetTask
+  - uid: Infinni.Agent.Tasks.Files.ConfigSetTask
+    name: ConfigSetTask
+  - uid: Infinni.Agent.Tasks.Files.NodeLogTask
+    name: NodeLogTask
+  - uid: Infinni.Agent.Tasks.Files.PerfLogTask
+    name: PerfLogTask
+- uid: Infinni.Agent.Tasks.InfinniNode
+  name: Infinni.Agent.Tasks.InfinniNode
+  items:
+  - uid: Infinni.Agent.Tasks.InfinniNode.AppsInfoTask
+    name: AppsInfoTask
+  - uid: Infinni.Agent.Tasks.InfinniNode.InitAppTask
+    name: InitAppTask
+  - uid: Infinni.Agent.Tasks.InfinniNode.InstallAppTask
+    name: InstallAppTask
+  - uid: Infinni.Agent.Tasks.InfinniNode.PackagesTask
+    name: PackagesTask
+  - uid: Infinni.Agent.Tasks.InfinniNode.RestartAppTask
+    name: RestartAppTask
+  - uid: Infinni.Agent.Tasks.InfinniNode.StartAppTask
+    name: StartAppTask
+  - uid: Infinni.Agent.Tasks.InfinniNode.StopAppTask
+    name: StopAppTask
+  - uid: Infinni.Agent.Tasks.InfinniNode.TaskStatusTask
+    name: TaskStatusTask
+  - uid: Infinni.Agent.Tasks.InfinniNode.UninstallAppTask
+    name: UninstallAppTask
+- uid: Infinni.Server.Agent
+  name: Infinni.Server.Agent
+  items:
+  - uid: Infinni.Server.Agent.AgentHttpClient
+    name: AgentHttpClient
+- uid: Infinni.Server.HttpService
+  name: Infinni.Server.HttpService
+  items:
+  - uid: Infinni.Server.HttpService.HttpServiceException
+    name: HttpServiceException
+  - uid: Infinni.Server.HttpService.ServerHttpService
+    name: ServerHttpService
+- uid: Infinni.Server.IoC
+  name: Infinni.Server.IoC
+  items:
+  - uid: Infinni.Server.IoC.AppContainerModule
+    name: AppContainerModule
+- uid: Infinni.Server.Settings
+  name: Infinni.Server.Settings
+  items:
+  - uid: Infinni.Server.Settings.AgentInfo
+    name: AgentInfo
+  - uid: Infinni.Server.Settings.ServerSettings
+    name: ServerSettings
+- uid: Infinni.Server.Tasks
+  name: Infinni.Server.Tasks
+  items:
+  - uid: Infinni.Server.Tasks.IServerTask
+    name: IServerTask
+- uid: Infinni.Server.Tasks.Agents
+  name: Infinni.Server.Tasks.Agents
+  items:
+  - uid: Infinni.Server.Tasks.Agents.AddAgentTask
+    name: AddAgentTask
+  - uid: Infinni.Server.Tasks.Agents.AgentsInfoProvider
+    name: AgentsInfoProvider
+  - uid: Infinni.Server.Tasks.Agents.AgentsInfoTask
+    name: AgentsInfoTask
+  - uid: Infinni.Server.Tasks.Agents.AgentTaskStatus
+    name: AgentTaskStatus
+  - uid: Infinni.Server.Tasks.Agents.AgentTaskStatusTask
+    name: AgentTaskStatusTask
+  - uid: Infinni.Server.Tasks.Agents.EditAgentTask
+    name: EditAgentTask
+  - uid: Infinni.Server.Tasks.Agents.RemoveAgentTask
+    name: RemoveAgentTask
+- uid: Infinni.Server.Tasks.Environment
+  name: Infinni.Server.Tasks.Environment
+  items:
+  - uid: Infinni.Server.Tasks.Environment.EnvironmentVariablesTask
+    name: EnvironmentVariablesTask
+- uid: Infinni.Server.Tasks.Files
+  name: Infinni.Server.Tasks.Files
+  items:
+  - uid: Infinni.Server.Tasks.Files.AppLogFileTask
+    name: AppLogFileTask
+  - uid: Infinni.Server.Tasks.Files.AppLogTask
+    name: AppLogTask
+  - uid: Infinni.Server.Tasks.Files.ConfigGetTask
+    name: ConfigGetTask
+  - uid: Infinni.Server.Tasks.Files.ConfigSetTask
+    name: ConfigSetTask
+  - uid: Infinni.Server.Tasks.Files.FileHelper
+    name: FileHelper
+  - uid: Infinni.Server.Tasks.Files.NodeLogFileTask
+    name: NodeLogFileTask
+  - uid: Infinni.Server.Tasks.Files.NodeLogTask
+    name: NodeLogTask
+  - uid: Infinni.Server.Tasks.Files.PerfLogFileTask
+    name: PerfLogFileTask
+  - uid: Infinni.Server.Tasks.Files.PerfLogTask
+    name: PerfLogTask
+- uid: Infinni.Server.Tasks.Heartbeat
+  name: Infinni.Server.Tasks.Heartbeat
+  items:
+  - uid: Infinni.Server.Tasks.Heartbeat.LogHeartBeatTask
+    name: LogHeartBeatTask
+- uid: Infinni.Server.Tasks.Infinni.Node
+  name: Infinni.Server.Tasks.Infinni.Node
+  items:
+  - uid: Infinni.Server.Tasks.Infinni.Node.AppsInfoTask
+    name: AppsInfoTask
+  - uid: Infinni.Server.Tasks.Infinni.Node.HttpServiceHelper
+    name: HttpServiceHelper
+  - uid: Infinni.Server.Tasks.Infinni.Node.InitAppTask
+    name: InitAppTask
+  - uid: Infinni.Server.Tasks.Infinni.Node.INodeOutputParser
+    name: INodeOutputParser
+  - uid: Infinni.Server.Tasks.Infinni.Node.InstallAppTask
+    name: InstallAppTask
+  - uid: Infinni.Server.Tasks.Infinni.Node.NodeOutputParser
+    name: NodeOutputParser
+  - uid: Infinni.Server.Tasks.Infinni.Node.PackagesTask
+    name: PackagesTask
+  - uid: Infinni.Server.Tasks.Infinni.Node.RestartAppTask
+    name: RestartAppTask
+  - uid: Infinni.Server.Tasks.Infinni.Node.StartAppTask
+    name: StartAppTask
+  - uid: Infinni.Server.Tasks.Infinni.Node.StopAppTask
+    name: StopAppTask
+  - uid: Infinni.Server.Tasks.Infinni.Node.UninstallAppTask
+    name: UninstallAppTask
+- uid: InfinniPlatform.Auth.Adfs.Middlewares
+  name: InfinniPlatform.Auth.Adfs.Middlewares
+  items:
+  - uid: InfinniPlatform.Auth.Adfs.Middlewares.AuthAdfsHttpMiddlewareSettings
+    name: AuthAdfsHttpMiddlewareSettings
+- uid: InfinniPlatform.Auth.Cookie.Middlewares
+  name: InfinniPlatform.Auth.Cookie.Middlewares
+  items:
+  - uid: InfinniPlatform.Auth.Cookie.Middlewares.AuthCookieHttpMiddlewareSettings
+    name: AuthCookieHttpMiddlewareSettings
+- uid: InfinniPlatform.Auth.Facebook.Middlewares
+  name: InfinniPlatform.Auth.Facebook.Middlewares
+  items:
+  - uid: InfinniPlatform.Auth.Facebook.Middlewares.AuthFacebookHttpMiddlewareSettings
+    name: AuthFacebookHttpMiddlewareSettings
+- uid: InfinniPlatform.Auth.Google.Middlewares
+  name: InfinniPlatform.Auth.Google.Middlewares
+  items:
+  - uid: InfinniPlatform.Auth.Google.Middlewares.AuthGoogleHttpMiddlewareSettings
+    name: AuthGoogleHttpMiddlewareSettings
+- uid: InfinniPlatform.Auth.Internal.Contract
+  name: InfinniPlatform.Auth.Internal.Contract
+  items:
+  - uid: InfinniPlatform.Auth.Internal.Contract.ApplicationClaimTypes
+    name: ApplicationClaimTypes
+  - uid: InfinniPlatform.Auth.Internal.Contract.ApplicationUser
+    name: ApplicationUser
+  - uid: InfinniPlatform.Auth.Internal.Contract.ApplicationUserClaim
+    name: ApplicationUserClaim
+  - uid: InfinniPlatform.Auth.Internal.Contract.ApplicationUserLogin
+    name: ApplicationUserLogin
+  - uid: InfinniPlatform.Auth.Internal.Contract.ForeignKey
+    name: ForeignKey
+  - uid: InfinniPlatform.Auth.Internal.Contract.IAppUserManager
+    name: IAppUserManager
+  - uid: InfinniPlatform.Auth.Internal.Contract.SecurityExtensions
+    name: SecurityExtensions
+- uid: InfinniPlatform.Auth.Internal.RestApi
+  name: InfinniPlatform.Auth.Internal.RestApi
+  items:
+  - uid: InfinniPlatform.Auth.Internal.RestApi.AuthApiClient
+    name: AuthApiClient
+- uid: InfinniPlatform.Auth.Internal.UserStorage
+  name: InfinniPlatform.Auth.Internal.UserStorage
+  items:
+  - uid: InfinniPlatform.Auth.Internal.UserStorage.UserStorageSettings
+    name: UserStorageSettings
+- uid: InfinniPlatform.Auth.Vk.Middlewares
+  name: InfinniPlatform.Auth.Vk.Middlewares
+  items:
+  - uid: InfinniPlatform.Auth.Vk.Middlewares.AuthVkHttpMiddlewareSettings
+    name: AuthVkHttpMiddlewareSettings
+- uid: InfinniPlatform.BlobStorage.Contract
+  name: InfinniPlatform.BlobStorage.Contract
+  items:
+  - uid: InfinniPlatform.BlobStorage.Contract.BlobData
+    name: BlobData
+  - uid: InfinniPlatform.BlobStorage.Contract.BlobInfo
+    name: BlobInfo
+  - uid: InfinniPlatform.BlobStorage.Contract.BlobStorageExtensions
+    name: BlobStorageExtensions
+  - uid: InfinniPlatform.BlobStorage.Contract.IBlobStorage
+    name: IBlobStorage
+- uid: InfinniPlatform.Caching
+  name: InfinniPlatform.Caching
+  items:
+  - uid: InfinniPlatform.Caching.CacheSettings
+    name: CacheSettings
+  - uid: InfinniPlatform.Caching.CachingExtensions
+    name: CachingExtensions
+  - uid: InfinniPlatform.Caching.IMemoryCache
+    name: IMemoryCache
+  - uid: InfinniPlatform.Caching.ISharedCache
+    name: ISharedCache
+- uid: InfinniPlatform.Caching.Contract
+  name: InfinniPlatform.Caching.Contract
+  items:
+  - uid: InfinniPlatform.Caching.Contract.ICache
+    name: ICache
+- uid: InfinniPlatform.Caching.TwoLayer
+  name: InfinniPlatform.Caching.TwoLayer
+  items:
+  - uid: InfinniPlatform.Caching.TwoLayer.CachingMessageConsumerSource
+    name: CachingMessageConsumerSource
+  - uid: InfinniPlatform.Caching.TwoLayer.ICacheSynchronizer
+    name: ICacheSynchronizer
+  - uid: InfinniPlatform.Caching.TwoLayer.TwoLayerCacheConsumer
+    name: TwoLayerCacheConsumer
+  - uid: InfinniPlatform.Caching.TwoLayer.TwoLayerCacheImpl
+    name: TwoLayerCacheImpl
+- uid: InfinniPlatform.Core.Compression
+  name: InfinniPlatform.Core.Compression
+  items:
+  - uid: InfinniPlatform.Core.Compression.GZipDataCompressor
+    name: GZipDataCompressor
+  - uid: InfinniPlatform.Core.Compression.IDataCompressor
+    name: IDataCompressor
+- uid: InfinniPlatform.Core.Extensions
+  name: InfinniPlatform.Core.Extensions
+  items:
+  - uid: InfinniPlatform.Core.Extensions.CommonExtensions
+    name: CommonExtensions
+- uid: InfinniPlatform.Core.Http
+  name: InfinniPlatform.Core.Http
+  items:
+  - uid: InfinniPlatform.Core.Http.StaticContentSettings
+    name: StaticContentSettings
+- uid: InfinniPlatform.Core.Http.Hosting
+  name: InfinniPlatform.Core.Http.Hosting
+  items:
+  - uid: InfinniPlatform.Core.Http.Hosting.IHostingService
+    name: IHostingService
+- uid: InfinniPlatform.Core.Http.Services
+  name: InfinniPlatform.Core.Http.Services
+  items:
+  - uid: InfinniPlatform.Core.Http.Services.HttpServiceNancyBootstrapper
+    name: HttpServiceNancyBootstrapper
+- uid: InfinniPlatform.Core.IoC
+  name: InfinniPlatform.Core.IoC
+  items:
+  - uid: InfinniPlatform.Core.IoC.AssemblyNameComparer
+    name: AssemblyNameComparer
+- uid: InfinniPlatform.Core.IoC.Http
+  name: InfinniPlatform.Core.IoC.Http
+  items:
+  - uid: InfinniPlatform.Core.IoC.Http.AutofacHttpContainerResolverFactory
+    name: AutofacHttpContainerResolverFactory
+- uid: InfinniPlatform.Core.Logging
+  name: InfinniPlatform.Core.Logging
+  items:
+  - uid: InfinniPlatform.Core.Logging.Logger
+    name: Logger
+- uid: InfinniPlatform.Core.Metadata
+  name: InfinniPlatform.Core.Metadata
+  items:
+  - uid: InfinniPlatform.Core.Metadata.JsonDocumentMetadataSource
+    name: JsonDocumentMetadataSource
+  - uid: InfinniPlatform.Core.Metadata.MetadataSettings
+    name: MetadataSettings
+- uid: InfinniPlatform.Core.Properties
+  name: InfinniPlatform.Core.Properties
+  items:
+  - uid: InfinniPlatform.Core.Properties.Resources
+    name: Resources
+- uid: InfinniPlatform.Core.ServiceHost
+  name: InfinniPlatform.Core.ServiceHost
+  items:
+  - uid: InfinniPlatform.Core.ServiceHost.ServiceHost
+    name: ServiceHost
+  - uid: InfinniPlatform.Core.ServiceHost.ServiceHostStatus
+    name: ServiceHostStatus
+- uid: InfinniPlatform.Core.Settings
+  name: InfinniPlatform.Core.Settings
+  items:
+  - uid: InfinniPlatform.Core.Settings.AppConfiguration
+    name: AppConfiguration
+  - uid: InfinniPlatform.Core.Settings.AppConfigurationPlaceholder
+    name: AppConfigurationPlaceholder
+  - uid: InfinniPlatform.Core.Settings.AppSettings
+    name: AppSettings
+- uid: InfinniPlatform.DocumentStorage.Contract
+  name: InfinniPlatform.DocumentStorage.Contract
+  items:
+  - uid: InfinniPlatform.DocumentStorage.Contract.Document
+    name: Document
+  - uid: InfinniPlatform.DocumentStorage.Contract.DocumentBulkResult
+    name: DocumentBulkResult
+  - uid: InfinniPlatform.DocumentStorage.Contract.DocumentHeader
+    name: DocumentHeader
+  - uid: InfinniPlatform.DocumentStorage.Contract.DocumentStorageExtensions
+    name: DocumentStorageExtensions
+  - uid: InfinniPlatform.DocumentStorage.Contract.DocumentStorageWriteException
+    name: DocumentStorageWriteException
+  - uid: InfinniPlatform.DocumentStorage.Contract.DocumentStorageWriteResult
+    name: DocumentStorageWriteResult
+  - uid: InfinniPlatform.DocumentStorage.Contract.DocumentTypeAttribute
+    name: DocumentTypeAttribute
+  - uid: InfinniPlatform.DocumentStorage.Contract.DocumentUpdateResult
+    name: DocumentUpdateResult
+  - uid: InfinniPlatform.DocumentStorage.Contract.DocumentUpdateStatus
+    name: DocumentUpdateStatus
+  - uid: InfinniPlatform.DocumentStorage.Contract.DocumentValidationResult
+    name: DocumentValidationResult
+  - uid: InfinniPlatform.DocumentStorage.Contract.DocumentValidationResultItem
+    name: DocumentValidationResultItem
+  - uid: InfinniPlatform.DocumentStorage.Contract.IDocumentAggregateCursor
+    name: IDocumentAggregateCursor
+  - uid: InfinniPlatform.DocumentStorage.Contract.IDocumentAggregateCursor`1
+    name: IDocumentAggregateCursor<TResult>
+    name.vb: IDocumentAggregateCursor(Of TResult)
+  - uid: InfinniPlatform.DocumentStorage.Contract.IDocumentAggregateSortedCursor
+    name: IDocumentAggregateSortedCursor
+  - uid: InfinniPlatform.DocumentStorage.Contract.IDocumentAggregateSortedCursor`1
+    name: IDocumentAggregateSortedCursor<TResult>
+    name.vb: IDocumentAggregateSortedCursor(Of TResult)
+  - uid: InfinniPlatform.DocumentStorage.Contract.IDocumentBulkBuilder
+    name: IDocumentBulkBuilder
+  - uid: InfinniPlatform.DocumentStorage.Contract.IDocumentBulkBuilder`1
+    name: IDocumentBulkBuilder<TDocument>
+    name.vb: IDocumentBulkBuilder(Of TDocument)
+  - uid: InfinniPlatform.DocumentStorage.Contract.IDocumentCursor`1
+    name: IDocumentCursor<TDocument>
+    name.vb: IDocumentCursor(Of TDocument)
+  - uid: InfinniPlatform.DocumentStorage.Contract.IDocumentFilterBuilder
+    name: IDocumentFilterBuilder
+  - uid: InfinniPlatform.DocumentStorage.Contract.IDocumentFindCursor
+    name: IDocumentFindCursor
+  - uid: InfinniPlatform.DocumentStorage.Contract.IDocumentFindCursor`2
+    name: IDocumentFindCursor<TDocument, TProjection>
+    name.vb: IDocumentFindCursor(Of TDocument, TProjection)
+  - uid: InfinniPlatform.DocumentStorage.Contract.IDocumentFindSortedCursor
+    name: IDocumentFindSortedCursor
+  - uid: InfinniPlatform.DocumentStorage.Contract.IDocumentFindSortedCursor`2
+    name: IDocumentFindSortedCursor<TDocument, TProjection>
+    name.vb: IDocumentFindSortedCursor(Of TDocument, TProjection)
+  - uid: InfinniPlatform.DocumentStorage.Contract.IDocumentIdGenerator
+    name: IDocumentIdGenerator
+  - uid: InfinniPlatform.DocumentStorage.Contract.IDocumentKnownTypeSource
+    name: IDocumentKnownTypeSource
+  - uid: InfinniPlatform.DocumentStorage.Contract.IDocumentProjectionBuilder
+    name: IDocumentProjectionBuilder
+  - uid: InfinniPlatform.DocumentStorage.Contract.IDocumentStorage
+    name: IDocumentStorage
+  - uid: InfinniPlatform.DocumentStorage.Contract.IDocumentStorage`1
+    name: IDocumentStorage<TDocument>
+    name.vb: IDocumentStorage(Of TDocument)
+  - uid: InfinniPlatform.DocumentStorage.Contract.IDocumentStorageFactory
+    name: IDocumentStorageFactory
+  - uid: InfinniPlatform.DocumentStorage.Contract.IDocumentStorageManager
+    name: IDocumentStorageManager
+  - uid: InfinniPlatform.DocumentStorage.Contract.IDocumentStorageProvider
+    name: IDocumentStorageProvider
+  - uid: InfinniPlatform.DocumentStorage.Contract.IDocumentStorageProvider`1
+    name: IDocumentStorageProvider<TDocument>
+    name.vb: IDocumentStorageProvider(Of TDocument)
+  - uid: InfinniPlatform.DocumentStorage.Contract.IDocumentStorageProviderFactory
+    name: IDocumentStorageProviderFactory
+  - uid: InfinniPlatform.DocumentStorage.Contract.IDocumentUpdateBuilder
+    name: IDocumentUpdateBuilder
+  - uid: InfinniPlatform.DocumentStorage.Contract.IDocumentUpdateBuilder`1
+    name: IDocumentUpdateBuilder<TDocument>
+    name.vb: IDocumentUpdateBuilder(Of TDocument)
+  - uid: InfinniPlatform.DocumentStorage.Contract.ISystemDocumentStorage
+    name: ISystemDocumentStorage
+  - uid: InfinniPlatform.DocumentStorage.Contract.ISystemDocumentStorage`1
+    name: ISystemDocumentStorage<TDocument>
+    name.vb: ISystemDocumentStorage(Of TDocument)
+  - uid: InfinniPlatform.DocumentStorage.Contract.ISystemDocumentStorageFactory
+    name: ISystemDocumentStorageFactory
+- uid: InfinniPlatform.DocumentStorage.Contract.Attributes
+  name: InfinniPlatform.DocumentStorage.Contract.Attributes
+  items:
+  - uid: InfinniPlatform.DocumentStorage.Contract.Attributes.DocumentIgnoreAttribute
+    name: DocumentIgnoreAttribute
+  - uid: InfinniPlatform.DocumentStorage.Contract.Attributes.DocumentPropertyNameAttribute
+    name: DocumentPropertyNameAttribute
+- uid: InfinniPlatform.DocumentStorage.Contract.Interceptors
+  name: InfinniPlatform.DocumentStorage.Contract.Interceptors
+  items:
+  - uid: InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentBulkCommand
+    name: DocumentBulkCommand
+  - uid: InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentBulkCommand`1
+    name: DocumentBulkCommand<TDocument>
+    name.vb: DocumentBulkCommand(Of TDocument)
+  - uid: InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentDeleteManyCommand
+    name: DocumentDeleteManyCommand
+  - uid: InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentDeleteManyCommand`1
+    name: DocumentDeleteManyCommand<TDocument>
+    name.vb: DocumentDeleteManyCommand(Of TDocument)
+  - uid: InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentDeleteOneCommand
+    name: DocumentDeleteOneCommand
+  - uid: InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentDeleteOneCommand`1
+    name: DocumentDeleteOneCommand<TDocument>
+    name.vb: DocumentDeleteOneCommand(Of TDocument)
+  - uid: InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentInsertManyCommand
+    name: DocumentInsertManyCommand
+  - uid: InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentInsertManyCommand`1
+    name: DocumentInsertManyCommand<TDocument>
+    name.vb: DocumentInsertManyCommand(Of TDocument)
+  - uid: InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentInsertOneCommand
+    name: DocumentInsertOneCommand
+  - uid: InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentInsertOneCommand`1
+    name: DocumentInsertOneCommand<TDocument>
+    name.vb: DocumentInsertOneCommand(Of TDocument)
+  - uid: InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentReplaceOneCommand
+    name: DocumentReplaceOneCommand
+  - uid: InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentReplaceOneCommand`1
+    name: DocumentReplaceOneCommand<TDocument>
+    name.vb: DocumentReplaceOneCommand(Of TDocument)
+  - uid: InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor
+    name: DocumentStorageInterceptor
+  - uid: InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor`1
+    name: DocumentStorageInterceptor<TDocument>
+    name.vb: DocumentStorageInterceptor(Of TDocument)
+  - uid: InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageWriteResult`1
+    name: DocumentStorageWriteResult<TResult>
+    name.vb: DocumentStorageWriteResult(Of TResult)
+  - uid: InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentUpdateManyCommand
+    name: DocumentUpdateManyCommand
+  - uid: InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentUpdateManyCommand`1
+    name: DocumentUpdateManyCommand<TDocument>
+    name.vb: DocumentUpdateManyCommand(Of TDocument)
+  - uid: InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentUpdateOneCommand
+    name: DocumentUpdateOneCommand
+  - uid: InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentUpdateOneCommand`1
+    name: DocumentUpdateOneCommand<TDocument>
+    name.vb: DocumentUpdateOneCommand(Of TDocument)
+  - uid: InfinniPlatform.DocumentStorage.Contract.Interceptors.IDocumentStorageInterceptor
+    name: IDocumentStorageInterceptor
+  - uid: InfinniPlatform.DocumentStorage.Contract.Interceptors.IDocumentStorageInterceptor`1
+    name: IDocumentStorageInterceptor<TDocument>
+    name.vb: IDocumentStorageInterceptor(Of TDocument)
+  - uid: InfinniPlatform.DocumentStorage.Contract.Interceptors.IDocumentWriteCommand
+    name: IDocumentWriteCommand
+  - uid: InfinniPlatform.DocumentStorage.Contract.Interceptors.IDocumentWriteCommand`1
+    name: IDocumentWriteCommand<TDocument>
+    name.vb: IDocumentWriteCommand(Of TDocument)
+- uid: InfinniPlatform.DocumentStorage.Contract.RestApi
+  name: InfinniPlatform.DocumentStorage.Contract.RestApi
+  items:
+  - uid: InfinniPlatform.DocumentStorage.Contract.RestApi.DocumentDeleteQueryClient
+    name: DocumentDeleteQueryClient
+  - uid: InfinniPlatform.DocumentStorage.Contract.RestApi.DocumentGetQueryClient
+    name: DocumentGetQueryClient
+  - uid: InfinniPlatform.DocumentStorage.Contract.RestApi.DocumentHttpServiceClient
+    name: DocumentHttpServiceClient
+  - uid: InfinniPlatform.DocumentStorage.Contract.RestApi.DocumentPostQueryClient
+    name: DocumentPostQueryClient
+  - uid: InfinniPlatform.DocumentStorage.Contract.RestApi.HttpRequestFileClient
+    name: HttpRequestFileClient
+- uid: InfinniPlatform.DocumentStorage.Contract.Services
+  name: InfinniPlatform.DocumentStorage.Contract.Services
+  items:
+  - uid: InfinniPlatform.DocumentStorage.Contract.Services.DocumentDeleteQuery
+    name: DocumentDeleteQuery
+  - uid: InfinniPlatform.DocumentStorage.Contract.Services.DocumentDeleteQuery`1
+    name: DocumentDeleteQuery<TDocument>
+    name.vb: DocumentDeleteQuery(Of TDocument)
+  - uid: InfinniPlatform.DocumentStorage.Contract.Services.DocumentDeleteQueryResult
+    name: DocumentDeleteQueryResult
+  - uid: InfinniPlatform.DocumentStorage.Contract.Services.DocumentGetQuery
+    name: DocumentGetQuery
+  - uid: InfinniPlatform.DocumentStorage.Contract.Services.DocumentGetQuery`1
+    name: DocumentGetQuery<TDocument>
+    name.vb: DocumentGetQuery(Of TDocument)
+  - uid: InfinniPlatform.DocumentStorage.Contract.Services.DocumentGetQueryResult
+    name: DocumentGetQueryResult
+  - uid: InfinniPlatform.DocumentStorage.Contract.Services.DocumentHttpServiceExtensions
+    name: DocumentHttpServiceExtensions
+  - uid: InfinniPlatform.DocumentStorage.Contract.Services.DocumentHttpServiceHandler
+    name: DocumentHttpServiceHandler
+  - uid: InfinniPlatform.DocumentStorage.Contract.Services.DocumentHttpServiceHandler`1
+    name: DocumentHttpServiceHandler<TDocument>
+    name.vb: DocumentHttpServiceHandler(Of TDocument)
+  - uid: InfinniPlatform.DocumentStorage.Contract.Services.DocumentPostQuery
+    name: DocumentPostQuery
+  - uid: InfinniPlatform.DocumentStorage.Contract.Services.DocumentPostQuery`1
+    name: DocumentPostQuery<TDocument>
+    name.vb: DocumentPostQuery(Of TDocument)
+  - uid: InfinniPlatform.DocumentStorage.Contract.Services.DocumentPostQueryResult
+    name: DocumentPostQueryResult
+  - uid: InfinniPlatform.DocumentStorage.Contract.Services.DocumentQueryResult
+    name: DocumentQueryResult
+  - uid: InfinniPlatform.DocumentStorage.Contract.Services.DocumentSortOrder
+    name: DocumentSortOrder
+  - uid: InfinniPlatform.DocumentStorage.Contract.Services.IDocumentHttpServiceHandler
+    name: IDocumentHttpServiceHandler
+  - uid: InfinniPlatform.DocumentStorage.Contract.Services.IDocumentHttpServiceHandler`1
+    name: IDocumentHttpServiceHandler<TDocument>
+    name.vb: IDocumentHttpServiceHandler(Of TDocument)
+  - uid: InfinniPlatform.DocumentStorage.Contract.Services.IDocumentHttpServiceHandlerBase
+    name: IDocumentHttpServiceHandlerBase
+- uid: InfinniPlatform.DocumentStorage.Contract.Specifications
+  name: InfinniPlatform.DocumentStorage.Contract.Specifications
+  items:
+  - uid: InfinniPlatform.DocumentStorage.Contract.Specifications.ISpecification
+    name: ISpecification
+  - uid: InfinniPlatform.DocumentStorage.Contract.Specifications.ISpecification`1
+    name: ISpecification<TDocument>
+    name.vb: ISpecification(Of TDocument)
+  - uid: InfinniPlatform.DocumentStorage.Contract.Specifications.Specification
+    name: Specification
+  - uid: InfinniPlatform.DocumentStorage.Contract.Specifications.Specification`1
+    name: Specification<TDocument>
+    name.vb: Specification(Of TDocument)
+- uid: InfinniPlatform.DocumentStorage.Contract.Transactions
+  name: InfinniPlatform.DocumentStorage.Contract.Transactions
+  items:
+  - uid: InfinniPlatform.DocumentStorage.Contract.Transactions.IUnitOfWork
+    name: IUnitOfWork
+  - uid: InfinniPlatform.DocumentStorage.Contract.Transactions.IUnitOfWorkFactory
+    name: IUnitOfWorkFactory
+- uid: InfinniPlatform.DocumentStorage.Services
+  name: InfinniPlatform.DocumentStorage.Services
+  items:
+  - uid: InfinniPlatform.DocumentStorage.Services.IDocumentQueryFactory
+    name: IDocumentQueryFactory
+  - uid: InfinniPlatform.DocumentStorage.Services.IDocumentQueryFactory`1
+    name: IDocumentQueryFactory<TDocument>
+    name.vb: IDocumentQueryFactory(Of TDocument)
+- uid: InfinniPlatform.DocumentStorage.Services.QueryFactories
+  name: InfinniPlatform.DocumentStorage.Services.QueryFactories
+  items:
+  - uid: InfinniPlatform.DocumentStorage.Services.QueryFactories.DocumentQueryFactory
+    name: DocumentQueryFactory
+  - uid: InfinniPlatform.DocumentStorage.Services.QueryFactories.DocumentQueryFactory`1
+    name: DocumentQueryFactory<TDocument>
+    name.vb: DocumentQueryFactory(Of TDocument)
+  - uid: InfinniPlatform.DocumentStorage.Services.QueryFactories.DocumentQueryFactoryBase
+    name: DocumentQueryFactoryBase
+- uid: InfinniPlatform.DocumentStorage.Services.QuerySyntax
+  name: InfinniPlatform.DocumentStorage.Services.QuerySyntax
+  items:
+  - uid: InfinniPlatform.DocumentStorage.Services.QuerySyntax.IdentifierNameQuerySyntaxNode
+    name: IdentifierNameQuerySyntaxNode
+  - uid: InfinniPlatform.DocumentStorage.Services.QuerySyntax.InvocationQuerySyntaxNode
+    name: InvocationQuerySyntaxNode
+  - uid: InfinniPlatform.DocumentStorage.Services.QuerySyntax.IQuerySyntaxNode
+    name: IQuerySyntaxNode
+  - uid: InfinniPlatform.DocumentStorage.Services.QuerySyntax.IQuerySyntaxTreeParser
+    name: IQuerySyntaxTreeParser
+  - uid: InfinniPlatform.DocumentStorage.Services.QuerySyntax.LiteralQuerySyntaxNode
+    name: LiteralQuerySyntaxNode
+  - uid: InfinniPlatform.DocumentStorage.Services.QuerySyntax.QuerySyntaxTreeParser
+    name: QuerySyntaxTreeParser
+  - uid: InfinniPlatform.DocumentStorage.Services.QuerySyntax.QuerySyntaxVisitor`1
+    name: QuerySyntaxVisitor<TResult>
+    name.vb: QuerySyntaxVisitor(Of TResult)
+  - uid: InfinniPlatform.DocumentStorage.Services.QuerySyntax.QueryToken
+    name: QueryToken
+  - uid: InfinniPlatform.DocumentStorage.Services.QuerySyntax.QueryTokenKind
+    name: QueryTokenKind
+  - uid: InfinniPlatform.DocumentStorage.Services.QuerySyntax.QueryTokenReader
+    name: QueryTokenReader
+- uid: InfinniPlatform.DocumentStorage.Storage
+  name: InfinniPlatform.DocumentStorage.Storage
+  items:
+  - uid: InfinniPlatform.DocumentStorage.Storage.IDocumentStorageBulkExecutor
+    name: IDocumentStorageBulkExecutor
+  - uid: InfinniPlatform.DocumentStorage.Storage.ISystemTenantProvider
+    name: ISystemTenantProvider
+  - uid: InfinniPlatform.DocumentStorage.Storage.SystemDocumentStorageFactory
+    name: SystemDocumentStorageFactory
+- uid: InfinniPlatform.Heartbeat
+  name: InfinniPlatform.Heartbeat
+  items:
+  - uid: InfinniPlatform.Heartbeat.HeartbeatAppEventHandler
+    name: HeartbeatAppEventHandler
+  - uid: InfinniPlatform.Heartbeat.HeartbeatMessage
+    name: HeartbeatMessage
+- uid: InfinniPlatform.Heartbeat.IoC
+  name: InfinniPlatform.Heartbeat.IoC
+  items:
+  - uid: InfinniPlatform.Heartbeat.IoC.HeartbeatContainerModule
+    name: HeartbeatContainerModule
+- uid: InfinniPlatform.Heartbeat.Settings
+  name: InfinniPlatform.Heartbeat.Settings
+  items:
+  - uid: InfinniPlatform.Heartbeat.Settings.HeartbeatSettings
+    name: HeartbeatSettings
+- uid: InfinniPlatform.Http.Middlewares
+  name: InfinniPlatform.Http.Middlewares
+  items:
+  - uid: InfinniPlatform.Http.Middlewares.HttpMiddleware
+    name: HttpMiddleware
+  - uid: InfinniPlatform.Http.Middlewares.HttpMiddlewareType
+    name: HttpMiddlewareType
+  - uid: InfinniPlatform.Http.Middlewares.IHttpMiddleware
+    name: IHttpMiddleware
+  - uid: InfinniPlatform.Http.Middlewares.IOwinContextProvider
+    name: IOwinContextProvider
+  - uid: InfinniPlatform.Http.Middlewares.IOwinMiddlewareTypeResolver
+    name: IOwinMiddlewareTypeResolver
+- uid: InfinniPlatform.MessageQueue.Contract
+  name: InfinniPlatform.MessageQueue.Contract
+  items:
+  - uid: InfinniPlatform.MessageQueue.Contract.IMessage
+    name: IMessage
+  - uid: InfinniPlatform.MessageQueue.Contract.IMessage`1
+    name: IMessage<T>
+    name.vb: IMessage(Of T)
+  - uid: InfinniPlatform.MessageQueue.Contract.IMessageConsumerSource
+    name: IMessageConsumerSource
+  - uid: InfinniPlatform.MessageQueue.Contract.Message`1
+    name: Message<T>
+    name.vb: Message(Of T)
+  - uid: InfinniPlatform.MessageQueue.Contract.QueueNameAttribute
+    name: QueueNameAttribute
+  - uid: InfinniPlatform.MessageQueue.Contract.QueuesExtentions
+    name: QueuesExtentions
+- uid: InfinniPlatform.MessageQueue.Contract.Consumers
+  name: InfinniPlatform.MessageQueue.Contract.Consumers
+  items:
+  - uid: InfinniPlatform.MessageQueue.Contract.Consumers.BroadcastConsumerBase`1
+    name: BroadcastConsumerBase<T>
+    name.vb: BroadcastConsumerBase(Of T)
+  - uid: InfinniPlatform.MessageQueue.Contract.Consumers.IBroadcastConsumer
+    name: IBroadcastConsumer
+  - uid: InfinniPlatform.MessageQueue.Contract.Consumers.IConsumer
+    name: IConsumer
+  - uid: InfinniPlatform.MessageQueue.Contract.Consumers.IOnDemandConsumer
+    name: IOnDemandConsumer
+  - uid: InfinniPlatform.MessageQueue.Contract.Consumers.ITaskConsumer
+    name: ITaskConsumer
+  - uid: InfinniPlatform.MessageQueue.Contract.Consumers.TaskConsumerBase`1
+    name: TaskConsumerBase<T>
+    name.vb: TaskConsumerBase(Of T)
+- uid: InfinniPlatform.MessageQueue.Contract.Producers
+  name: InfinniPlatform.MessageQueue.Contract.Producers
+  items:
+  - uid: InfinniPlatform.MessageQueue.Contract.Producers.IBroadcastProducer
+    name: IBroadcastProducer
+  - uid: InfinniPlatform.MessageQueue.Contract.Producers.ITaskProducer
+    name: ITaskProducer
+- uid: InfinniPlatform.MessageQueue.IoC
+  name: InfinniPlatform.MessageQueue.IoC
+  items:
+  - uid: InfinniPlatform.MessageQueue.IoC.MessageQueueContainerModule
+    name: MessageQueueContainerModule
+- uid: InfinniPlatform.MessageQueue.RabbitMq
+  name: InfinniPlatform.MessageQueue.RabbitMq
+  items:
+  - uid: InfinniPlatform.MessageQueue.RabbitMq.Helpers
+    name: Helpers
+  - uid: InfinniPlatform.MessageQueue.RabbitMq.IBasicPropertiesProvider
+    name: IBasicPropertiesProvider
+  - uid: InfinniPlatform.MessageQueue.RabbitMq.MessageHeadersTypes
+    name: MessageHeadersTypes
+  - uid: InfinniPlatform.MessageQueue.RabbitMq.QueueNamingConventions
+    name: QueueNamingConventions
+- uid: InfinniPlatform.MessageQueue.RabbitMq.Hosting
+  name: InfinniPlatform.MessageQueue.RabbitMq.Hosting
+  items:
+  - uid: InfinniPlatform.MessageQueue.RabbitMq.Hosting.IMessageConsumeEventHandler
+    name: IMessageConsumeEventHandler
+  - uid: InfinniPlatform.MessageQueue.RabbitMq.Hosting.IMessageQueueConsumersManager
+    name: IMessageQueueConsumersManager
+  - uid: InfinniPlatform.MessageQueue.RabbitMq.Hosting.IMessageQueueThreadPool
+    name: IMessageQueueThreadPool
+  - uid: InfinniPlatform.MessageQueue.RabbitMq.Hosting.MessageConsumeEventHandler
+    name: MessageConsumeEventHandler
+  - uid: InfinniPlatform.MessageQueue.RabbitMq.Hosting.MessageConsumerSource
+    name: MessageConsumerSource
+  - uid: InfinniPlatform.MessageQueue.RabbitMq.Hosting.MessageQueueThreadPool
+    name: MessageQueueThreadPool
+- uid: InfinniPlatform.MessageQueue.RabbitMq.Management
+  name: InfinniPlatform.MessageQueue.RabbitMq.Management
+  items:
+  - uid: InfinniPlatform.MessageQueue.RabbitMq.Management.RabbitMqConnectionSettings
+    name: RabbitMqConnectionSettings
+- uid: InfinniPlatform.MessageQueue.RabbitMq.Management.HttpAPI
+  name: InfinniPlatform.MessageQueue.RabbitMq.Management.HttpAPI
+  items:
+  - uid: InfinniPlatform.MessageQueue.RabbitMq.Management.HttpAPI.Binding
+    name: Binding
+  - uid: InfinniPlatform.MessageQueue.RabbitMq.Management.HttpAPI.Connection
+    name: Connection
+  - uid: InfinniPlatform.MessageQueue.RabbitMq.Management.HttpAPI.Exchange
+    name: Exchange
+  - uid: InfinniPlatform.MessageQueue.RabbitMq.Management.HttpAPI.Queue
+    name: Queue
+- uid: InfinniPlatform.MessageQueue.RabbitMq.Serialization
+  name: InfinniPlatform.MessageQueue.RabbitMq.Serialization
+  items:
+  - uid: InfinniPlatform.MessageQueue.RabbitMq.Serialization.IMessageSerializer
+    name: IMessageSerializer
+- uid: InfinniPlatform.Plugins.ViewEngine.IoC
+  name: InfinniPlatform.Plugins.ViewEngine.IoC
+  items:
+  - uid: InfinniPlatform.Plugins.ViewEngine.IoC.WatcherContainerModule
+    name: WatcherContainerModule
+- uid: InfinniPlatform.Plugins.ViewEngine.Nancy
+  name: InfinniPlatform.Plugins.ViewEngine.Nancy
+  items:
+  - uid: InfinniPlatform.Plugins.ViewEngine.Nancy.AggregateViewLocationProvider
+    name: AggregateViewLocationProvider
+  - uid: InfinniPlatform.Plugins.ViewEngine.Nancy.CommonExtensions
+    name: CommonExtensions
+  - uid: InfinniPlatform.Plugins.ViewEngine.Nancy.ViewEngineBootstrapperExtension
+    name: ViewEngineBootstrapperExtension
+- uid: InfinniPlatform.Plugins.ViewEngine.Settings
+  name: InfinniPlatform.Plugins.ViewEngine.Settings
+  items:
+  - uid: InfinniPlatform.Plugins.ViewEngine.Settings.ViewEngineSettings
+    name: ViewEngineSettings
+- uid: InfinniPlatform.PrintView.Contract
+  name: InfinniPlatform.PrintView.Contract
+  items:
+  - uid: InfinniPlatform.PrintView.Contract.HtmlToPdfSettings
+    name: HtmlToPdfSettings
+  - uid: InfinniPlatform.PrintView.Contract.IPrintDocumentBuilder
+    name: IPrintDocumentBuilder
+  - uid: InfinniPlatform.PrintView.Contract.IPrintDocumentWriter
+    name: IPrintDocumentWriter
+  - uid: InfinniPlatform.PrintView.Contract.IPrintViewBuilder
+    name: IPrintViewBuilder
+  - uid: InfinniPlatform.PrintView.Contract.IPrintViewSerializer
+    name: IPrintViewSerializer
+  - uid: InfinniPlatform.PrintView.Contract.IPrintViewWriter
+    name: IPrintViewWriter
+  - uid: InfinniPlatform.PrintView.Contract.PrintDocumentMap
+    name: PrintDocumentMap
+  - uid: InfinniPlatform.PrintView.Contract.PrintViewBuilder
+    name: PrintViewBuilder
+  - uid: InfinniPlatform.PrintView.Contract.PrintViewFileFormat
+    name: PrintViewFileFormat
+  - uid: InfinniPlatform.PrintView.Contract.PrintViewHttpResponse
+    name: PrintViewHttpResponse
+  - uid: InfinniPlatform.PrintView.Contract.PrintViewSerializer
+    name: PrintViewSerializer
+  - uid: InfinniPlatform.PrintView.Contract.PrintViewWriter
+    name: PrintViewWriter
+- uid: InfinniPlatform.PrintView.Factories
+  name: InfinniPlatform.PrintView.Factories
+  items:
+  - uid: InfinniPlatform.PrintView.Factories.PrintDocumentBuilder
+    name: PrintDocumentBuilder
+- uid: InfinniPlatform.PrintView.Factories.Block
+  name: InfinniPlatform.PrintView.Factories.Block
+  items:
+  - uid: InfinniPlatform.PrintView.Factories.Block.CellCoordinate
+    name: CellCoordinate
+- uid: InfinniPlatform.PrintView.Model
+  name: InfinniPlatform.PrintView.Model
+  items:
+  - uid: InfinniPlatform.PrintView.Model.PrintBlock
+    name: PrintBlock
+  - uid: InfinniPlatform.PrintView.Model.PrintBorder
+    name: PrintBorder
+  - uid: InfinniPlatform.PrintView.Model.PrintDocument
+    name: PrintDocument
+  - uid: InfinniPlatform.PrintView.Model.PrintElement
+    name: PrintElement
+  - uid: InfinniPlatform.PrintView.Model.PrintFont
+    name: PrintFont
+  - uid: InfinniPlatform.PrintView.Model.PrintFontStretch
+    name: PrintFontStretch
+  - uid: InfinniPlatform.PrintView.Model.PrintFontStyle
+    name: PrintFontStyle
+  - uid: InfinniPlatform.PrintView.Model.PrintFontVariant
+    name: PrintFontVariant
+  - uid: InfinniPlatform.PrintView.Model.PrintFontWeight
+    name: PrintFontWeight
+  - uid: InfinniPlatform.PrintView.Model.PrintInline
+    name: PrintInline
+  - uid: InfinniPlatform.PrintView.Model.PrintNamedItem
+    name: PrintNamedItem
+  - uid: InfinniPlatform.PrintView.Model.PrintSize
+    name: PrintSize
+  - uid: InfinniPlatform.PrintView.Model.PrintSizeUnit
+    name: PrintSizeUnit
+  - uid: InfinniPlatform.PrintView.Model.PrintSizeUnitConverter
+    name: PrintSizeUnitConverter
+  - uid: InfinniPlatform.PrintView.Model.PrintStyle
+    name: PrintStyle
+  - uid: InfinniPlatform.PrintView.Model.PrintTextAlignment
+    name: PrintTextAlignment
+  - uid: InfinniPlatform.PrintView.Model.PrintTextCase
+    name: PrintTextCase
+  - uid: InfinniPlatform.PrintView.Model.PrintTextDecoration
+    name: PrintTextDecoration
+  - uid: InfinniPlatform.PrintView.Model.PrintThickness
+    name: PrintThickness
+  - uid: InfinniPlatform.PrintView.Model.PrintVisibility
+    name: PrintVisibility
+- uid: InfinniPlatform.PrintView.Model.Block
+  name: InfinniPlatform.PrintView.Model.Block
+  items:
+  - uid: InfinniPlatform.PrintView.Model.Block.PrintLine
+    name: PrintLine
+  - uid: InfinniPlatform.PrintView.Model.Block.PrintList
+    name: PrintList
+  - uid: InfinniPlatform.PrintView.Model.Block.PrintListMarkerStyle
+    name: PrintListMarkerStyle
+  - uid: InfinniPlatform.PrintView.Model.Block.PrintPageBreak
+    name: PrintPageBreak
+  - uid: InfinniPlatform.PrintView.Model.Block.PrintParagraph
+    name: PrintParagraph
+  - uid: InfinniPlatform.PrintView.Model.Block.PrintSection
+    name: PrintSection
+  - uid: InfinniPlatform.PrintView.Model.Block.PrintTable
+    name: PrintTable
+  - uid: InfinniPlatform.PrintView.Model.Block.PrintTableCell
+    name: PrintTableCell
+  - uid: InfinniPlatform.PrintView.Model.Block.PrintTableColumn
+    name: PrintTableColumn
+  - uid: InfinniPlatform.PrintView.Model.Block.PrintTableRow
+    name: PrintTableRow
+- uid: InfinniPlatform.PrintView.Model.Defaults
+  name: InfinniPlatform.PrintView.Model.Defaults
+  items:
+  - uid: InfinniPlatform.PrintView.Model.Defaults.PrintViewDefaults
+    name: PrintViewDefaults
+  - uid: InfinniPlatform.PrintView.Model.Defaults.PrintViewDefaults.BarcodeEan13
+    name: PrintViewDefaults.BarcodeEan13
+  - uid: InfinniPlatform.PrintView.Model.Defaults.PrintViewDefaults.BarcodeQr
+    name: PrintViewDefaults.BarcodeQr
+  - uid: InfinniPlatform.PrintView.Model.Defaults.PrintViewDefaults.Colors
+    name: PrintViewDefaults.Colors
+  - uid: InfinniPlatform.PrintView.Model.Defaults.PrintViewDefaults.Document
+    name: PrintViewDefaults.Document
+  - uid: InfinniPlatform.PrintView.Model.Defaults.PrintViewDefaults.Formats
+    name: PrintViewDefaults.Formats
+  - uid: InfinniPlatform.PrintView.Model.Defaults.PrintViewDefaults.Image
+    name: PrintViewDefaults.Image
+  - uid: InfinniPlatform.PrintView.Model.Defaults.PrintViewDefaults.Line
+    name: PrintViewDefaults.Line
+  - uid: InfinniPlatform.PrintView.Model.Defaults.PrintViewDefaults.List
+    name: PrintViewDefaults.List
+  - uid: InfinniPlatform.PrintView.Model.Defaults.PrintViewDefaults.PageSizes
+    name: PrintViewDefaults.PageSizes
+  - uid: InfinniPlatform.PrintView.Model.Defaults.PrintViewDefaults.Table
+    name: PrintViewDefaults.Table
+  - uid: InfinniPlatform.PrintView.Model.Defaults.PrintViewDefaults.TableCell
+    name: PrintViewDefaults.TableCell
+  - uid: InfinniPlatform.PrintView.Model.Defaults.PrintViewDefaults.Text
+    name: PrintViewDefaults.Text
+- uid: InfinniPlatform.PrintView.Model.Format
+  name: InfinniPlatform.PrintView.Model.Format
+  items:
+  - uid: InfinniPlatform.PrintView.Model.Format.BooleanFormat
+    name: BooleanFormat
+  - uid: InfinniPlatform.PrintView.Model.Format.DateTimeFormat
+    name: DateTimeFormat
+  - uid: InfinniPlatform.PrintView.Model.Format.NumberFormat
+    name: NumberFormat
+  - uid: InfinniPlatform.PrintView.Model.Format.ObjectFormat
+    name: ObjectFormat
+  - uid: InfinniPlatform.PrintView.Model.Format.ValueFormat
+    name: ValueFormat
+- uid: InfinniPlatform.PrintView.Model.Inline
+  name: InfinniPlatform.PrintView.Model.Inline
+  items:
+  - uid: InfinniPlatform.PrintView.Model.Inline.PrintBarcode
+    name: PrintBarcode
+  - uid: InfinniPlatform.PrintView.Model.Inline.PrintBarcodeEan13
+    name: PrintBarcodeEan13
+  - uid: InfinniPlatform.PrintView.Model.Inline.PrintBarcodeQr
+    name: PrintBarcodeQr
+  - uid: InfinniPlatform.PrintView.Model.Inline.PrintBarcodeQrErrorCorrection
+    name: PrintBarcodeQrErrorCorrection
+  - uid: InfinniPlatform.PrintView.Model.Inline.PrintBold
+    name: PrintBold
+  - uid: InfinniPlatform.PrintView.Model.Inline.PrintHyperlink
+    name: PrintHyperlink
+  - uid: InfinniPlatform.PrintView.Model.Inline.PrintImage
+    name: PrintImage
+  - uid: InfinniPlatform.PrintView.Model.Inline.PrintImageRotation
+    name: PrintImageRotation
+  - uid: InfinniPlatform.PrintView.Model.Inline.PrintImageStretch
+    name: PrintImageStretch
+  - uid: InfinniPlatform.PrintView.Model.Inline.PrintItalic
+    name: PrintItalic
+  - uid: InfinniPlatform.PrintView.Model.Inline.PrintLineBreak
+    name: PrintLineBreak
+  - uid: InfinniPlatform.PrintView.Model.Inline.PrintRun
+    name: PrintRun
+  - uid: InfinniPlatform.PrintView.Model.Inline.PrintSpan
+    name: PrintSpan
+  - uid: InfinniPlatform.PrintView.Model.Inline.PrintUnderline
+    name: PrintUnderline
+- uid: InfinniPlatform.PrintView.Writers.Html
+  name: InfinniPlatform.PrintView.Writers.Html
+  items:
+  - uid: InfinniPlatform.PrintView.Writers.Html.HtmlPrintDocumentWriter
+    name: HtmlPrintDocumentWriter
+- uid: InfinniPlatform.PrintView.Writers.Pdf
+  name: InfinniPlatform.PrintView.Writers.Pdf
+  items:
+  - uid: InfinniPlatform.PrintView.Writers.Pdf.PdfPrintDocumentWriter
+    name: PdfPrintDocumentWriter
+- uid: InfinniPlatform.PushNotification.Contract
+  name: InfinniPlatform.PushNotification.Contract
+  items:
+  - uid: InfinniPlatform.PushNotification.Contract.IPushNotificationService
+    name: IPushNotificationService
+- uid: InfinniPlatform.PushNotification.IoC
+  name: InfinniPlatform.PushNotification.IoC
+  items:
+  - uid: InfinniPlatform.PushNotification.IoC.PushNotificationContainerModule
+    name: PushNotificationContainerModule
+- uid: InfinniPlatform.PushNotification.MessageBus
+  name: InfinniPlatform.PushNotification.MessageBus
+  items:
+  - uid: InfinniPlatform.PushNotification.MessageBus.PushNotificationMessageConsumerSource
+    name: PushNotificationMessageConsumerSource
+  - uid: InfinniPlatform.PushNotification.MessageBus.RabbitMqScaleoutConfiguration
+    name: RabbitMqScaleoutConfiguration
+  - uid: InfinniPlatform.PushNotification.MessageBus.SignalRMessageBus
+    name: SignalRMessageBus
+- uid: InfinniPlatform.PushNotification.SignalR
+  name: InfinniPlatform.PushNotification.SignalR
+  items:
+  - uid: InfinniPlatform.PushNotification.SignalR.SignalRDependencyResolver
+    name: SignalRDependencyResolver
+  - uid: InfinniPlatform.PushNotification.SignalR.SignalRHubDescriptorProvider
+    name: SignalRHubDescriptorProvider
+  - uid: InfinniPlatform.PushNotification.SignalR.SignalRPushNotificationService
+    name: SignalRPushNotificationService
+  - uid: InfinniPlatform.PushNotification.SignalR.SignalRPushNotificationServiceHub
+    name: SignalRPushNotificationServiceHub
+- uid: InfinniPlatform.Scheduler.Common
+  name: InfinniPlatform.Scheduler.Common
+  items:
+  - uid: InfinniPlatform.Scheduler.Common.IJobSchedulerDispatcher
+    name: IJobSchedulerDispatcher
+- uid: InfinniPlatform.Scheduler.Contract
+  name: InfinniPlatform.Scheduler.Contract
+  items:
+  - uid: InfinniPlatform.Scheduler.Contract.CronConstants
+    name: CronConstants
+  - uid: InfinniPlatform.Scheduler.Contract.CronExpressionBuilderExtensions
+    name: CronExpressionBuilderExtensions
+  - uid: InfinniPlatform.Scheduler.Contract.ICronExpressionBuilder
+    name: ICronExpressionBuilder
+  - uid: InfinniPlatform.Scheduler.Contract.ICronExpressionDayOfMonthBuilder
+    name: ICronExpressionDayOfMonthBuilder
+  - uid: InfinniPlatform.Scheduler.Contract.ICronExpressionDayOfWeekBuilder
+    name: ICronExpressionDayOfWeekBuilder
+  - uid: InfinniPlatform.Scheduler.Contract.ICronExpressionHourBuilder
+    name: ICronExpressionHourBuilder
+  - uid: InfinniPlatform.Scheduler.Contract.ICronExpressionMinuteBuilder
+    name: ICronExpressionMinuteBuilder
+  - uid: InfinniPlatform.Scheduler.Contract.ICronExpressionMonthBuilder
+    name: ICronExpressionMonthBuilder
+  - uid: InfinniPlatform.Scheduler.Contract.ICronExpressionSecondBuilder
+    name: ICronExpressionSecondBuilder
+  - uid: InfinniPlatform.Scheduler.Contract.ICronExpressionYearBuilder
+    name: ICronExpressionYearBuilder
+  - uid: InfinniPlatform.Scheduler.Contract.IJobHandler
+    name: IJobHandler
+  - uid: InfinniPlatform.Scheduler.Contract.IJobHandlerContext
+    name: IJobHandlerContext
+  - uid: InfinniPlatform.Scheduler.Contract.IJobHandlerTypeSerializer
+    name: IJobHandlerTypeSerializer
+  - uid: InfinniPlatform.Scheduler.Contract.IJobInfo
+    name: IJobInfo
+  - uid: InfinniPlatform.Scheduler.Contract.IJobInfoBuilder
+    name: IJobInfoBuilder
+  - uid: InfinniPlatform.Scheduler.Contract.IJobInfoFactory
+    name: IJobInfoFactory
+  - uid: InfinniPlatform.Scheduler.Contract.IJobInfoSource
+    name: IJobInfoSource
+  - uid: InfinniPlatform.Scheduler.Contract.IJobScheduler
+    name: IJobScheduler
+  - uid: InfinniPlatform.Scheduler.Contract.IJobStatus
+    name: IJobStatus
+  - uid: InfinniPlatform.Scheduler.Contract.JobInfoFactoryExtensions
+    name: JobInfoFactoryExtensions
+  - uid: InfinniPlatform.Scheduler.Contract.JobMisfirePolicy
+    name: JobMisfirePolicy
+  - uid: InfinniPlatform.Scheduler.Contract.JobState
+    name: JobState
+  - uid: InfinniPlatform.Scheduler.Contract.Month
+    name: Month
+  - uid: InfinniPlatform.Scheduler.Contract.SchedulerExtensions
+    name: SchedulerExtensions
+  - uid: InfinniPlatform.Scheduler.Contract.SchedulerSettings
+    name: SchedulerSettings
+- uid: InfinniPlatform.Sdk.Diagnostics
+  name: InfinniPlatform.Sdk.Diagnostics
+  items:
+  - uid: InfinniPlatform.Sdk.Diagnostics.ISubsystemStatusProvider
+    name: ISubsystemStatusProvider
+- uid: InfinniPlatform.Sdk.Dynamic
+  name: InfinniPlatform.Sdk.Dynamic
+  items:
+  - uid: InfinniPlatform.Sdk.Dynamic.DynamicWrapper
+    name: DynamicWrapper
+  - uid: InfinniPlatform.Sdk.Dynamic.DynamicWrapperExtensions
+    name: DynamicWrapperExtensions
+  - uid: InfinniPlatform.Sdk.Dynamic.DynamicWrapperPropertyDescriptor
+    name: DynamicWrapperPropertyDescriptor
+  - uid: InfinniPlatform.Sdk.Dynamic.ObjectHelper
+    name: ObjectHelper
+  - uid: InfinniPlatform.Sdk.Dynamic.ReflectionExtensions
+    name: ReflectionExtensions
+- uid: InfinniPlatform.Sdk.Hosting
+  name: InfinniPlatform.Sdk.Hosting
+  items:
+  - uid: InfinniPlatform.Sdk.Hosting.AppEventHandler
+    name: AppEventHandler
+  - uid: InfinniPlatform.Sdk.Hosting.IAppEventHandler
+    name: IAppEventHandler
+- uid: InfinniPlatform.Sdk.Http
+  name: InfinniPlatform.Sdk.Http
+  items:
+  - uid: InfinniPlatform.Sdk.Http.HostingConfig
+    name: HostingConfig
+  - uid: InfinniPlatform.Sdk.Http.IHostAddressParser
+    name: IHostAddressParser
+- uid: InfinniPlatform.Sdk.Http.Services
+  name: InfinniPlatform.Sdk.Http.Services
+  items:
+  - uid: InfinniPlatform.Sdk.Http.Services.DefaultHttpResultConverter
+    name: DefaultHttpResultConverter
+  - uid: InfinniPlatform.Sdk.Http.Services.HttpConstants
+    name: HttpConstants
+  - uid: InfinniPlatform.Sdk.Http.Services.HttpResponse
+    name: HttpResponse
+  - uid: InfinniPlatform.Sdk.Http.Services.IHttpGlobalHandler
+    name: IHttpGlobalHandler
+  - uid: InfinniPlatform.Sdk.Http.Services.IHttpRequest
+    name: IHttpRequest
+  - uid: InfinniPlatform.Sdk.Http.Services.IHttpRequestFile
+    name: IHttpRequestFile
+  - uid: InfinniPlatform.Sdk.Http.Services.IHttpRequestHeaders
+    name: IHttpRequestHeaders
+  - uid: InfinniPlatform.Sdk.Http.Services.IHttpResponse
+    name: IHttpResponse
+  - uid: InfinniPlatform.Sdk.Http.Services.IHttpService
+    name: IHttpService
+  - uid: InfinniPlatform.Sdk.Http.Services.IHttpServiceBuilder
+    name: IHttpServiceBuilder
+  - uid: InfinniPlatform.Sdk.Http.Services.IHttpServiceContext
+    name: IHttpServiceContext
+  - uid: InfinniPlatform.Sdk.Http.Services.IHttpServiceContextProvider
+    name: IHttpServiceContextProvider
+  - uid: InfinniPlatform.Sdk.Http.Services.IHttpServiceRoute
+    name: IHttpServiceRoute
+  - uid: InfinniPlatform.Sdk.Http.Services.IHttpServiceRouteBuilder
+    name: IHttpServiceRouteBuilder
+  - uid: InfinniPlatform.Sdk.Http.Services.IHttpServiceSource
+    name: IHttpServiceSource
+  - uid: InfinniPlatform.Sdk.Http.Services.IMimeTypeResolver
+    name: IMimeTypeResolver
+  - uid: InfinniPlatform.Sdk.Http.Services.JsonHttpResponse
+    name: JsonHttpResponse
+  - uid: InfinniPlatform.Sdk.Http.Services.RedirectHttpResponse
+    name: RedirectHttpResponse
+  - uid: InfinniPlatform.Sdk.Http.Services.RedirectHttpResponse.RedirectType
+    name: RedirectHttpResponse.RedirectType
+  - uid: InfinniPlatform.Sdk.Http.Services.ServiceExtentions
+    name: ServiceExtentions
+  - uid: InfinniPlatform.Sdk.Http.Services.ServiceResult`1
+    name: ServiceResult<TResult>
+    name.vb: ServiceResult(Of TResult)
+  - uid: InfinniPlatform.Sdk.Http.Services.StreamHttpResponse
+    name: StreamHttpResponse
+  - uid: InfinniPlatform.Sdk.Http.Services.TextHttpResponse
+    name: TextHttpResponse
+  - uid: InfinniPlatform.Sdk.Http.Services.ViewHttpResponce
+    name: ViewHttpResponce
+- uid: InfinniPlatform.Sdk.IoC
+  name: InfinniPlatform.Sdk.IoC
+  items:
+  - uid: InfinniPlatform.Sdk.IoC.ContainerExtensions
+    name: ContainerExtensions
+  - uid: InfinniPlatform.Sdk.IoC.IContainerBuilder
+    name: IContainerBuilder
+  - uid: InfinniPlatform.Sdk.IoC.IContainerInstanceActivator
+    name: IContainerInstanceActivator
+  - uid: InfinniPlatform.Sdk.IoC.IContainerModule
+    name: IContainerModule
+  - uid: InfinniPlatform.Sdk.IoC.IContainerParameterResolver
+    name: IContainerParameterResolver
+  - uid: InfinniPlatform.Sdk.IoC.IContainerRegistrationRule
+    name: IContainerRegistrationRule
+  - uid: InfinniPlatform.Sdk.IoC.IContainerResolver
+    name: IContainerResolver
+  - uid: InfinniPlatform.Sdk.IoC.SimpleContainerParameterResolver
+    name: SimpleContainerParameterResolver
+- uid: InfinniPlatform.Sdk.Logging
+  name: InfinniPlatform.Sdk.Logging
+  items:
+  - uid: InfinniPlatform.Sdk.Logging.ILog
+    name: ILog
+  - uid: InfinniPlatform.Sdk.Logging.IPerformanceLog
+    name: IPerformanceLog
+  - uid: InfinniPlatform.Sdk.Logging.LogExtensions
+    name: LogExtensions
+  - uid: InfinniPlatform.Sdk.Logging.LoggerNameAttribute
+    name: LoggerNameAttribute
+- uid: InfinniPlatform.Sdk.Metadata
+  name: InfinniPlatform.Sdk.Metadata
+  items:
+  - uid: InfinniPlatform.Sdk.Metadata.DataType
+    name: DataType
+  - uid: InfinniPlatform.Sdk.Metadata.DocumentIndex
+    name: DocumentIndex
+  - uid: InfinniPlatform.Sdk.Metadata.DocumentIndexKeyType
+    name: DocumentIndexKeyType
+  - uid: InfinniPlatform.Sdk.Metadata.DocumentMetadata
+    name: DocumentMetadata
+  - uid: InfinniPlatform.Sdk.Metadata.IDocumentMetadataSource
+    name: IDocumentMetadataSource
+- uid: InfinniPlatform.Sdk.RestApi
+  name: InfinniPlatform.Sdk.RestApi
+  items:
+  - uid: InfinniPlatform.Sdk.RestApi.BaseRestClient
+    name: BaseRestClient
+  - uid: InfinniPlatform.Sdk.RestApi.RequestExecutor
+    name: RequestExecutor
+- uid: InfinniPlatform.Sdk.RestApi.Blob
+  name: InfinniPlatform.Sdk.RestApi.Blob
+  items:
+  - uid: InfinniPlatform.Sdk.RestApi.Blob.BlobHttpServiceClient
+    name: BlobHttpServiceClient
+- uid: InfinniPlatform.Sdk.Security
+  name: InfinniPlatform.Sdk.Security
+  items:
+  - uid: InfinniPlatform.Sdk.Security.IUserIdentityProvider
+    name: IUserIdentityProvider
+  - uid: InfinniPlatform.Sdk.Security.SecurityConstants
+    name: SecurityConstants
+- uid: InfinniPlatform.Sdk.Serialization
+  name: InfinniPlatform.Sdk.Serialization
+  items:
+  - uid: InfinniPlatform.Sdk.Serialization.IgnoreSerializerErrorHandler
+    name: IgnoreSerializerErrorHandler
+  - uid: InfinniPlatform.Sdk.Serialization.IJsonObjectSerializer
+    name: IJsonObjectSerializer
+  - uid: InfinniPlatform.Sdk.Serialization.IMemberValueConverter
+    name: IMemberValueConverter
+  - uid: InfinniPlatform.Sdk.Serialization.IObjectSerializer
+    name: IObjectSerializer
+  - uid: InfinniPlatform.Sdk.Serialization.ISerializerErrorHandler
+    name: ISerializerErrorHandler
+  - uid: InfinniPlatform.Sdk.Serialization.JsonObjectSerializer
+    name: JsonObjectSerializer
+  - uid: InfinniPlatform.Sdk.Serialization.KnownTypesContainer
+    name: KnownTypesContainer
+  - uid: InfinniPlatform.Sdk.Serialization.SerializationExtensions
+    name: SerializationExtensions
+  - uid: InfinniPlatform.Sdk.Serialization.SerializerPropertyNameAttribute
+    name: SerializerPropertyNameAttribute
+  - uid: InfinniPlatform.Sdk.Serialization.SerializerVisibleAttribute
+    name: SerializerVisibleAttribute
+  - uid: InfinniPlatform.Sdk.Serialization.XmlDateMemberValueConverter
+    name: XmlDateMemberValueConverter
+- uid: InfinniPlatform.Sdk.Session
+  name: InfinniPlatform.Sdk.Session
+  items:
+  - uid: InfinniPlatform.Sdk.Session.ISessionManager
+    name: ISessionManager
+  - uid: InfinniPlatform.Sdk.Session.ITenantProvider
+    name: ITenantProvider
+  - uid: InfinniPlatform.Sdk.Session.ITenantScope
+    name: ITenantScope
+  - uid: InfinniPlatform.Sdk.Session.ITenantScopeProvider
+    name: ITenantScopeProvider
+  - uid: InfinniPlatform.Sdk.Session.IUserEventHandler
+    name: IUserEventHandler
+  - uid: InfinniPlatform.Sdk.Session.UserEventHandler
+    name: UserEventHandler
+- uid: InfinniPlatform.Sdk.Settings
+  name: InfinniPlatform.Sdk.Settings
+  items:
+  - uid: InfinniPlatform.Sdk.Settings.IAppConfiguration
+    name: IAppConfiguration
+  - uid: InfinniPlatform.Sdk.Settings.IAppEnvironment
+    name: IAppEnvironment
+- uid: InfinniPlatform.Sdk.Threading
+  name: InfinniPlatform.Sdk.Threading
+  items:
+  - uid: InfinniPlatform.Sdk.Threading.AsyncHelper
+    name: AsyncHelper
+- uid: InfinniPlatform.Sdk.Types
+  name: InfinniPlatform.Sdk.Types
+  items:
+  - uid: InfinniPlatform.Sdk.Types.Date
+    name: Date
+  - uid: InfinniPlatform.Sdk.Types.Time
+    name: Time
+- uid: InfinniPlatform.Sdk.ViewEngine
+  name: InfinniPlatform.Sdk.ViewEngine
+  items:
+  - uid: InfinniPlatform.Sdk.ViewEngine.IViewEngineBootstrapperExtension
+    name: IViewEngineBootstrapperExtension
+- uid: InfinniPlatform.ServiceHost
+  name: InfinniPlatform.ServiceHost
+  items:
+  - uid: InfinniPlatform.ServiceHost.AssemblyNameComparer
+    name: AssemblyNameComparer
+  - uid: InfinniPlatform.ServiceHost.DirectoryAssemblyCatalog
+    name: DirectoryAssemblyCatalog
+  - uid: InfinniPlatform.ServiceHost.DirectoryAssemblyLoadContext
+    name: DirectoryAssemblyLoadContext
+  - uid: InfinniPlatform.ServiceHost.Program
+    name: Program
+- uid: InfinniPlatform.Watcher
+  name: InfinniPlatform.Watcher
+  items:
+  - uid: InfinniPlatform.Watcher.ConsoleLog
+    name: ConsoleLog
+  - uid: InfinniPlatform.Watcher.Extensions
+    name: Extensions
+  - uid: InfinniPlatform.Watcher.Watcher
+    name: Watcher
+  - uid: InfinniPlatform.Watcher.WatcherSettings
+    name: WatcherSettings
+- uid: InfinniPlatform.Watcher.IoC
+  name: InfinniPlatform.Watcher.IoC
+  items:
+  - uid: InfinniPlatform.Watcher.IoC.WatcherContainerModule
+    name: WatcherContainerModule
