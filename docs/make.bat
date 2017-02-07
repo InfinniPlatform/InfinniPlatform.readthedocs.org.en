@@ -41,6 +41,7 @@ if "%1" == "help" (
 	echo.  coverage   to run coverage check of the documentation if enabled
 	echo.  dummy      to check syntax errors of document sources
 	echo.  livehtml   to start sphinx-autobuild
+	echo.  docfx      to generate API Reference using DocFx
 	goto end
 )
 
@@ -284,6 +285,18 @@ if "%1" == "livehtml" (
 	if errorlevel 1 exit /b 1
 	echo.
 	echo.sphinx-autobuild started.
+	goto end
+)
+
+if "%1" == "docfx" (
+	echo.
+	echo.docfx metadata docfx/docfx.json
+	docfx metadata docfx/docfx.json
+	if errorlevel 1 exit /b 1
+	echo.
+	echo.docfx build docfx/docfx.json
+	docfx build docfx/docfx.json
+	if errorlevel 1 exit /b 1
 	goto end
 )
 

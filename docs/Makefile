@@ -49,6 +49,7 @@ help:
 	@echo "  coverage   to run coverage check of the documentation (if enabled)"
 	@echo "  dummy      to check syntax errors of document sources"
 	@echo "  livehtml   to start sphinx-autobuild"
+	@echo "  docfx      to generate API Reference using DocFx"
 
 .PHONY: clean
 clean:
@@ -235,3 +236,12 @@ livehtml:
 	sphinx-autobuild -b html $(ALLSPHINXOPTS) $(BUILDDIR)/html
 	@echo
 	@echo "sphinx-autobuild started."
+
+.PHONY: docfx
+docfx:
+	@echo
+	@echo "docfx metadata docfx/docfx.json"
+	docfx metadata docfx/docfx.json
+	@echo
+	@echo "docfx build docfx/docfx.json"
+	docfx build docfx/docfx.json
