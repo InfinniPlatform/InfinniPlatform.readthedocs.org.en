@@ -240,8 +240,11 @@ livehtml:
 .PHONY: docfx
 docfx:
 	@echo
-	@echo "docfx metadata docfx/docfx.json"
+	@echo "Clear destination directory"
+	rm -rf source/_docfx/reference
+	@echo
+	@echo "Generate metadata files from source code"
 	docfx metadata docfx/docfx.json
 	@echo
-	@echo "docfx build docfx/docfx.json"
+	@echo "Generate website for API Reference"
 	docfx build docfx/docfx.json

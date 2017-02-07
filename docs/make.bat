@@ -290,12 +290,15 @@ if "%1" == "livehtml" (
 
 if "%1" == "docfx" (
 	echo.
-	echo.docfx metadata docfx/docfx.json
-	docfx metadata docfx/docfx.json
+	echo.Clear destination directory
+	rd /S /Q "source/_docfx/reference"
+	echo.
+	echo.Generate metadata files from source code
+	docfx metadata "docfx/docfx.json"
 	if errorlevel 1 exit /b 1
 	echo.
-	echo.docfx build docfx/docfx.json
-	docfx build docfx/docfx.json
+	echo.Generate website for API Reference
+	docfx build "docfx/docfx.json"
 	if errorlevel 1 exit /b 1
 	goto end
 )
