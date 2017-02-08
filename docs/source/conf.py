@@ -26,6 +26,7 @@ on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
 
 # Hack for lacking git-lfs support ReadTheDocs
 if on_rtd:
+    print('Fetching files with git_lfs')
     from git_lfs import fetch
     fetch(PROJECT_ROOT_DIR)
 
