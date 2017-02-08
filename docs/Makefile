@@ -241,7 +241,7 @@ livehtml:
 docfx:
 	@echo
 	@echo "Clear destination directory"
-	rm -rf source/_docfx/reference
+	rm -rf source/_docfx
 	@echo
 	@echo "Generate metadata files from source code"
 	docfx metadata docfx/docfx.json

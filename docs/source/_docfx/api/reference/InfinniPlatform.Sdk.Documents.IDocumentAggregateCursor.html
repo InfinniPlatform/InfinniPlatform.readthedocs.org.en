@@ -1,0 +1,647 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IDocumentAggregateCursor
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IDocumentAggregateCursor
+   ">
+    <meta name="generator" content="docfx 2.11.2.0">
+    
+    <link rel="shortcut icon" href="../../../_static/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../../../_static/favicon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="InfinniPlatform_Sdk_Documents_IDocumentAggregateCursor" data-uid="InfinniPlatform.Sdk.Documents.IDocumentAggregateCursor">Interface IDocumentAggregateCursor
+              </h1>
+              <div class="markdown level0 summary"><p>Указатель на список документов для агрегации.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Documents.IDocumentCursor-1.html#InfinniPlatform_Sdk_Documents_IDocumentCursor_1_Any">IDocumentCursor&lt;DynamicWrapper&gt;.Any()</a>
+                </div>
+                <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Documents.IDocumentCursor-1.html#InfinniPlatform_Sdk_Documents_IDocumentCursor_1_AnyAsync">IDocumentCursor&lt;DynamicWrapper&gt;.AnyAsync()</a>
+                </div>
+                <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Documents.IDocumentCursor-1.html#InfinniPlatform_Sdk_Documents_IDocumentCursor_1_First">IDocumentCursor&lt;DynamicWrapper&gt;.First()</a>
+                </div>
+                <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Documents.IDocumentCursor-1.html#InfinniPlatform_Sdk_Documents_IDocumentCursor_1_FirstAsync">IDocumentCursor&lt;DynamicWrapper&gt;.FirstAsync()</a>
+                </div>
+                <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Documents.IDocumentCursor-1.html#InfinniPlatform_Sdk_Documents_IDocumentCursor_1_FirstOrDefault">IDocumentCursor&lt;DynamicWrapper&gt;.FirstOrDefault()</a>
+                </div>
+                <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Documents.IDocumentCursor-1.html#InfinniPlatform_Sdk_Documents_IDocumentCursor_1_FirstOrDefaultAsync">IDocumentCursor&lt;DynamicWrapper&gt;.FirstOrDefaultAsync()</a>
+                </div>
+                <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Documents.IDocumentCursor-1.html#InfinniPlatform_Sdk_Documents_IDocumentCursor_1_ToList">IDocumentCursor&lt;DynamicWrapper&gt;.ToList()</a>
+                </div>
+                <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Documents.IDocumentCursor-1.html#InfinniPlatform_Sdk_Documents_IDocumentCursor_1_ToListAsync">IDocumentCursor&lt;DynamicWrapper&gt;.ToListAsync()</a>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:InfinniPlatform.Sdk.Documents</h6>
+              <h6><strong>Assembly</strong>:InfinniPlatform.Sdk.dll</h6>
+              <h5 id="InfinniPlatform_Sdk_Documents_IDocumentAggregateCursor_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public interface IDocumentAggregateCursor : IDocumentCursor&lt;DynamicWrapper&gt;</code></pre>
+              </div>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/release-1.11/apiSpec/new?filename=InfinniPlatform_Sdk_Documents_IDocumentAggregateCursor_Group_InfinniPlatform_Sdk_Dynamic_DynamicWrapper_.md&amp;value=---%0Auid%3A%20InfinniPlatform.Sdk.Documents.IDocumentAggregateCursor.Group(InfinniPlatform.Sdk.Dynamic.DynamicWrapper)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/release-1.11/InfinniPlatform.Sdk/Documents/IDocumentAggregateCursor.cs/#L26">View Source</a>
+              </span>
+              <a id="InfinniPlatform_Sdk_Documents_IDocumentAggregateCursor_Group_" data-uid="InfinniPlatform.Sdk.Documents.IDocumentAggregateCursor.Group*"></a>
+              <h4 id="InfinniPlatform_Sdk_Documents_IDocumentAggregateCursor_Group_InfinniPlatform_Sdk_Dynamic_DynamicWrapper_" data-uid="InfinniPlatform.Sdk.Documents.IDocumentAggregateCursor.Group(InfinniPlatform.Sdk.Dynamic.DynamicWrapper)">Group(DynamicWrapper)</h4>
+              <div class="markdown level1 summary"><p>Группирует исходные документы по указанному выражению и производит вычисление заданных функций агрегации для каждой группы.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IDocumentAggregateCursor Group(DynamicWrapper group)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.Sdk.Dynamic.DynamicWrapper.html">DynamicWrapper</a></td>
+                    <td><span class="parametername">group</span></td>
+                    <td><p>Правило группировки и агрегации групп данных.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.Sdk.Documents.IDocumentAggregateCursor.html">IDocumentAggregateCursor</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/release-1.11/apiSpec/new?filename=InfinniPlatform_Sdk_Documents_IDocumentAggregateCursor_Limit_System_Int32_.md&amp;value=---%0Auid%3A%20InfinniPlatform.Sdk.Documents.IDocumentAggregateCursor.Limit(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/release-1.11/InfinniPlatform.Sdk/Documents/IDocumentAggregateCursor.cs/#L56">View Source</a>
+              </span>
+              <a id="InfinniPlatform_Sdk_Documents_IDocumentAggregateCursor_Limit_" data-uid="InfinniPlatform.Sdk.Documents.IDocumentAggregateCursor.Limit*"></a>
+              <h4 id="InfinniPlatform_Sdk_Documents_IDocumentAggregateCursor_Limit_System_Int32_" data-uid="InfinniPlatform.Sdk.Documents.IDocumentAggregateCursor.Limit(System.Int32)">Limit(Int32)</h4>
+              <div class="markdown level1 summary"><p>Ограничивает результирующую выборку указанным количеством документов.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IDocumentAggregateCursor Limit(int limit)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">limit</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.Sdk.Documents.IDocumentAggregateCursor.html">IDocumentAggregateCursor</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/release-1.11/apiSpec/new?filename=InfinniPlatform_Sdk_Documents_IDocumentAggregateCursor_Lookup_System_String_System_String_System_String_System_String_.md&amp;value=---%0Auid%3A%20InfinniPlatform.Sdk.Documents.IDocumentAggregateCursor.Lookup(System.String%2CSystem.String%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/release-1.11/InfinniPlatform.Sdk/Documents/IDocumentAggregateCursor.cs/#L36">View Source</a>
+              </span>
+              <a id="InfinniPlatform_Sdk_Documents_IDocumentAggregateCursor_Lookup_" data-uid="InfinniPlatform.Sdk.Documents.IDocumentAggregateCursor.Lookup*"></a>
+              <h4 id="InfinniPlatform_Sdk_Documents_IDocumentAggregateCursor_Lookup_System_String_System_String_System_String_System_String_" data-uid="InfinniPlatform.Sdk.Documents.IDocumentAggregateCursor.Lookup(System.String,System.String,System.String,System.String)">Lookup(String, String, String, String)</h4>
+              <div class="markdown level1 summary"><p>Присоединяет к каждому исходному документу документ из указанной внешней коллекции в соответствии с заданным правилом
+(left outer join).</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IDocumentAggregateCursor Lookup(string foreignDocumentType, string localKeyProperty, string foreignKeyProperty, string resultArrayProperty)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">foreignDocumentType</span></td>
+                    <td><p>Имя типа внешнего документа.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">localKeyProperty</span></td>
+                    <td><p>Свойство исходного документа, содержащее ключ для присоединения.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">foreignKeyProperty</span></td>
+                    <td><p>Свойство внешнего документа, содержащее ключ для присоединения.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">resultArrayProperty</span></td>
+                    <td><p>Свойство, в которое будет помещен массив присоединенных документов.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.Sdk.Documents.IDocumentAggregateCursor.html">IDocumentAggregateCursor</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/release-1.11/apiSpec/new?filename=InfinniPlatform_Sdk_Documents_IDocumentAggregateCursor_Project_InfinniPlatform_Sdk_Dynamic_DynamicWrapper_.md&amp;value=---%0Auid%3A%20InfinniPlatform.Sdk.Documents.IDocumentAggregateCursor.Project(InfinniPlatform.Sdk.Dynamic.DynamicWrapper)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/release-1.11/InfinniPlatform.Sdk/Documents/IDocumentAggregateCursor.cs/#L14">View Source</a>
+              </span>
+              <a id="InfinniPlatform_Sdk_Documents_IDocumentAggregateCursor_Project_" data-uid="InfinniPlatform.Sdk.Documents.IDocumentAggregateCursor.Project*"></a>
+              <h4 id="InfinniPlatform_Sdk_Documents_IDocumentAggregateCursor_Project_InfinniPlatform_Sdk_Dynamic_DynamicWrapper_" data-uid="InfinniPlatform.Sdk.Documents.IDocumentAggregateCursor.Project(InfinniPlatform.Sdk.Dynamic.DynamicWrapper)">Project(DynamicWrapper)</h4>
+              <div class="markdown level1 summary"><p>Создает проекцию для отображения результата агрегации документов.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IDocumentAggregateCursor Project(DynamicWrapper projection)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.Sdk.Dynamic.DynamicWrapper.html">DynamicWrapper</a></td>
+                    <td><span class="parametername">projection</span></td>
+                    <td><p>Правило формирования проекции.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.Sdk.Documents.IDocumentAggregateCursor.html">IDocumentAggregateCursor</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/release-1.11/apiSpec/new?filename=InfinniPlatform_Sdk_Documents_IDocumentAggregateCursor_Skip_System_Int32_.md&amp;value=---%0Auid%3A%20InfinniPlatform.Sdk.Documents.IDocumentAggregateCursor.Skip(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/release-1.11/InfinniPlatform.Sdk/Documents/IDocumentAggregateCursor.cs/#L51">View Source</a>
+              </span>
+              <a id="InfinniPlatform_Sdk_Documents_IDocumentAggregateCursor_Skip_" data-uid="InfinniPlatform.Sdk.Documents.IDocumentAggregateCursor.Skip*"></a>
+              <h4 id="InfinniPlatform_Sdk_Documents_IDocumentAggregateCursor_Skip_System_Int32_" data-uid="InfinniPlatform.Sdk.Documents.IDocumentAggregateCursor.Skip(System.Int32)">Skip(Int32)</h4>
+              <div class="markdown level1 summary"><p>Пропускает указанное количество документов в результирующей выборке.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IDocumentAggregateCursor Skip(int skip)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Int32</span></td>
+                    <td><span class="parametername">skip</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.Sdk.Documents.IDocumentAggregateCursor.html">IDocumentAggregateCursor</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/release-1.11/apiSpec/new?filename=InfinniPlatform_Sdk_Documents_IDocumentAggregateCursor_SortBy_System_String_.md&amp;value=---%0Auid%3A%20InfinniPlatform.Sdk.Documents.IDocumentAggregateCursor.SortBy(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/release-1.11/InfinniPlatform.Sdk/Documents/IDocumentAggregateCursor.cs/#L41">View Source</a>
+              </span>
+              <a id="InfinniPlatform_Sdk_Documents_IDocumentAggregateCursor_SortBy_" data-uid="InfinniPlatform.Sdk.Documents.IDocumentAggregateCursor.SortBy*"></a>
+              <h4 id="InfinniPlatform_Sdk_Documents_IDocumentAggregateCursor_SortBy_System_String_" data-uid="InfinniPlatform.Sdk.Documents.IDocumentAggregateCursor.SortBy(System.String)">SortBy(String)</h4>
+              <div class="markdown level1 summary"><p>Сортирует документы по возрастанию указанного свойства.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IDocumentAggregateSortedCursor SortBy(string property)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">property</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.Sdk.Documents.IDocumentAggregateSortedCursor.html">IDocumentAggregateSortedCursor</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/release-1.11/apiSpec/new?filename=InfinniPlatform_Sdk_Documents_IDocumentAggregateCursor_SortByDescending_System_String_.md&amp;value=---%0Auid%3A%20InfinniPlatform.Sdk.Documents.IDocumentAggregateCursor.SortByDescending(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/release-1.11/InfinniPlatform.Sdk/Documents/IDocumentAggregateCursor.cs/#L46">View Source</a>
+              </span>
+              <a id="InfinniPlatform_Sdk_Documents_IDocumentAggregateCursor_SortByDescending_" data-uid="InfinniPlatform.Sdk.Documents.IDocumentAggregateCursor.SortByDescending*"></a>
+              <h4 id="InfinniPlatform_Sdk_Documents_IDocumentAggregateCursor_SortByDescending_System_String_" data-uid="InfinniPlatform.Sdk.Documents.IDocumentAggregateCursor.SortByDescending(System.String)">SortByDescending(String)</h4>
+              <div class="markdown level1 summary"><p>Сортирует документы по убыванию указанного свойства.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IDocumentAggregateSortedCursor SortByDescending(string property)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">property</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.Sdk.Documents.IDocumentAggregateSortedCursor.html">IDocumentAggregateSortedCursor</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/release-1.11/apiSpec/new?filename=InfinniPlatform_Sdk_Documents_IDocumentAggregateCursor_Unwind_System_String_.md&amp;value=---%0Auid%3A%20InfinniPlatform.Sdk.Documents.IDocumentAggregateCursor.Unwind(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/release-1.11/InfinniPlatform.Sdk/Documents/IDocumentAggregateCursor.cs/#L20">View Source</a>
+              </span>
+              <a id="InfinniPlatform_Sdk_Documents_IDocumentAggregateCursor_Unwind_" data-uid="InfinniPlatform.Sdk.Documents.IDocumentAggregateCursor.Unwind*"></a>
+              <h4 id="InfinniPlatform_Sdk_Documents_IDocumentAggregateCursor_Unwind_System_String_" data-uid="InfinniPlatform.Sdk.Documents.IDocumentAggregateCursor.Unwind(System.String)">Unwind(String)</h4>
+              <div class="markdown level1 summary"><p>Создает отдельный документ для каждого элемента массива, находящегося в указанном свойстве исходного документа.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IDocumentAggregateCursor Unwind(string arrayProperty)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">arrayProperty</span></td>
+                    <td><p>Свойство документа, содержащее массив.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.Sdk.Documents.IDocumentAggregateCursor.html">IDocumentAggregateCursor</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="extensionmethods">Extension Methods</h3>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.DynamicWrapperExtensions.html#InfinniPlatform_Sdk_Dynamic_DynamicWrapperExtensions_ToDynamic_System_Object_">DynamicWrapperExtensions.ToDynamic(Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.DynamicWrapperExtensions.html#InfinniPlatform_Sdk_Dynamic_DynamicWrapperExtensions_ToEnumerable_System_Object_">DynamicWrapperExtensions.ToEnumerable(Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_GetProperty_System_Object_System_String_">ObjectHelper.GetProperty(Object, String)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_SetProperty_System_Object_System_String_System_Object_">ObjectHelper.SetProperty(Object, String, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_ReplaceProperties_System_Object_System_Object_">ObjectHelper.ReplaceProperties(Object, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_GetItem_System_Object_System_Int32_">ObjectHelper.GetItem(Object, Int32)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_SetItem_System_Object_System_Int32_System_Object_">ObjectHelper.SetItem(Object, Int32, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_AddItem_System_Object_System_Object_">ObjectHelper.AddItem(Object, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_ReplaceItem_System_Object_System_Object_System_Object_">ObjectHelper.ReplaceItem(Object, Object, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_MoveItem_System_Object_System_Object_System_Int32_">ObjectHelper.MoveItem(Object, Object, Int32)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_InsertItem_System_Object_System_Int32_System_Object_">ObjectHelper.InsertItem(Object, Int32, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_RemoveItem_System_Object_System_Object_">ObjectHelper.RemoveItem(Object, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_RemoveItemAt_System_Object_System_Int32_">ObjectHelper.RemoveItemAt(Object, Int32)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_GetIndexProperty_System_Object_System_Collections_Generic_IEnumerable_System_Object__">ObjectHelper.GetIndexProperty(Object, IEnumerable&lt;Object&gt;)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_IsInstanceOfType_System_Object_System_Type_">ReflectionExtensions.IsInstanceOfType(Object, Type)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_GetMemberValue_System_Object_System_String_">ReflectionExtensions.GetMemberValue(Object, String)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_SetMemberValue_System_Object_System_String_System_Object_">ReflectionExtensions.SetMemberValue(Object, String, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_InvokeMember_System_Object_System_String_System_Object___System_Object__System_Type___">ReflectionExtensions.InvokeMember(Object, String, Object[], out Object, Type[])</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_GetFieldValue_System_Object_System_Reflection_FieldInfo_">ReflectionExtensions.GetFieldValue(Object, FieldInfo)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_SetFieldValue_System_Object_System_Reflection_FieldInfo_System_Object_">ReflectionExtensions.SetFieldValue(Object, FieldInfo, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_GetPropertyValue_System_Object_System_Reflection_PropertyInfo_">ReflectionExtensions.GetPropertyValue(Object, PropertyInfo)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_">ReflectionExtensions.SetPropertyValue(Object, PropertyInfo, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_GetMethodDelegate_System_Object_System_Reflection_MethodInfo_">ReflectionExtensions.GetMethodDelegate(Object, MethodInfo)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_GetEventDelegate_System_Object_System_Reflection_EventInfo_">ReflectionExtensions.GetEventDelegate(Object, EventInfo)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_SetEventDelegate_System_Object_System_Reflection_EventInfo_System_Object_">ReflectionExtensions.SetEventDelegate(Object, EventInfo, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Core.Extensions.CommonExtensions.html#InfinniPlatform_Core_Extensions_CommonExtensions_ExecuteSilent__1___0_System_Action___0__">CommonExtensions.ExecuteSilent&lt;T&gt;(T, Action&lt;T&gt;)</a>
+              </div>
+                        </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/release-1.11/apiSpec/new?filename=InfinniPlatform_Sdk_Documents_IDocumentAggregateCursor.md&amp;value=---%0Auid%3A%20InfinniPlatform.Sdk.Documents.IDocumentAggregateCursor%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/release-1.11/InfinniPlatform.Sdk/Documents/IDocumentAggregateCursor.cs/#L8" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © Copyright Infinnity Solutions Ltd, 2010–2017.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

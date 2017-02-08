@@ -291,7 +291,7 @@ if "%1" == "livehtml" (
 if "%1" == "docfx" (
 	echo.
 	echo.Clear destination directory
-	rd /S /Q "source/_docfx/reference"
+	rd /S /Q "source/_docfx
 	echo.
 	echo.Generate metadata files from source code
 	docfx metadata "docfx/docfx.json"

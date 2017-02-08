@@ -46,7 +46,8 @@
         "globalMetadata": {
             "_appFooter": "© Copyright Infinnity Solutions Ltd, 2010–2017.",
             "_appLogoPath": "../../_static/favicon.png",
-            "_appFaviconPath": "../../_static/favicon.png"
+            "_appFaviconPath": "../../_static/favicon.png",
+            "_enableSearch": true
         },
         "fileMetadataFiles": [],
         "template": [

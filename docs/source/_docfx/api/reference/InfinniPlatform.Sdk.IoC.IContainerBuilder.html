@@ -1,0 +1,623 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IContainerBuilder
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IContainerBuilder
+   ">
+    <meta name="generator" content="docfx 2.11.2.0">
+    
+    <link rel="shortcut icon" href="../../../_static/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    <meta property="docfx:rel" content="../">
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../../../_static/favicon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items"></div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="InfinniPlatform_Sdk_IoC_IContainerBuilder" data-uid="InfinniPlatform.Sdk.IoC.IContainerBuilder">Interface IContainerBuilder
+              </h1>
+              <div class="markdown level0 summary"><p>Регистратор зависимостей и правил их разрешения.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <h6><strong>Namespace</strong>:InfinniPlatform.Sdk.IoC</h6>
+              <h6><strong>Assembly</strong>:InfinniPlatform.Sdk.dll</h6>
+              <h5 id="InfinniPlatform_Sdk_IoC_IContainerBuilder_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public interface IContainerBuilder</code></pre>
+              </div>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/release-1.11/apiSpec/new?filename=InfinniPlatform_Sdk_IoC_IContainerBuilder_OnActivateInstance_InfinniPlatform_Sdk_IoC_IContainerInstanceActivator_.md&amp;value=---%0Auid%3A%20InfinniPlatform.Sdk.IoC.IContainerBuilder.OnActivateInstance(InfinniPlatform.Sdk.IoC.IContainerInstanceActivator)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/release-1.11/InfinniPlatform.Sdk/IoC/IContainerBuilder.cs/#L75">View Source</a>
+              </span>
+              <a id="InfinniPlatform_Sdk_IoC_IContainerBuilder_OnActivateInstance_" data-uid="InfinniPlatform.Sdk.IoC.IContainerBuilder.OnActivateInstance*"></a>
+              <h4 id="InfinniPlatform_Sdk_IoC_IContainerBuilder_OnActivateInstance_InfinniPlatform_Sdk_IoC_IContainerInstanceActivator_" data-uid="InfinniPlatform.Sdk.IoC.IContainerBuilder.OnActivateInstance(InfinniPlatform.Sdk.IoC.IContainerInstanceActivator)">OnActivateInstance(IContainerInstanceActivator)</h4>
+              <div class="markdown level1 summary"><p>Определяет обработчик на событие инициализации зависимости.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void OnActivateInstance(IContainerInstanceActivator instanceActivator)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.Sdk.IoC.IContainerInstanceActivator.html">IContainerInstanceActivator</a></td>
+                    <td><span class="parametername">instanceActivator</span></td>
+                    <td><p>Обработчик инициализации экземпляра зависимости.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/release-1.11/apiSpec/new?filename=InfinniPlatform_Sdk_IoC_IContainerBuilder_OnCreateInstance_InfinniPlatform_Sdk_IoC_IContainerParameterResolver_.md&amp;value=---%0Auid%3A%20InfinniPlatform.Sdk.IoC.IContainerBuilder.OnCreateInstance(InfinniPlatform.Sdk.IoC.IContainerParameterResolver)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/release-1.11/InfinniPlatform.Sdk/IoC/IContainerBuilder.cs/#L69">View Source</a>
+              </span>
+              <a id="InfinniPlatform_Sdk_IoC_IContainerBuilder_OnCreateInstance_" data-uid="InfinniPlatform.Sdk.IoC.IContainerBuilder.OnCreateInstance*"></a>
+              <h4 id="InfinniPlatform_Sdk_IoC_IContainerBuilder_OnCreateInstance_InfinniPlatform_Sdk_IoC_IContainerParameterResolver_" data-uid="InfinniPlatform.Sdk.IoC.IContainerBuilder.OnCreateInstance(InfinniPlatform.Sdk.IoC.IContainerParameterResolver)">OnCreateInstance(IContainerParameterResolver)</h4>
+              <div class="markdown level1 summary"><p>Определяет обработчик на событие создания зависимости.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void OnCreateInstance(IContainerParameterResolver parameterResolver)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.Sdk.IoC.IContainerParameterResolver.html">IContainerParameterResolver</a></td>
+                    <td><span class="parametername">parameterResolver</span></td>
+                    <td><p>Обработчик разрешения зависимостей, передаваемых через параметры конструкторов.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/release-1.11/apiSpec/new?filename=InfinniPlatform_Sdk_IoC_IContainerBuilder_RegisterFactory__1_System_Func_InfinniPlatform_Sdk_IoC_IContainerResolver___0__.md&amp;value=---%0Auid%3A%20InfinniPlatform.Sdk.IoC.IContainerBuilder.RegisterFactory%60%601(System.Func%7BInfinniPlatform.Sdk.IoC.IContainerResolver%2C%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/release-1.11/InfinniPlatform.Sdk/IoC/IContainerBuilder.cs/#L63">View Source</a>
+              </span>
+              <a id="InfinniPlatform_Sdk_IoC_IContainerBuilder_RegisterFactory_" data-uid="InfinniPlatform.Sdk.IoC.IContainerBuilder.RegisterFactory*"></a>
+              <h4 id="InfinniPlatform_Sdk_IoC_IContainerBuilder_RegisterFactory__1_System_Func_InfinniPlatform_Sdk_IoC_IContainerResolver___0__" data-uid="InfinniPlatform.Sdk.IoC.IContainerBuilder.RegisterFactory``1(System.Func{InfinniPlatform.Sdk.IoC.IContainerResolver,``0})">RegisterFactory&lt;TComponent&gt;(Func&lt;IContainerResolver, TComponent&gt;)</h4>
+              <div class="markdown level1 summary"><p>Регистрирует фабричный метод компонента.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IContainerRegistrationRule RegisterFactory&lt;TComponent&gt;(Func&lt;IContainerResolver, TComponent&gt; componentFactory)where TComponent : class</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Func</span>&lt;<a class="xref" href="InfinniPlatform.Sdk.IoC.IContainerResolver.html">IContainerResolver</a>, TComponent&gt;</td>
+                    <td><span class="parametername">componentFactory</span></td>
+                    <td><p>Фабричный метод компонента.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.Sdk.IoC.IContainerRegistrationRule.html">IContainerRegistrationRule</a></td>
+                    <td><p>Правила регистрации компонента.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">TComponent</span></td>
+                    <td><p>Тип, реализующий компонент.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="InfinniPlatform_Sdk_IoC_IContainerBuilder_RegisterFactory__1_System_Func_InfinniPlatform_Sdk_IoC_IContainerResolver___0___examples">Examples</h5>
+              
+RegisterFactory(r =&gt; new MyComponent())
+
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/release-1.11/apiSpec/new?filename=InfinniPlatform_Sdk_IoC_IContainerBuilder_RegisterGeneric_System_Type_.md&amp;value=---%0Auid%3A%20InfinniPlatform.Sdk.IoC.IContainerBuilder.RegisterGeneric(System.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/release-1.11/InfinniPlatform.Sdk/IoC/IContainerBuilder.cs/#L41">View Source</a>
+              </span>
+              <a id="InfinniPlatform_Sdk_IoC_IContainerBuilder_RegisterGeneric_" data-uid="InfinniPlatform.Sdk.IoC.IContainerBuilder.RegisterGeneric*"></a>
+              <h4 id="InfinniPlatform_Sdk_IoC_IContainerBuilder_RegisterGeneric_System_Type_" data-uid="InfinniPlatform.Sdk.IoC.IContainerBuilder.RegisterGeneric(System.Type)">RegisterGeneric(Type)</h4>
+              <div class="markdown level1 summary"><p>Регистрирует компонент по его generic-типу.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IContainerRegistrationRule RegisterGeneric(Type componentType)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Type</span></td>
+                    <td><span class="parametername">componentType</span></td>
+                    <td><p>Тип, реализующий компонент.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.Sdk.IoC.IContainerRegistrationRule.html">IContainerRegistrationRule</a></td>
+                    <td><p>Правила регистрации компонента.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="InfinniPlatform_Sdk_IoC_IContainerBuilder_RegisterGeneric_System_Type__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Компонент будет создан с помощью Reflection.</p>
+</div>
+              <h5 id="InfinniPlatform_Sdk_IoC_IContainerBuilder_RegisterGeneric_System_Type__examples">Examples</h5>
+              
+RegisterGeneric(typeof(MyComponent&lt;&gt;))
+
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/release-1.11/apiSpec/new?filename=InfinniPlatform_Sdk_IoC_IContainerBuilder_RegisterInstance__1___0_.md&amp;value=---%0Auid%3A%20InfinniPlatform.Sdk.IoC.IContainerBuilder.RegisterInstance%60%601(%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/release-1.11/InfinniPlatform.Sdk/IoC/IContainerBuilder.cs/#L52">View Source</a>
+              </span>
+              <a id="InfinniPlatform_Sdk_IoC_IContainerBuilder_RegisterInstance_" data-uid="InfinniPlatform.Sdk.IoC.IContainerBuilder.RegisterInstance*"></a>
+              <h4 id="InfinniPlatform_Sdk_IoC_IContainerBuilder_RegisterInstance__1___0_" data-uid="InfinniPlatform.Sdk.IoC.IContainerBuilder.RegisterInstance``1(``0)">RegisterInstance&lt;TComponent&gt;(TComponent)</h4>
+              <div class="markdown level1 summary"><p>Регистрирует экземпляр компонента.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IContainerRegistrationRule RegisterInstance&lt;TComponent&gt;(TComponent componentInstance)where TComponent : class</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TComponent</span></td>
+                    <td><span class="parametername">componentInstance</span></td>
+                    <td><p>Экземпляр компонента.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.Sdk.IoC.IContainerRegistrationRule.html">IContainerRegistrationRule</a></td>
+                    <td><p>Правила регистрации компонента.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">TComponent</span></td>
+                    <td><p>Тип, реализующий компонент.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="InfinniPlatform_Sdk_IoC_IContainerBuilder_RegisterInstance__1___0__examples">Examples</h5>
+              
+RegisterInstance(new MyComponent())
+
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/release-1.11/apiSpec/new?filename=InfinniPlatform_Sdk_IoC_IContainerBuilder_RegisterType_System_Type_.md&amp;value=---%0Auid%3A%20InfinniPlatform.Sdk.IoC.IContainerBuilder.RegisterType(System.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/release-1.11/InfinniPlatform.Sdk/IoC/IContainerBuilder.cs/#L30">View Source</a>
+              </span>
+              <a id="InfinniPlatform_Sdk_IoC_IContainerBuilder_RegisterType_" data-uid="InfinniPlatform.Sdk.IoC.IContainerBuilder.RegisterType*"></a>
+              <h4 id="InfinniPlatform_Sdk_IoC_IContainerBuilder_RegisterType_System_Type_" data-uid="InfinniPlatform.Sdk.IoC.IContainerBuilder.RegisterType(System.Type)">RegisterType(Type)</h4>
+              <div class="markdown level1 summary"><p>Регистрирует компонент по его типу.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IContainerRegistrationRule RegisterType(Type componentType)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Type</span></td>
+                    <td><span class="parametername">componentType</span></td>
+                    <td><p>Тип, реализующий компонент.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.Sdk.IoC.IContainerRegistrationRule.html">IContainerRegistrationRule</a></td>
+                    <td><p>Правила регистрации компонента.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="InfinniPlatform_Sdk_IoC_IContainerBuilder_RegisterType_System_Type__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Компонент будет создан с помощью Reflection.</p>
+</div>
+              <h5 id="InfinniPlatform_Sdk_IoC_IContainerBuilder_RegisterType_System_Type__examples">Examples</h5>
+              
+RegisterType(typeof(MyComponent))
+
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/release-1.11/apiSpec/new?filename=InfinniPlatform_Sdk_IoC_IContainerBuilder_RegisterType__1.md&amp;value=---%0Auid%3A%20InfinniPlatform.Sdk.IoC.IContainerBuilder.RegisterType%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/release-1.11/InfinniPlatform.Sdk/IoC/IContainerBuilder.cs/#L19">View Source</a>
+              </span>
+              <a id="InfinniPlatform_Sdk_IoC_IContainerBuilder_RegisterType_" data-uid="InfinniPlatform.Sdk.IoC.IContainerBuilder.RegisterType*"></a>
+              <h4 id="InfinniPlatform_Sdk_IoC_IContainerBuilder_RegisterType__1" data-uid="InfinniPlatform.Sdk.IoC.IContainerBuilder.RegisterType``1">RegisterType&lt;TComponent&gt;()</h4>
+              <div class="markdown level1 summary"><p>Регистрирует компонент по его типу.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IContainerRegistrationRule RegisterType&lt;TComponent&gt;()where TComponent : class</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.Sdk.IoC.IContainerRegistrationRule.html">IContainerRegistrationRule</a></td>
+                    <td><p>Правила регистрации компонента.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">TComponent</span></td>
+                    <td><p>Тип, реализующий компонент.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="InfinniPlatform_Sdk_IoC_IContainerBuilder_RegisterType__1_remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Компонент будет создан с помощью Reflection.</p>
+</div>
+              <h5 id="InfinniPlatform_Sdk_IoC_IContainerBuilder_RegisterType__1_examples">Examples</h5>
+              
+RegisterType&lt;MyComponent&gt;()
+
+              <h3 id="extensionmethods">Extension Methods</h3>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Scheduler.Contract.SchedulerExtensions.html#InfinniPlatform_Scheduler_Contract_SchedulerExtensions_RegisterJobInfoSources_InfinniPlatform_Sdk_IoC_IContainerBuilder_System_Reflection_Assembly_">SchedulerExtensions.RegisterJobInfoSources(IContainerBuilder, Assembly)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Scheduler.Contract.SchedulerExtensions.html#InfinniPlatform_Scheduler_Contract_SchedulerExtensions_RegisterJobHandlers_InfinniPlatform_Sdk_IoC_IContainerBuilder_System_Reflection_Assembly_">SchedulerExtensions.RegisterJobHandlers(IContainerBuilder, Assembly)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Queues.QueuesExtentions.html#InfinniPlatform_Sdk_Queues_QueuesExtentions_RegisterConsumers_InfinniPlatform_Sdk_IoC_IContainerBuilder_System_Reflection_Assembly_">QueuesExtentions.RegisterConsumers(IContainerBuilder, Assembly)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.DynamicWrapperExtensions.html#InfinniPlatform_Sdk_Dynamic_DynamicWrapperExtensions_ToDynamic_System_Object_">DynamicWrapperExtensions.ToDynamic(Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.DynamicWrapperExtensions.html#InfinniPlatform_Sdk_Dynamic_DynamicWrapperExtensions_ToEnumerable_System_Object_">DynamicWrapperExtensions.ToEnumerable(Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_GetProperty_System_Object_System_String_">ObjectHelper.GetProperty(Object, String)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_SetProperty_System_Object_System_String_System_Object_">ObjectHelper.SetProperty(Object, String, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_ReplaceProperties_System_Object_System_Object_">ObjectHelper.ReplaceProperties(Object, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_GetItem_System_Object_System_Int32_">ObjectHelper.GetItem(Object, Int32)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_SetItem_System_Object_System_Int32_System_Object_">ObjectHelper.SetItem(Object, Int32, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_AddItem_System_Object_System_Object_">ObjectHelper.AddItem(Object, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_ReplaceItem_System_Object_System_Object_System_Object_">ObjectHelper.ReplaceItem(Object, Object, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_MoveItem_System_Object_System_Object_System_Int32_">ObjectHelper.MoveItem(Object, Object, Int32)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_InsertItem_System_Object_System_Int32_System_Object_">ObjectHelper.InsertItem(Object, Int32, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_RemoveItem_System_Object_System_Object_">ObjectHelper.RemoveItem(Object, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_RemoveItemAt_System_Object_System_Int32_">ObjectHelper.RemoveItemAt(Object, Int32)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_GetIndexProperty_System_Object_System_Collections_Generic_IEnumerable_System_Object__">ObjectHelper.GetIndexProperty(Object, IEnumerable&lt;Object&gt;)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_IsInstanceOfType_System_Object_System_Type_">ReflectionExtensions.IsInstanceOfType(Object, Type)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_GetMemberValue_System_Object_System_String_">ReflectionExtensions.GetMemberValue(Object, String)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_SetMemberValue_System_Object_System_String_System_Object_">ReflectionExtensions.SetMemberValue(Object, String, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_InvokeMember_System_Object_System_String_System_Object___System_Object__System_Type___">ReflectionExtensions.InvokeMember(Object, String, Object[], out Object, Type[])</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_GetFieldValue_System_Object_System_Reflection_FieldInfo_">ReflectionExtensions.GetFieldValue(Object, FieldInfo)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_SetFieldValue_System_Object_System_Reflection_FieldInfo_System_Object_">ReflectionExtensions.SetFieldValue(Object, FieldInfo, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_GetPropertyValue_System_Object_System_Reflection_PropertyInfo_">ReflectionExtensions.GetPropertyValue(Object, PropertyInfo)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_">ReflectionExtensions.SetPropertyValue(Object, PropertyInfo, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_GetMethodDelegate_System_Object_System_Reflection_MethodInfo_">ReflectionExtensions.GetMethodDelegate(Object, MethodInfo)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_GetEventDelegate_System_Object_System_Reflection_EventInfo_">ReflectionExtensions.GetEventDelegate(Object, EventInfo)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_SetEventDelegate_System_Object_System_Reflection_EventInfo_System_Object_">ReflectionExtensions.SetEventDelegate(Object, EventInfo, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.IoC.ContainerExtensions.html#InfinniPlatform_Sdk_IoC_ContainerExtensions_RegisterAssemblyTypes_InfinniPlatform_Sdk_IoC_IContainerBuilder_System_Reflection_Assembly_System_Func_System_Type_System_Boolean__System_Action_InfinniPlatform_Sdk_IoC_IContainerRegistrationRule__">ContainerExtensions.RegisterAssemblyTypes(IContainerBuilder, Assembly, Func&lt;Type, Boolean&gt;, Action&lt;IContainerRegistrationRule&gt;)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Documents.Services.DocumentHttpServiceExtensions.html#InfinniPlatform_Sdk_Documents_Services_DocumentHttpServiceExtensions_RegisterDocumentHttpService_InfinniPlatform_Sdk_IoC_IContainerBuilder_System_String_">DocumentHttpServiceExtensions.RegisterDocumentHttpService(IContainerBuilder, String)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Documents.Services.DocumentHttpServiceExtensions.html#InfinniPlatform_Sdk_Documents_Services_DocumentHttpServiceExtensions_RegisterDocumentHttpService__1_InfinniPlatform_Sdk_IoC_IContainerBuilder_System_String_">DocumentHttpServiceExtensions.RegisterDocumentHttpService&lt;TDocument&gt;(IContainerBuilder, String)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Documents.Services.DocumentHttpServiceExtensions.html#InfinniPlatform_Sdk_Documents_Services_DocumentHttpServiceExtensions_RegisterDocumentHttpServiceType_InfinniPlatform_Sdk_IoC_IContainerBuilder_System_Type_">DocumentHttpServiceExtensions.RegisterDocumentHttpServiceType(IContainerBuilder, Type)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Documents.Services.DocumentHttpServiceExtensions.html#InfinniPlatform_Sdk_Documents_Services_DocumentHttpServiceExtensions_RegisterDocumentHttpServiceType__1_InfinniPlatform_Sdk_IoC_IContainerBuilder_">DocumentHttpServiceExtensions.RegisterDocumentHttpServiceType&lt;TServiceHandler&gt;(IContainerBuilder)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Documents.Services.DocumentHttpServiceExtensions.html#InfinniPlatform_Sdk_Documents_Services_DocumentHttpServiceExtensions_RegisterDocumentHttpServiceInstance__1_InfinniPlatform_Sdk_IoC_IContainerBuilder___0_">DocumentHttpServiceExtensions.RegisterDocumentHttpServiceInstance&lt;TServiceHandler&gt;(IContainerBuilder, TServiceHandler)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Documents.Services.DocumentHttpServiceExtensions.html#InfinniPlatform_Sdk_Documents_Services_DocumentHttpServiceExtensions_RegisterDocumentHttpServices_InfinniPlatform_Sdk_IoC_IContainerBuilder_System_Reflection_Assembly_">DocumentHttpServiceExtensions.RegisterDocumentHttpServices(IContainerBuilder, Assembly)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Http.Services.ServiceExtentions.html#InfinniPlatform_Sdk_Http_Services_ServiceExtentions_RegisterHttpServices_InfinniPlatform_Sdk_IoC_IContainerBuilder_System_Reflection_Assembly_">ServiceExtentions.RegisterHttpServices(IContainerBuilder, Assembly)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Core.Extensions.CommonExtensions.html#InfinniPlatform_Core_Extensions_CommonExtensions_ExecuteSilent__1___0_System_Action___0__">CommonExtensions.ExecuteSilent&lt;T&gt;(T, Action&lt;T&gt;)</a>
+              </div>
+                        </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/release-1.11/apiSpec/new?filename=InfinniPlatform_Sdk_IoC_IContainerBuilder.md&amp;value=---%0Auid%3A%20InfinniPlatform.Sdk.IoC.IContainerBuilder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/release-1.11/InfinniPlatform.Sdk/IoC/IContainerBuilder.cs/#L8" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © Copyright Infinnity Solutions Ltd, 2010–2017.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
