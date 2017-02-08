@@ -10,15 +10,16 @@ import sys
 import os
 import datetime
 
-# PYTHONPATH = docs/source
-DOC_SOURCES_DIR = os.path.dirname(os.path.abspath(__file__))
-PROJECT_ROOT_DIR = os.path.dirname(os.path.dirname(DOC_SOURCES_DIR))
-sys.path.insert(0, DOC_SOURCES_DIR)
-
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 #sys.path.insert(0, os.path.abspath('.'))
+
+# PYTHONPATH = docs/source
+DOC_SOURCES_DIR = os.path.dirname(os.path.abspath(__file__))
+PROJECT_ROOT_DIR = os.path.dirname(os.path.dirname(DOC_SOURCES_DIR))
+sys.path.insert(0, DOC_SOURCES_DIR)
+print(PROJECT_ROOT_DIR)
 
 # -- General configuration ------------------------------------------------
 
@@ -381,4 +382,4 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
 else:
     # hack for lacking git-lfs support on rtd
     from git_lfs import fetch
-    fetch(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
+    fetch(PROJECT_ROOT_DIR)
