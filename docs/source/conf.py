@@ -373,3 +373,7 @@ if not on_rtd:  # only import and set the theme if we're building docs locally
     import sphinx_rtd_theme
     html_theme = 'sphinx_rtd_theme'
     html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+else:
+    # hack for lacking git-lfs support on rtd
+    from git_lfs import fetch
+    fetch(os.path.dirname(os.path.dirname(os.path.dirname(__file__))))
