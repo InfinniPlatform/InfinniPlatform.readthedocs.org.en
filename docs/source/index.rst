@@ -41,6 +41,7 @@ as well to all.
    16-security/index.rst
    17-scheduler/index.rst
    18-deploy/index.rst
+   API Reference <../api/reference/index.html#://>
    release-notes/index.rst
 
 Indices and tables

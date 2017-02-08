@@ -19,15 +19,15 @@
                     "src": "../../../InfinniPlatform"
                 }
             ],
-            "dest": "api"
+            "dest": "reference"
         }
     ],
     "build": {
         "content": [
             {
                 "files": [
-                    "api/**.yml",
-                    "api/index.md"
+                    "reference/**.yml",
+                    "reference/index.md"
                 ]
             },
             {
@@ -41,11 +41,12 @@
                 ]
             }
         ],
-        "dest": "../source/_docfx/reference",
+        "dest": "../source/_docfx/api",
         "globalMetadataFiles": [],
         "globalMetadata": {
-            "_disableNavbar": "true",
-            "_appFooter": "© Copyright Infinnity Solutions Ltd, 2010–2017."
+            "_appFooter": "© Copyright Infinnity Solutions Ltd, 2010–2017.",
+            "_appLogoPath": "../../_static/favicon.png",
+            "_appFaviconPath": "../../_static/favicon.png"
         },
         "fileMetadataFiles": [],
         "template": [
