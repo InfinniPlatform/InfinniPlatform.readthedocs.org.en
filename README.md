@@ -14,6 +14,4 @@ Local version of the documentation will be on http://127.0.0.1:8000/.
 
 After that you can change sources and see how it will be looked.
 
-|build|
-
-.. |build| image:: https://img.shields.io/badge/docs-latest-brightgreen.svg?style=flat
+![ReadTheDocs.org build](https://readthedocs.org/projects/infinniplatform-en/badge/?version=latest)
