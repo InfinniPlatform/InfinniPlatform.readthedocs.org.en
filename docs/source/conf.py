@@ -19,7 +19,15 @@ import datetime
 DOC_SOURCES_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT_DIR = os.path.dirname(os.path.dirname(DOC_SOURCES_DIR))
 sys.path.insert(0, DOC_SOURCES_DIR)
-print(PROJECT_ROOT_DIR)
+print('PROJECT_ROOT_DIR', PROJECT_ROOT_DIR)
+
+# If runs on ReadTheDocs environment
+on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
+
+# Hack for lacking git-lfs support ReadTheDocs
+if on_rtd:
+    from git_lfs import fetch
+    fetch(PROJECT_ROOT_DIR)
 
 # -- General configuration ------------------------------------------------
 
@@ -374,12 +382,8 @@ epub_exclude_files = ['search.html']
 # If false, no index is generated.
 #epub_use_index = True
 
-on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
-if not on_rtd:  # only import and set the theme if we're building docs locally
+# Only import and set the theme if we're building docs locally
+if not on_rtd:
     import sphinx_rtd_theme
     html_theme = 'sphinx_rtd_theme'
     html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
-else:
-    # hack for lacking git-lfs support on rtd
-    from git_lfs import fetch
-    fetch(PROJECT_ROOT_DIR)
