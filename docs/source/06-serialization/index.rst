@@ -13,17 +13,16 @@ mechanism is used in most of cases especially on the system layer but at the sam
 .. index:: IJsonObjectSerializer
 .. index:: JsonObjectSerializer
 
-Data Serialization is represented as ``InfinniPlatform.Sdk.Serialization.JsonObjectSerializer`` class which implements two interfaces from the same
-namespace - ``IObjectSerializer`` and ``IJsonObjectSerializer``. The first - ``IObjectSerializer`` declares common methods of serializers. The second -
-``IJsonObjectSerializer`` extends the first and contains few special methods which are appropriate to JSON format.
+Data Serialization is represented as `JsonObjectSerializer`_ class which implements two interfaces from the same namespace - `IObjectSerializer`_
+and `IJsonObjectSerializer`_. The first - `IObjectSerializer`_ declares common methods of serializers. The second - `IJsonObjectSerializer`_ extends
+the first and contains few special methods which are appropriate to JSON format.
 
-``JsonObjectSerializer`` class is thread-safe and it has two singleton instances - ``JsonObjectSerializer.Default`` and ``JsonObjectSerializer.Formated``.
-``Default`` instance uses UTF-8 encoding (without BOM) and serializes objects without formatting. ``Formated`` instance is the same as ``Default`` but
-serializes objects with formatting (for getting easy-to-read JSON). Both of them do not have any other settings which you can pass to the constructor
-of ``JsonObjectSerializer``. You can use ``Default`` and ``Formated`` instances explicitly but if you have access to :doc:`IoC Container </02-ioc/index>`
-we strongly recommend getting instance ``IJsonObjectSerializer`` via IoC. For example acquire ``IJsonObjectSerializer`` through
-:doc:`a constructor </02-ioc/container-resolver>` of the class where you need this dependency. It allows to use the same settings
-of the data serialization in an application and customize them in one place.
+`JsonObjectSerializer`_ class is thread-safe and it has two singleton instances - `Default`_ and `Formated`_. `Default`_ instance uses UTF-8 encoding
+(without BOM) and serializes objects without formatting. `Formated`_ instance is the same as `Default`_ but serializes objects with formatting (for
+getting easy-to-read JSON). Both of them do not have any other settings which you can pass to the constructor of `JsonObjectSerializer`_. You can use
+`Default`_ and `Formated`_ instances explicitly but if you have access to :doc:`IoC Container </02-ioc/index>` we strongly recommend getting instance
+`IJsonObjectSerializer`_ via IoC. For example acquire `IJsonObjectSerializer`_ through :doc:`a constructor </02-ioc/container-resolver>` of the class
+where you need this dependency. It allows to use the same settings of the data serialization in an application and customize them in one place.
 
 
 .. toctree::
@@ -38,3 +37,8 @@ of the data serialization in an application and customize them in one place.
 
 
 .. _`Json.NET`: http://www.newtonsoft.com/json
+.. _`JsonObjectSerializer`: /api/reference/InfinniPlatform.Sdk.Serialization.JsonObjectSerializer.html
+.. _`IObjectSerializer`: /api/reference/InfinniPlatform.Sdk.Serialization.IObjectSerializer.html
+.. _`IJsonObjectSerializer`: /api/reference/InfinniPlatform.Sdk.Serialization.IJsonObjectSerializer.html
+.. _`Default`: /api/reference/InfinniPlatform.Sdk.Serialization.JsonObjectSerializer.html#InfinniPlatform_Sdk_Serialization_JsonObjectSerializer_Default
+.. _`Formated`: /api/reference/InfinniPlatform.Sdk.Serialization.JsonObjectSerializer.html#InfinniPlatform_Sdk_Serialization_JsonObjectSerializer_Formated
