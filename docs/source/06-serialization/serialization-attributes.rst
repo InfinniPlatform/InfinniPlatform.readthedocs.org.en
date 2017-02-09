@@ -1,7 +1,7 @@
 Serialization Attributes
 ========================
 
-Attributes can be used to control how ``JsonObjectSerializer`` serializes and deserializes .NET objects.
+Attributes can be used to control how `JsonObjectSerializer`_ serializes and deserializes .NET objects.
 
 
 .. index:: NonSerializedAttribute
@@ -30,13 +30,13 @@ exclude properties which can be calculated from other fields.
 
 
 .. index:: SerializerVisibleAttribute
-.. _SerializerVisibleAttribute:
+.. _SerializerVisibleAttribute-Ref:
 
 SerializerVisibleAttribute
 --------------------------
 
-The ``SerializerVisibleAttribute`` includes a field or property to serialization. By default non-public fields and properties as well as properties
-with non-public setters (or without them) are excluded from serialization. This attribute is the opposite `NonSerializedAttribute`.
+The `SerializerVisibleAttribute`_ includes a field or property to serialization. By default non-public fields and properties as well as properties
+with non-public setters (or without them) are excluded from serialization. This attribute is the opposite `NonSerializedAttribute`_.
 
 .. code-block:: csharp
    :emphasize-lines: 3,6
@@ -52,12 +52,12 @@ with non-public setters (or without them) are excluded from serialization. This 
 
 
 .. index:: SerializerPropertyNameAttribute
-.. _SerializerPropertyNameAttribute:
+.. _SerializerPropertyNameAttribute-Ref:
 
 SerializerPropertyNameAttribute
 -------------------------------
 
-The ``SerializerPropertyNameAttribute`` sets specified property name while serialization. By default, the JSON property will have the same name as
+The `SerializerPropertyNameAttribute`_ sets specified property name while serialization. By default, the JSON property will have the same name as
 the .NET property. This attribute allows the name to be customized.
 
 .. code-block:: csharp
@@ -74,3 +74,6 @@ the .NET property. This attribute allows the name to be customized.
 
 
 .. _`NonSerializedAttribute`: https://msdn.microsoft.com/en-US/library/system.nonserializedattribute(v=vs.110).aspx
+.. _`JsonObjectSerializer`: /api/reference/InfinniPlatform.Sdk.Serialization.JsonObjectSerializer.html
+.. _`SerializerVisibleAttribute`: /api/reference/InfinniPlatform.Sdk.Serialization.SerializerVisibleAttribute.html
+.. _`SerializerPropertyNameAttribute`: /api/reference/InfinniPlatform.Sdk.Serialization.SerializerPropertyNameAttribute.html

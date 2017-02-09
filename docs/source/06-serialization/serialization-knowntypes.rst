@@ -1,8 +1,8 @@
 Serialization Known Types
 =========================
 
-By default ``JsonObjectSerializer`` does not include any type information into resultant JSON. So if a serializable type contains a property with
-an abstract type serialization will be successful but not deserialization. It is because ``JsonObjectSerializer`` does not have any information
+By default `JsonObjectSerializer`_ does not include any type information into resultant JSON. So if a serializable type contains a property with
+an abstract type serialization will be successful but not deserialization. It is because `JsonObjectSerializer`_ does not have any information
 about specific type of the property.
 
 .. code-block:: csharp
@@ -56,7 +56,7 @@ about specific type of the property.
     // JsonSerializationException:  Could not create an instance of type I.
     // Type is an interface or abstract class and cannot be instantiated.
 
-To solve this problem you can use ``KnownTypesContainer`` and pass it into the ``JsonObjectSerializer`` constructor directly or via :doc:`IoC Container </02-ioc/index>`.
+To solve this problem you can use `KnownTypesContainer`_ and pass it into the `JsonObjectSerializer`_ constructor directly or via :doc:`IoC Container </02-ioc/index>`.
 Known types allow to include type information into resultant JSON during serialization and rely on it during deserialization. All you need is to add
 an unique alias for each type which can be use as value of a property with abstract type.
 
@@ -98,3 +98,7 @@ an unique alias for each type which can be use as value of a property with abstr
 
     Console.WriteLine(((B)result.Property2).PropertyB);
     // ValueB
+
+
+.. _`JsonObjectSerializer`: /api/reference/InfinniPlatform.Sdk.Serialization.JsonObjectSerializer.html
+.. _`KnownTypesContainer`: /api/reference/InfinniPlatform.Sdk.Serialization.KnownTypesContainer.html

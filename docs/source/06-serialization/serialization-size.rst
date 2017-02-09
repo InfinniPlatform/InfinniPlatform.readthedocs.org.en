@@ -45,7 +45,7 @@ to serialize. Only the properties you mark up will be serialized.
         public int Age { get; set; }
     }
 
-Also you can change property names and make them shorter using :ref:`SerializerPropertyNameAttribute <serializerpropertynameattribute>` (but it can
+Also you can change property names and make them shorter using :ref:`SerializerPropertyNameAttribute <serializerpropertynameattribute-ref>` (but it can
 influence on readability your JSON).
 
 .. code-block:: csharp
@@ -92,6 +92,7 @@ the other hand keeps the JSON result small, skipping all unnecessary spaces and 
 
 For more complex cases you can use :doc:`serialization converters </06-serialization/serialization-converters>` which provide a way to customize how
 an object will be serialised and deserialized, including changing serialization behavior at runtime.
+
 
 .. _`NonSerializedAttribute`: https://msdn.microsoft.com/en-US/library/system.nonserializedattribute(v=vs.110).aspx
 .. _`DataContractAttribute`: https://msdn.microsoft.com/en-US/library/system.runtime.serialization.datacontractattribute(v=vs.110).aspx

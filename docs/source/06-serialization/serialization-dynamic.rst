@@ -3,7 +3,7 @@
 Serialization Dynamic Objects
 =============================
 
-The ``JsonObjectSerializer`` supports :doc:`dynamic objects </01-dynamic/index>`.
+The `JsonObjectSerializer`_ supports :doc:`dynamic objects </01-dynamic/index>`.
 
 .. code-block:: csharp
    :emphasize-lines: 1,19
@@ -36,3 +36,6 @@ The ``JsonObjectSerializer`` supports :doc:`dynamic objects </01-dynamic/index>`
 
     Console.WriteLine(result.Birthday);
     //1/2/2000 3:04:05 AM
+
+
+.. _`JsonObjectSerializer`: /api/reference/InfinniPlatform.Sdk.Serialization.JsonObjectSerializer.html

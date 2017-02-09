@@ -6,12 +6,12 @@ Serialization Error Handling
 InfinniPlatform supports error handling during serialization and deserialization. Error handling lets you catch an error and choose whether to handle
 it and continue with serialization or let the error bubble up and be thrown in your application.
 
-To handle serialization errors you need to implement the interface ``InfinniPlatform.Sdk.Serialization.ISerializerErrorHandler`` and pass it into
-the ``JsonObjectSerializer`` constructor directly or via :doc:`IoC Container </02-ioc/index>`. The ``ISerializerErrorHandler`` has the only one method
-``Handle()``. It is called whenever an exception is thrown while serializing or deserializing JSON.
+To handle serialization errors you need to implement the interface `ISerializerErrorHandler`_ and pass it into the `JsonObjectSerializer`_ constructor
+directly or via :doc:`IoC Container </02-ioc/index>`. The `ISerializerErrorHandler`_ has the only one method ``Handle()``. It is called whenever
+an exception is thrown while serializing or deserializing JSON.
 
-.. note:: The ``IgnoreSerializerErrorHandler`` implements ``ISerializerErrorHandler`` and ignores all exceptions. This handler allows to skip
-          properties whose getters and setters can throw exceptions.
+.. note:: The `IgnoreSerializerErrorHandler`_ implements `ISerializerErrorHandler`_ and ignores all exceptions. This handler allows to skip properties
+          whose getters and setters can throw exceptions.
 
 Next example ignores all exceptions during serialization and deserialization.
 
@@ -62,3 +62,8 @@ Next example ignores all exceptions during serialization and deserialization.
     //{
     //  "Property1": "Value1"
     //}
+
+
+.. _`JsonObjectSerializer`: /api/reference/InfinniPlatform.Sdk.Serialization.JsonObjectSerializer.html
+.. _`ISerializerErrorHandler`: /api/reference/InfinniPlatform.Sdk.Serialization.ISerializerErrorHandler.html
+.. _`IgnoreSerializerErrorHandler`: /api/reference/InfinniPlatform.Sdk.Serialization.IgnoreSerializerErrorHandler.html
