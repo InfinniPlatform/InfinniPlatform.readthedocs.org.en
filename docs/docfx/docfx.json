@@ -47,11 +47,12 @@
             "_appFooter": "© Copyright Infinnity Solutions Ltd, 2010–2017.",
             "_appLogoPath": "../../_static/favicon.png",
             "_appFaviconPath": "../../_static/favicon.png",
-            "_enableSearch": true
+            "_enableSearch": false
         },
         "fileMetadataFiles": [],
         "template": [
-            "default"
+            "default",
+            "_exported_templates/default"
         ],
         "postProcessors": [],
         "noLangKeyword": false

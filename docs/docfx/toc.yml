@@ -1,6 +1,3 @@
-- name: Documentation
+- name: InfinniPlatform Documentation
   href: ../
   homepage: ../
-- name: API Reference
-  href: reference/
-  homepage: reference/index.md

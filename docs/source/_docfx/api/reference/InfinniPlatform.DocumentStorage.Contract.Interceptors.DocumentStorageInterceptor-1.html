@@ -1,0 +1,1135 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DocumentStorageInterceptor&lt;TDocument&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DocumentStorageInterceptor&lt;TDocument&gt;
+   ">
+    <meta name="generator" content="docfx 2.11.2.0">
+    
+    <link rel="shortcut icon" href="../../../_static/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../../../_static/favicon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1" data-uid="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor`1">Class DocumentStorageInterceptor&lt;TDocument&gt;
+              </h1>
+              <div class="markdown level0 summary"><p>Базовый класс для обработчика событий изменения документов в хранилище.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor.html">DocumentStorageInterceptor</a></div>
+                  <div class="level2"><span class="xref">DocumentStorageInterceptor&lt;TDocument&gt;</span></div>
+              </div>
+              <div class="inheritedMembers">
+                <h5>Inherited Members</h5>
+                <div>
+                  <a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor.html#InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_DocumentType">DocumentStorageInterceptor.DocumentType</a>
+                </div>
+                <div>
+                  <a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor.html#InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_OnBeforeInsertOne_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentInsertOneCommand_">DocumentStorageInterceptor.OnBeforeInsertOne(DocumentInsertOneCommand)</a>
+                </div>
+                <div>
+                  <a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor.html#InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_OnAfterInsertOne_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentInsertOneCommand_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageWriteResult_System_Object__System_Exception_">DocumentStorageInterceptor.OnAfterInsertOne(DocumentInsertOneCommand, DocumentStorageWriteResult&lt;Object&gt;, Exception)</a>
+                </div>
+                <div>
+                  <a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor.html#InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_OnBeforeInsertMany_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentInsertManyCommand_">DocumentStorageInterceptor.OnBeforeInsertMany(DocumentInsertManyCommand)</a>
+                </div>
+                <div>
+                  <a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor.html#InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_OnAfterInsertMany_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentInsertManyCommand_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageWriteResult_System_Object__System_Exception_">DocumentStorageInterceptor.OnAfterInsertMany(DocumentInsertManyCommand, DocumentStorageWriteResult&lt;Object&gt;, Exception)</a>
+                </div>
+                <div>
+                  <a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor.html#InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_OnBeforeUpdateOne_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentUpdateOneCommand_">DocumentStorageInterceptor.OnBeforeUpdateOne(DocumentUpdateOneCommand)</a>
+                </div>
+                <div>
+                  <a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor.html#InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_OnAfterUpdateOne_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentUpdateOneCommand_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageWriteResult_InfinniPlatform_DocumentStorage_Contract_DocumentUpdateResult__System_Exception_">DocumentStorageInterceptor.OnAfterUpdateOne(DocumentUpdateOneCommand, DocumentStorageWriteResult&lt;DocumentUpdateResult&gt;, Exception)</a>
+                </div>
+                <div>
+                  <a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor.html#InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_OnBeforeUpdateMany_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentUpdateManyCommand_">DocumentStorageInterceptor.OnBeforeUpdateMany(DocumentUpdateManyCommand)</a>
+                </div>
+                <div>
+                  <a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor.html#InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_OnAfterUpdateMany_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentUpdateManyCommand_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageWriteResult_InfinniPlatform_DocumentStorage_Contract_DocumentUpdateResult__System_Exception_">DocumentStorageInterceptor.OnAfterUpdateMany(DocumentUpdateManyCommand, DocumentStorageWriteResult&lt;DocumentUpdateResult&gt;, Exception)</a>
+                </div>
+                <div>
+                  <a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor.html#InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_OnBeforeReplaceOne_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentReplaceOneCommand_">DocumentStorageInterceptor.OnBeforeReplaceOne(DocumentReplaceOneCommand)</a>
+                </div>
+                <div>
+                  <a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor.html#InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_OnAfterReplaceOne_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentReplaceOneCommand_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageWriteResult_InfinniPlatform_DocumentStorage_Contract_DocumentUpdateResult__System_Exception_">DocumentStorageInterceptor.OnAfterReplaceOne(DocumentReplaceOneCommand, DocumentStorageWriteResult&lt;DocumentUpdateResult&gt;, Exception)</a>
+                </div>
+                <div>
+                  <a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor.html#InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_OnBeforeDeleteOne_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentDeleteOneCommand_">DocumentStorageInterceptor.OnBeforeDeleteOne(DocumentDeleteOneCommand)</a>
+                </div>
+                <div>
+                  <a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor.html#InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_OnAfterDeleteOne_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentDeleteOneCommand_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageWriteResult_System_Int64__System_Exception_">DocumentStorageInterceptor.OnAfterDeleteOne(DocumentDeleteOneCommand, DocumentStorageWriteResult&lt;Int64&gt;, Exception)</a>
+                </div>
+                <div>
+                  <a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor.html#InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_OnBeforeDeleteMany_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentDeleteManyCommand_">DocumentStorageInterceptor.OnBeforeDeleteMany(DocumentDeleteManyCommand)</a>
+                </div>
+                <div>
+                  <a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor.html#InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_OnAfterDeleteMany_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentDeleteManyCommand_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageWriteResult_System_Int64__System_Exception_">DocumentStorageInterceptor.OnAfterDeleteMany(DocumentDeleteManyCommand, DocumentStorageWriteResult&lt;Int64&gt;, Exception)</a>
+                </div>
+                <div>
+                  <a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor.html#InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_OnBeforeBulk_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentBulkCommand_">DocumentStorageInterceptor.OnBeforeBulk(DocumentBulkCommand)</a>
+                </div>
+                <div>
+                  <a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor.html#InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_OnAfterBulk_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentBulkCommand_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageWriteResult_InfinniPlatform_DocumentStorage_Contract_DocumentBulkResult__System_Exception_">DocumentStorageInterceptor.OnAfterBulk(DocumentBulkCommand, DocumentStorageWriteResult&lt;DocumentBulkResult&gt;, Exception)</a>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ToString()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetHashCode()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.GetType()</span>
+                </div>
+                <div>
+                  <span class="xref">System.Object.MemberwiseClone()</span>
+                </div>
+              </div>
+              <h6><strong>Namespace</strong>:InfinniPlatform.DocumentStorage.Contract.Interceptors</h6>
+              <h6><strong>Assembly</strong>:InfinniPlatform.DocumentStorage.dll</h6>
+              <h5 id="InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract class DocumentStorageInterceptor&lt;TDocument&gt; : DocumentStorageInterceptor, IDocumentStorageInterceptor&lt;TDocument&gt;, IDocumentStorageInterceptor</code></pre>
+              </div>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">TDocument</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="constructors">Constructors
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1__ctor_System_String_.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor%601.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage/Contract/Interceptors/DocumentStorageInterceptor.cs/#L196">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1__ctor_" data-uid="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor`1.#ctor*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1__ctor_System_String_" data-uid="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor`1.#ctor(System.String)">DocumentStorageInterceptor(String)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected DocumentStorageInterceptor(string documentType = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">documentType</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnAfterBulk_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentBulkCommand__0__InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageWriteResult_InfinniPlatform_DocumentStorage_Contract_DocumentBulkResult__System_Exception_.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor%601.OnAfterBulk(InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentBulkCommand%7B%600%7D%2CInfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageWriteResult%7BInfinniPlatform.DocumentStorage.Contract.DocumentBulkResult%7D%2CSystem.Exception)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage/Contract/Interceptors/DocumentStorageInterceptor.cs/#L365">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnAfterBulk_" data-uid="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor`1.OnAfterBulk*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnAfterBulk_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentBulkCommand__0__InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageWriteResult_InfinniPlatform_DocumentStorage_Contract_DocumentBulkResult__System_Exception_" data-uid="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor`1.OnAfterBulk(InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentBulkCommand{`0},InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageWriteResult{InfinniPlatform.DocumentStorage.Contract.DocumentBulkResult},System.Exception)">OnAfterBulk(DocumentBulkCommand&lt;TDocument&gt;, DocumentStorageWriteResult&lt;DocumentBulkResult&gt;, Exception)</h4>
+              <div class="markdown level1 summary"><p>Вызывается после выполнения набора команд изменения документов в рамках одного запроса к хранилищу.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void OnAfterBulk(DocumentBulkCommand&lt;TDocument&gt; command, DocumentStorageWriteResult&lt;DocumentBulkResult&gt; result, Exception exception)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentBulkCommand-1.html">DocumentBulkCommand</a>&lt;TDocument&gt;</td>
+                    <td><span class="parametername">command</span></td>
+                    <td><p>Набор команд изменения документов.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageWriteResult-1.html">DocumentStorageWriteResult</a>&lt;<a class="xref" href="InfinniPlatform.DocumentStorage.Contract.DocumentBulkResult.html">DocumentBulkResult</a>&gt;</td>
+                    <td><span class="parametername">result</span></td>
+                    <td><p>Результат выполнения набора команд изменения документов.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Exception</span></td>
+                    <td><span class="parametername">exception</span></td>
+                    <td><p>Исключение, возникшее при выполнении команды.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.IDocumentStorageInterceptor-1.html#InfinniPlatform_DocumentStorage_Contract_Interceptors_IDocumentStorageInterceptor_1_OnAfterBulk_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentBulkCommand__0__InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageWriteResult_InfinniPlatform_DocumentStorage_Contract_DocumentBulkResult__System_Exception_">IDocumentStorageInterceptor&lt;TDocument&gt;.OnAfterBulk(DocumentBulkCommand&lt;TDocument&gt;, DocumentStorageWriteResult&lt;DocumentBulkResult&gt;, Exception)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnAfterDeleteMany_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentDeleteManyCommand__0__InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageWriteResult_System_Int64__System_Exception_.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor%601.OnAfterDeleteMany(InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentDeleteManyCommand%7B%600%7D%2CInfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageWriteResult%7BSystem.Int64%7D%2CSystem.Exception)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage/Contract/Interceptors/DocumentStorageInterceptor.cs/#L344">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnAfterDeleteMany_" data-uid="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor`1.OnAfterDeleteMany*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnAfterDeleteMany_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentDeleteManyCommand__0__InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageWriteResult_System_Int64__System_Exception_" data-uid="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor`1.OnAfterDeleteMany(InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentDeleteManyCommand{`0},InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageWriteResult{System.Int64},System.Exception)">OnAfterDeleteMany(DocumentDeleteManyCommand&lt;TDocument&gt;, DocumentStorageWriteResult&lt;Int64&gt;, Exception)</h4>
+              <div class="markdown level1 summary"><p>Вызывается после удаления набора документов из хранилища.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void OnAfterDeleteMany(DocumentDeleteManyCommand&lt;TDocument&gt; command, DocumentStorageWriteResult&lt;long&gt; result, Exception exception)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentDeleteManyCommand-1.html">DocumentDeleteManyCommand</a>&lt;TDocument&gt;</td>
+                    <td><span class="parametername">command</span></td>
+                    <td><p>Команда удаления набора документов.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageWriteResult-1.html">DocumentStorageWriteResult</a>&lt;<span class="xref">System.Int64</span>&gt;</td>
+                    <td><span class="parametername">result</span></td>
+                    <td><p>Результат выполнения команды удаления набора документов.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Exception</span></td>
+                    <td><span class="parametername">exception</span></td>
+                    <td><p>Исключение, возникшее при выполнении команды.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.IDocumentStorageInterceptor-1.html#InfinniPlatform_DocumentStorage_Contract_Interceptors_IDocumentStorageInterceptor_1_OnAfterDeleteMany_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentDeleteManyCommand__0__InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageWriteResult_System_Int64__System_Exception_">IDocumentStorageInterceptor&lt;TDocument&gt;.OnAfterDeleteMany(DocumentDeleteManyCommand&lt;TDocument&gt;, DocumentStorageWriteResult&lt;Int64&gt;, Exception)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnAfterDeleteOne_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentDeleteOneCommand__0__InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageWriteResult_System_Int64__System_Exception_.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor%601.OnAfterDeleteOne(InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentDeleteOneCommand%7B%600%7D%2CInfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageWriteResult%7BSystem.Int64%7D%2CSystem.Exception)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage/Contract/Interceptors/DocumentStorageInterceptor.cs/#L323">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnAfterDeleteOne_" data-uid="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor`1.OnAfterDeleteOne*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnAfterDeleteOne_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentDeleteOneCommand__0__InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageWriteResult_System_Int64__System_Exception_" data-uid="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor`1.OnAfterDeleteOne(InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentDeleteOneCommand{`0},InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageWriteResult{System.Int64},System.Exception)">OnAfterDeleteOne(DocumentDeleteOneCommand&lt;TDocument&gt;, DocumentStorageWriteResult&lt;Int64&gt;, Exception)</h4>
+              <div class="markdown level1 summary"><p>Вызывается после удаления одного документа из хранилища.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void OnAfterDeleteOne(DocumentDeleteOneCommand&lt;TDocument&gt; command, DocumentStorageWriteResult&lt;long&gt; result, Exception exception)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentDeleteOneCommand-1.html">DocumentDeleteOneCommand</a>&lt;TDocument&gt;</td>
+                    <td><span class="parametername">command</span></td>
+                    <td><p>Команда удаления одного документа.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageWriteResult-1.html">DocumentStorageWriteResult</a>&lt;<span class="xref">System.Int64</span>&gt;</td>
+                    <td><span class="parametername">result</span></td>
+                    <td><p>Результат выполнения команды удаления одного документа.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Exception</span></td>
+                    <td><span class="parametername">exception</span></td>
+                    <td><p>Исключение, возникшее при выполнении команды.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.IDocumentStorageInterceptor-1.html#InfinniPlatform_DocumentStorage_Contract_Interceptors_IDocumentStorageInterceptor_1_OnAfterDeleteOne_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentDeleteOneCommand__0__InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageWriteResult_System_Int64__System_Exception_">IDocumentStorageInterceptor&lt;TDocument&gt;.OnAfterDeleteOne(DocumentDeleteOneCommand&lt;TDocument&gt;, DocumentStorageWriteResult&lt;Int64&gt;, Exception)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnAfterInsertMany_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentInsertManyCommand__0__InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageWriteResult_System_Object__System_Exception_.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor%601.OnAfterInsertMany(InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentInsertManyCommand%7B%600%7D%2CInfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageWriteResult%7BSystem.Object%7D%2CSystem.Exception)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage/Contract/Interceptors/DocumentStorageInterceptor.cs/#L239">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnAfterInsertMany_" data-uid="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor`1.OnAfterInsertMany*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnAfterInsertMany_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentInsertManyCommand__0__InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageWriteResult_System_Object__System_Exception_" data-uid="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor`1.OnAfterInsertMany(InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentInsertManyCommand{`0},InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageWriteResult{System.Object},System.Exception)">OnAfterInsertMany(DocumentInsertManyCommand&lt;TDocument&gt;, DocumentStorageWriteResult&lt;Object&gt;, Exception)</h4>
+              <div class="markdown level1 summary"><p>Вызывается после вставки набора документов в хранилище.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void OnAfterInsertMany(DocumentInsertManyCommand&lt;TDocument&gt; command, DocumentStorageWriteResult&lt;object&gt; result, Exception exception)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentInsertManyCommand-1.html">DocumentInsertManyCommand</a>&lt;TDocument&gt;</td>
+                    <td><span class="parametername">command</span></td>
+                    <td><p>Команда вставки набора документов.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageWriteResult-1.html">DocumentStorageWriteResult</a>&lt;<span class="xref">System.Object</span>&gt;</td>
+                    <td><span class="parametername">result</span></td>
+                    <td><p>Результат вставки набора документов.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Exception</span></td>
+                    <td><span class="parametername">exception</span></td>
+                    <td><p>Исключение, возникшее при выполнении команды.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.IDocumentStorageInterceptor-1.html#InfinniPlatform_DocumentStorage_Contract_Interceptors_IDocumentStorageInterceptor_1_OnAfterInsertMany_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentInsertManyCommand__0__InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageWriteResult_System_Object__System_Exception_">IDocumentStorageInterceptor&lt;TDocument&gt;.OnAfterInsertMany(DocumentInsertManyCommand&lt;TDocument&gt;, DocumentStorageWriteResult&lt;Object&gt;, Exception)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnAfterInsertOne_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentInsertOneCommand__0__InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageWriteResult_System_Object__System_Exception_.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor%601.OnAfterInsertOne(InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentInsertOneCommand%7B%600%7D%2CInfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageWriteResult%7BSystem.Object%7D%2CSystem.Exception)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage/Contract/Interceptors/DocumentStorageInterceptor.cs/#L218">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnAfterInsertOne_" data-uid="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor`1.OnAfterInsertOne*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnAfterInsertOne_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentInsertOneCommand__0__InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageWriteResult_System_Object__System_Exception_" data-uid="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor`1.OnAfterInsertOne(InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentInsertOneCommand{`0},InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageWriteResult{System.Object},System.Exception)">OnAfterInsertOne(DocumentInsertOneCommand&lt;TDocument&gt;, DocumentStorageWriteResult&lt;Object&gt;, Exception)</h4>
+              <div class="markdown level1 summary"><p>Вызывается после вставки одного документа в хранилище.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void OnAfterInsertOne(DocumentInsertOneCommand&lt;TDocument&gt; command, DocumentStorageWriteResult&lt;object&gt; result, Exception exception)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentInsertOneCommand-1.html">DocumentInsertOneCommand</a>&lt;TDocument&gt;</td>
+                    <td><span class="parametername">command</span></td>
+                    <td><p>Команда вставки одного документа.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageWriteResult-1.html">DocumentStorageWriteResult</a>&lt;<span class="xref">System.Object</span>&gt;</td>
+                    <td><span class="parametername">result</span></td>
+                    <td><p>Результат вставки одного документа.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Exception</span></td>
+                    <td><span class="parametername">exception</span></td>
+                    <td><p>Исключение, возникшее при выполнении команды.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.IDocumentStorageInterceptor-1.html#InfinniPlatform_DocumentStorage_Contract_Interceptors_IDocumentStorageInterceptor_1_OnAfterInsertOne_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentInsertOneCommand__0__InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageWriteResult_System_Object__System_Exception_">IDocumentStorageInterceptor&lt;TDocument&gt;.OnAfterInsertOne(DocumentInsertOneCommand&lt;TDocument&gt;, DocumentStorageWriteResult&lt;Object&gt;, Exception)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnAfterReplaceOne_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentReplaceOneCommand__0__InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageWriteResult_InfinniPlatform_DocumentStorage_Contract_DocumentUpdateResult__System_Exception_.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor%601.OnAfterReplaceOne(InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentReplaceOneCommand%7B%600%7D%2CInfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageWriteResult%7BInfinniPlatform.DocumentStorage.Contract.DocumentUpdateResult%7D%2CSystem.Exception)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage/Contract/Interceptors/DocumentStorageInterceptor.cs/#L302">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnAfterReplaceOne_" data-uid="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor`1.OnAfterReplaceOne*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnAfterReplaceOne_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentReplaceOneCommand__0__InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageWriteResult_InfinniPlatform_DocumentStorage_Contract_DocumentUpdateResult__System_Exception_" data-uid="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor`1.OnAfterReplaceOne(InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentReplaceOneCommand{`0},InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageWriteResult{InfinniPlatform.DocumentStorage.Contract.DocumentUpdateResult},System.Exception)">OnAfterReplaceOne(DocumentReplaceOneCommand&lt;TDocument&gt;, DocumentStorageWriteResult&lt;DocumentUpdateResult&gt;, Exception)</h4>
+              <div class="markdown level1 summary"><p>Вызывается после замены одного документа в хранилище.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void OnAfterReplaceOne(DocumentReplaceOneCommand&lt;TDocument&gt; command, DocumentStorageWriteResult&lt;DocumentUpdateResult&gt; result, Exception exception)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentReplaceOneCommand-1.html">DocumentReplaceOneCommand</a>&lt;TDocument&gt;</td>
+                    <td><span class="parametername">command</span></td>
+                    <td><p>Команда замены одного документа.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageWriteResult-1.html">DocumentStorageWriteResult</a>&lt;<a class="xref" href="InfinniPlatform.DocumentStorage.Contract.DocumentUpdateResult.html">DocumentUpdateResult</a>&gt;</td>
+                    <td><span class="parametername">result</span></td>
+                    <td><p>Результат выполнения команды замены одного документа.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Exception</span></td>
+                    <td><span class="parametername">exception</span></td>
+                    <td><p>Исключение, возникшее при выполнении команды.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.IDocumentStorageInterceptor-1.html#InfinniPlatform_DocumentStorage_Contract_Interceptors_IDocumentStorageInterceptor_1_OnAfterReplaceOne_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentReplaceOneCommand__0__InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageWriteResult_InfinniPlatform_DocumentStorage_Contract_DocumentUpdateResult__System_Exception_">IDocumentStorageInterceptor&lt;TDocument&gt;.OnAfterReplaceOne(DocumentReplaceOneCommand&lt;TDocument&gt;, DocumentStorageWriteResult&lt;DocumentUpdateResult&gt;, Exception)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnAfterUpdateMany_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentUpdateManyCommand__0__InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageWriteResult_InfinniPlatform_DocumentStorage_Contract_DocumentUpdateResult__System_Exception_.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor%601.OnAfterUpdateMany(InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentUpdateManyCommand%7B%600%7D%2CInfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageWriteResult%7BInfinniPlatform.DocumentStorage.Contract.DocumentUpdateResult%7D%2CSystem.Exception)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage/Contract/Interceptors/DocumentStorageInterceptor.cs/#L281">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnAfterUpdateMany_" data-uid="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor`1.OnAfterUpdateMany*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnAfterUpdateMany_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentUpdateManyCommand__0__InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageWriteResult_InfinniPlatform_DocumentStorage_Contract_DocumentUpdateResult__System_Exception_" data-uid="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor`1.OnAfterUpdateMany(InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentUpdateManyCommand{`0},InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageWriteResult{InfinniPlatform.DocumentStorage.Contract.DocumentUpdateResult},System.Exception)">OnAfterUpdateMany(DocumentUpdateManyCommand&lt;TDocument&gt;, DocumentStorageWriteResult&lt;DocumentUpdateResult&gt;, Exception)</h4>
+              <div class="markdown level1 summary"><p>Вызывается после обновления набора документов в хранилище.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void OnAfterUpdateMany(DocumentUpdateManyCommand&lt;TDocument&gt; command, DocumentStorageWriteResult&lt;DocumentUpdateResult&gt; result, Exception exception)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentUpdateManyCommand-1.html">DocumentUpdateManyCommand</a>&lt;TDocument&gt;</td>
+                    <td><span class="parametername">command</span></td>
+                    <td><p>Команда обновления набора документов.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageWriteResult-1.html">DocumentStorageWriteResult</a>&lt;<a class="xref" href="InfinniPlatform.DocumentStorage.Contract.DocumentUpdateResult.html">DocumentUpdateResult</a>&gt;</td>
+                    <td><span class="parametername">result</span></td>
+                    <td><p>Результат выполнения команды обновления набора документов.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Exception</span></td>
+                    <td><span class="parametername">exception</span></td>
+                    <td><p>Исключение, возникшее при выполнении команды.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.IDocumentStorageInterceptor-1.html#InfinniPlatform_DocumentStorage_Contract_Interceptors_IDocumentStorageInterceptor_1_OnAfterUpdateMany_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentUpdateManyCommand__0__InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageWriteResult_InfinniPlatform_DocumentStorage_Contract_DocumentUpdateResult__System_Exception_">IDocumentStorageInterceptor&lt;TDocument&gt;.OnAfterUpdateMany(DocumentUpdateManyCommand&lt;TDocument&gt;, DocumentStorageWriteResult&lt;DocumentUpdateResult&gt;, Exception)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnAfterUpdateOne_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentUpdateOneCommand__0__InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageWriteResult_InfinniPlatform_DocumentStorage_Contract_DocumentUpdateResult__System_Exception_.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor%601.OnAfterUpdateOne(InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentUpdateOneCommand%7B%600%7D%2CInfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageWriteResult%7BInfinniPlatform.DocumentStorage.Contract.DocumentUpdateResult%7D%2CSystem.Exception)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage/Contract/Interceptors/DocumentStorageInterceptor.cs/#L260">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnAfterUpdateOne_" data-uid="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor`1.OnAfterUpdateOne*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnAfterUpdateOne_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentUpdateOneCommand__0__InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageWriteResult_InfinniPlatform_DocumentStorage_Contract_DocumentUpdateResult__System_Exception_" data-uid="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor`1.OnAfterUpdateOne(InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentUpdateOneCommand{`0},InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageWriteResult{InfinniPlatform.DocumentStorage.Contract.DocumentUpdateResult},System.Exception)">OnAfterUpdateOne(DocumentUpdateOneCommand&lt;TDocument&gt;, DocumentStorageWriteResult&lt;DocumentUpdateResult&gt;, Exception)</h4>
+              <div class="markdown level1 summary"><p>Вызывается после вставки набора документов в хранилище.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual void OnAfterUpdateOne(DocumentUpdateOneCommand&lt;TDocument&gt; command, DocumentStorageWriteResult&lt;DocumentUpdateResult&gt; result, Exception exception)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentUpdateOneCommand-1.html">DocumentUpdateOneCommand</a>&lt;TDocument&gt;</td>
+                    <td><span class="parametername">command</span></td>
+                    <td><p>Команда обновления одного документа.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageWriteResult-1.html">DocumentStorageWriteResult</a>&lt;<a class="xref" href="InfinniPlatform.DocumentStorage.Contract.DocumentUpdateResult.html">DocumentUpdateResult</a>&gt;</td>
+                    <td><span class="parametername">result</span></td>
+                    <td><p>Результат выполнения команды обновления документа.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Exception</span></td>
+                    <td><span class="parametername">exception</span></td>
+                    <td><p>Исключение, возникшее при выполнении команды.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.IDocumentStorageInterceptor-1.html#InfinniPlatform_DocumentStorage_Contract_Interceptors_IDocumentStorageInterceptor_1_OnAfterUpdateOne_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentUpdateOneCommand__0__InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageWriteResult_InfinniPlatform_DocumentStorage_Contract_DocumentUpdateResult__System_Exception_">IDocumentStorageInterceptor&lt;TDocument&gt;.OnAfterUpdateOne(DocumentUpdateOneCommand&lt;TDocument&gt;, DocumentStorageWriteResult&lt;DocumentUpdateResult&gt;, Exception)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnBeforeBulk_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentBulkCommand__0__.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor%601.OnBeforeBulk(InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentBulkCommand%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage/Contract/Interceptors/DocumentStorageInterceptor.cs/#L354">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnBeforeBulk_" data-uid="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor`1.OnBeforeBulk*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnBeforeBulk_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentBulkCommand__0__" data-uid="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor`1.OnBeforeBulk(InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentBulkCommand{`0})">OnBeforeBulk(DocumentBulkCommand&lt;TDocument&gt;)</h4>
+              <div class="markdown level1 summary"><p>Вызывается перед выполнением набора команд изменения документов в рамках одного запроса к хранилищу.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual DocumentStorageWriteResult&lt;DocumentBulkResult&gt; OnBeforeBulk(DocumentBulkCommand&lt;TDocument&gt; command)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentBulkCommand-1.html">DocumentBulkCommand</a>&lt;TDocument&gt;</td>
+                    <td><span class="parametername">command</span></td>
+                    <td><p>Набор команд изменения документов.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageWriteResult-1.html">DocumentStorageWriteResult</a>&lt;<a class="xref" href="InfinniPlatform.DocumentStorage.Contract.DocumentBulkResult.html">DocumentBulkResult</a>&gt;</td>
+                    <td><p>Результат выполнения набора команд изменения документов.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.IDocumentStorageInterceptor-1.html#InfinniPlatform_DocumentStorage_Contract_Interceptors_IDocumentStorageInterceptor_1_OnBeforeBulk_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentBulkCommand__0__">IDocumentStorageInterceptor&lt;TDocument&gt;.OnBeforeBulk(DocumentBulkCommand&lt;TDocument&gt;)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnBeforeDeleteMany_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentDeleteManyCommand__0__.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor%601.OnBeforeDeleteMany(InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentDeleteManyCommand%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage/Contract/Interceptors/DocumentStorageInterceptor.cs/#L333">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnBeforeDeleteMany_" data-uid="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor`1.OnBeforeDeleteMany*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnBeforeDeleteMany_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentDeleteManyCommand__0__" data-uid="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor`1.OnBeforeDeleteMany(InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentDeleteManyCommand{`0})">OnBeforeDeleteMany(DocumentDeleteManyCommand&lt;TDocument&gt;)</h4>
+              <div class="markdown level1 summary"><p>Вызывается перед удалением набора документов из хранилища.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual DocumentStorageWriteResult&lt;long&gt; OnBeforeDeleteMany(DocumentDeleteManyCommand&lt;TDocument&gt; command)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentDeleteManyCommand-1.html">DocumentDeleteManyCommand</a>&lt;TDocument&gt;</td>
+                    <td><span class="parametername">command</span></td>
+                    <td><p>Команда удаления набора документов.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageWriteResult-1.html">DocumentStorageWriteResult</a>&lt;<span class="xref">System.Int64</span>&gt;</td>
+                    <td><p>Результат выполнения команды удаления набора документов.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.IDocumentStorageInterceptor-1.html#InfinniPlatform_DocumentStorage_Contract_Interceptors_IDocumentStorageInterceptor_1_OnBeforeDeleteMany_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentDeleteManyCommand__0__">IDocumentStorageInterceptor&lt;TDocument&gt;.OnBeforeDeleteMany(DocumentDeleteManyCommand&lt;TDocument&gt;)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnBeforeDeleteOne_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentDeleteOneCommand__0__.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor%601.OnBeforeDeleteOne(InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentDeleteOneCommand%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage/Contract/Interceptors/DocumentStorageInterceptor.cs/#L312">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnBeforeDeleteOne_" data-uid="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor`1.OnBeforeDeleteOne*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnBeforeDeleteOne_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentDeleteOneCommand__0__" data-uid="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor`1.OnBeforeDeleteOne(InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentDeleteOneCommand{`0})">OnBeforeDeleteOne(DocumentDeleteOneCommand&lt;TDocument&gt;)</h4>
+              <div class="markdown level1 summary"><p>Вызывается перед удалением одного документа из хранилища.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual DocumentStorageWriteResult&lt;long&gt; OnBeforeDeleteOne(DocumentDeleteOneCommand&lt;TDocument&gt; command)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentDeleteOneCommand-1.html">DocumentDeleteOneCommand</a>&lt;TDocument&gt;</td>
+                    <td><span class="parametername">command</span></td>
+                    <td><p>Команда удаления одного документа.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageWriteResult-1.html">DocumentStorageWriteResult</a>&lt;<span class="xref">System.Int64</span>&gt;</td>
+                    <td><p>Результат выполнения команды удаления одного документа.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.IDocumentStorageInterceptor-1.html#InfinniPlatform_DocumentStorage_Contract_Interceptors_IDocumentStorageInterceptor_1_OnBeforeDeleteOne_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentDeleteOneCommand__0__">IDocumentStorageInterceptor&lt;TDocument&gt;.OnBeforeDeleteOne(DocumentDeleteOneCommand&lt;TDocument&gt;)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnBeforeInsertMany_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentInsertManyCommand__0__.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor%601.OnBeforeInsertMany(InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentInsertManyCommand%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage/Contract/Interceptors/DocumentStorageInterceptor.cs/#L228">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnBeforeInsertMany_" data-uid="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor`1.OnBeforeInsertMany*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnBeforeInsertMany_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentInsertManyCommand__0__" data-uid="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor`1.OnBeforeInsertMany(InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentInsertManyCommand{`0})">OnBeforeInsertMany(DocumentInsertManyCommand&lt;TDocument&gt;)</h4>
+              <div class="markdown level1 summary"><p>Вызывается перед вставкой набора документов в хранилище.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual DocumentStorageWriteResult&lt;object&gt; OnBeforeInsertMany(DocumentInsertManyCommand&lt;TDocument&gt; command)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentInsertManyCommand-1.html">DocumentInsertManyCommand</a>&lt;TDocument&gt;</td>
+                    <td><span class="parametername">command</span></td>
+                    <td><p>Команда вставки набора документов.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageWriteResult-1.html">DocumentStorageWriteResult</a>&lt;<span class="xref">System.Object</span>&gt;</td>
+                    <td><p>Результат вставки набора документов.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.IDocumentStorageInterceptor-1.html#InfinniPlatform_DocumentStorage_Contract_Interceptors_IDocumentStorageInterceptor_1_OnBeforeInsertMany_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentInsertManyCommand__0__">IDocumentStorageInterceptor&lt;TDocument&gt;.OnBeforeInsertMany(DocumentInsertManyCommand&lt;TDocument&gt;)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnBeforeInsertOne_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentInsertOneCommand__0__.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor%601.OnBeforeInsertOne(InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentInsertOneCommand%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage/Contract/Interceptors/DocumentStorageInterceptor.cs/#L207">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnBeforeInsertOne_" data-uid="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor`1.OnBeforeInsertOne*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnBeforeInsertOne_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentInsertOneCommand__0__" data-uid="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor`1.OnBeforeInsertOne(InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentInsertOneCommand{`0})">OnBeforeInsertOne(DocumentInsertOneCommand&lt;TDocument&gt;)</h4>
+              <div class="markdown level1 summary"><p>Вызывается перед вставкой одного документа в хранилище.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual DocumentStorageWriteResult&lt;object&gt; OnBeforeInsertOne(DocumentInsertOneCommand&lt;TDocument&gt; command)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentInsertOneCommand-1.html">DocumentInsertOneCommand</a>&lt;TDocument&gt;</td>
+                    <td><span class="parametername">command</span></td>
+                    <td><p>Команда вставки одного документа.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageWriteResult-1.html">DocumentStorageWriteResult</a>&lt;<span class="xref">System.Object</span>&gt;</td>
+                    <td><p>Результат вставки одного документа.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.IDocumentStorageInterceptor-1.html#InfinniPlatform_DocumentStorage_Contract_Interceptors_IDocumentStorageInterceptor_1_OnBeforeInsertOne_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentInsertOneCommand__0__">IDocumentStorageInterceptor&lt;TDocument&gt;.OnBeforeInsertOne(DocumentInsertOneCommand&lt;TDocument&gt;)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnBeforeReplaceOne_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentReplaceOneCommand__0__.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor%601.OnBeforeReplaceOne(InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentReplaceOneCommand%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage/Contract/Interceptors/DocumentStorageInterceptor.cs/#L291">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnBeforeReplaceOne_" data-uid="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor`1.OnBeforeReplaceOne*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnBeforeReplaceOne_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentReplaceOneCommand__0__" data-uid="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor`1.OnBeforeReplaceOne(InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentReplaceOneCommand{`0})">OnBeforeReplaceOne(DocumentReplaceOneCommand&lt;TDocument&gt;)</h4>
+              <div class="markdown level1 summary"><p>Вызывается перед заменой одного документа в хранилище.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual DocumentStorageWriteResult&lt;DocumentUpdateResult&gt; OnBeforeReplaceOne(DocumentReplaceOneCommand&lt;TDocument&gt; command)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentReplaceOneCommand-1.html">DocumentReplaceOneCommand</a>&lt;TDocument&gt;</td>
+                    <td><span class="parametername">command</span></td>
+                    <td><p>Команда замены одного документа.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageWriteResult-1.html">DocumentStorageWriteResult</a>&lt;<a class="xref" href="InfinniPlatform.DocumentStorage.Contract.DocumentUpdateResult.html">DocumentUpdateResult</a>&gt;</td>
+                    <td><p>Результат выполнения команды замены одного документа.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.IDocumentStorageInterceptor-1.html#InfinniPlatform_DocumentStorage_Contract_Interceptors_IDocumentStorageInterceptor_1_OnBeforeReplaceOne_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentReplaceOneCommand__0__">IDocumentStorageInterceptor&lt;TDocument&gt;.OnBeforeReplaceOne(DocumentReplaceOneCommand&lt;TDocument&gt;)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnBeforeUpdateMany_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentUpdateManyCommand__0__.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor%601.OnBeforeUpdateMany(InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentUpdateManyCommand%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage/Contract/Interceptors/DocumentStorageInterceptor.cs/#L270">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnBeforeUpdateMany_" data-uid="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor`1.OnBeforeUpdateMany*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnBeforeUpdateMany_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentUpdateManyCommand__0__" data-uid="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor`1.OnBeforeUpdateMany(InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentUpdateManyCommand{`0})">OnBeforeUpdateMany(DocumentUpdateManyCommand&lt;TDocument&gt;)</h4>
+              <div class="markdown level1 summary"><p>Вызывается перед обновлением набора документов в хранилище.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual DocumentStorageWriteResult&lt;DocumentUpdateResult&gt; OnBeforeUpdateMany(DocumentUpdateManyCommand&lt;TDocument&gt; command)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentUpdateManyCommand-1.html">DocumentUpdateManyCommand</a>&lt;TDocument&gt;</td>
+                    <td><span class="parametername">command</span></td>
+                    <td><p>Команда обновления набора документов.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageWriteResult-1.html">DocumentStorageWriteResult</a>&lt;<a class="xref" href="InfinniPlatform.DocumentStorage.Contract.DocumentUpdateResult.html">DocumentUpdateResult</a>&gt;</td>
+                    <td><p>Результат выполнения команды обновления набора документов.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.IDocumentStorageInterceptor-1.html#InfinniPlatform_DocumentStorage_Contract_Interceptors_IDocumentStorageInterceptor_1_OnBeforeUpdateMany_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentUpdateManyCommand__0__">IDocumentStorageInterceptor&lt;TDocument&gt;.OnBeforeUpdateMany(DocumentUpdateManyCommand&lt;TDocument&gt;)</a></div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnBeforeUpdateOne_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentUpdateOneCommand__0__.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor%601.OnBeforeUpdateOne(InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentUpdateOneCommand%7B%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage/Contract/Interceptors/DocumentStorageInterceptor.cs/#L249">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnBeforeUpdateOne_" data-uid="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor`1.OnBeforeUpdateOne*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1_OnBeforeUpdateOne_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentUpdateOneCommand__0__" data-uid="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor`1.OnBeforeUpdateOne(InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentUpdateOneCommand{`0})">OnBeforeUpdateOne(DocumentUpdateOneCommand&lt;TDocument&gt;)</h4>
+              <div class="markdown level1 summary"><p>Вызывается перед вставкой набора документов в хранилище.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public virtual DocumentStorageWriteResult&lt;DocumentUpdateResult&gt; OnBeforeUpdateOne(DocumentUpdateOneCommand&lt;TDocument&gt; command)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentUpdateOneCommand-1.html">DocumentUpdateOneCommand</a>&lt;TDocument&gt;</td>
+                    <td><span class="parametername">command</span></td>
+                    <td><p>Команда обновления одного документа.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageWriteResult-1.html">DocumentStorageWriteResult</a>&lt;<a class="xref" href="InfinniPlatform.DocumentStorage.Contract.DocumentUpdateResult.html">DocumentUpdateResult</a>&gt;</td>
+                    <td><p>Результат выполнения команды обновления документа.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="implements">Implements</h5>
+                  <div><a class="xref" href="InfinniPlatform.DocumentStorage.Contract.Interceptors.IDocumentStorageInterceptor-1.html#InfinniPlatform_DocumentStorage_Contract_Interceptors_IDocumentStorageInterceptor_1_OnBeforeUpdateOne_InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentUpdateOneCommand__0__">IDocumentStorageInterceptor&lt;TDocument&gt;.OnBeforeUpdateOne(DocumentUpdateOneCommand&lt;TDocument&gt;)</a></div>
+              <h3 id="extensionmethods">Extension Methods</h3>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.DynamicWrapperExtensions.html#InfinniPlatform_Sdk_Dynamic_DynamicWrapperExtensions_ToDynamic_System_Object_">DynamicWrapperExtensions.ToDynamic(Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.DynamicWrapperExtensions.html#InfinniPlatform_Sdk_Dynamic_DynamicWrapperExtensions_ToEnumerable_System_Object_">DynamicWrapperExtensions.ToEnumerable(Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_GetProperty_System_Object_System_String_">ObjectHelper.GetProperty(Object, String)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_SetProperty_System_Object_System_String_System_Object_">ObjectHelper.SetProperty(Object, String, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_ReplaceProperties_System_Object_System_Object_">ObjectHelper.ReplaceProperties(Object, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_GetItem_System_Object_System_Int32_">ObjectHelper.GetItem(Object, Int32)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_SetItem_System_Object_System_Int32_System_Object_">ObjectHelper.SetItem(Object, Int32, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_AddItem_System_Object_System_Object_">ObjectHelper.AddItem(Object, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_ReplaceItem_System_Object_System_Object_System_Object_">ObjectHelper.ReplaceItem(Object, Object, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_MoveItem_System_Object_System_Object_System_Int32_">ObjectHelper.MoveItem(Object, Object, Int32)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_InsertItem_System_Object_System_Int32_System_Object_">ObjectHelper.InsertItem(Object, Int32, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_RemoveItem_System_Object_System_Object_">ObjectHelper.RemoveItem(Object, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_RemoveItemAt_System_Object_System_Int32_">ObjectHelper.RemoveItemAt(Object, Int32)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_GetIndexProperty_System_Object_System_Collections_Generic_IEnumerable_System_Object__">ObjectHelper.GetIndexProperty(Object, IEnumerable&lt;Object&gt;)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_IsInstanceOfType_System_Object_System_Type_">ReflectionExtensions.IsInstanceOfType(Object, Type)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_GetMemberValue_System_Object_System_String_">ReflectionExtensions.GetMemberValue(Object, String)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_SetMemberValue_System_Object_System_String_System_Object_">ReflectionExtensions.SetMemberValue(Object, String, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_InvokeMember_System_Object_System_String_System_Object___System_Object__System_Type___">ReflectionExtensions.InvokeMember(Object, String, Object[], out Object, Type[])</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_GetFieldValue_System_Object_System_Reflection_FieldInfo_">ReflectionExtensions.GetFieldValue(Object, FieldInfo)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_SetFieldValue_System_Object_System_Reflection_FieldInfo_System_Object_">ReflectionExtensions.SetFieldValue(Object, FieldInfo, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_GetPropertyValue_System_Object_System_Reflection_PropertyInfo_">ReflectionExtensions.GetPropertyValue(Object, PropertyInfo)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_">ReflectionExtensions.SetPropertyValue(Object, PropertyInfo, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_GetMethodDelegate_System_Object_System_Reflection_MethodInfo_">ReflectionExtensions.GetMethodDelegate(Object, MethodInfo)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_GetEventDelegate_System_Object_System_Reflection_EventInfo_">ReflectionExtensions.GetEventDelegate(Object, EventInfo)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_SetEventDelegate_System_Object_System_Reflection_EventInfo_System_Object_">ReflectionExtensions.SetEventDelegate(Object, EventInfo, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Core.Extensions.CommonExtensions.html#InfinniPlatform_Core_Extensions_CommonExtensions_ExecuteSilent__1___0_System_Action___0__">CommonExtensions.ExecuteSilent&lt;T&gt;(T, Action&lt;T&gt;)</a>
+              </div>
+                        </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Contract_Interceptors_DocumentStorageInterceptor_1.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Contract.Interceptors.DocumentStorageInterceptor%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage/Contract/Interceptors/DocumentStorageInterceptor.cs/#L194" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © Copyright Infinnity Solutions Ltd, 2010–2017.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
