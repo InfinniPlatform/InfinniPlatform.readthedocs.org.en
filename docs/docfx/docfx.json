@@ -52,7 +52,7 @@
         "fileMetadataFiles": [],
         "template": [
             "default",
-            "_exported_templates/default"
+            "templates/rtd"
         ],
         "postProcessors": [],
         "noLangKeyword": false
