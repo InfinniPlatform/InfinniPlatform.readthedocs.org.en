@@ -16,9 +16,9 @@
   font-family:'FontAwesome';
   src:url("../../_static/fonts/fontawesome-webfont.eot?v=4.2.0");
   src:url("../../_static/fonts/fontawesome-webfont.eot?#iefix&v=4.2.0") format("embedded-opentype"),
-      url("../../_static/fonts/fontawesome-webfont.woff?v=4.2.0") format("woff"),
-      url("../../_static/fonts/fontawesome-webfont.ttf?v=4.2.0") format("truetype"),
-      url("../../_static/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular") format("svg");
+  url("../../_static/fonts/fontawesome-webfont.woff?v=4.2.0") format("woff"),
+  url("../../_static/fonts/fontawesome-webfont.ttf?v=4.2.0") format("truetype"),
+  url("../../_static/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular") format("svg");
 }
 
 @font-face {
@@ -483,6 +483,14 @@ header .navbar {
   background-color: #2980b9;
   border-color: #2980b9;
   padding: 0.809em;
+}
+
+.article .col-md-10 {
+  padding: 1.618em 3.236em;
+  max-width: 800px;
+  min-height: calc(100vh - 180px);
+  background-color: #fff;
+  overflow: hidden;
 }
 
 .navbar .navbar-nav > li > a {
@@ -1004,13 +1012,7 @@ body .toc {
   margin-top: 105px;
 }
 
-.article .col-md-10 {
-  padding: 1.618em 3.236em;
-  max-width: 800px;
-  min-height: calc(100vh - 180px);
-  background-color: #fff;
-  overflow: hidden;
-}
+
 
 .inheritance hr {
   margin-top: 5px;
@@ -1193,6 +1195,16 @@ footer {
   font-size: 16px;
 }
 
+@media (max-width: 768px) {
+  footer {
+    left: 0;
+  }
+}
+
+.xref {
+  word-wrap: break-word;
+}
+
 @media (min-width: 768px) {
   #sidetoggle.collapse {
     display: block;
@@ -1227,12 +1239,6 @@ footer {
     text-align: center;
   }
 
-  .sidenav {
-    padding: 15px 0;
-    margin-left: -15px;
-    margin-right: -15px;
-  }
-
   .sidefilter {
     position: static;
     width: auto;
@@ -1249,18 +1255,20 @@ footer {
   }
 
   .toc .level2 > li {
-    display: inline-block;
+    display: block;
+    width: 100%;
   }
 
   .toc .level2 > li:after {
-    margin-left: -3px;
-    margin-right: 5px;
-    content: ", ";
-    color: #666;
+    /*margin-left: -3px;*/
+    /*margin-right: 5px;*/
+    /*content: ", ";*/
+    /*color: #666;*/
   }
 
   .article.grid-right {
     margin-left: 0;
+    margin-right: 0;
   }
 
   .grad-top,
@@ -1382,5 +1390,60 @@ div.embeddedvideo iframe {
 
   .footer {
     display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar .container {
+    height: 70px;
+    width: 100%;
+  }
+  .navbar .container .navbar-toggle {
+    display: none;
+  }
+  .navbar .container .navbar-collapse {
+    display: block;
+    border: none;
+    margin-top: 10px;
+    box-shadow: none;
+  }
+
+  .container {
+    width: 100%;
+    background-color: #fff;
+  }
+
+  .subnav {
+    width: 100%;
+  }
+
+  .subnav .container {
+    display: none;
+  }
+
+  .sidenav {
+    width: 100%;
+    margin: 0;
+  }
+
+  .sidenav .btn {
+    color: #fff;
+  }
+
+  .navbar {
+    min-height: 35px;
+  }
+
+  .sidetoc {
+    text-align: left;
+  }
+
+  .article .col-md-10 {
+    padding: 15px;
+    min-height: calc(100vh - 220px);
+  }
+
+  .footer {
+    padding: 0 15px;
   }
 }
