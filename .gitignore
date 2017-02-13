@@ -63,3 +63,6 @@ target/
 
 # DocFX
 docs/docfx/reference/*.yml
+
+# webstorm files
+.idea/
