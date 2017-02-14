@@ -427,6 +427,7 @@ header .navbar {
   border-width: 0 0 1px;
   border-radius: 0;
   text-align: center;
+  min-height: 0;
 }
 
 .navbar-brand {
@@ -446,6 +447,10 @@ header .navbar {
 .subnav {
   border: none;
   width: 1150px;
+}
+
+#wrapper > .container {
+  padding-top: 69px;
 }
 
 .container {
@@ -474,7 +479,7 @@ header .navbar {
 }
 
 .navbar .container {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 1;
@@ -483,6 +488,10 @@ header .navbar {
   background-color: #2980b9;
   border-color: #2980b9;
   padding: 0.809em;
+}
+
+.navbar[role="navigation"] .container {
+  position: fixed;
 }
 
 .article .col-md-10 {
