@@ -57,7 +57,8 @@
         "ioc",
         "DynamicWrapper",
         "asynchronously",
-        "Scalability"
+        "Scalability",
+        "api"
     ],
     "languageIDs": [
         "markdown",
