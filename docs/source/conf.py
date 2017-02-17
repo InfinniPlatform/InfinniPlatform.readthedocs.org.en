@@ -157,13 +157,6 @@ html_static_path = ['_files', '_static']
 # directly to the root of the documentation.
 html_extra_path = ['_docfx']
 
-# Override RTD theme
-html_context = {
-    'css_files': [
-        '_static/theme_overrides.css',  
-    ]
-}
-
 # If not None, a 'Last updated on:' timestamp is inserted at every page
 # bottom, using the given strftime format.
 # The empty string is equivalent to '%b %d, %Y'.
