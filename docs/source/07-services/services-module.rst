@@ -1,7 +1,7 @@
 .. index:: IHttpService
 .. index:: IHttpServiceBuilder
 
-Defining modules
+Defining Modules
 ================
 
 Modules are key concept and the one thing which you have to know to develop HTTP services. A module is created by inheriting from the `IHttpService`_
