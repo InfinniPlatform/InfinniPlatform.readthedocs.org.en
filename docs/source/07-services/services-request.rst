@@ -18,6 +18,7 @@ information from different parts of the URL. The `Parameters`_ contains values o
 the `Query`_ contains values of the query string.
 
 .. image:: /_images/urlStructure.png
+   :alt: The URL Structure
 
 Next example shows how to extract values from a URL which looks like on previous image.
 

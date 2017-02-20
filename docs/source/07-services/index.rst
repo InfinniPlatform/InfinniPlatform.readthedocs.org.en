@@ -24,7 +24,7 @@ InfinniPlatform fully integrated with `NancyFx`_ - lightweight, low-ceremony, fr
     services-routing.rst
     services-request.rst
     services-response.rst
-    services-hooks.rst
+    services-interception.rst
 
 
 .. _`NancyFx`: http://nancyfx.org/
