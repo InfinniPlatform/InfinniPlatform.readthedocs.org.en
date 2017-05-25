@@ -1,0 +1,637 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DocumentHttpServiceBase
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DocumentHttpServiceBase
+   ">
+    <meta name="generator" content="docfx 2.17.7.15">
+    
+    <link rel="shortcut icon" href="../../../_static/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../../../_static/favicon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="InfinniPlatform_DocumentStorage_DocumentHttpServiceBase" data-uid="InfinniPlatform.DocumentStorage.DocumentHttpServiceBase">Class DocumentHttpServiceBase
+              </h1>
+              <div class="markdown level0 summary"><p>Базовый класс сервисов по работе с документами.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <div class="inheritance">
+                <h5>Inheritance</h5>
+                  <div class="level0"><span class="xref">System.Object</span></div>
+                  <div class="level1"><span class="xref">DocumentHttpServiceBase</span></div>
+                  <div class="level2"><a class="xref" href="InfinniPlatform.DocumentStorage.DocumentHttpService.html">DocumentHttpService</a></div>
+                  <div class="level2"><a class="xref" href="InfinniPlatform.DocumentStorage.DocumentHttpService-1.html">DocumentHttpService&lt;TDocument&gt;</a></div>
+              </div>
+              <h6><strong>Namespace</strong>:InfinniPlatform.DocumentStorage</h6>
+              <h6><strong>Assembly</strong>:InfinniPlatform.DocumentStorage.HttpService.dll</h6>
+              <h5 id="InfinniPlatform_DocumentStorage_DocumentHttpServiceBase_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public abstract class DocumentHttpServiceBase : object, IHttpService</code></pre>
+              </div>
+              <h3 id="constructors">Constructors
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_DocumentHttpServiceBase__ctor_InfinniPlatform_Logging_IPerformanceLog_InfinniPlatform_Logging_ILog_.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.DocumentHttpServiceBase.%23ctor(InfinniPlatform.Logging.IPerformanceLog%2CInfinniPlatform.Logging.ILog)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.HttpService/DocumentHttpServiceBase.cs/#L16">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_DocumentHttpServiceBase__ctor_" data-uid="InfinniPlatform.DocumentStorage.DocumentHttpServiceBase.#ctor*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_DocumentHttpServiceBase__ctor_InfinniPlatform_Logging_IPerformanceLog_InfinniPlatform_Logging_ILog_" data-uid="InfinniPlatform.DocumentStorage.DocumentHttpServiceBase.#ctor(InfinniPlatform.Logging.IPerformanceLog,InfinniPlatform.Logging.ILog)">DocumentHttpServiceBase(IPerformanceLog, ILog)</h4>
+              <div class="markdown level1 summary"></div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected DocumentHttpServiceBase(IPerformanceLog performanceLog, ILog log)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.Logging.IPerformanceLog.html">IPerformanceLog</a></td>
+                    <td><span class="parametername">performanceLog</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.Logging.ILog.html">ILog</a></td>
+                    <td><span class="parametername">log</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="properties">Properties
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_DocumentHttpServiceBase_CanDelete.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.DocumentHttpServiceBase.CanDelete%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.HttpService/DocumentHttpServiceBase.cs/#L68">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_DocumentHttpServiceBase_CanDelete_" data-uid="InfinniPlatform.DocumentStorage.DocumentHttpServiceBase.CanDelete*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_DocumentHttpServiceBase_CanDelete" data-uid="InfinniPlatform.DocumentStorage.DocumentHttpServiceBase.CanDelete">CanDelete</h4>
+              <div class="markdown level1 summary"><p>Разрешено ли удаление документов.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool CanDelete { get; protected set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_DocumentHttpServiceBase_CanGet.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.DocumentHttpServiceBase.CanGet%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.HttpService/DocumentHttpServiceBase.cs/#L58">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_DocumentHttpServiceBase_CanGet_" data-uid="InfinniPlatform.DocumentStorage.DocumentHttpServiceBase.CanGet*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_DocumentHttpServiceBase_CanGet" data-uid="InfinniPlatform.DocumentStorage.DocumentHttpServiceBase.CanGet">CanGet</h4>
+              <div class="markdown level1 summary"><p>Разрешено ли получение документов.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool CanGet { get; protected set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_DocumentHttpServiceBase_CanPost.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.DocumentHttpServiceBase.CanPost%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.HttpService/DocumentHttpServiceBase.cs/#L63">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_DocumentHttpServiceBase_CanPost_" data-uid="InfinniPlatform.DocumentStorage.DocumentHttpServiceBase.CanPost*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_DocumentHttpServiceBase_CanPost" data-uid="InfinniPlatform.DocumentStorage.DocumentHttpServiceBase.CanPost">CanPost</h4>
+              <div class="markdown level1 summary"><p>Разрешено ли сохранение документов.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public bool CanPost { get; protected set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_DocumentHttpServiceBase_DocumentType.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.DocumentHttpServiceBase.DocumentType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.HttpService/DocumentHttpServiceBase.cs/#L53">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_DocumentHttpServiceBase_DocumentType_" data-uid="InfinniPlatform.DocumentStorage.DocumentHttpServiceBase.DocumentType*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_DocumentHttpServiceBase_DocumentType" data-uid="InfinniPlatform.DocumentStorage.DocumentHttpServiceBase.DocumentType">DocumentType</h4>
+              <div class="markdown level1 summary"><p>Имя типа документа.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public string DocumentType { get; protected set; }</code></pre>
+              </div>
+              <h5 class="propertyValue">Property Value</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_DocumentHttpServiceBase_Delete_InfinniPlatform_Http_IHttpRequest_.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.DocumentHttpServiceBase.Delete(InfinniPlatform.Http.IHttpRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.HttpService/DocumentHttpServiceBase.cs/#L89">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_DocumentHttpServiceBase_Delete_" data-uid="InfinniPlatform.DocumentStorage.DocumentHttpServiceBase.Delete*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_DocumentHttpServiceBase_Delete_InfinniPlatform_Http_IHttpRequest_" data-uid="InfinniPlatform.DocumentStorage.DocumentHttpServiceBase.Delete(InfinniPlatform.Http.IHttpRequest)">Delete(IHttpRequest)</h4>
+              <div class="markdown level1 summary"><p>Обрабатывает запрос на удаление документа.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected abstract Task&lt;object&gt; Delete(IHttpRequest request)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.Http.IHttpRequest.html">IHttpRequest</a></td>
+                    <td><span class="parametername">request</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_DocumentHttpServiceBase_Get_InfinniPlatform_Http_IHttpRequest_.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.DocumentHttpServiceBase.Get(InfinniPlatform.Http.IHttpRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.HttpService/DocumentHttpServiceBase.cs/#L79">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_DocumentHttpServiceBase_Get_" data-uid="InfinniPlatform.DocumentStorage.DocumentHttpServiceBase.Get*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_DocumentHttpServiceBase_Get_InfinniPlatform_Http_IHttpRequest_" data-uid="InfinniPlatform.DocumentStorage.DocumentHttpServiceBase.Get(InfinniPlatform.Http.IHttpRequest)">Get(IHttpRequest)</h4>
+              <div class="markdown level1 summary"><p>Обрабатывает запрос на получение документов.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected abstract Task&lt;object&gt; Get(IHttpRequest request)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.Http.IHttpRequest.html">IHttpRequest</a></td>
+                    <td><span class="parametername">request</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_DocumentHttpServiceBase_Load_InfinniPlatform_Http_IHttpServiceBuilder_.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.DocumentHttpServiceBase.Load(InfinniPlatform.Http.IHttpServiceBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.HttpService/DocumentHttpServiceBase.cs/#L74">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_DocumentHttpServiceBase_Load_" data-uid="InfinniPlatform.DocumentStorage.DocumentHttpServiceBase.Load*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_DocumentHttpServiceBase_Load_InfinniPlatform_Http_IHttpServiceBuilder_" data-uid="InfinniPlatform.DocumentStorage.DocumentHttpServiceBase.Load(InfinniPlatform.Http.IHttpServiceBuilder)">Load(IHttpServiceBuilder)</h4>
+              <div class="markdown level1 summary"><p>Загружает настройки сервиса по работе с документами.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected abstract void Load(IHttpServiceBuilder builder)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.Http.IHttpServiceBuilder.html">IHttpServiceBuilder</a></td>
+                    <td><span class="parametername">builder</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_DocumentHttpServiceBase_Post_InfinniPlatform_Http_IHttpRequest_.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.DocumentHttpServiceBase.Post(InfinniPlatform.Http.IHttpRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.HttpService/DocumentHttpServiceBase.cs/#L84">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_DocumentHttpServiceBase_Post_" data-uid="InfinniPlatform.DocumentStorage.DocumentHttpServiceBase.Post*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_DocumentHttpServiceBase_Post_InfinniPlatform_Http_IHttpRequest_" data-uid="InfinniPlatform.DocumentStorage.DocumentHttpServiceBase.Post(InfinniPlatform.Http.IHttpRequest)">Post(IHttpRequest)</h4>
+              <div class="markdown level1 summary"><p>Обрабатывает запрос на сохранение документа.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected abstract Task&lt;object&gt; Post(IHttpRequest request)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.Http.IHttpRequest.html">IHttpRequest</a></td>
+                    <td><span class="parametername">request</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_DocumentHttpServiceBase_ProcessRequestAsync__2_InfinniPlatform_Http_IHttpRequest_Func_InfinniPlatform_Http_IHttpRequest___0__Func___0_Task___1___Func___0_Task___1___Func___0___1_Exception_Task__Func_Exception_System_String__.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.DocumentHttpServiceBase.ProcessRequestAsync%60%602(InfinniPlatform.Http.IHttpRequest%2CFunc%7BInfinniPlatform.Http.IHttpRequest%2C%60%600%7D%2CFunc%7B%60%600%2CTask%7B%60%601%7D%7D%2CFunc%7B%60%600%2CTask%7B%60%601%7D%7D%2CFunc%7B%60%600%2C%60%601%2CException%2CTask%7D%2CFunc%7BException%2CSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.HttpService/DocumentHttpServiceBase.cs/#L95">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_DocumentHttpServiceBase_ProcessRequestAsync_" data-uid="InfinniPlatform.DocumentStorage.DocumentHttpServiceBase.ProcessRequestAsync*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_DocumentHttpServiceBase_ProcessRequestAsync__2_InfinniPlatform_Http_IHttpRequest_Func_InfinniPlatform_Http_IHttpRequest___0__Func___0_Task___1___Func___0_Task___1___Func___0___1_Exception_Task__Func_Exception_System_String__" data-uid="InfinniPlatform.DocumentStorage.DocumentHttpServiceBase.ProcessRequestAsync``2(InfinniPlatform.Http.IHttpRequest,Func{InfinniPlatform.Http.IHttpRequest,``0},Func{``0,Task{``1}},Func{``0,Task{``1}},Func{``0,``1,Exception,Task},Func{Exception,System.String})">ProcessRequestAsync&lt;TQuery, TResult&gt;(IHttpRequest, Func&lt;IHttpRequest, TQuery&gt;, Func&lt;TQuery, Task&lt;TResult&gt;&gt;, Func&lt;TQuery, Task&lt;TResult&gt;&gt;, Func&lt;TQuery, TResult, Exception, Task&gt;, Func&lt;Exception, String&gt;)</h4>
+              <div class="markdown level1 summary"><p>Обрабатывает запрос с использованием указанных правил.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">protected Task&lt;object&gt; ProcessRequestAsync&lt;TQuery, TResult&gt;(IHttpRequest request, Func&lt;IHttpRequest, TQuery&gt; queryFunc, Func&lt;TQuery, Task&lt;TResult&gt;&gt; handlerFunc, Func&lt;TQuery, Task&lt;TResult&gt;&gt; onBefore, Func&lt;TQuery, TResult, Exception, Task&gt; onAfter, Func&lt;Exception, string&gt; onError)where TResult : DocumentQueryResult</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.Http.IHttpRequest.html">IHttpRequest</a></td>
+                    <td><span class="parametername">request</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Func</span>&lt;<a class="xref" href="InfinniPlatform.Http.IHttpRequest.html">IHttpRequest</a>, TQuery&gt;</td>
+                    <td><span class="parametername">queryFunc</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Func</span>&lt;TQuery, <span class="xref">Task</span>&lt;TResult&gt;&gt;</td>
+                    <td><span class="parametername">handlerFunc</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Func</span>&lt;TQuery, <span class="xref">Task</span>&lt;TResult&gt;&gt;</td>
+                    <td><span class="parametername">onBefore</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Func</span>&lt;TQuery, TResult, <span class="xref">Exception</span>, <span class="xref">Task</span>&gt;</td>
+                    <td><span class="parametername">onAfter</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Func</span>&lt;<span class="xref">Exception</span>, <span class="xref">System.String</span>&gt;</td>
+                    <td><span class="parametername">onError</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Task</span>&lt;<span class="xref">System.Object</span>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">TQuery</span></td>
+                    <td></td>
+                  </tr>
+                  <tr>
+                    <td><span class="parametername">TResult</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="extensionmethods">Extension Methods</h3>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Extensions.CommonExtensions.html#InfinniPlatform_Extensions_CommonExtensions_ExecuteSilent__1___0_Action___0__">CommonExtensions.ExecuteSilent&lt;T&gt;(T, Action&lt;T&gt;)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_GetItem_System_Object_System_Int32_">DynamicCollectionExtensions.GetItem(Object, Int32)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_SetItem_System_Object_System_Int32_System_Object_">DynamicCollectionExtensions.SetItem(Object, Int32, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_AddItem_System_Object_System_Object_">DynamicCollectionExtensions.AddItem(Object, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_InsertItem_System_Object_System_Int32_System_Object_">DynamicCollectionExtensions.InsertItem(Object, Int32, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_RemoveItem_System_Object_System_Object_">DynamicCollectionExtensions.RemoveItem(Object, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_RemoveItemAt_System_Object_System_Int32_">DynamicCollectionExtensions.RemoveItemAt(Object, Int32)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_MoveItem_System_Object_System_Object_System_Int32_">DynamicCollectionExtensions.MoveItem(Object, Object, Int32)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicObjectExtensions.html#InfinniPlatform_Dynamic_DynamicObjectExtensions_TryGetPropertyValue_System_Object_System_String_">DynamicObjectExtensions.TryGetPropertyValue(Object, String)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicObjectExtensions.html#InfinniPlatform_Dynamic_DynamicObjectExtensions_TrySetPropertyValue_System_Object_System_String_System_Object_">DynamicObjectExtensions.TrySetPropertyValue(Object, String, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicObjectExtensions.html#InfinniPlatform_Dynamic_DynamicObjectExtensions_TryGetPropertyValueByPath_System_Object_System_String_">DynamicObjectExtensions.TryGetPropertyValueByPath(Object, String)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicObjectExtensions.html#InfinniPlatform_Dynamic_DynamicObjectExtensions_TrySetPropertyValueByPath_System_Object_System_String_System_Object_">DynamicObjectExtensions.TrySetPropertyValueByPath(Object, String, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_IsInstanceOfType_System_Object_Type_">ReflectionExtensions.IsInstanceOfType(Object, Type)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_GetMemberValue_System_Object_System_String_">ReflectionExtensions.GetMemberValue(Object, String)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_SetMemberValue_System_Object_System_String_System_Object_">ReflectionExtensions.SetMemberValue(Object, String, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_InvokeMember_System_Object_System_String_System_Object___System_Object__Type___">ReflectionExtensions.InvokeMember(Object, String, Object[], out Object, Type[])</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_GetFieldValue_System_Object_FieldInfo_">ReflectionExtensions.GetFieldValue(Object, FieldInfo)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_SetFieldValue_System_Object_FieldInfo_System_Object_">ReflectionExtensions.SetFieldValue(Object, FieldInfo, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_GetPropertyValue_System_Object_PropertyInfo_">ReflectionExtensions.GetPropertyValue(Object, PropertyInfo)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_SetPropertyValue_System_Object_PropertyInfo_System_Object_">ReflectionExtensions.SetPropertyValue(Object, PropertyInfo, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_GetMethodDelegate_System_Object_MethodInfo_">ReflectionExtensions.GetMethodDelegate(Object, MethodInfo)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_GetEventDelegate_System_Object_EventInfo_">ReflectionExtensions.GetEventDelegate(Object, EventInfo)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_SetEventDelegate_System_Object_EventInfo_System_Object_">ReflectionExtensions.SetEventDelegate(Object, EventInfo, Object)</a>
+              </div>
+                        </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_DocumentHttpServiceBase.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.DocumentHttpServiceBase%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.HttpService/DocumentHttpServiceBase.cs/#L14" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © Copyright Infinnity Solutions Ltd, 2010–2017.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

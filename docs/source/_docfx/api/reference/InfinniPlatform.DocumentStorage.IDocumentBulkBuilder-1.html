@@ -1,0 +1,541 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IDocumentBulkBuilder&lt;TDocument&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IDocumentBulkBuilder&lt;TDocument&gt;
+   ">
+    <meta name="generator" content="docfx 2.17.7.15">
+    
+    <link rel="shortcut icon" href="../../../_static/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../../../_static/favicon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="InfinniPlatform_DocumentStorage_IDocumentBulkBuilder_1" data-uid="InfinniPlatform.DocumentStorage.IDocumentBulkBuilder`1">Interface IDocumentBulkBuilder&lt;TDocument&gt;
+              </h1>
+              <div class="markdown level0 summary"><p>Предоставляет методы создания набора команд изменения документов.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <h6><strong>Namespace</strong>:InfinniPlatform.DocumentStorage</h6>
+              <h6><strong>Assembly</strong>:InfinniPlatform.DocumentStorage.Abstractions.dll</h6>
+              <h5 id="InfinniPlatform_DocumentStorage_IDocumentBulkBuilder_1_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public interface IDocumentBulkBuilder&lt;TDocument&gt;</code></pre>
+              </div>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">TDocument</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_IDocumentBulkBuilder_1_DeleteMany_Expression_Func__0_System_Boolean___.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.IDocumentBulkBuilder%601.DeleteMany(Expression%7BFunc%7B%600%2CSystem.Boolean%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.Abstractions/IDocumentBulkBuilderGeneric.cs/#L51">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_IDocumentBulkBuilder_1_DeleteMany_" data-uid="InfinniPlatform.DocumentStorage.IDocumentBulkBuilder`1.DeleteMany*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_IDocumentBulkBuilder_1_DeleteMany_Expression_Func__0_System_Boolean___" data-uid="InfinniPlatform.DocumentStorage.IDocumentBulkBuilder`1.DeleteMany(Expression{Func{`0,System.Boolean}})">DeleteMany(Expression&lt;Func&lt;TDocument, Boolean&gt;&gt;)</h4>
+              <div class="markdown level1 summary"><p>Удаляет все документы, удовлетворяющие указанному фильтру.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IDocumentBulkBuilder&lt;TDocument&gt; DeleteMany(Expression&lt;Func&lt;TDocument, bool&gt;&gt; filter = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TDocument, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+                    <td><span class="parametername">filter</span></td>
+                    <td><p>Фильтр для поиска документов.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.IDocumentBulkBuilder-1.html">IDocumentBulkBuilder</a>&lt;TDocument&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_IDocumentBulkBuilder_1_DeleteOne_Expression_Func__0_System_Boolean___.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.IDocumentBulkBuilder%601.DeleteOne(Expression%7BFunc%7B%600%2CSystem.Boolean%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.Abstractions/IDocumentBulkBuilderGeneric.cs/#L45">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_IDocumentBulkBuilder_1_DeleteOne_" data-uid="InfinniPlatform.DocumentStorage.IDocumentBulkBuilder`1.DeleteOne*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_IDocumentBulkBuilder_1_DeleteOne_Expression_Func__0_System_Boolean___" data-uid="InfinniPlatform.DocumentStorage.IDocumentBulkBuilder`1.DeleteOne(Expression{Func{`0,System.Boolean}})">DeleteOne(Expression&lt;Func&lt;TDocument, Boolean&gt;&gt;)</h4>
+              <div class="markdown level1 summary"><p>Удаляет первый найденный документ, удовлетворяющий указанному фильтру.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IDocumentBulkBuilder&lt;TDocument&gt; DeleteOne(Expression&lt;Func&lt;TDocument, bool&gt;&gt; filter = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TDocument, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+                    <td><span class="parametername">filter</span></td>
+                    <td><p>Фильтр для поиска документов.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.IDocumentBulkBuilder-1.html">IDocumentBulkBuilder</a>&lt;TDocument&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_IDocumentBulkBuilder_1_InsertOne__0_.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.IDocumentBulkBuilder%601.InsertOne(%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.Abstractions/IDocumentBulkBuilderGeneric.cs/#L15">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_IDocumentBulkBuilder_1_InsertOne_" data-uid="InfinniPlatform.DocumentStorage.IDocumentBulkBuilder`1.InsertOne*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_IDocumentBulkBuilder_1_InsertOne__0_" data-uid="InfinniPlatform.DocumentStorage.IDocumentBulkBuilder`1.InsertOne(`0)">InsertOne(TDocument)</h4>
+              <div class="markdown level1 summary"><p>Вставляет один документ в хранилище или возвращает исключение, если хранилище уже содержит указанный документ.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IDocumentBulkBuilder&lt;TDocument&gt; InsertOne(TDocument document)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TDocument</span></td>
+                    <td><span class="parametername">document</span></td>
+                    <td><p>Документ для вставки.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.IDocumentBulkBuilder-1.html">IDocumentBulkBuilder</a>&lt;TDocument&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_IDocumentBulkBuilder_1_ReplaceOne__0_Expression_Func__0_System_Boolean___System_Boolean_.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.IDocumentBulkBuilder%601.ReplaceOne(%600%2CExpression%7BFunc%7B%600%2CSystem.Boolean%7D%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.Abstractions/IDocumentBulkBuilderGeneric.cs/#L39">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_IDocumentBulkBuilder_1_ReplaceOne_" data-uid="InfinniPlatform.DocumentStorage.IDocumentBulkBuilder`1.ReplaceOne*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_IDocumentBulkBuilder_1_ReplaceOne__0_Expression_Func__0_System_Boolean___System_Boolean_" data-uid="InfinniPlatform.DocumentStorage.IDocumentBulkBuilder`1.ReplaceOne(`0,Expression{Func{`0,System.Boolean}},System.Boolean)">ReplaceOne(TDocument, Expression&lt;Func&lt;TDocument, Boolean&gt;&gt;, Boolean)</h4>
+              <div class="markdown level1 summary"><p>Заменяет первый найденный документ, удовлетворяющий указанному фильтру.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IDocumentBulkBuilder&lt;TDocument&gt; ReplaceOne(TDocument replacement, Expression&lt;Func&lt;TDocument, bool&gt;&gt; filter = null, bool insertIfNotExists = false)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TDocument</span></td>
+                    <td><span class="parametername">replacement</span></td>
+                    <td><p>Документ замены.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TDocument, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+                    <td><span class="parametername">filter</span></td>
+                    <td><p>Фильтр для поиска документов.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">insertIfNotExists</span></td>
+                    <td><p>Следует ли создать документ, если ничего не найдено.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.IDocumentBulkBuilder-1.html">IDocumentBulkBuilder</a>&lt;TDocument&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_IDocumentBulkBuilder_1_UpdateMany_Action_InfinniPlatform_DocumentStorage_IDocumentUpdateBuilder__0___Expression_Func__0_System_Boolean___System_Boolean_.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.IDocumentBulkBuilder%601.UpdateMany(Action%7BInfinniPlatform.DocumentStorage.IDocumentUpdateBuilder%7B%600%7D%7D%2CExpression%7BFunc%7B%600%2CSystem.Boolean%7D%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.Abstractions/IDocumentBulkBuilderGeneric.cs/#L31">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_IDocumentBulkBuilder_1_UpdateMany_" data-uid="InfinniPlatform.DocumentStorage.IDocumentBulkBuilder`1.UpdateMany*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_IDocumentBulkBuilder_1_UpdateMany_Action_InfinniPlatform_DocumentStorage_IDocumentUpdateBuilder__0___Expression_Func__0_System_Boolean___System_Boolean_" data-uid="InfinniPlatform.DocumentStorage.IDocumentBulkBuilder`1.UpdateMany(Action{InfinniPlatform.DocumentStorage.IDocumentUpdateBuilder{`0}},Expression{Func{`0,System.Boolean}},System.Boolean)">UpdateMany(Action&lt;IDocumentUpdateBuilder&lt;TDocument&gt;&gt;, Expression&lt;Func&lt;TDocument, Boolean&gt;&gt;, Boolean)</h4>
+              <div class="markdown level1 summary"><p>Обновляет все документы, удовлетворяющие указанному фильтру.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IDocumentBulkBuilder&lt;TDocument&gt; UpdateMany(Action&lt;IDocumentUpdateBuilder&lt;TDocument&gt;&gt; update, Expression&lt;Func&lt;TDocument, bool&gt;&gt; filter = null, bool insertIfNotExists = false)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Action</span>&lt;<a class="xref" href="InfinniPlatform.DocumentStorage.IDocumentUpdateBuilder-1.html">IDocumentUpdateBuilder</a>&lt;TDocument&gt;&gt;</td>
+                    <td><span class="parametername">update</span></td>
+                    <td><p>Оператор обновления документов.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TDocument, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+                    <td><span class="parametername">filter</span></td>
+                    <td><p>Фильтр для поиска документов.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">insertIfNotExists</span></td>
+                    <td><p>Следует ли создать документ, если ничего не найдено.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.IDocumentBulkBuilder-1.html">IDocumentBulkBuilder</a>&lt;TDocument&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_IDocumentBulkBuilder_1_UpdateOne_Action_InfinniPlatform_DocumentStorage_IDocumentUpdateBuilder__0___Expression_Func__0_System_Boolean___System_Boolean_.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.IDocumentBulkBuilder%601.UpdateOne(Action%7BInfinniPlatform.DocumentStorage.IDocumentUpdateBuilder%7B%600%7D%7D%2CExpression%7BFunc%7B%600%2CSystem.Boolean%7D%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.Abstractions/IDocumentBulkBuilderGeneric.cs/#L23">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_IDocumentBulkBuilder_1_UpdateOne_" data-uid="InfinniPlatform.DocumentStorage.IDocumentBulkBuilder`1.UpdateOne*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_IDocumentBulkBuilder_1_UpdateOne_Action_InfinniPlatform_DocumentStorage_IDocumentUpdateBuilder__0___Expression_Func__0_System_Boolean___System_Boolean_" data-uid="InfinniPlatform.DocumentStorage.IDocumentBulkBuilder`1.UpdateOne(Action{InfinniPlatform.DocumentStorage.IDocumentUpdateBuilder{`0}},Expression{Func{`0,System.Boolean}},System.Boolean)">UpdateOne(Action&lt;IDocumentUpdateBuilder&lt;TDocument&gt;&gt;, Expression&lt;Func&lt;TDocument, Boolean&gt;&gt;, Boolean)</h4>
+              <div class="markdown level1 summary"><p>Обновляет первый найденный документ, удовлетворяющий указанному фильтру.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">IDocumentBulkBuilder&lt;TDocument&gt; UpdateOne(Action&lt;IDocumentUpdateBuilder&lt;TDocument&gt;&gt; update, Expression&lt;Func&lt;TDocument, bool&gt;&gt; filter = null, bool insertIfNotExists = false)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Action</span>&lt;<a class="xref" href="InfinniPlatform.DocumentStorage.IDocumentUpdateBuilder-1.html">IDocumentUpdateBuilder</a>&lt;TDocument&gt;&gt;</td>
+                    <td><span class="parametername">update</span></td>
+                    <td><p>Оператор обновления документов.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TDocument, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+                    <td><span class="parametername">filter</span></td>
+                    <td><p>Фильтр для поиска документов.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">insertIfNotExists</span></td>
+                    <td><p>Следует ли создать документ, если ничего не найдено.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.IDocumentBulkBuilder-1.html">IDocumentBulkBuilder</a>&lt;TDocument&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="extensionmethods">Extension Methods</h3>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Extensions.CommonExtensions.html#InfinniPlatform_Extensions_CommonExtensions_ExecuteSilent__1___0_Action___0__">CommonExtensions.ExecuteSilent&lt;T&gt;(T, Action&lt;T&gt;)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_GetItem_System_Object_System_Int32_">DynamicCollectionExtensions.GetItem(Object, Int32)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_SetItem_System_Object_System_Int32_System_Object_">DynamicCollectionExtensions.SetItem(Object, Int32, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_AddItem_System_Object_System_Object_">DynamicCollectionExtensions.AddItem(Object, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_InsertItem_System_Object_System_Int32_System_Object_">DynamicCollectionExtensions.InsertItem(Object, Int32, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_RemoveItem_System_Object_System_Object_">DynamicCollectionExtensions.RemoveItem(Object, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_RemoveItemAt_System_Object_System_Int32_">DynamicCollectionExtensions.RemoveItemAt(Object, Int32)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_MoveItem_System_Object_System_Object_System_Int32_">DynamicCollectionExtensions.MoveItem(Object, Object, Int32)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicObjectExtensions.html#InfinniPlatform_Dynamic_DynamicObjectExtensions_TryGetPropertyValue_System_Object_System_String_">DynamicObjectExtensions.TryGetPropertyValue(Object, String)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicObjectExtensions.html#InfinniPlatform_Dynamic_DynamicObjectExtensions_TrySetPropertyValue_System_Object_System_String_System_Object_">DynamicObjectExtensions.TrySetPropertyValue(Object, String, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicObjectExtensions.html#InfinniPlatform_Dynamic_DynamicObjectExtensions_TryGetPropertyValueByPath_System_Object_System_String_">DynamicObjectExtensions.TryGetPropertyValueByPath(Object, String)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicObjectExtensions.html#InfinniPlatform_Dynamic_DynamicObjectExtensions_TrySetPropertyValueByPath_System_Object_System_String_System_Object_">DynamicObjectExtensions.TrySetPropertyValueByPath(Object, String, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_IsInstanceOfType_System_Object_Type_">ReflectionExtensions.IsInstanceOfType(Object, Type)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_GetMemberValue_System_Object_System_String_">ReflectionExtensions.GetMemberValue(Object, String)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_SetMemberValue_System_Object_System_String_System_Object_">ReflectionExtensions.SetMemberValue(Object, String, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_InvokeMember_System_Object_System_String_System_Object___System_Object__Type___">ReflectionExtensions.InvokeMember(Object, String, Object[], out Object, Type[])</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_GetFieldValue_System_Object_FieldInfo_">ReflectionExtensions.GetFieldValue(Object, FieldInfo)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_SetFieldValue_System_Object_FieldInfo_System_Object_">ReflectionExtensions.SetFieldValue(Object, FieldInfo, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_GetPropertyValue_System_Object_PropertyInfo_">ReflectionExtensions.GetPropertyValue(Object, PropertyInfo)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_SetPropertyValue_System_Object_PropertyInfo_System_Object_">ReflectionExtensions.SetPropertyValue(Object, PropertyInfo, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_GetMethodDelegate_System_Object_MethodInfo_">ReflectionExtensions.GetMethodDelegate(Object, MethodInfo)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_GetEventDelegate_System_Object_EventInfo_">ReflectionExtensions.GetEventDelegate(Object, EventInfo)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_SetEventDelegate_System_Object_EventInfo_System_Object_">ReflectionExtensions.SetEventDelegate(Object, EventInfo, Object)</a>
+              </div>
+                        </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_IDocumentBulkBuilder_1.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.IDocumentBulkBuilder%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.Abstractions/IDocumentBulkBuilderGeneric.cs/#L9" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © Copyright Infinnity Solutions Ltd, 2010–2017.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

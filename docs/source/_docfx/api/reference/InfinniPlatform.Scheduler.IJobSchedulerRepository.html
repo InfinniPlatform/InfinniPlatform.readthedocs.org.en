@@ -1,0 +1,767 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IJobSchedulerRepository
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IJobSchedulerRepository
+   ">
+    <meta name="generator" content="docfx 2.17.7.15">
+    
+    <link rel="shortcut icon" href="../../../_static/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../../../_static/favicon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="InfinniPlatform_Scheduler_IJobSchedulerRepository" data-uid="InfinniPlatform.Scheduler.IJobSchedulerRepository">Interface IJobSchedulerRepository
+              </h1>
+              <div class="markdown level0 summary"><p>Предоставляет механизм для хранения состояния планировщика <a class="xref" href="InfinniPlatform.Scheduler.IJobScheduler.html">IJobScheduler</a>.</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <h6><strong>Namespace</strong>:InfinniPlatform.Scheduler</h6>
+              <h6><strong>Assembly</strong>:InfinniPlatform.Scheduler.Quartz.dll</h6>
+              <h5 id="InfinniPlatform_Scheduler_IJobSchedulerRepository_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public interface IJobSchedulerRepository</code></pre>
+              </div>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_Scheduler_IJobSchedulerRepository_AddOrUpdateJob_InfinniPlatform_Scheduler_JobInfo_.md&amp;value=---%0Auid%3A%20InfinniPlatform.Scheduler.IJobSchedulerRepository.AddOrUpdateJob(InfinniPlatform.Scheduler.JobInfo)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Scheduler.Quartz/IJobSchedulerRepository.cs/#L21">View Source</a>
+              </span>
+              <a id="InfinniPlatform_Scheduler_IJobSchedulerRepository_AddOrUpdateJob_" data-uid="InfinniPlatform.Scheduler.IJobSchedulerRepository.AddOrUpdateJob*"></a>
+              <h4 id="InfinniPlatform_Scheduler_IJobSchedulerRepository_AddOrUpdateJob_InfinniPlatform_Scheduler_JobInfo_" data-uid="InfinniPlatform.Scheduler.IJobSchedulerRepository.AddOrUpdateJob(InfinniPlatform.Scheduler.JobInfo)">AddOrUpdateJob(JobInfo)</h4>
+              <div class="markdown level1 summary"><p>Добавляет или обновляет задание.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">Task AddOrUpdateJob(JobInfo jobInfo)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.Scheduler.JobInfo.html">JobInfo</a></td>
+                    <td><span class="parametername">jobInfo</span></td>
+                    <td><p>Информация о задании.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Task</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_Scheduler_IJobSchedulerRepository_AddOrUpdateJobs_IEnumerable_InfinniPlatform_Scheduler_JobInfo__.md&amp;value=---%0Auid%3A%20InfinniPlatform.Scheduler.IJobSchedulerRepository.AddOrUpdateJobs(IEnumerable%7BInfinniPlatform.Scheduler.JobInfo%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Scheduler.Quartz/IJobSchedulerRepository.cs/#L27">View Source</a>
+              </span>
+              <a id="InfinniPlatform_Scheduler_IJobSchedulerRepository_AddOrUpdateJobs_" data-uid="InfinniPlatform.Scheduler.IJobSchedulerRepository.AddOrUpdateJobs*"></a>
+              <h4 id="InfinniPlatform_Scheduler_IJobSchedulerRepository_AddOrUpdateJobs_IEnumerable_InfinniPlatform_Scheduler_JobInfo__" data-uid="InfinniPlatform.Scheduler.IJobSchedulerRepository.AddOrUpdateJobs(IEnumerable{InfinniPlatform.Scheduler.JobInfo})">AddOrUpdateJobs(IEnumerable&lt;JobInfo&gt;)</h4>
+              <div class="markdown level1 summary"><p>Добавляет или обновляет список заданий.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">Task AddOrUpdateJobs(IEnumerable&lt;JobInfo&gt; jobInfos)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="InfinniPlatform.Scheduler.JobInfo.html">JobInfo</a>&gt;</td>
+                    <td><span class="parametername">jobInfos</span></td>
+                    <td><p>Список с информацией о заданиях.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Task</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_Scheduler_IJobSchedulerRepository_DeleteAllJobs.md&amp;value=---%0Auid%3A%20InfinniPlatform.Scheduler.IJobSchedulerRepository.DeleteAllJobs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Scheduler.Quartz/IJobSchedulerRepository.cs/#L45">View Source</a>
+              </span>
+              <a id="InfinniPlatform_Scheduler_IJobSchedulerRepository_DeleteAllJobs_" data-uid="InfinniPlatform.Scheduler.IJobSchedulerRepository.DeleteAllJobs*"></a>
+              <h4 id="InfinniPlatform_Scheduler_IJobSchedulerRepository_DeleteAllJobs" data-uid="InfinniPlatform.Scheduler.IJobSchedulerRepository.DeleteAllJobs">DeleteAllJobs()</h4>
+              <div class="markdown level1 summary"><p>Удаляет все задания.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">Task DeleteAllJobs()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Task</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_Scheduler_IJobSchedulerRepository_DeleteJob_System_String_.md&amp;value=---%0Auid%3A%20InfinniPlatform.Scheduler.IJobSchedulerRepository.DeleteJob(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Scheduler.Quartz/IJobSchedulerRepository.cs/#L34">View Source</a>
+              </span>
+              <a id="InfinniPlatform_Scheduler_IJobSchedulerRepository_DeleteJob_" data-uid="InfinniPlatform.Scheduler.IJobSchedulerRepository.DeleteJob*"></a>
+              <h4 id="InfinniPlatform_Scheduler_IJobSchedulerRepository_DeleteJob_System_String_" data-uid="InfinniPlatform.Scheduler.IJobSchedulerRepository.DeleteJob(System.String)">DeleteJob(String)</h4>
+              <div class="markdown level1 summary"><p>Удаляет указанное задание.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">Task DeleteJob(string jobId)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">jobId</span></td>
+                    <td><p>Уникальный идентификатор задания.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Task</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_Scheduler_IJobSchedulerRepository_DeleteJobs_IEnumerable_System_String__.md&amp;value=---%0Auid%3A%20InfinniPlatform.Scheduler.IJobSchedulerRepository.DeleteJobs(IEnumerable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Scheduler.Quartz/IJobSchedulerRepository.cs/#L40">View Source</a>
+              </span>
+              <a id="InfinniPlatform_Scheduler_IJobSchedulerRepository_DeleteJobs_" data-uid="InfinniPlatform.Scheduler.IJobSchedulerRepository.DeleteJobs*"></a>
+              <h4 id="InfinniPlatform_Scheduler_IJobSchedulerRepository_DeleteJobs_IEnumerable_System_String__" data-uid="InfinniPlatform.Scheduler.IJobSchedulerRepository.DeleteJobs(IEnumerable{System.String})">DeleteJobs(IEnumerable&lt;String&gt;)</h4>
+              <div class="markdown level1 summary"><p>Удаляет указанные задания.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">Task DeleteJobs(IEnumerable&lt;string&gt; jobIds)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+                    <td><span class="parametername">jobIds</span></td>
+                    <td><p>Список с уникальными идентификаторами заданий.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Task</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_Scheduler_IJobSchedulerRepository_GetActualJobInfos.md&amp;value=---%0Auid%3A%20InfinniPlatform.Scheduler.IJobSchedulerRepository.GetActualJobInfos%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Scheduler.Quartz/IJobSchedulerRepository.cs/#L14">View Source</a>
+              </span>
+              <a id="InfinniPlatform_Scheduler_IJobSchedulerRepository_GetActualJobInfos_" data-uid="InfinniPlatform.Scheduler.IJobSchedulerRepository.GetActualJobInfos*"></a>
+              <h4 id="InfinniPlatform_Scheduler_IJobSchedulerRepository_GetActualJobInfos" data-uid="InfinniPlatform.Scheduler.IJobSchedulerRepository.GetActualJobInfos">GetActualJobInfos()</h4>
+              <div class="markdown level1 summary"><p>Возвращает список с информацией об актуальных заданиях.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">Task&lt;IEnumerable&lt;JobInfo&gt;&gt; GetActualJobInfos()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Task</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="InfinniPlatform.Scheduler.JobInfo.html">JobInfo</a>&gt;&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_Scheduler_IJobSchedulerRepository_IsHandledJob_System_String_.md&amp;value=---%0Auid%3A%20InfinniPlatform.Scheduler.IJobSchedulerRepository.IsHandledJob(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Scheduler.Quartz/IJobSchedulerRepository.cs/#L94">View Source</a>
+              </span>
+              <a id="InfinniPlatform_Scheduler_IJobSchedulerRepository_IsHandledJob_" data-uid="InfinniPlatform.Scheduler.IJobSchedulerRepository.IsHandledJob*"></a>
+              <h4 id="InfinniPlatform_Scheduler_IJobSchedulerRepository_IsHandledJob_System_String_" data-uid="InfinniPlatform.Scheduler.IJobSchedulerRepository.IsHandledJob(System.String)">IsHandledJob(String)</h4>
+              <div class="markdown level1 summary"><p>Проверяет, был ли обработан экземпляр указанного задания.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">Task&lt;bool&gt; IsHandledJob(string jobInstance)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">jobInstance</span></td>
+                    <td><p>Уникальный идентификатор экземпляра задания.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 id="InfinniPlatform_Scheduler_IJobSchedulerRepository_IsHandledJob_System_String__remarks">Remarks</h5>
+              <div class="markdown level1 remarks"><p>Поскольку каждый узел кластера осуществляет планирование заданий, то вполне вероятно, что
+событие о необходимости выполнения очередного задания на каждом узле возникнет примерно
+в одно и то же время. Данный интерфейс предоставляет метод, который позволяет проверить,
+что обработка указанного экземпляра задания осуществляется в первый раз.</p>
+</div>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_Scheduler_IJobSchedulerRepository_PauseAllJobs.md&amp;value=---%0Auid%3A%20InfinniPlatform.Scheduler.IJobSchedulerRepository.PauseAllJobs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Scheduler.Quartz/IJobSchedulerRepository.cs/#L63">View Source</a>
+              </span>
+              <a id="InfinniPlatform_Scheduler_IJobSchedulerRepository_PauseAllJobs_" data-uid="InfinniPlatform.Scheduler.IJobSchedulerRepository.PauseAllJobs*"></a>
+              <h4 id="InfinniPlatform_Scheduler_IJobSchedulerRepository_PauseAllJobs" data-uid="InfinniPlatform.Scheduler.IJobSchedulerRepository.PauseAllJobs">PauseAllJobs()</h4>
+              <div class="markdown level1 summary"><p>Приостанавливает планирование всех заданий.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">Task PauseAllJobs()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Task</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_Scheduler_IJobSchedulerRepository_PauseJob_System_String_.md&amp;value=---%0Auid%3A%20InfinniPlatform.Scheduler.IJobSchedulerRepository.PauseJob(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Scheduler.Quartz/IJobSchedulerRepository.cs/#L52">View Source</a>
+              </span>
+              <a id="InfinniPlatform_Scheduler_IJobSchedulerRepository_PauseJob_" data-uid="InfinniPlatform.Scheduler.IJobSchedulerRepository.PauseJob*"></a>
+              <h4 id="InfinniPlatform_Scheduler_IJobSchedulerRepository_PauseJob_System_String_" data-uid="InfinniPlatform.Scheduler.IJobSchedulerRepository.PauseJob(System.String)">PauseJob(String)</h4>
+              <div class="markdown level1 summary"><p>Приостанавливает планирование указанного задания.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">Task PauseJob(string jobId)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">jobId</span></td>
+                    <td><p>Уникальный идентификатор задания.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Task</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_Scheduler_IJobSchedulerRepository_PauseJobs_IEnumerable_System_String__.md&amp;value=---%0Auid%3A%20InfinniPlatform.Scheduler.IJobSchedulerRepository.PauseJobs(IEnumerable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Scheduler.Quartz/IJobSchedulerRepository.cs/#L58">View Source</a>
+              </span>
+              <a id="InfinniPlatform_Scheduler_IJobSchedulerRepository_PauseJobs_" data-uid="InfinniPlatform.Scheduler.IJobSchedulerRepository.PauseJobs*"></a>
+              <h4 id="InfinniPlatform_Scheduler_IJobSchedulerRepository_PauseJobs_IEnumerable_System_String__" data-uid="InfinniPlatform.Scheduler.IJobSchedulerRepository.PauseJobs(IEnumerable{System.String})">PauseJobs(IEnumerable&lt;String&gt;)</h4>
+              <div class="markdown level1 summary"><p>Приостанавливает планирование указанных заданий.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">Task PauseJobs(IEnumerable&lt;string&gt; jobIds)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+                    <td><span class="parametername">jobIds</span></td>
+                    <td><p>Список с уникальными идентификаторами заданий.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Task</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_Scheduler_IJobSchedulerRepository_ResumeAllJobs.md&amp;value=---%0Auid%3A%20InfinniPlatform.Scheduler.IJobSchedulerRepository.ResumeAllJobs%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Scheduler.Quartz/IJobSchedulerRepository.cs/#L81">View Source</a>
+              </span>
+              <a id="InfinniPlatform_Scheduler_IJobSchedulerRepository_ResumeAllJobs_" data-uid="InfinniPlatform.Scheduler.IJobSchedulerRepository.ResumeAllJobs*"></a>
+              <h4 id="InfinniPlatform_Scheduler_IJobSchedulerRepository_ResumeAllJobs" data-uid="InfinniPlatform.Scheduler.IJobSchedulerRepository.ResumeAllJobs">ResumeAllJobs()</h4>
+              <div class="markdown level1 summary"><p>Возобновляет планирование всех заданий.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">Task ResumeAllJobs()</code></pre>
+              </div>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Task</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_Scheduler_IJobSchedulerRepository_ResumeJob_System_String_.md&amp;value=---%0Auid%3A%20InfinniPlatform.Scheduler.IJobSchedulerRepository.ResumeJob(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Scheduler.Quartz/IJobSchedulerRepository.cs/#L70">View Source</a>
+              </span>
+              <a id="InfinniPlatform_Scheduler_IJobSchedulerRepository_ResumeJob_" data-uid="InfinniPlatform.Scheduler.IJobSchedulerRepository.ResumeJob*"></a>
+              <h4 id="InfinniPlatform_Scheduler_IJobSchedulerRepository_ResumeJob_System_String_" data-uid="InfinniPlatform.Scheduler.IJobSchedulerRepository.ResumeJob(System.String)">ResumeJob(String)</h4>
+              <div class="markdown level1 summary"><p>Возобновляет планирование указанного задания.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">Task ResumeJob(string jobId)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">jobId</span></td>
+                    <td><p>Уникальный идентификатор задания.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Task</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_Scheduler_IJobSchedulerRepository_ResumeJobs_IEnumerable_System_String__.md&amp;value=---%0Auid%3A%20InfinniPlatform.Scheduler.IJobSchedulerRepository.ResumeJobs(IEnumerable%7BSystem.String%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Scheduler.Quartz/IJobSchedulerRepository.cs/#L76">View Source</a>
+              </span>
+              <a id="InfinniPlatform_Scheduler_IJobSchedulerRepository_ResumeJobs_" data-uid="InfinniPlatform.Scheduler.IJobSchedulerRepository.ResumeJobs*"></a>
+              <h4 id="InfinniPlatform_Scheduler_IJobSchedulerRepository_ResumeJobs_IEnumerable_System_String__" data-uid="InfinniPlatform.Scheduler.IJobSchedulerRepository.ResumeJobs(IEnumerable{System.String})">ResumeJobs(IEnumerable&lt;String&gt;)</h4>
+              <div class="markdown level1 summary"><p>Возобновляет планирование указанных заданий.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">Task ResumeJobs(IEnumerable&lt;string&gt; jobIds)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</td>
+                    <td><span class="parametername">jobIds</span></td>
+                    <td><p>Список с уникальными идентификаторами заданий.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Task</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="extensionmethods">Extension Methods</h3>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Extensions.CommonExtensions.html#InfinniPlatform_Extensions_CommonExtensions_ExecuteSilent__1___0_Action___0__">CommonExtensions.ExecuteSilent&lt;T&gt;(T, Action&lt;T&gt;)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_GetItem_System_Object_System_Int32_">DynamicCollectionExtensions.GetItem(Object, Int32)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_SetItem_System_Object_System_Int32_System_Object_">DynamicCollectionExtensions.SetItem(Object, Int32, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_AddItem_System_Object_System_Object_">DynamicCollectionExtensions.AddItem(Object, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_InsertItem_System_Object_System_Int32_System_Object_">DynamicCollectionExtensions.InsertItem(Object, Int32, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_RemoveItem_System_Object_System_Object_">DynamicCollectionExtensions.RemoveItem(Object, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_RemoveItemAt_System_Object_System_Int32_">DynamicCollectionExtensions.RemoveItemAt(Object, Int32)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_MoveItem_System_Object_System_Object_System_Int32_">DynamicCollectionExtensions.MoveItem(Object, Object, Int32)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicObjectExtensions.html#InfinniPlatform_Dynamic_DynamicObjectExtensions_TryGetPropertyValue_System_Object_System_String_">DynamicObjectExtensions.TryGetPropertyValue(Object, String)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicObjectExtensions.html#InfinniPlatform_Dynamic_DynamicObjectExtensions_TrySetPropertyValue_System_Object_System_String_System_Object_">DynamicObjectExtensions.TrySetPropertyValue(Object, String, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicObjectExtensions.html#InfinniPlatform_Dynamic_DynamicObjectExtensions_TryGetPropertyValueByPath_System_Object_System_String_">DynamicObjectExtensions.TryGetPropertyValueByPath(Object, String)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicObjectExtensions.html#InfinniPlatform_Dynamic_DynamicObjectExtensions_TrySetPropertyValueByPath_System_Object_System_String_System_Object_">DynamicObjectExtensions.TrySetPropertyValueByPath(Object, String, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_IsInstanceOfType_System_Object_Type_">ReflectionExtensions.IsInstanceOfType(Object, Type)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_GetMemberValue_System_Object_System_String_">ReflectionExtensions.GetMemberValue(Object, String)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_SetMemberValue_System_Object_System_String_System_Object_">ReflectionExtensions.SetMemberValue(Object, String, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_InvokeMember_System_Object_System_String_System_Object___System_Object__Type___">ReflectionExtensions.InvokeMember(Object, String, Object[], out Object, Type[])</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_GetFieldValue_System_Object_FieldInfo_">ReflectionExtensions.GetFieldValue(Object, FieldInfo)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_SetFieldValue_System_Object_FieldInfo_System_Object_">ReflectionExtensions.SetFieldValue(Object, FieldInfo, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_GetPropertyValue_System_Object_PropertyInfo_">ReflectionExtensions.GetPropertyValue(Object, PropertyInfo)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_SetPropertyValue_System_Object_PropertyInfo_System_Object_">ReflectionExtensions.SetPropertyValue(Object, PropertyInfo, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_GetMethodDelegate_System_Object_MethodInfo_">ReflectionExtensions.GetMethodDelegate(Object, MethodInfo)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_GetEventDelegate_System_Object_EventInfo_">ReflectionExtensions.GetEventDelegate(Object, EventInfo)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_SetEventDelegate_System_Object_EventInfo_System_Object_">ReflectionExtensions.SetEventDelegate(Object, EventInfo, Object)</a>
+              </div>
+                        </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_Scheduler_IJobSchedulerRepository.md&amp;value=---%0Auid%3A%20InfinniPlatform.Scheduler.IJobSchedulerRepository%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Scheduler.Quartz/IJobSchedulerRepository.cs/#L9" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © Copyright Infinnity Solutions Ltd, 2010–2017.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

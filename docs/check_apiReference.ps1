@@ -1,4 +1,4 @@
-$success = $true
+$warnings = 0
 $apiFiles = Get-ChildItem -Path (Join-Path $PSScriptRoot 'source/_docfx/api/reference') -Filter '*.html' | ForEach-Object { $_.Name }
 $docFiles = Get-ChildItem -Path (Join-Path $PSScriptRoot 'source') -Filter '*.rst' -Recurse
 
@@ -15,14 +15,14 @@ foreach ($docFile in $docFiles)
         if ($apiFiles -notcontains $ref)
         {
             Write-Host "File '$($docFile.FullName)' contains bad reference '$ref'." -ForegroundColor Yellow
-            $success = $false
+            $warnings += 1
         }
     }
 }
 
-if (-not $success)
+if ($warnings -gt 0)
 {
-    Write-Host 'Documentation contains bad references to the API.' -ForegroundColor Red
+    Write-Host "Documentation contains $warnings bad references to the API." -ForegroundColor Red
     exit 1
 }
 

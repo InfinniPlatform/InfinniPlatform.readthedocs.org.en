@@ -1,0 +1,1475 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IUnitOfWork
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IUnitOfWork
+   ">
+    <meta name="generator" content="docfx 2.17.7.15">
+    
+    <link rel="shortcut icon" href="../../../_static/favicon.png">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../../../_static/favicon.png" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content">
+              
+              
+              <h1 id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork">Interface IUnitOfWork
+              </h1>
+              <div class="markdown level0 summary"><p>Предоставляет интерфейс, реализующий шаблон &quot;Единица работы&quot; (&quot;Unit of Work&quot;).</p>
+</div>
+              <div class="markdown level0 conceptual"></div>
+              <h6><strong>Namespace</strong>:InfinniPlatform.DocumentStorage.Transactions</h6>
+              <h6><strong>Assembly</strong>:InfinniPlatform.DocumentStorage.Abstractions.dll</h6>
+              <h5 id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_syntax">Syntax</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public interface IUnitOfWork : IDisposable</code></pre>
+              </div>
+              <h5 id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_remarks"><strong>Remarks</strong></h5>
+              <div class="markdown level0 remarks"><p><a href="http://martinfowler.com/eaaCatalog/unitOfWork.html">http://martinfowler.com/eaaCatalog/unitOfWork.html</a></p>
+</div>
+              <h3 id="methods">Methods
+              </h3>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_Commit_System_Boolean_.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.Commit(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.Abstractions/Transactions/IUnitOfWork.cs/#L204">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_Commit_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.Commit*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_Commit_System_Boolean_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.Commit(System.Boolean)">Commit(Boolean)</h4>
+              <div class="markdown level1 summary"><p>Подтверждает все действия.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void Commit(bool isOrdered = false)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">isOrdered</span></td>
+                    <td><p>Обязательно ли выполнять команды по порядку.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_CommitAsync_System_Boolean_.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.CommitAsync(System.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.Abstractions/Transactions/IUnitOfWork.cs/#L210">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_CommitAsync_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.CommitAsync*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_CommitAsync_System_Boolean_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.CommitAsync(System.Boolean)">CommitAsync(Boolean)</h4>
+              <div class="markdown level1 summary"><p>Подтверждает все действия.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">Task CommitAsync(bool isOrdered = false)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">isOrdered</span></td>
+                    <td><p>Обязательно ли выполнять команды по порядку.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Task</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_DeleteMany_System_String_Func_InfinniPlatform_DocumentStorage_IDocumentFilterBuilder_System_Object__.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.DeleteMany(System.String%2CFunc%7BInfinniPlatform.DocumentStorage.IDocumentFilterBuilder%2CSystem.Object%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.Abstractions/Transactions/IUnitOfWork.cs/#L182">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_DeleteMany_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.DeleteMany*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_DeleteMany_System_String_Func_InfinniPlatform_DocumentStorage_IDocumentFilterBuilder_System_Object__" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.DeleteMany(System.String,Func{InfinniPlatform.DocumentStorage.IDocumentFilterBuilder,System.Object})">DeleteMany(String, Func&lt;IDocumentFilterBuilder, Object&gt;)</h4>
+              <div class="markdown level1 summary"><p>Удаляет все документы, удовлетворяющие указанному фильтру.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void DeleteMany(string documentType, Func&lt;IDocumentFilterBuilder, object&gt; filter = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">documentType</span></td>
+                    <td><p>Имя типа документа.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Func</span>&lt;<a class="xref" href="InfinniPlatform.DocumentStorage.IDocumentFilterBuilder.html">IDocumentFilterBuilder</a>, <span class="xref">System.Object</span>&gt;</td>
+                    <td><span class="parametername">filter</span></td>
+                    <td><p>Фильтр для поиска документов.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_DeleteMany__1_Expression_Func___0_System_Boolean___.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.DeleteMany%60%601(Expression%7BFunc%7B%60%600%2CSystem.Boolean%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.Abstractions/Transactions/IUnitOfWork.cs/#L197">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_DeleteMany_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.DeleteMany*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_DeleteMany__1_Expression_Func___0_System_Boolean___" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.DeleteMany``1(Expression{Func{``0,System.Boolean}})">DeleteMany&lt;TDocument&gt;(Expression&lt;Func&lt;TDocument, Boolean&gt;&gt;)</h4>
+              <div class="markdown level1 summary"><p>Удаляет все документы, удовлетворяющие указанному фильтру.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void DeleteMany&lt;TDocument&gt;(Expression&lt;Func&lt;TDocument, bool&gt;&gt; filter = null)where TDocument : Document</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TDocument, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+                    <td><span class="parametername">filter</span></td>
+                    <td><p>Фильтр для поиска документов.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">TDocument</span></td>
+                    <td><p>Тип документа.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_DeleteMany__1_System_String_Expression_Func___0_System_Boolean___.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.DeleteMany%60%601(System.String%2CExpression%7BFunc%7B%60%600%2CSystem.Boolean%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.Abstractions/Transactions/IUnitOfWork.cs/#L190">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_DeleteMany_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.DeleteMany*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_DeleteMany__1_System_String_Expression_Func___0_System_Boolean___" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.DeleteMany``1(System.String,Expression{Func{``0,System.Boolean}})">DeleteMany&lt;TDocument&gt;(String, Expression&lt;Func&lt;TDocument, Boolean&gt;&gt;)</h4>
+              <div class="markdown level1 summary"><p>Удаляет все документы, удовлетворяющие указанному фильтру.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void DeleteMany&lt;TDocument&gt;(string documentType, Expression&lt;Func&lt;TDocument, bool&gt;&gt; filter = null)where TDocument : Document</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">documentType</span></td>
+                    <td><p>Имя типа документа.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TDocument, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+                    <td><span class="parametername">filter</span></td>
+                    <td><p>Фильтр для поиска документов.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">TDocument</span></td>
+                    <td><p>Тип документа.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_DeleteOne_System_String_Func_InfinniPlatform_DocumentStorage_IDocumentFilterBuilder_System_Object__.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.DeleteOne(System.String%2CFunc%7BInfinniPlatform.DocumentStorage.IDocumentFilterBuilder%2CSystem.Object%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.Abstractions/Transactions/IUnitOfWork.cs/#L159">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_DeleteOne_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.DeleteOne*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_DeleteOne_System_String_Func_InfinniPlatform_DocumentStorage_IDocumentFilterBuilder_System_Object__" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.DeleteOne(System.String,Func{InfinniPlatform.DocumentStorage.IDocumentFilterBuilder,System.Object})">DeleteOne(String, Func&lt;IDocumentFilterBuilder, Object&gt;)</h4>
+              <div class="markdown level1 summary"><p>Удаляет первый найденный документ, удовлетворяющий указанному фильтру.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void DeleteOne(string documentType, Func&lt;IDocumentFilterBuilder, object&gt; filter = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">documentType</span></td>
+                    <td><p>Имя типа документа.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Func</span>&lt;<a class="xref" href="InfinniPlatform.DocumentStorage.IDocumentFilterBuilder.html">IDocumentFilterBuilder</a>, <span class="xref">System.Object</span>&gt;</td>
+                    <td><span class="parametername">filter</span></td>
+                    <td><p>Фильтр для поиска документов.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_DeleteOne__1_Expression_Func___0_System_Boolean___.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.DeleteOne%60%601(Expression%7BFunc%7B%60%600%2CSystem.Boolean%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.Abstractions/Transactions/IUnitOfWork.cs/#L174">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_DeleteOne_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.DeleteOne*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_DeleteOne__1_Expression_Func___0_System_Boolean___" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.DeleteOne``1(Expression{Func{``0,System.Boolean}})">DeleteOne&lt;TDocument&gt;(Expression&lt;Func&lt;TDocument, Boolean&gt;&gt;)</h4>
+              <div class="markdown level1 summary"><p>Удаляет первый найденный документ, удовлетворяющий указанному фильтру.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void DeleteOne&lt;TDocument&gt;(Expression&lt;Func&lt;TDocument, bool&gt;&gt; filter = null)where TDocument : Document</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TDocument, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+                    <td><span class="parametername">filter</span></td>
+                    <td><p>Фильтр для поиска документов.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">TDocument</span></td>
+                    <td><p>Тип документа.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_DeleteOne__1_System_String_Expression_Func___0_System_Boolean___.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.DeleteOne%60%601(System.String%2CExpression%7BFunc%7B%60%600%2CSystem.Boolean%7D%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.Abstractions/Transactions/IUnitOfWork.cs/#L167">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_DeleteOne_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.DeleteOne*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_DeleteOne__1_System_String_Expression_Func___0_System_Boolean___" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.DeleteOne``1(System.String,Expression{Func{``0,System.Boolean}})">DeleteOne&lt;TDocument&gt;(String, Expression&lt;Func&lt;TDocument, Boolean&gt;&gt;)</h4>
+              <div class="markdown level1 summary"><p>Удаляет первый найденный документ, удовлетворяющий указанному фильтру.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void DeleteOne&lt;TDocument&gt;(string documentType, Expression&lt;Func&lt;TDocument, bool&gt;&gt; filter = null)where TDocument : Document</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">documentType</span></td>
+                    <td><p>Имя типа документа.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TDocument, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+                    <td><span class="parametername">filter</span></td>
+                    <td><p>Фильтр для поиска документов.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">TDocument</span></td>
+                    <td><p>Тип документа.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_InsertMany_System_String_IEnumerable_InfinniPlatform_Dynamic_DynamicDocument__.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.InsertMany(System.String%2CIEnumerable%7BInfinniPlatform.Dynamic.DynamicDocument%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.Abstractions/Transactions/IUnitOfWork.cs/#L47">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_InsertMany_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.InsertMany*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_InsertMany_System_String_IEnumerable_InfinniPlatform_Dynamic_DynamicDocument__" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.InsertMany(System.String,IEnumerable{InfinniPlatform.Dynamic.DynamicDocument})">InsertMany(String, IEnumerable&lt;DynamicDocument&gt;)</h4>
+              <div class="markdown level1 summary"><p>Вставляет набор документов хранилище или возвращает исключение, если хранилище уже содержит один из указанных документов.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void InsertMany(string documentType, IEnumerable&lt;DynamicDocument&gt; documents)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">documentType</span></td>
+                    <td><p>Имя типа документа.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="InfinniPlatform.Dynamic.DynamicDocument.html">DynamicDocument</a>&gt;</td>
+                    <td><span class="parametername">documents</span></td>
+                    <td><p>Список документов для вставки.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="exceptions">Exceptions</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.DocumentStorageWriteException.html">DocumentStorageWriteException</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_InsertMany__1_IEnumerable___0__.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.InsertMany%60%601(IEnumerable%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.Abstractions/Transactions/IUnitOfWork.cs/#L64">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_InsertMany_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.InsertMany*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_InsertMany__1_IEnumerable___0__" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.InsertMany``1(IEnumerable{``0})">InsertMany&lt;TDocument&gt;(IEnumerable&lt;TDocument&gt;)</h4>
+              <div class="markdown level1 summary"><p>Вставляет набор документов хранилище или возвращает исключение, если хранилище уже содержит один из указанных документов.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void InsertMany&lt;TDocument&gt;(IEnumerable&lt;TDocument&gt; documents)where TDocument : Document</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;TDocument&gt;</td>
+                    <td><span class="parametername">documents</span></td>
+                    <td><p>Список документов для вставки.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">TDocument</span></td>
+                    <td><p>Тип документа.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="exceptions">Exceptions</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.DocumentStorageWriteException.html">DocumentStorageWriteException</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_InsertMany__1_System_String_IEnumerable___0__.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.InsertMany%60%601(System.String%2CIEnumerable%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.Abstractions/Transactions/IUnitOfWork.cs/#L56">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_InsertMany_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.InsertMany*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_InsertMany__1_System_String_IEnumerable___0__" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.InsertMany``1(System.String,IEnumerable{``0})">InsertMany&lt;TDocument&gt;(String, IEnumerable&lt;TDocument&gt;)</h4>
+              <div class="markdown level1 summary"><p>Вставляет набор документов хранилище или возвращает исключение, если хранилище уже содержит один из указанных документов.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void InsertMany&lt;TDocument&gt;(string documentType, IEnumerable&lt;TDocument&gt; documents)where TDocument : Document</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">documentType</span></td>
+                    <td><p>Имя типа документа.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;TDocument&gt;</td>
+                    <td><span class="parametername">documents</span></td>
+                    <td><p>Список документов для вставки.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">TDocument</span></td>
+                    <td><p>Тип документа.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="exceptions">Exceptions</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Condition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.DocumentStorage.DocumentStorageWriteException.html">DocumentStorageWriteException</a></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_InsertOne_System_String_InfinniPlatform_Dynamic_DynamicDocument_.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.InsertOne(System.String%2CInfinniPlatform.Dynamic.DynamicDocument)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.Abstractions/Transactions/IUnitOfWork.cs/#L23">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_InsertOne_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.InsertOne*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_InsertOne_System_String_InfinniPlatform_Dynamic_DynamicDocument_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.InsertOne(System.String,InfinniPlatform.Dynamic.DynamicDocument)">InsertOne(String, DynamicDocument)</h4>
+              <div class="markdown level1 summary"><p>Вставляет один документ в хранилище или возвращает исключение, если хранилище уже содержит указанный документ.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void InsertOne(string documentType, DynamicDocument document)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">documentType</span></td>
+                    <td><p>Имя типа документа.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.Dynamic.DynamicDocument.html">DynamicDocument</a></td>
+                    <td><span class="parametername">document</span></td>
+                    <td><p>Документ для вставки.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_InsertOne__1___0_.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.InsertOne%60%601(%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.Abstractions/Transactions/IUnitOfWork.cs/#L38">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_InsertOne_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.InsertOne*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_InsertOne__1___0_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.InsertOne``1(``0)">InsertOne&lt;TDocument&gt;(TDocument)</h4>
+              <div class="markdown level1 summary"><p>Вставляет один документ в хранилище или возвращает исключение, если хранилище уже содержит указанный документ.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void InsertOne&lt;TDocument&gt;(TDocument document)where TDocument : Document</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TDocument</span></td>
+                    <td><span class="parametername">document</span></td>
+                    <td><p>Документ для вставки.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">TDocument</span></td>
+                    <td><p>Тип документа.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_InsertOne__1_System_String___0_.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.InsertOne%60%601(System.String%2C%60%600)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.Abstractions/Transactions/IUnitOfWork.cs/#L31">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_InsertOne_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.InsertOne*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_InsertOne__1_System_String___0_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.InsertOne``1(System.String,``0)">InsertOne&lt;TDocument&gt;(String, TDocument)</h4>
+              <div class="markdown level1 summary"><p>Вставляет один документ в хранилище или возвращает исключение, если хранилище уже содержит указанный документ.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void InsertOne&lt;TDocument&gt;(string documentType, TDocument document)where TDocument : Document</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">documentType</span></td>
+                    <td><p>Имя типа документа.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">TDocument</span></td>
+                    <td><span class="parametername">document</span></td>
+                    <td><p>Документ для вставки.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">TDocument</span></td>
+                    <td><p>Тип документа.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_ReplaceOne_System_String_InfinniPlatform_Dynamic_DynamicDocument_Func_InfinniPlatform_DocumentStorage_IDocumentFilterBuilder_System_Object__System_Boolean_.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.ReplaceOne(System.String%2CInfinniPlatform.Dynamic.DynamicDocument%2CFunc%7BInfinniPlatform.DocumentStorage.IDocumentFilterBuilder%2CSystem.Object%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.Abstractions/Transactions/IUnitOfWork.cs/#L132">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_ReplaceOne_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.ReplaceOne*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_ReplaceOne_System_String_InfinniPlatform_Dynamic_DynamicDocument_Func_InfinniPlatform_DocumentStorage_IDocumentFilterBuilder_System_Object__System_Boolean_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.ReplaceOne(System.String,InfinniPlatform.Dynamic.DynamicDocument,Func{InfinniPlatform.DocumentStorage.IDocumentFilterBuilder,System.Object},System.Boolean)">ReplaceOne(String, DynamicDocument, Func&lt;IDocumentFilterBuilder, Object&gt;, Boolean)</h4>
+              <div class="markdown level1 summary"><p>Заменяет первый найденный документ, удовлетворяющий указанному фильтру.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void ReplaceOne(string documentType, DynamicDocument replacement, Func&lt;IDocumentFilterBuilder, object&gt; filter = null, bool insertIfNotExists = false)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">documentType</span></td>
+                    <td><p>Имя типа документа.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.Dynamic.DynamicDocument.html">DynamicDocument</a></td>
+                    <td><span class="parametername">replacement</span></td>
+                    <td><p>Документ замены.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Func</span>&lt;<a class="xref" href="InfinniPlatform.DocumentStorage.IDocumentFilterBuilder.html">IDocumentFilterBuilder</a>, <span class="xref">System.Object</span>&gt;</td>
+                    <td><span class="parametername">filter</span></td>
+                    <td><p>Фильтр для поиска документов.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">insertIfNotExists</span></td>
+                    <td><p>Следует ли создать документ, если ничего не найдено.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_ReplaceOne__1___0_Expression_Func___0_System_Boolean___System_Boolean_.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.ReplaceOne%60%601(%60%600%2CExpression%7BFunc%7B%60%600%2CSystem.Boolean%7D%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.Abstractions/Transactions/IUnitOfWork.cs/#L151">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_ReplaceOne_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.ReplaceOne*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_ReplaceOne__1___0_Expression_Func___0_System_Boolean___System_Boolean_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.ReplaceOne``1(``0,Expression{Func{``0,System.Boolean}},System.Boolean)">ReplaceOne&lt;TDocument&gt;(TDocument, Expression&lt;Func&lt;TDocument, Boolean&gt;&gt;, Boolean)</h4>
+              <div class="markdown level1 summary"><p>Заменяет первый найденный документ, удовлетворяющий указанному фильтру.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void ReplaceOne&lt;TDocument&gt;(TDocument replacement, Expression&lt;Func&lt;TDocument, bool&gt;&gt; filter = null, bool insertIfNotExists = false)where TDocument : Document</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">TDocument</span></td>
+                    <td><span class="parametername">replacement</span></td>
+                    <td><p>Документ замены.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TDocument, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+                    <td><span class="parametername">filter</span></td>
+                    <td><p>Фильтр для поиска документов.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">insertIfNotExists</span></td>
+                    <td><p>Следует ли создать документ, если ничего не найдено.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">TDocument</span></td>
+                    <td><p>Тип документа.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_ReplaceOne__1_System_String___0_Expression_Func___0_System_Boolean___System_Boolean_.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.ReplaceOne%60%601(System.String%2C%60%600%2CExpression%7BFunc%7B%60%600%2CSystem.Boolean%7D%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.Abstractions/Transactions/IUnitOfWork.cs/#L142">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_ReplaceOne_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.ReplaceOne*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_ReplaceOne__1_System_String___0_Expression_Func___0_System_Boolean___System_Boolean_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.ReplaceOne``1(System.String,``0,Expression{Func{``0,System.Boolean}},System.Boolean)">ReplaceOne&lt;TDocument&gt;(String, TDocument, Expression&lt;Func&lt;TDocument, Boolean&gt;&gt;, Boolean)</h4>
+              <div class="markdown level1 summary"><p>Заменяет первый найденный документ, удовлетворяющий указанному фильтру.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void ReplaceOne&lt;TDocument&gt;(string documentType, TDocument replacement, Expression&lt;Func&lt;TDocument, bool&gt;&gt; filter = null, bool insertIfNotExists = false)where TDocument : Document</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">documentType</span></td>
+                    <td><p>Имя типа документа.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">TDocument</span></td>
+                    <td><span class="parametername">replacement</span></td>
+                    <td><p>Документ замены.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TDocument, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+                    <td><span class="parametername">filter</span></td>
+                    <td><p>Фильтр для поиска документов.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">insertIfNotExists</span></td>
+                    <td><p>Следует ли создать документ, если ничего не найдено.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">TDocument</span></td>
+                    <td><p>Тип документа.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_UpdateMany_System_String_Action_InfinniPlatform_DocumentStorage_IDocumentUpdateBuilder__Func_InfinniPlatform_DocumentStorage_IDocumentFilterBuilder_System_Object__System_Boolean_.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.UpdateMany(System.String%2CAction%7BInfinniPlatform.DocumentStorage.IDocumentUpdateBuilder%7D%2CFunc%7BInfinniPlatform.DocumentStorage.IDocumentFilterBuilder%2CSystem.Object%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.Abstractions/Transactions/IUnitOfWork.cs/#L103">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_UpdateMany_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.UpdateMany*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_UpdateMany_System_String_Action_InfinniPlatform_DocumentStorage_IDocumentUpdateBuilder__Func_InfinniPlatform_DocumentStorage_IDocumentFilterBuilder_System_Object__System_Boolean_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.UpdateMany(System.String,Action{InfinniPlatform.DocumentStorage.IDocumentUpdateBuilder},Func{InfinniPlatform.DocumentStorage.IDocumentFilterBuilder,System.Object},System.Boolean)">UpdateMany(String, Action&lt;IDocumentUpdateBuilder&gt;, Func&lt;IDocumentFilterBuilder, Object&gt;, Boolean)</h4>
+              <div class="markdown level1 summary"><p>Обновляет все документы, удовлетворяющие указанному фильтру.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void UpdateMany(string documentType, Action&lt;IDocumentUpdateBuilder&gt; update, Func&lt;IDocumentFilterBuilder, object&gt; filter = null, bool insertIfNotExists = false)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">documentType</span></td>
+                    <td><p>Имя типа документа.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Action</span>&lt;<a class="xref" href="InfinniPlatform.DocumentStorage.IDocumentUpdateBuilder.html">IDocumentUpdateBuilder</a>&gt;</td>
+                    <td><span class="parametername">update</span></td>
+                    <td><p>Оператор обновления документов.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Func</span>&lt;<a class="xref" href="InfinniPlatform.DocumentStorage.IDocumentFilterBuilder.html">IDocumentFilterBuilder</a>, <span class="xref">System.Object</span>&gt;</td>
+                    <td><span class="parametername">filter</span></td>
+                    <td><p>Фильтр для поиска документов.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">insertIfNotExists</span></td>
+                    <td><p>Следует ли создать документ, если ничего не найдено.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_UpdateMany__1_Action_InfinniPlatform_DocumentStorage_IDocumentUpdateBuilder___0___Expression_Func___0_System_Boolean___System_Boolean_.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.UpdateMany%60%601(Action%7BInfinniPlatform.DocumentStorage.IDocumentUpdateBuilder%7B%60%600%7D%7D%2CExpression%7BFunc%7B%60%600%2CSystem.Boolean%7D%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.Abstractions/Transactions/IUnitOfWork.cs/#L122">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_UpdateMany_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.UpdateMany*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_UpdateMany__1_Action_InfinniPlatform_DocumentStorage_IDocumentUpdateBuilder___0___Expression_Func___0_System_Boolean___System_Boolean_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.UpdateMany``1(Action{InfinniPlatform.DocumentStorage.IDocumentUpdateBuilder{``0}},Expression{Func{``0,System.Boolean}},System.Boolean)">UpdateMany&lt;TDocument&gt;(Action&lt;IDocumentUpdateBuilder&lt;TDocument&gt;&gt;, Expression&lt;Func&lt;TDocument, Boolean&gt;&gt;, Boolean)</h4>
+              <div class="markdown level1 summary"><p>Обновляет все документы, удовлетворяющие указанному фильтру.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void UpdateMany&lt;TDocument&gt;(Action&lt;IDocumentUpdateBuilder&lt;TDocument&gt;&gt; update, Expression&lt;Func&lt;TDocument, bool&gt;&gt; filter = null, bool insertIfNotExists = false)where TDocument : Document</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Action</span>&lt;<a class="xref" href="InfinniPlatform.DocumentStorage.IDocumentUpdateBuilder-1.html">IDocumentUpdateBuilder</a>&lt;TDocument&gt;&gt;</td>
+                    <td><span class="parametername">update</span></td>
+                    <td><p>Оператор обновления документов.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TDocument, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+                    <td><span class="parametername">filter</span></td>
+                    <td><p>Фильтр для поиска документов.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">insertIfNotExists</span></td>
+                    <td><p>Следует ли создать документ, если ничего не найдено.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">TDocument</span></td>
+                    <td><p>Тип документа.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_UpdateMany__1_System_String_Action_InfinniPlatform_DocumentStorage_IDocumentUpdateBuilder___0___Expression_Func___0_System_Boolean___System_Boolean_.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.UpdateMany%60%601(System.String%2CAction%7BInfinniPlatform.DocumentStorage.IDocumentUpdateBuilder%7B%60%600%7D%7D%2CExpression%7BFunc%7B%60%600%2CSystem.Boolean%7D%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.Abstractions/Transactions/IUnitOfWork.cs/#L113">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_UpdateMany_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.UpdateMany*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_UpdateMany__1_System_String_Action_InfinniPlatform_DocumentStorage_IDocumentUpdateBuilder___0___Expression_Func___0_System_Boolean___System_Boolean_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.UpdateMany``1(System.String,Action{InfinniPlatform.DocumentStorage.IDocumentUpdateBuilder{``0}},Expression{Func{``0,System.Boolean}},System.Boolean)">UpdateMany&lt;TDocument&gt;(String, Action&lt;IDocumentUpdateBuilder&lt;TDocument&gt;&gt;, Expression&lt;Func&lt;TDocument, Boolean&gt;&gt;, Boolean)</h4>
+              <div class="markdown level1 summary"><p>Обновляет все документы, удовлетворяющие указанному фильтру.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void UpdateMany&lt;TDocument&gt;(string documentType, Action&lt;IDocumentUpdateBuilder&lt;TDocument&gt;&gt; update, Expression&lt;Func&lt;TDocument, bool&gt;&gt; filter = null, bool insertIfNotExists = false)where TDocument : Document</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">documentType</span></td>
+                    <td><p>Имя типа документа.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Action</span>&lt;<a class="xref" href="InfinniPlatform.DocumentStorage.IDocumentUpdateBuilder-1.html">IDocumentUpdateBuilder</a>&lt;TDocument&gt;&gt;</td>
+                    <td><span class="parametername">update</span></td>
+                    <td><p>Оператор обновления документов.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TDocument, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+                    <td><span class="parametername">filter</span></td>
+                    <td><p>Фильтр для поиска документов.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">insertIfNotExists</span></td>
+                    <td><p>Следует ли создать документ, если ничего не найдено.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">TDocument</span></td>
+                    <td><p>Тип документа.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_UpdateOne_System_String_Action_InfinniPlatform_DocumentStorage_IDocumentUpdateBuilder__Func_InfinniPlatform_DocumentStorage_IDocumentFilterBuilder_System_Object__System_Boolean_.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.UpdateOne(System.String%2CAction%7BInfinniPlatform.DocumentStorage.IDocumentUpdateBuilder%7D%2CFunc%7BInfinniPlatform.DocumentStorage.IDocumentFilterBuilder%2CSystem.Object%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.Abstractions/Transactions/IUnitOfWork.cs/#L74">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_UpdateOne_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.UpdateOne*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_UpdateOne_System_String_Action_InfinniPlatform_DocumentStorage_IDocumentUpdateBuilder__Func_InfinniPlatform_DocumentStorage_IDocumentFilterBuilder_System_Object__System_Boolean_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.UpdateOne(System.String,Action{InfinniPlatform.DocumentStorage.IDocumentUpdateBuilder},Func{InfinniPlatform.DocumentStorage.IDocumentFilterBuilder,System.Object},System.Boolean)">UpdateOne(String, Action&lt;IDocumentUpdateBuilder&gt;, Func&lt;IDocumentFilterBuilder, Object&gt;, Boolean)</h4>
+              <div class="markdown level1 summary"><p>Обновляет первый найденный документ, удовлетворяющий указанному фильтру.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void UpdateOne(string documentType, Action&lt;IDocumentUpdateBuilder&gt; update, Func&lt;IDocumentFilterBuilder, object&gt; filter = null, bool insertIfNotExists = false)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">documentType</span></td>
+                    <td><p>Имя типа документа.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Action</span>&lt;<a class="xref" href="InfinniPlatform.DocumentStorage.IDocumentUpdateBuilder.html">IDocumentUpdateBuilder</a>&gt;</td>
+                    <td><span class="parametername">update</span></td>
+                    <td><p>Оператор обновления документов.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Func</span>&lt;<a class="xref" href="InfinniPlatform.DocumentStorage.IDocumentFilterBuilder.html">IDocumentFilterBuilder</a>, <span class="xref">System.Object</span>&gt;</td>
+                    <td><span class="parametername">filter</span></td>
+                    <td><p>Фильтр для поиска документов.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">insertIfNotExists</span></td>
+                    <td><p>Следует ли создать документ, если ничего не найдено.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_UpdateOne__1_Action_InfinniPlatform_DocumentStorage_IDocumentUpdateBuilder___0___Expression_Func___0_System_Boolean___System_Boolean_.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.UpdateOne%60%601(Action%7BInfinniPlatform.DocumentStorage.IDocumentUpdateBuilder%7B%60%600%7D%7D%2CExpression%7BFunc%7B%60%600%2CSystem.Boolean%7D%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.Abstractions/Transactions/IUnitOfWork.cs/#L93">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_UpdateOne_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.UpdateOne*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_UpdateOne__1_Action_InfinniPlatform_DocumentStorage_IDocumentUpdateBuilder___0___Expression_Func___0_System_Boolean___System_Boolean_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.UpdateOne``1(Action{InfinniPlatform.DocumentStorage.IDocumentUpdateBuilder{``0}},Expression{Func{``0,System.Boolean}},System.Boolean)">UpdateOne&lt;TDocument&gt;(Action&lt;IDocumentUpdateBuilder&lt;TDocument&gt;&gt;, Expression&lt;Func&lt;TDocument, Boolean&gt;&gt;, Boolean)</h4>
+              <div class="markdown level1 summary"><p>Обновляет первый найденный документ, удовлетворяющий указанному фильтру.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void UpdateOne&lt;TDocument&gt;(Action&lt;IDocumentUpdateBuilder&lt;TDocument&gt;&gt; update, Expression&lt;Func&lt;TDocument, bool&gt;&gt; filter = null, bool insertIfNotExists = false)where TDocument : Document</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">Action</span>&lt;<a class="xref" href="InfinniPlatform.DocumentStorage.IDocumentUpdateBuilder-1.html">IDocumentUpdateBuilder</a>&lt;TDocument&gt;&gt;</td>
+                    <td><span class="parametername">update</span></td>
+                    <td><p>Оператор обновления документов.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TDocument, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+                    <td><span class="parametername">filter</span></td>
+                    <td><p>Фильтр для поиска документов.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">insertIfNotExists</span></td>
+                    <td><p>Следует ли создать документ, если ничего не найдено.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">TDocument</span></td>
+                    <td><p>Тип документа.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_UpdateOne__1_System_String_Action_InfinniPlatform_DocumentStorage_IDocumentUpdateBuilder___0___Expression_Func___0_System_Boolean___System_Boolean_.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.UpdateOne%60%601(System.String%2CAction%7BInfinniPlatform.DocumentStorage.IDocumentUpdateBuilder%7B%60%600%7D%7D%2CExpression%7BFunc%7B%60%600%2CSystem.Boolean%7D%7D%2CSystem.Boolean)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.Abstractions/Transactions/IUnitOfWork.cs/#L84">View Source</a>
+              </span>
+              <a id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_UpdateOne_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.UpdateOne*"></a>
+              <h4 id="InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_UpdateOne__1_System_String_Action_InfinniPlatform_DocumentStorage_IDocumentUpdateBuilder___0___Expression_Func___0_System_Boolean___System_Boolean_" data-uid="InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork.UpdateOne``1(System.String,Action{InfinniPlatform.DocumentStorage.IDocumentUpdateBuilder{``0}},Expression{Func{``0,System.Boolean}},System.Boolean)">UpdateOne&lt;TDocument&gt;(String, Action&lt;IDocumentUpdateBuilder&lt;TDocument&gt;&gt;, Expression&lt;Func&lt;TDocument, Boolean&gt;&gt;, Boolean)</h4>
+              <div class="markdown level1 summary"><p>Обновляет первый найденный документ, удовлетворяющий указанному фильтру.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">void UpdateOne&lt;TDocument&gt;(string documentType, Action&lt;IDocumentUpdateBuilder&lt;TDocument&gt;&gt; update, Expression&lt;Func&lt;TDocument, bool&gt;&gt; filter = null, bool insertIfNotExists = false)where TDocument : Document</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">System.String</span></td>
+                    <td><span class="parametername">documentType</span></td>
+                    <td><p>Имя типа документа.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Action</span>&lt;<a class="xref" href="InfinniPlatform.DocumentStorage.IDocumentUpdateBuilder-1.html">IDocumentUpdateBuilder</a>&lt;TDocument&gt;&gt;</td>
+                    <td><span class="parametername">update</span></td>
+                    <td><p>Оператор обновления документов.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">Expression</span>&lt;<span class="xref">Func</span>&lt;TDocument, <span class="xref">System.Boolean</span>&gt;&gt;</td>
+                    <td><span class="parametername">filter</span></td>
+                    <td><p>Фильтр для поиска документов.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">System.Boolean</span></td>
+                    <td><span class="parametername">insertIfNotExists</span></td>
+                    <td><p>Следует ли создать документ, если ничего не найдено.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="typeParameters">Type Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="parametername">TDocument</span></td>
+                    <td><p>Тип документа.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h3 id="extensionmethods">Extension Methods</h3>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Extensions.CommonExtensions.html#InfinniPlatform_Extensions_CommonExtensions_ExecuteSilent__1___0_Action___0__">CommonExtensions.ExecuteSilent&lt;T&gt;(T, Action&lt;T&gt;)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.DocumentStorage.DocumentStorageExtensions.html#InfinniPlatform_DocumentStorage_DocumentStorageExtensions_SaveOne_InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_System_String_InfinniPlatform_Dynamic_DynamicDocument_">DocumentStorageExtensions.SaveOne(IUnitOfWork, String, DynamicDocument)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.DocumentStorage.DocumentStorageExtensions.html#InfinniPlatform_DocumentStorage_DocumentStorageExtensions_SaveOne__1_InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_System_String___0_">DocumentStorageExtensions.SaveOne&lt;TDocument&gt;(IUnitOfWork, String, TDocument)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.DocumentStorage.DocumentStorageExtensions.html#InfinniPlatform_DocumentStorage_DocumentStorageExtensions_SaveOne__1_InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork___0_">DocumentStorageExtensions.SaveOne&lt;TDocument&gt;(IUnitOfWork, TDocument)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.DocumentStorage.DocumentStorageExtensions.html#InfinniPlatform_DocumentStorage_DocumentStorageExtensions_SaveMany_InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_System_String_IEnumerable_InfinniPlatform_Dynamic_DynamicDocument__">DocumentStorageExtensions.SaveMany(IUnitOfWork, String, IEnumerable&lt;DynamicDocument&gt;)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.DocumentStorage.DocumentStorageExtensions.html#InfinniPlatform_DocumentStorage_DocumentStorageExtensions_SaveMany__1_InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_System_String_IEnumerable___0__">DocumentStorageExtensions.SaveMany&lt;TDocument&gt;(IUnitOfWork, String, IEnumerable&lt;TDocument&gt;)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.DocumentStorage.DocumentStorageExtensions.html#InfinniPlatform_DocumentStorage_DocumentStorageExtensions_SaveMany__1_InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork_IEnumerable___0__">DocumentStorageExtensions.SaveMany&lt;TDocument&gt;(IUnitOfWork, IEnumerable&lt;TDocument&gt;)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_GetItem_System_Object_System_Int32_">DynamicCollectionExtensions.GetItem(Object, Int32)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_SetItem_System_Object_System_Int32_System_Object_">DynamicCollectionExtensions.SetItem(Object, Int32, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_AddItem_System_Object_System_Object_">DynamicCollectionExtensions.AddItem(Object, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_InsertItem_System_Object_System_Int32_System_Object_">DynamicCollectionExtensions.InsertItem(Object, Int32, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_RemoveItem_System_Object_System_Object_">DynamicCollectionExtensions.RemoveItem(Object, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_RemoveItemAt_System_Object_System_Int32_">DynamicCollectionExtensions.RemoveItemAt(Object, Int32)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_MoveItem_System_Object_System_Object_System_Int32_">DynamicCollectionExtensions.MoveItem(Object, Object, Int32)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicObjectExtensions.html#InfinniPlatform_Dynamic_DynamicObjectExtensions_TryGetPropertyValue_System_Object_System_String_">DynamicObjectExtensions.TryGetPropertyValue(Object, String)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicObjectExtensions.html#InfinniPlatform_Dynamic_DynamicObjectExtensions_TrySetPropertyValue_System_Object_System_String_System_Object_">DynamicObjectExtensions.TrySetPropertyValue(Object, String, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicObjectExtensions.html#InfinniPlatform_Dynamic_DynamicObjectExtensions_TryGetPropertyValueByPath_System_Object_System_String_">DynamicObjectExtensions.TryGetPropertyValueByPath(Object, String)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicObjectExtensions.html#InfinniPlatform_Dynamic_DynamicObjectExtensions_TrySetPropertyValueByPath_System_Object_System_String_System_Object_">DynamicObjectExtensions.TrySetPropertyValueByPath(Object, String, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_IsInstanceOfType_System_Object_Type_">ReflectionExtensions.IsInstanceOfType(Object, Type)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_GetMemberValue_System_Object_System_String_">ReflectionExtensions.GetMemberValue(Object, String)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_SetMemberValue_System_Object_System_String_System_Object_">ReflectionExtensions.SetMemberValue(Object, String, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_InvokeMember_System_Object_System_String_System_Object___System_Object__Type___">ReflectionExtensions.InvokeMember(Object, String, Object[], out Object, Type[])</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_GetFieldValue_System_Object_FieldInfo_">ReflectionExtensions.GetFieldValue(Object, FieldInfo)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_SetFieldValue_System_Object_FieldInfo_System_Object_">ReflectionExtensions.SetFieldValue(Object, FieldInfo, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_GetPropertyValue_System_Object_PropertyInfo_">ReflectionExtensions.GetPropertyValue(Object, PropertyInfo)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_SetPropertyValue_System_Object_PropertyInfo_System_Object_">ReflectionExtensions.SetPropertyValue(Object, PropertyInfo, Object)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_GetMethodDelegate_System_Object_MethodInfo_">ReflectionExtensions.GetMethodDelegate(Object, MethodInfo)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_GetEventDelegate_System_Object_EventInfo_">ReflectionExtensions.GetEventDelegate(Object, EventInfo)</a>
+              </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_SetEventDelegate_System_Object_EventInfo_System_Object_">ReflectionExtensions.SetEventDelegate(Object, EventInfo, Object)</a>
+              </div>
+                        </article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_DocumentStorage_Transactions_IUnitOfWork.md&amp;value=---%0Auid%3A%20InfinniPlatform.DocumentStorage.Transactions.IUnitOfWork%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.DocumentStorage.Abstractions/Transactions/IUnitOfWork.cs/#L16" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © Copyright Infinnity Solutions Ltd, 2010–2017.
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

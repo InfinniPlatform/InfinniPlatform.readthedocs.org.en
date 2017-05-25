@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width">
     <meta name="title" content="Interface IOwinMiddlewareTypeResolver
    ">
-    <meta name="generator" content="docfx 2.11.2.0">
+    <meta name="generator" content="docfx 2.17.7.15">
     
     <link rel="shortcut icon" href="../../../_static/favicon.png">
     <link rel="stylesheet" href="../styles/docfx.vendor.css">
@@ -71,11 +71,11 @@
               
               <h1 id="InfinniPlatform_Http_Middlewares_IOwinMiddlewareTypeResolver" data-uid="InfinniPlatform.Http.Middlewares.IOwinMiddlewareTypeResolver">Interface IOwinMiddlewareTypeResolver
               </h1>
-              <div class="markdown level0 summary"><p>Провайдер получения типа обработчика запросов OWIN для регистрации в <see cref="!:IAppBuilder"></see>.</p>
+              <div class="markdown level0 summary"><p>Провайдер получения типа обработчика запросов OWIN для регистрации в <see cref="!:IApplicationBuilder"></see>.</p>
 </div>
               <div class="markdown level0 conceptual"></div>
               <h6><strong>Namespace</strong>:InfinniPlatform.Http.Middlewares</h6>
-              <h6><strong>Assembly</strong>:InfinniPlatform.Http.dll</h6>
+              <h6><strong>Assembly</strong>:InfinniPlatform.Http.Abstractions.dll</h6>
               <h5 id="InfinniPlatform_Http_Middlewares_IOwinMiddlewareTypeResolver_syntax">Syntax</h5>
               <div class="codewrapper">
                 <pre><code class="lang-csharp hljs">public interface IOwinMiddlewareTypeResolver</code></pre>
@@ -84,14 +84,14 @@
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/release-1.11/apiSpec/new?filename=InfinniPlatform_Http_Middlewares_IOwinMiddlewareTypeResolver_ResolveType__1.md&amp;value=---%0Auid%3A%20InfinniPlatform.Http.Middlewares.IOwinMiddlewareTypeResolver.ResolveType%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_Http_Middlewares_IOwinMiddlewareTypeResolver_ResolveType__1.md&amp;value=---%0Auid%3A%20InfinniPlatform.Http.Middlewares.IOwinMiddlewareTypeResolver.ResolveType%60%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/release-1.11/InfinniPlatform.Http/Middlewares/IOwinMiddlewareTypeResolver.cs/#L18">View Source</a>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Http.Abstractions/Middlewares/IOwinMiddlewareTypeResolver.cs/#L16">View Source</a>
               </span>
               <a id="InfinniPlatform_Http_Middlewares_IOwinMiddlewareTypeResolver_ResolveType_" data-uid="InfinniPlatform.Http.Middlewares.IOwinMiddlewareTypeResolver.ResolveType*"></a>
               <h4 id="InfinniPlatform_Http_Middlewares_IOwinMiddlewareTypeResolver_ResolveType__1" data-uid="InfinniPlatform.Http.Middlewares.IOwinMiddlewareTypeResolver.ResolveType``1">ResolveType&lt;TOwinMiddleware&gt;()</h4>
-              <div class="markdown level1 summary"><p>Возвращает реальный тип обработчика запросов OWIN для регистрации в <see cref="!:IAppBuilder"></see>.</p>
+              <div class="markdown level1 summary"><p>Возвращает реальный тип обработчика запросов OWIN для регистрации в <see cref="!:IApplicationBuilder"></see>.</p>
 </div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
@@ -108,7 +108,7 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">System.Type</span></td>
+                    <td><span class="xref">Type</span></td>
                     <td></td>
                   </tr>
                 </tbody>
@@ -131,82 +131,73 @@
               </table>
               <h3 id="extensionmethods">Extension Methods</h3>
               <div>
-                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.DynamicWrapperExtensions.html#InfinniPlatform_Sdk_Dynamic_DynamicWrapperExtensions_ToDynamic_System_Object_">DynamicWrapperExtensions.ToDynamic(Object)</a>
+                  <a class="xref" href="InfinniPlatform.Extensions.CommonExtensions.html#InfinniPlatform_Extensions_CommonExtensions_ExecuteSilent__1___0_Action___0__">CommonExtensions.ExecuteSilent&lt;T&gt;(T, Action&lt;T&gt;)</a>
               </div>
               <div>
-                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.DynamicWrapperExtensions.html#InfinniPlatform_Sdk_Dynamic_DynamicWrapperExtensions_ToEnumerable_System_Object_">DynamicWrapperExtensions.ToEnumerable(Object)</a>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_GetItem_System_Object_System_Int32_">DynamicCollectionExtensions.GetItem(Object, Int32)</a>
               </div>
               <div>
-                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_GetProperty_System_Object_System_String_">ObjectHelper.GetProperty(Object, String)</a>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_SetItem_System_Object_System_Int32_System_Object_">DynamicCollectionExtensions.SetItem(Object, Int32, Object)</a>
               </div>
               <div>
-                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_SetProperty_System_Object_System_String_System_Object_">ObjectHelper.SetProperty(Object, String, Object)</a>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_AddItem_System_Object_System_Object_">DynamicCollectionExtensions.AddItem(Object, Object)</a>
               </div>
               <div>
-                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_ReplaceProperties_System_Object_System_Object_">ObjectHelper.ReplaceProperties(Object, Object)</a>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_InsertItem_System_Object_System_Int32_System_Object_">DynamicCollectionExtensions.InsertItem(Object, Int32, Object)</a>
               </div>
               <div>
-                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_GetItem_System_Object_System_Int32_">ObjectHelper.GetItem(Object, Int32)</a>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_RemoveItem_System_Object_System_Object_">DynamicCollectionExtensions.RemoveItem(Object, Object)</a>
               </div>
               <div>
-                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_SetItem_System_Object_System_Int32_System_Object_">ObjectHelper.SetItem(Object, Int32, Object)</a>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_RemoveItemAt_System_Object_System_Int32_">DynamicCollectionExtensions.RemoveItemAt(Object, Int32)</a>
               </div>
               <div>
-                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_AddItem_System_Object_System_Object_">ObjectHelper.AddItem(Object, Object)</a>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_MoveItem_System_Object_System_Object_System_Int32_">DynamicCollectionExtensions.MoveItem(Object, Object, Int32)</a>
               </div>
               <div>
-                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_ReplaceItem_System_Object_System_Object_System_Object_">ObjectHelper.ReplaceItem(Object, Object, Object)</a>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicObjectExtensions.html#InfinniPlatform_Dynamic_DynamicObjectExtensions_TryGetPropertyValue_System_Object_System_String_">DynamicObjectExtensions.TryGetPropertyValue(Object, String)</a>
               </div>
               <div>
-                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_MoveItem_System_Object_System_Object_System_Int32_">ObjectHelper.MoveItem(Object, Object, Int32)</a>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicObjectExtensions.html#InfinniPlatform_Dynamic_DynamicObjectExtensions_TrySetPropertyValue_System_Object_System_String_System_Object_">DynamicObjectExtensions.TrySetPropertyValue(Object, String, Object)</a>
               </div>
               <div>
-                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_InsertItem_System_Object_System_Int32_System_Object_">ObjectHelper.InsertItem(Object, Int32, Object)</a>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicObjectExtensions.html#InfinniPlatform_Dynamic_DynamicObjectExtensions_TryGetPropertyValueByPath_System_Object_System_String_">DynamicObjectExtensions.TryGetPropertyValueByPath(Object, String)</a>
               </div>
               <div>
-                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_RemoveItem_System_Object_System_Object_">ObjectHelper.RemoveItem(Object, Object)</a>
+                  <a class="xref" href="InfinniPlatform.Dynamic.DynamicObjectExtensions.html#InfinniPlatform_Dynamic_DynamicObjectExtensions_TrySetPropertyValueByPath_System_Object_System_String_System_Object_">DynamicObjectExtensions.TrySetPropertyValueByPath(Object, String, Object)</a>
               </div>
               <div>
-                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_RemoveItemAt_System_Object_System_Int32_">ObjectHelper.RemoveItemAt(Object, Int32)</a>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_IsInstanceOfType_System_Object_Type_">ReflectionExtensions.IsInstanceOfType(Object, Type)</a>
               </div>
               <div>
-                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ObjectHelper.html#InfinniPlatform_Sdk_Dynamic_ObjectHelper_GetIndexProperty_System_Object_System_Collections_Generic_IEnumerable_System_Object__">ObjectHelper.GetIndexProperty(Object, IEnumerable&lt;Object&gt;)</a>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_GetMemberValue_System_Object_System_String_">ReflectionExtensions.GetMemberValue(Object, String)</a>
               </div>
               <div>
-                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_IsInstanceOfType_System_Object_System_Type_">ReflectionExtensions.IsInstanceOfType(Object, Type)</a>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_SetMemberValue_System_Object_System_String_System_Object_">ReflectionExtensions.SetMemberValue(Object, String, Object)</a>
               </div>
               <div>
-                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_GetMemberValue_System_Object_System_String_">ReflectionExtensions.GetMemberValue(Object, String)</a>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_InvokeMember_System_Object_System_String_System_Object___System_Object__Type___">ReflectionExtensions.InvokeMember(Object, String, Object[], out Object, Type[])</a>
               </div>
               <div>
-                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_SetMemberValue_System_Object_System_String_System_Object_">ReflectionExtensions.SetMemberValue(Object, String, Object)</a>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_GetFieldValue_System_Object_FieldInfo_">ReflectionExtensions.GetFieldValue(Object, FieldInfo)</a>
               </div>
               <div>
-                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_InvokeMember_System_Object_System_String_System_Object___System_Object__System_Type___">ReflectionExtensions.InvokeMember(Object, String, Object[], out Object, Type[])</a>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_SetFieldValue_System_Object_FieldInfo_System_Object_">ReflectionExtensions.SetFieldValue(Object, FieldInfo, Object)</a>
               </div>
               <div>
-                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_GetFieldValue_System_Object_System_Reflection_FieldInfo_">ReflectionExtensions.GetFieldValue(Object, FieldInfo)</a>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_GetPropertyValue_System_Object_PropertyInfo_">ReflectionExtensions.GetPropertyValue(Object, PropertyInfo)</a>
               </div>
               <div>
-                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_SetFieldValue_System_Object_System_Reflection_FieldInfo_System_Object_">ReflectionExtensions.SetFieldValue(Object, FieldInfo, Object)</a>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_SetPropertyValue_System_Object_PropertyInfo_System_Object_">ReflectionExtensions.SetPropertyValue(Object, PropertyInfo, Object)</a>
               </div>
               <div>
-                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_GetPropertyValue_System_Object_System_Reflection_PropertyInfo_">ReflectionExtensions.GetPropertyValue(Object, PropertyInfo)</a>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_GetMethodDelegate_System_Object_MethodInfo_">ReflectionExtensions.GetMethodDelegate(Object, MethodInfo)</a>
               </div>
               <div>
-                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_SetPropertyValue_System_Object_System_Reflection_PropertyInfo_System_Object_">ReflectionExtensions.SetPropertyValue(Object, PropertyInfo, Object)</a>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_GetEventDelegate_System_Object_EventInfo_">ReflectionExtensions.GetEventDelegate(Object, EventInfo)</a>
               </div>
               <div>
-                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_GetMethodDelegate_System_Object_System_Reflection_MethodInfo_">ReflectionExtensions.GetMethodDelegate(Object, MethodInfo)</a>
-              </div>
-              <div>
-                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_GetEventDelegate_System_Object_System_Reflection_EventInfo_">ReflectionExtensions.GetEventDelegate(Object, EventInfo)</a>
-              </div>
-              <div>
-                  <a class="xref" href="InfinniPlatform.Sdk.Dynamic.ReflectionExtensions.html#InfinniPlatform_Sdk_Dynamic_ReflectionExtensions_SetEventDelegate_System_Object_System_Reflection_EventInfo_System_Object_">ReflectionExtensions.SetEventDelegate(Object, EventInfo, Object)</a>
-              </div>
-              <div>
-                  <a class="xref" href="InfinniPlatform.Core.Extensions.CommonExtensions.html#InfinniPlatform_Core_Extensions_CommonExtensions_ExecuteSilent__1___0_System_Action___0__">CommonExtensions.ExecuteSilent&lt;T&gt;(T, Action&lt;T&gt;)</a>
+                  <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_SetEventDelegate_System_Object_EventInfo_System_Object_">ReflectionExtensions.SetEventDelegate(Object, EventInfo, Object)</a>
               </div>
                         </article>
           </div>
@@ -216,10 +207,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/release-1.11/apiSpec/new?filename=InfinniPlatform_Http_Middlewares_IOwinMiddlewareTypeResolver.md&amp;value=---%0Auid%3A%20InfinniPlatform.Http.Middlewares.IOwinMiddlewareTypeResolver%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_Http_Middlewares_IOwinMiddlewareTypeResolver.md&amp;value=---%0Auid%3A%20InfinniPlatform.Http.Middlewares.IOwinMiddlewareTypeResolver%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/release-1.11/InfinniPlatform.Http/Middlewares/IOwinMiddlewareTypeResolver.cs/#L12" class="contribution-link">View Source</a>
+                    <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Http.Abstractions/Middlewares/IOwinMiddlewareTypeResolver.cs/#L10" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
