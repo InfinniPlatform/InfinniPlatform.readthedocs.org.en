@@ -1,108 +1,110 @@
 Getting Started
 ===============
 
-This article will help you getting started with basic settings to begin app development.
+Below you will find the steps to build your first ASP.NET Core app powered by InfinniPlatform.
 
-Examples of Using
------------------
+Let's start by building a simple "Hello, world!" app.
 
-Clone app example:
+**1.** Install .NET Core. See installation steps for Windows, macOS, and Linux `here <https://dot.net/core>`_.
 
-.. code-block:: bash
-
-    > git clone https://github.com/InfinniPlatform/InfinniPlatform.Northwind.git
-
-Open a file ``InfinniPlatform.Northwind.sln`` in Visual Studio and build it to run pressing (``F5``).
-
-Check if it is up and running:
+**2.** Create a new ASP.NET Core project
 
 .. code-block:: bash
 
-    > curl http://localhost:9900
+    mkdir myapp
+    cd myapp
+    dotnet new web
 
-Examples of Deploy
-------------------
-
-Install Infinni.Node utility to continue with deployment InfinniPlatform apps
-(:download:`download a Windows installation script Infinni.Node  <../_files/Infinni_Node_Install.bat>`).
-
-The latest version is installed by default:
+**3.** Install InfinniPlatform.Core package
 
 .. code-block:: bash
 
-    > Infinni_Node_Install.bat # installs the latest version of Infinni.Node
+    dotnet add package InfinniPlatform.Core -s https://www.myget.org/F/infinniplatform/ -v 2.2-*
 
-You can install any `version <http://nuget.infinnity.ru/packages/Infinni.Node/>`_ of utility from the repository:
+**4.** Create MyHttpService.cs and define an HTTP service
+
+.. code-block:: bash
+   :caption: MyHttpService.cs
+   :emphasize-lines: 11,12
+
+    using System.Threading.Tasks;
+
+    using InfinniPlatform.Http;
+
+    namespace myapp
+    {
+        class MyHttpService : IHttpService
+        {
+            public void Load(IHttpServiceBuilder builder)
+            {
+                builder.Get["/hello"] = async request =>
+                    await Task.FromResult("Hello from InfinniPlatform!");
+            }
+        }
+    }
+
+**5.** Create MyAppContainerModule.cs and register the HTTP service
+
+.. code-block:: bash
+   :caption: MyAppContainerModule.cs
+   :emphasize-lines: 10
+
+    using InfinniPlatform.Http;
+    using InfinniPlatform.IoC;
+
+    namespace myapp
+    {
+        class MyAppContainerModule : IContainerModule
+        {
+            public void Load(IContainerBuilder builder)
+            {
+                builder.RegisterType<MyHttpService>().As<IHttpService>().SingleInstance();
+            }
+        }
+    }
+
+**6.** Update the code in Startup.cs to use InfinniPlatform
+
+.. code-block:: bash
+   :caption: Startup.cs
+   :emphasize-lines: 15,20
+
+    using System;
+
+    using InfinniPlatform.AspNetCore;
+    using InfinniPlatform.IoC;
+
+    using Microsoft.AspNetCore.Builder;
+    using Microsoft.Extensions.DependencyInjection;
+
+    namespace myapp
+    {
+        public class Startup
+        {
+            public IServiceProvider ConfigureServices(IServiceCollection services)
+            {
+                return services.BuildProvider(new[] { new MyAppContainerModule() });
+            }
+
+            public void Configure(IApplicationBuilder app, IContainerResolver resolver)
+            {
+                app.UseDefaultAppLayers(resolver);
+            }
+        }
+    }
+
+**7.** Restore the packages
 
 .. code-block:: bash
 
-    > Infinni_Node_Install.bat <version> # installs specified version of Infinni.Node
+    dotnet restore -s https://www.myget.org/F/infinniplatform/
 
-When script finishes Infinni.Node will be placed into the folder ``Infinni.Node.X`` (where ``X`` - version number) in the same folder where script was
-run. Change folder as in example below:
-
-.. code-block:: bash
-
-    > cd Infinni.Node.X
-
-Install the app:
+**8.** Run the app (the dotnet run command will build the app when it's out of date)
 
 .. code-block:: bash
 
-    > Infinni.Node.exe install -i "InfinniPlatform.Northwind" -p
+    dotnet run
 
-Start the app:
+**9.** Browse to http://localhost:5000/hello
 
-.. code-block:: bash
-
-    > Infinni.Node.exe start -i "InfinniPlatform.Northwind"
-
-Check if it is running:
-
-.. code-block:: bash
-
-    > curl http://localhost:9900
-
-System Requirements
--------------------
-
-For Developers
-~~~~~~~~~~~~~~
-
-- `PowerShell`_ 3.0 (and above)
-- `Git`_
-- `NuGet`_
-- `curl`_
-- `Visual Studio Community`_
-
-Requirement for Windows deployment
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-- Windows Server 2008 R2 SP1 (or SP2) x64, Windows Server 2012 (или 2012 R2) x64
-- `Microsoft .NET Framework 4.5`_
-
-Requirement for Linux deployment
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-- Ubuntu 14.04.4 LTS x64
-- `Mono 4.2`_
-
-Additional Environments
-~~~~~~~~~~~~~~~~~~~~~~~
-
-- `MongoDB`_ (in case of 'document store' using)
-- `RabbitMQ`_ (in case of 'message bus' using)
-- `Redis`_ (in case of cluster deployment)
-- `ELK`_ (in case of utilizing monitoring)
-
-.. _PowerShell: https://msdn.microsoft.com/en-us/powershell
-.. _Git: https://git-scm.com/downloads
-.. _Nuget: https://dist.nuget.org/index.html
-.. _curl: https://curl.haxx.se/download.html
-.. _Visual Studio Community: https://www.visualstudio.com/ru-ru/products/visual-studio-community-vs.aspx
-.. _Microsoft .NET Framework 4.5: https://www.microsoft.com/ru-ru/download/details.aspx?id=30653
-.. _Mono 4.2: http://www.mono-project.com/download/
-.. _MongoDB: https://www.mongodb.com/download-center
-.. _RabbitMQ: https://www.rabbitmq.com/download.html
-.. _Redis: http://redis.io/download
-.. _ELK: https://www.elastic.co/products
+**10.** Press Ctrl+C to stop the app
