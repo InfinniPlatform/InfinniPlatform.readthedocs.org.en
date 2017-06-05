@@ -1,4 +1,4 @@
-.. index:: DynamicWrapper
+.. index:: DynamicDocument
 
 Dynamic Objects
 ===============
@@ -12,11 +12,11 @@ non-formalized data.
 Creating Dynamic Objects
 ------------------------
 
-InfinniPlatform has dynamic object represented by ``InfinniPlatform.Sdk.Dynamic.DynamicWrapper``.
+InfinniPlatform has dynamic object represented by DynamicDocument_.
 
 .. code-block:: csharp
 
-    dynamic instance = new DynamicWrapper();
+    dynamic instance = new DynamicDocument();
 
 
 Setting Properties of Dynamic Objects
@@ -26,13 +26,13 @@ Dynamic object instance can be created with pre-defined properties:
 
 .. code-block:: csharp
 
-    dynamic instance = new DynamicWrapper
+    dynamic instance = new DynamicDocument
                        {
                            { "Property1", 123 },
                            { "Property2", "Abc" },
                            { "Property3", DateTime.Now },
                            {
-                               "Property4", new DynamicWrapper
+                               "Property4", new DynamicDocument
                                             {
                                                 { "SubProperty1", 456 },
                                                 { "SubProperty2", "Def" }
@@ -47,7 +47,7 @@ or define properties later:
     instance.Property1 = 123;
     instance.Property2 = "Abc";
     instance.Property3 = DateTime.Now;
-    instance.Property4 = new DynamicWrapper();
+    instance.Property4 = new DynamicDocument();
     instance.Property4.SubProperty1 = 456;
     instance.Property4.SubProperty2 = "Def";
 
@@ -100,5 +100,7 @@ type in advance to avoid errors of type conversion and even in case of getting o
 Serialization of Dynamic Objects
 --------------------------------
 
-Class instances ``InfinniPlatform.Sdk.Dynamic.DynamicWrapper`` can be serialized and deserialized to/from JSON. You my find additional info here
-:doc:`/06-serialization/index`.
+Class instances DynamicDocument_ can be serialized and deserialized to/from JSON. You my find additional info here :doc:`/06-serialization/index`.
+
+
+.. _`DynamicDocument`: /api/reference/InfinniPlatform.Dynamic.DynamicDocument.html
