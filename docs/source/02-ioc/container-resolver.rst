@@ -191,8 +191,8 @@ Getting Direct Access to IoC Container
 --------------------------------------
 
 In case if it is required to make a universal factory of components which type is knowable in runtime, for example as in generic-type case, or working
-component logic depends on configuration of IoC-container, one can obtain a direct access to container using ``InfinniPlatform.Sdk.IoC.IContainerResolver``. 
-Next example shows component ``A`` acquires access to IoC-container because component type becomes known in runtime.
+component logic depends on configuration of IoC-container, one can obtain a direct access to container using IContainerResolver_. Next example shows
+component ``A`` acquires access to IoC-container because component type becomes known in runtime.
 
 .. code-block:: csharp
    :emphasize-lines: 5,12
@@ -226,8 +226,7 @@ Resolving dependencies at Runtime
 
 .. index:: IContainerResolver.Resolve()
 
-``InfinniPlatform.Sdk.IoC.IContainerResolver`` interface lets get dependency by any of afore mentioned way. ``Resolve()`` serves those purposes and
-has two reloads.
+The IContainerResolver_ interface lets get dependency by any of afore mentioned way. `Resolve()`_ serves those purposes and has two reloads.
 
 .. code-block:: csharp
 
@@ -239,7 +238,7 @@ has two reloads.
 
 .. index:: IContainerResolver.TryResolve()
 
-If service is not registered, method ``Resolve()`` will throw an exception. This can be bypassed two ways, first one is to use method ``TryResolve()``.
+If service is not registered, method `Resolve()`_ will throw an exception. This can be bypassed two ways, first one is to use method `TryResolve()`_.
 
 .. code-block:: csharp
 
@@ -263,7 +262,7 @@ If service is not registered, method ``Resolve()`` will throw an exception. This
 
 .. index:: IContainerResolver.ResolveOptional()
 
-Second is to use method ``ResolveOptional()``.
+Second is to use method `ResolveOptional()`_.
 
 .. code-block:: csharp
 
@@ -292,8 +291,8 @@ Second is to use method ``ResolveOptional()``.
 Checking registrations
 ~~~~~~~~~~~~~~~~~~~~~~
 
-To check the configuration of IoC-container one may call a list of registered services ``Services``. To check the status of registration of a particular
-service one should use method ``IsRegistered()``. 
+To check the configuration of IoC-container one may call a list of registered services Services_. To check the status of registration of a particular
+service one should use method `IsRegistered()`_. 
 
 .. code-block:: csharp
 
@@ -312,6 +311,13 @@ service one should use method ``IsRegistered()``.
     }
 
 
-.. _`IEnumerable<T>`: https://msdn.microsoft.com/en-US/library/9eekhta0(v=vs.110).aspx
-.. _`Lazy<T>`: https://msdn.microsoft.com/en-US/library/dd642331(v=vs.110).aspx
-.. _`Lazy<T>.Value`: https://msdn.microsoft.com/en-US/library/dd642177(v=vs.110).aspx
+.. _`IContainerResolver`: /api/reference/InfinniPlatform.IoC.IContainerResolver.html
+.. _`Services`: /api/reference/InfinniPlatform.IoC.IContainerResolver.html#InfinniPlatform_IoC_IContainerResolver_Services
+.. _`IsRegistered()`: /api/reference/InfinniPlatform.IoC.IContainerResolver.html#InfinniPlatform_IoC_IContainerResolver_IsRegistered_Type_
+.. _`Resolve()`: /api/reference/InfinniPlatform.IoC.IContainerResolver.html#InfinniPlatform_IoC_IContainerResolver_Resolve_Type_
+.. _`TryResolve()`: /api/reference/InfinniPlatform.IoC.IContainerResolver.html#InfinniPlatform_IoC_IContainerResolver_TryResolve_Type_System_Object__
+.. _`ResolveOptional()`: /api/reference/InfinniPlatform.IoC.IContainerResolver.html#InfinniPlatform_IoC_IContainerResolver_ResolveOptional_Type_
+
+.. _`IEnumerable<T>`: https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=netcore-1.1
+.. _`Lazy<T>`: https://docs.microsoft.com/en-us/dotnet/api/system.lazy-1?view=netcore-1.1
+.. _`Lazy<T>.Value`: https://docs.microsoft.com/en-us/dotnet/api/system.lazy-1.value?view=netcore-1.1#System_Lazy_1_Value

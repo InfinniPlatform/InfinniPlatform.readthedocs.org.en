@@ -16,7 +16,7 @@ reduce resources utilized.
 
 
 .. index:: IContainerRegistrationRule.InstancePerDependency()
-.. index:: IContainerRegistrationRule.InstancePerRequest()
+.. index:: IContainerRegistrationRule.InstancePerLifetimeScope()
 .. index:: IContainerRegistrationRule.SingleInstance()
 
 Defining Component Lifetime
@@ -31,29 +31,29 @@ All registered components are created each time they are received by default.
     builder.RegisterType<MyComponent>().As<IMyService>().InstancePerDependency();
 
     // Component will be created for the time of HTTP-request execution
-    builder.RegisterType<MyComponent>().As<IMyService>().InstancePerRequest();
+    builder.RegisterType<MyComponent>().As<IMyService>().InstancePerLifetimeScope();
 
     // Component will be created once for the time of the app execution
     builder.RegisterType<MyComponent>().As<IMyService>().SingleInstance();
 
 In the end of lifetime cycle IoC-container :ref:`disposes <dispose>` component instance which makes it no longer available for further usage. This is
-the reason that definition of the lifetime must take into account their dependency. For example, component ``SingleInstance()`` is not able to directly
-be dependant on component ``InstancePerDependency()``
+the reason that definition of the lifetime must take into account their dependency. For example, component `SingleInstance()`_ is not able to directly
+be dependant on component `InstancePerDependency()`_.
 
 .. table:: Possible direct dependencies
 
-    +-----------------------------+-------------------------------+
-    | Initial type                | May refer to                  |
-    +=============================+===============================+
-    | ``InstancePerDependency()`` | * ``InstancePerDependency()`` |
-    |                             | * ``InstancePerRequest()``    |
-    |                             | * ``SingleInstance()``        |
-    +-----------------------------+-------------------------------+
-    | ``InstancePerRequest()``    | * ``InstancePerRequest()``    |
-    |                             | * ``SingleInstance()``        |
-    +-----------------------------+-------------------------------+
-    | ``SingleInstance()``        | * ``SingleInstance()``        |
-    +-----------------------------+-------------------------------+
+    +-------------------------------+---------------------------------+
+    | Initial type                  | May refer to                    |
+    +===============================+=================================+
+    | `InstancePerDependency()`_    | * `InstancePerDependency()`_    |
+    |                               | * `InstancePerLifetimeScope()`_ |
+    |                               | * `SingleInstance()`_           |
+    +-------------------------------+---------------------------------+
+    | `InstancePerLifetimeScope()`_ | * `InstancePerLifetimeScope()`_ |
+    |                               | * `SingleInstance()`_           |
+    +-------------------------------+---------------------------------+
+    | `SingleInstance()`_           | * `SingleInstance()`_           |
+    +-------------------------------+---------------------------------+
 
 If component's lifetime is more than lifetime of the component it depends on to retrieve dependency one should use :ref:`factory function <resolve-func>`.
 Next example shows component ``A`` depends on component ``B`` but retrieves its dependency right before usage due to the fact that the lifetime of
@@ -92,12 +92,12 @@ Components Disposing
 --------------------
 
 App may get resources which temporary created for the time of execution. For example a connection to a database, file stream an so on. .NET model
-offers ``IDisposable`` interface which brings all resources to be disposed.
+offers IDisposable_ interface which brings all resources to be disposed.
 
-In the end of component lifetime IoC-container checks whether it implements ``IDisposable`` interface and if it does then it calls method ``Dispose()``.
+In the end of component lifetime IoC-container checks whether it implements IDisposable_ interface and if it does then it calls method `Dispose()`_.
 Afterwards the current component instance becomes unavailable for further usage.
 
-To deny automatic disposal one should directly call method ``ExternallyOwned()``. This may be frequently used when the component lifetime is owned by
+To deny automatic disposal one should directly call method `ExternallyOwned()`_. This may be frequently used when the component lifetime is owned by
 external component.
 
 .. code-block:: csharp
@@ -107,3 +107,12 @@ external component.
     // ...
 
     builder.RegisterType<DisposableComponent>().ExternallyOwned();
+
+
+.. _`InstancePerDependency()`: /api/reference/InfinniPlatform.IoC.IContainerRegistrationRule.html#InfinniPlatform_IoC_IContainerRegistrationRule_InstancePerDependency
+.. _`InstancePerLifetimeScope()`: /api/reference/InfinniPlatform.IoC.IContainerRegistrationRule.html#InfinniPlatform_IoC_IContainerRegistrationRule_InstancePerLifetimeScope
+.. _`SingleInstance()`: /api/reference/InfinniPlatform.IoC.IContainerRegistrationRule.html#InfinniPlatform_IoC_IContainerRegistrationRule_SingleInstance
+.. _`ExternallyOwned()`: /api/reference/InfinniPlatform.IoC.IContainerRegistrationRule.html#InfinniPlatform_IoC_IContainerRegistrationRule_ExternallyOwned
+
+.. _`IDisposable`: https://docs.microsoft.com/en-us/dotnet/api/system.idisposable?view=netcore-1.1
+.. _`Dispose()`: https://docs.microsoft.com/en-us/dotnet/api/system.idisposable.dispose?view=netcore-1.1#System_IDisposable_Dispose
