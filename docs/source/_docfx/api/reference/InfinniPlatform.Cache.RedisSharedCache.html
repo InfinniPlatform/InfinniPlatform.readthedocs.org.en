@@ -89,19 +89,19 @@
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_Cache_RedisSharedCache__ctor_InfinniPlatform_AppOptions_InfinniPlatform_Cache_RedisConnectionFactory_InfinniPlatform_Logging_ILog_InfinniPlatform_Logging_IPerformanceLog_.md&amp;value=---%0Auid%3A%20InfinniPlatform.Cache.RedisSharedCache.%23ctor(InfinniPlatform.AppOptions%2CInfinniPlatform.Cache.RedisConnectionFactory%2CInfinniPlatform.Logging.ILog%2CInfinniPlatform.Logging.IPerformanceLog)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_Cache_RedisSharedCache__ctor_InfinniPlatform_AppOptions_InfinniPlatform_Cache_RedisConnectionFactory_ILogger_InfinniPlatform_Cache_RedisSharedCache__InfinniPlatform_Logging_IPerformanceLogger_InfinniPlatform_Cache_RedisSharedCache__.md&amp;value=---%0Auid%3A%20InfinniPlatform.Cache.RedisSharedCache.%23ctor(InfinniPlatform.AppOptions%2CInfinniPlatform.Cache.RedisConnectionFactory%2CILogger%7BInfinniPlatform.Cache.RedisSharedCache%7D%2CInfinniPlatform.Logging.IPerformanceLogger%7BInfinniPlatform.Cache.RedisSharedCache%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Cache.Redis/RedisSharedCache.cs/#L24">View Source</a>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Cache.Redis/RedisSharedCache.cs/#L25">View Source</a>
               </span>
               <a id="InfinniPlatform_Cache_RedisSharedCache__ctor_" data-uid="InfinniPlatform.Cache.RedisSharedCache.#ctor*"></a>
-              <h4 id="InfinniPlatform_Cache_RedisSharedCache__ctor_InfinniPlatform_AppOptions_InfinniPlatform_Cache_RedisConnectionFactory_InfinniPlatform_Logging_ILog_InfinniPlatform_Logging_IPerformanceLog_" data-uid="InfinniPlatform.Cache.RedisSharedCache.#ctor(InfinniPlatform.AppOptions,InfinniPlatform.Cache.RedisConnectionFactory,InfinniPlatform.Logging.ILog,InfinniPlatform.Logging.IPerformanceLog)">RedisSharedCache(AppOptions, RedisConnectionFactory, ILog, IPerformanceLog)</h4>
+              <h4 id="InfinniPlatform_Cache_RedisSharedCache__ctor_InfinniPlatform_AppOptions_InfinniPlatform_Cache_RedisConnectionFactory_ILogger_InfinniPlatform_Cache_RedisSharedCache__InfinniPlatform_Logging_IPerformanceLogger_InfinniPlatform_Cache_RedisSharedCache__" data-uid="InfinniPlatform.Cache.RedisSharedCache.#ctor(InfinniPlatform.AppOptions,InfinniPlatform.Cache.RedisConnectionFactory,ILogger{InfinniPlatform.Cache.RedisSharedCache},InfinniPlatform.Logging.IPerformanceLogger{InfinniPlatform.Cache.RedisSharedCache})">RedisSharedCache(AppOptions, RedisConnectionFactory, ILogger&lt;RedisSharedCache&gt;, IPerformanceLogger&lt;RedisSharedCache&gt;)</h4>
               <div class="markdown level1 summary"><p>Конструктор.</p>
 </div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public RedisSharedCache(AppOptions appOptions, RedisConnectionFactory connectionFactory, ILog log, IPerformanceLog performanceLog)</code></pre>
+                <pre><code class="lang-csharp hljs">public RedisSharedCache(AppOptions appOptions, RedisConnectionFactory connectionFactory, ILogger&lt;RedisSharedCache&gt; logger, IPerformanceLogger&lt;RedisSharedCache&gt; perfLogger)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -126,14 +126,14 @@
 </td>
                   </tr>
                   <tr>
-                    <td><a class="xref" href="InfinniPlatform.Logging.ILog.html">ILog</a></td>
-                    <td><span class="parametername">log</span></td>
+                    <td><span class="xref">ILogger</span>&lt;<a class="xref" href="InfinniPlatform.Cache.RedisSharedCache.html">RedisSharedCache</a>&gt;</td>
+                    <td><span class="parametername">logger</span></td>
                     <td><p>Сервис регистрации событий.</p>
 </td>
                   </tr>
                   <tr>
-                    <td><a class="xref" href="InfinniPlatform.Logging.IPerformanceLog.html">IPerformanceLog</a></td>
-                    <td><span class="parametername">performanceLog</span></td>
+                    <td><a class="xref" href="InfinniPlatform.Logging.IPerformanceLogger-1.html">IPerformanceLogger</a>&lt;<a class="xref" href="InfinniPlatform.Cache.RedisSharedCache.html">RedisSharedCache</a>&gt;</td>
+                    <td><span class="parametername">perfLogger</span></td>
                     <td><p>Сервис регистрации длительности выполнения методов.</p>
 </td>
                   </tr>
@@ -146,7 +146,7 @@
                 <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_Cache_RedisSharedCache_Clear.md&amp;value=---%0Auid%3A%20InfinniPlatform.Cache.RedisSharedCache.Clear%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Cache.Redis/RedisSharedCache.cs/#L99">View Source</a>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Cache.Redis/RedisSharedCache.cs/#L100">View Source</a>
               </span>
               <a id="InfinniPlatform_Cache_RedisSharedCache_Clear_" data-uid="InfinniPlatform.Cache.RedisSharedCache.Clear*"></a>
               <h4 id="InfinniPlatform_Cache_RedisSharedCache_Clear" data-uid="InfinniPlatform.Cache.RedisSharedCache.Clear">Clear()</h4>
@@ -161,7 +161,7 @@
                 <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_Cache_RedisSharedCache_Contains_System_String_.md&amp;value=---%0Auid%3A%20InfinniPlatform.Cache.RedisSharedCache.Contains(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Cache.Redis/RedisSharedCache.cs/#L41">View Source</a>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Cache.Redis/RedisSharedCache.cs/#L42">View Source</a>
               </span>
               <a id="InfinniPlatform_Cache_RedisSharedCache_Contains_" data-uid="InfinniPlatform.Cache.RedisSharedCache.Contains*"></a>
               <h4 id="InfinniPlatform_Cache_RedisSharedCache_Contains_System_String_" data-uid="InfinniPlatform.Cache.RedisSharedCache.Contains(System.String)">Contains(String)</h4>
@@ -208,7 +208,7 @@
                 <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_Cache_RedisSharedCache_Get_System_String_.md&amp;value=---%0Auid%3A%20InfinniPlatform.Cache.RedisSharedCache.Get(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Cache.Redis/RedisSharedCache.cs/#L51">View Source</a>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Cache.Redis/RedisSharedCache.cs/#L52">View Source</a>
               </span>
               <a id="InfinniPlatform_Cache_RedisSharedCache_Get_" data-uid="InfinniPlatform.Cache.RedisSharedCache.Get*"></a>
               <h4 id="InfinniPlatform_Cache_RedisSharedCache_Get_System_String_" data-uid="InfinniPlatform.Cache.RedisSharedCache.Get(System.String)">Get(String)</h4>
@@ -255,7 +255,7 @@
                 <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_Cache_RedisSharedCache_Remove_System_String_.md&amp;value=---%0Auid%3A%20InfinniPlatform.Cache.RedisSharedCache.Remove(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Cache.Redis/RedisSharedCache.cs/#L89">View Source</a>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Cache.Redis/RedisSharedCache.cs/#L90">View Source</a>
               </span>
               <a id="InfinniPlatform_Cache_RedisSharedCache_Remove_" data-uid="InfinniPlatform.Cache.RedisSharedCache.Remove*"></a>
               <h4 id="InfinniPlatform_Cache_RedisSharedCache_Remove_System_String_" data-uid="InfinniPlatform.Cache.RedisSharedCache.Remove(System.String)">Remove(String)</h4>
@@ -302,7 +302,7 @@
                 <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_Cache_RedisSharedCache_Set_System_String_System_String_.md&amp;value=---%0Auid%3A%20InfinniPlatform.Cache.RedisSharedCache.Set(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Cache.Redis/RedisSharedCache.cs/#L74">View Source</a>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Cache.Redis/RedisSharedCache.cs/#L75">View Source</a>
               </span>
               <a id="InfinniPlatform_Cache_RedisSharedCache_Set_" data-uid="InfinniPlatform.Cache.RedisSharedCache.Set*"></a>
               <h4 id="InfinniPlatform_Cache_RedisSharedCache_Set_System_String_System_String_" data-uid="InfinniPlatform.Cache.RedisSharedCache.Set(System.String,System.String)">Set(String, String)</h4>
@@ -339,7 +339,7 @@
                 <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_Cache_RedisSharedCache_TryGet_System_String_System_String__.md&amp;value=---%0Auid%3A%20InfinniPlatform.Cache.RedisSharedCache.TryGet(System.String%2CSystem.String%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Cache.Redis/RedisSharedCache.cs/#L60">View Source</a>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Cache.Redis/RedisSharedCache.cs/#L61">View Source</a>
               </span>
               <a id="InfinniPlatform_Cache_RedisSharedCache_TryGet_" data-uid="InfinniPlatform.Cache.RedisSharedCache.TryGet*"></a>
               <h4 id="InfinniPlatform_Cache_RedisSharedCache_TryGet_System_String_System_String__" data-uid="InfinniPlatform.Cache.RedisSharedCache.TryGet(System.String,System.String@)">TryGet(String, out String)</h4>
@@ -387,9 +387,6 @@
                 </tbody>
               </table>
               <h3 id="extensionmethods">Extension Methods</h3>
-              <div>
-                  <a class="xref" href="InfinniPlatform.Extensions.CommonExtensions.html#InfinniPlatform_Extensions_CommonExtensions_ExecuteSilent__1___0_Action___0__">CommonExtensions.ExecuteSilent&lt;T&gt;(T, Action&lt;T&gt;)</a>
-              </div>
               <div>
                   <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_GetItem_System_Object_System_Int32_">DynamicCollectionExtensions.GetItem(Object, Int32)</a>
               </div>
@@ -456,6 +453,9 @@
               <div>
                   <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_SetEventDelegate_System_Object_EventInfo_System_Object_">ReflectionExtensions.SetEventDelegate(Object, EventInfo, Object)</a>
               </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Extensions.CommonExtensions.html#InfinniPlatform_Extensions_CommonExtensions_ExecuteSilent__1___0_Action___0__">CommonExtensions.ExecuteSilent&lt;T&gt;(T, Action&lt;T&gt;)</a>
+              </div>
                         </article>
           </div>
           
@@ -467,7 +467,7 @@
                     <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_Cache_RedisSharedCache.md&amp;value=---%0Auid%3A%20InfinniPlatform.Cache.RedisSharedCache%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Cache.Redis/RedisSharedCache.cs/#L14" class="contribution-link">View Source</a>
+                    <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Cache.Redis/RedisSharedCache.cs/#L16" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

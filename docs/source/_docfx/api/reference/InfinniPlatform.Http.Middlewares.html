@@ -75,36 +75,42 @@
               <div class="markdown level0 remarks"></div>
                 <h3 id="classes">Classes
               </h3>
-                  <h4><a class="xref" href="InfinniPlatform.Http.Middlewares.ErrorHandlingMiddlewareOptions.html">ErrorHandlingMiddlewareOptions</a></h4>
-                  <section><p>Настройки для <span class="xref">InfinniPlatform.Http.Middlewares.ErrorHandlingHttpMiddleware</span>.</p>
+                  <h4><a class="xref" href="InfinniPlatform.Http.Middlewares.ErrorHandlingAppLayer.html">ErrorHandlingAppLayer</a></h4>
+                  <section><p>Hosting layer for processing request errors.</p>
 </section>
-                  <h4><a class="xref" href="InfinniPlatform.Http.Middlewares.HttpMiddlewareBase-1.html">HttpMiddlewareBase&lt;TOptions&gt;</a></h4>
-                  <section><p>Базовый класс промежуточного слоя обработки HTTP запросов приложения <a class="xref" href="InfinniPlatform.Http.Middlewares.IHttpMiddleware.html">IHttpMiddleware</a>.</p>
-</section>
-                  <h4><a class="xref" href="InfinniPlatform.Http.Middlewares.NancyMiddlewareOptions.html">NancyMiddlewareOptions</a></h4>
-                  <section><p>Настройки для <span class="xref">InfinniPlatform.Http.Middlewares.NancyHttpMiddleware</span>.</p>
-</section>
-                  <h4><a class="xref" href="InfinniPlatform.Http.Middlewares.OwinMiddleware.html">OwinMiddleware</a></h4>
-                  <section><p>An abstract base class for a standard middleware pattern.</p>
+                  <h4><a class="xref" href="InfinniPlatform.Http.Middlewares.NancyAppLayer.html">NancyAppLayer</a></h4>
+                  <section><p>Hosting layer for request processing based on NancyFx framework.</p>
 </section>
                 <h3 id="interfaces">Interfaces
               </h3>
-                  <h4><a class="xref" href="InfinniPlatform.Http.Middlewares.IHttpContextProvider.html">IHttpContextProvider</a></h4>
-                  <section><p>Предоставляет метод для получения контекста OWIN текущего запроса.</p>
+                  <h4><a class="xref" href="InfinniPlatform.Http.Middlewares.IAfterAuthenticationAppLayer.html">IAfterAuthenticationAppLayer</a></h4>
+                  <section><p>Уровень для обработки запросов после аутентификации пользователя.</p>
 </section>
-                  <h4><a class="xref" href="InfinniPlatform.Http.Middlewares.IHttpMiddleware.html">IHttpMiddleware</a></h4>
-                  <section><p>Промежуточный слой обработки HTTP запросов приложения.</p>
+                  <h4><a class="xref" href="InfinniPlatform.Http.Middlewares.IAppLayer.html">IAppLayer</a></h4>
+                  <section></section>
+                  <h4><a class="xref" href="InfinniPlatform.Http.Middlewares.IAuthenticationBarrierAppLayer.html">IAuthenticationBarrierAppLayer</a></h4>
+                  <section><p>Уровень для барьерной аутентификации пользователя.</p>
 </section>
-                  <h4><a class="xref" href="InfinniPlatform.Http.Middlewares.IMiddlewareOptions.html">IMiddlewareOptions</a></h4>
-                  <section><p>Настройки для <a class="xref" href="InfinniPlatform.Http.Middlewares.IHttpMiddleware.html">IHttpMiddleware</a>.</p>
+                  <h4><a class="xref" href="InfinniPlatform.Http.Middlewares.IBeforeAuthenticationAppLayer.html">IBeforeAuthenticationAppLayer</a></h4>
+                  <section><p>Уровень для обработки запросов до аутентификации пользователя.</p>
 </section>
-                  <h4><a class="xref" href="InfinniPlatform.Http.Middlewares.IOwinMiddlewareTypeResolver.html">IOwinMiddlewareTypeResolver</a></h4>
-                  <section><p>Провайдер получения типа обработчика запросов OWIN для регистрации в <see cref="!:IApplicationBuilder"></see>.</p>
+                  <h4><a class="xref" href="InfinniPlatform.Http.Middlewares.IBusinessAppLayer.html">IBusinessAppLayer</a></h4>
+                  <section><p>Уровень для обработки прикладных запросов.</p>
 </section>
-                <h3 id="enums">Enums
-              </h3>
-                  <h4><a class="xref" href="InfinniPlatform.Http.Middlewares.HttpMiddlewareType.html">HttpMiddlewareType</a></h4>
-                  <section><p>Тип промежуточного слоя обработки HTTP запросов приложения <a class="xref" href="InfinniPlatform.Http.Middlewares.IHttpMiddleware.html">IHttpMiddleware</a>.</p>
+                  <h4><a class="xref" href="InfinniPlatform.Http.Middlewares.IDefaultAppLayer.html">IDefaultAppLayer</a></h4>
+                  <section><p>Marker interface for internal implementations of <a class="xref" href="InfinniPlatform.Http.Middlewares.IAppLayer.html">IAppLayer</a>.</p>
+</section>
+                  <h4><a class="xref" href="InfinniPlatform.Http.Middlewares.IErrorHandlingAppLayer.html">IErrorHandlingAppLayer</a></h4>
+                  <section><p>Уровень для обработки ошибок выполнения запросов.</p>
+</section>
+                  <h4><a class="xref" href="InfinniPlatform.Http.Middlewares.IExternalAuthenticationAppLayer.html">IExternalAuthenticationAppLayer</a></h4>
+                  <section><p>Уровень для аутентификации пользователя на основе внешнего провайдера.</p>
+</section>
+                  <h4><a class="xref" href="InfinniPlatform.Http.Middlewares.IGlobalHandlingAppLayer.html">IGlobalHandlingAppLayer</a></h4>
+                  <section><p>Уровень для глобальной обработки запросов.</p>
+</section>
+                  <h4><a class="xref" href="InfinniPlatform.Http.Middlewares.IInternalAuthenticationAppLayer.html">IInternalAuthenticationAppLayer</a></h4>
+                  <section><p>Уровень для аутентификации пользователя средствами приложения.</p>
 </section>
                         </article>
           </div>

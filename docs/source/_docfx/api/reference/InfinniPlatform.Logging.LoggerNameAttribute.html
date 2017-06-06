@@ -71,7 +71,7 @@
               
               <h1 id="InfinniPlatform_Logging_LoggerNameAttribute" data-uid="InfinniPlatform.Logging.LoggerNameAttribute">Class LoggerNameAttribute
               </h1>
-              <div class="markdown level0 summary"><p>Атрибут для определения имени источника событий.</p>
+              <div class="markdown level0 summary"><p>The attribute defines the category name for the <see cref="!:ILogger&lt;TCategoryName&gt;"></see>.</p>
 </div>
               <div class="markdown level0 conceptual"></div>
               <div class="inheritance">
@@ -83,7 +83,7 @@
               <h6><strong>Assembly</strong>:InfinniPlatform.Core.Abstractions.dll</h6>
               <h5 id="InfinniPlatform_Logging_LoggerNameAttribute_syntax">Syntax</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public sealed class LoggerNameAttribute : Attribute</code></pre>
+                <pre><code class="lang-csharp hljs">public class LoggerNameAttribute : Attribute</code></pre>
               </div>
               <h3 id="constructors">Constructors
               </h3>
@@ -92,11 +92,11 @@
                 <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_Logging_LoggerNameAttribute__ctor_System_String_.md&amp;value=---%0Auid%3A%20InfinniPlatform.Logging.LoggerNameAttribute.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Core.Abstractions/Logging/LoggerNameAttribute.cs/#L15">View Source</a>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Core.Abstractions/Logging/LoggerNameAttribute.cs/#L17">View Source</a>
               </span>
               <a id="InfinniPlatform_Logging_LoggerNameAttribute__ctor_" data-uid="InfinniPlatform.Logging.LoggerNameAttribute.#ctor*"></a>
               <h4 id="InfinniPlatform_Logging_LoggerNameAttribute__ctor_System_String_" data-uid="InfinniPlatform.Logging.LoggerNameAttribute.#ctor(System.String)">LoggerNameAttribute(String)</h4>
-              <div class="markdown level1 summary"><p>Конструктор.</p>
+              <div class="markdown level1 summary"><p>Creates a new <a class="xref" href="InfinniPlatform.Logging.LoggerNameAttribute.html">LoggerNameAttribute</a>.</p>
 </div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
@@ -116,7 +116,7 @@
                   <tr>
                     <td><span class="xref">System.String</span></td>
                     <td><span class="parametername">name</span></td>
-                    <td><p>Имя источника событий.</p>
+                    <td><p>The logger category name.</p>
 </td>
                   </tr>
                 </tbody>
@@ -128,11 +128,11 @@
                 <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_Logging_LoggerNameAttribute_Name.md&amp;value=---%0Auid%3A%20InfinniPlatform.Logging.LoggerNameAttribute.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Core.Abstractions/Logging/LoggerNameAttribute.cs/#L23">View Source</a>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Core.Abstractions/Logging/LoggerNameAttribute.cs/#L25">View Source</a>
               </span>
               <a id="InfinniPlatform_Logging_LoggerNameAttribute_Name_" data-uid="InfinniPlatform.Logging.LoggerNameAttribute.Name*"></a>
               <h4 id="InfinniPlatform_Logging_LoggerNameAttribute_Name" data-uid="InfinniPlatform.Logging.LoggerNameAttribute.Name">Name</h4>
-              <div class="markdown level1 summary"><p>Имя источника событий.</p>
+              <div class="markdown level1 summary"><p>The logger category name.</p>
 </div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
@@ -155,9 +155,6 @@
                 </tbody>
               </table>
               <h3 id="extensionmethods">Extension Methods</h3>
-              <div>
-                  <a class="xref" href="InfinniPlatform.Extensions.CommonExtensions.html#InfinniPlatform_Extensions_CommonExtensions_ExecuteSilent__1___0_Action___0__">CommonExtensions.ExecuteSilent&lt;T&gt;(T, Action&lt;T&gt;)</a>
-              </div>
               <div>
                   <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_GetItem_System_Object_System_Int32_">DynamicCollectionExtensions.GetItem(Object, Int32)</a>
               </div>
@@ -224,6 +221,9 @@
               <div>
                   <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_SetEventDelegate_System_Object_EventInfo_System_Object_">ReflectionExtensions.SetEventDelegate(Object, EventInfo, Object)</a>
               </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Extensions.CommonExtensions.html#InfinniPlatform_Extensions_CommonExtensions_ExecuteSilent__1___0_Action___0__">CommonExtensions.ExecuteSilent&lt;T&gt;(T, Action&lt;T&gt;)</a>
+              </div>
                         </article>
           </div>
           
@@ -235,7 +235,7 @@
                     <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_Logging_LoggerNameAttribute.md&amp;value=---%0Auid%3A%20InfinniPlatform.Logging.LoggerNameAttribute%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Core.Abstractions/Logging/LoggerNameAttribute.cs/#L8" class="contribution-link">View Source</a>
+                    <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Core.Abstractions/Logging/LoggerNameAttribute.cs/#L10" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>

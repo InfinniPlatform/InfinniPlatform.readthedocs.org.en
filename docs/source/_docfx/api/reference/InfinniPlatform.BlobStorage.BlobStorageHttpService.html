@@ -71,7 +71,7 @@
               
               <h1 id="InfinniPlatform_BlobStorage_BlobStorageHttpService" data-uid="InfinniPlatform.BlobStorage.BlobStorageHttpService">Class BlobStorageHttpService
               </h1>
-              <div class="markdown level0 summary"><p>Provides HTTP serivce to get data from <a class="xref" href="InfinniPlatform.BlobStorage.IBlobStorage.html">IBlobStorage</a>.</p>
+              <div class="markdown level0 summary"><p>Provides HTTP service to get data from <a class="xref" href="InfinniPlatform.BlobStorage.IBlobStorage.html">IBlobStorage</a>.</p>
 </div>
               <div class="markdown level0 conceptual"></div>
               <div class="inheritance">
@@ -92,18 +92,18 @@
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_BlobStorage_BlobStorageHttpService__ctor_InfinniPlatform_BlobStorage_IBlobStorage_InfinniPlatform_Logging_IPerformanceLog_InfinniPlatform_Logging_ILog_.md&amp;value=---%0Auid%3A%20InfinniPlatform.BlobStorage.BlobStorageHttpService.%23ctor(InfinniPlatform.BlobStorage.IBlobStorage%2CInfinniPlatform.Logging.IPerformanceLog%2CInfinniPlatform.Logging.ILog)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_BlobStorage_BlobStorageHttpService__ctor_InfinniPlatform_BlobStorage_IBlobStorage_InfinniPlatform_Logging_IPerformanceLogger_InfinniPlatform_BlobStorage_BlobStorageHttpService__ILogger_InfinniPlatform_BlobStorage_BlobStorageHttpService__.md&amp;value=---%0Auid%3A%20InfinniPlatform.BlobStorage.BlobStorageHttpService.%23ctor(InfinniPlatform.BlobStorage.IBlobStorage%2CInfinniPlatform.Logging.IPerformanceLogger%7BInfinniPlatform.BlobStorage.BlobStorageHttpService%7D%2CILogger%7BInfinniPlatform.BlobStorage.BlobStorageHttpService%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.BlobStorage.HttpService/BlobStorageHttpService.cs/#L24">View Source</a>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.BlobStorage.HttpService/BlobStorageHttpService.cs/#L26">View Source</a>
               </span>
               <a id="InfinniPlatform_BlobStorage_BlobStorageHttpService__ctor_" data-uid="InfinniPlatform.BlobStorage.BlobStorageHttpService.#ctor*"></a>
-              <h4 id="InfinniPlatform_BlobStorage_BlobStorageHttpService__ctor_InfinniPlatform_BlobStorage_IBlobStorage_InfinniPlatform_Logging_IPerformanceLog_InfinniPlatform_Logging_ILog_" data-uid="InfinniPlatform.BlobStorage.BlobStorageHttpService.#ctor(InfinniPlatform.BlobStorage.IBlobStorage,InfinniPlatform.Logging.IPerformanceLog,InfinniPlatform.Logging.ILog)">BlobStorageHttpService(IBlobStorage, IPerformanceLog, ILog)</h4>
+              <h4 id="InfinniPlatform_BlobStorage_BlobStorageHttpService__ctor_InfinniPlatform_BlobStorage_IBlobStorage_InfinniPlatform_Logging_IPerformanceLogger_InfinniPlatform_BlobStorage_BlobStorageHttpService__ILogger_InfinniPlatform_BlobStorage_BlobStorageHttpService__" data-uid="InfinniPlatform.BlobStorage.BlobStorageHttpService.#ctor(InfinniPlatform.BlobStorage.IBlobStorage,InfinniPlatform.Logging.IPerformanceLogger{InfinniPlatform.BlobStorage.BlobStorageHttpService},ILogger{InfinniPlatform.BlobStorage.BlobStorageHttpService})">BlobStorageHttpService(IBlobStorage, IPerformanceLogger&lt;BlobStorageHttpService&gt;, ILogger&lt;BlobStorageHttpService&gt;)</h4>
               <div class="markdown level1 summary"></div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public BlobStorageHttpService(IBlobStorage blobStorage, IPerformanceLog performanceLog, ILog log)</code></pre>
+                <pre><code class="lang-csharp hljs">public BlobStorageHttpService(IBlobStorage blobStorage, IPerformanceLogger&lt;BlobStorageHttpService&gt; perfLogger, ILogger&lt;BlobStorageHttpService&gt; logger)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -121,18 +121,18 @@
                     <td></td>
                   </tr>
                   <tr>
-                    <td><a class="xref" href="InfinniPlatform.Logging.IPerformanceLog.html">IPerformanceLog</a></td>
-                    <td><span class="parametername">performanceLog</span></td>
+                    <td><a class="xref" href="InfinniPlatform.Logging.IPerformanceLogger-1.html">IPerformanceLogger</a>&lt;<a class="xref" href="InfinniPlatform.BlobStorage.BlobStorageHttpService.html">BlobStorageHttpService</a>&gt;</td>
+                    <td><span class="parametername">perfLogger</span></td>
                     <td></td>
                   </tr>
                   <tr>
-                    <td><a class="xref" href="InfinniPlatform.Logging.ILog.html">ILog</a></td>
-                    <td><span class="parametername">log</span></td>
+                    <td><span class="xref">ILogger</span>&lt;<a class="xref" href="InfinniPlatform.BlobStorage.BlobStorageHttpService.html">BlobStorageHttpService</a>&gt;</td>
+                    <td><span class="parametername">logger</span></td>
                     <td></td>
                   </tr>
                 </tbody>
               </table>
-              <h5 id="InfinniPlatform_BlobStorage_BlobStorageHttpService__ctor_InfinniPlatform_BlobStorage_IBlobStorage_InfinniPlatform_Logging_IPerformanceLog_InfinniPlatform_Logging_ILog__examples">Examples</h5>
+              <h5 id="InfinniPlatform_BlobStorage_BlobStorageHttpService__ctor_InfinniPlatform_BlobStorage_IBlobStorage_InfinniPlatform_Logging_IPerformanceLogger_InfinniPlatform_BlobStorage_BlobStorageHttpService__ILogger_InfinniPlatform_BlobStorage_BlobStorageHttpService___examples">Examples</h5>
               <pre><code>GET /blob/{id}</code></pre>
 
               <h3 id="fields">Fields
@@ -142,7 +142,7 @@
                 <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_BlobStorage_BlobStorageHttpService_DefaultServicePath.md&amp;value=---%0Auid%3A%20InfinniPlatform.BlobStorage.BlobStorageHttpService.DefaultServicePath%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.BlobStorage.HttpService/BlobStorageHttpService.cs/#L21">View Source</a>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.BlobStorage.HttpService/BlobStorageHttpService.cs/#L23">View Source</a>
               </span>
               <h4 id="InfinniPlatform_BlobStorage_BlobStorageHttpService_DefaultServicePath" data-uid="InfinniPlatform.BlobStorage.BlobStorageHttpService.DefaultServicePath">DefaultServicePath</h4>
               <div class="markdown level1 summary"></div>
@@ -176,7 +176,7 @@
                 <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_BlobStorage_BlobStorageHttpService_GetFileContentAsync_InfinniPlatform_Http_IHttpRequest_.md&amp;value=---%0Auid%3A%20InfinniPlatform.BlobStorage.BlobStorageHttpService.GetFileContentAsync(InfinniPlatform.Http.IHttpRequest)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.BlobStorage.HttpService/BlobStorageHttpService.cs/#L45">View Source</a>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.BlobStorage.HttpService/BlobStorageHttpService.cs/#L47">View Source</a>
               </span>
               <a id="InfinniPlatform_BlobStorage_BlobStorageHttpService_GetFileContentAsync_" data-uid="InfinniPlatform.BlobStorage.BlobStorageHttpService.GetFileContentAsync*"></a>
               <h4 id="InfinniPlatform_BlobStorage_BlobStorageHttpService_GetFileContentAsync_InfinniPlatform_Http_IHttpRequest_" data-uid="InfinniPlatform.BlobStorage.BlobStorageHttpService.GetFileContentAsync(InfinniPlatform.Http.IHttpRequest)">GetFileContentAsync(IHttpRequest)</h4>
@@ -226,7 +226,7 @@
                 <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_BlobStorage_BlobStorageHttpService_Load_InfinniPlatform_Http_IHttpServiceBuilder_.md&amp;value=---%0Auid%3A%20InfinniPlatform.BlobStorage.BlobStorageHttpService.Load(InfinniPlatform.Http.IHttpServiceBuilder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.BlobStorage.HttpService/BlobStorageHttpService.cs/#L37">View Source</a>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.BlobStorage.HttpService/BlobStorageHttpService.cs/#L39">View Source</a>
               </span>
               <a id="InfinniPlatform_BlobStorage_BlobStorageHttpService_Load_" data-uid="InfinniPlatform.BlobStorage.BlobStorageHttpService.Load*"></a>
               <h4 id="InfinniPlatform_BlobStorage_BlobStorageHttpService_Load_InfinniPlatform_Http_IHttpServiceBuilder_" data-uid="InfinniPlatform.BlobStorage.BlobStorageHttpService.Load(InfinniPlatform.Http.IHttpServiceBuilder)">Load(IHttpServiceBuilder)</h4>
@@ -257,9 +257,6 @@
               <pre><code>GET /blob/{id}</code></pre>
 
               <h3 id="extensionmethods">Extension Methods</h3>
-              <div>
-                  <a class="xref" href="InfinniPlatform.Extensions.CommonExtensions.html#InfinniPlatform_Extensions_CommonExtensions_ExecuteSilent__1___0_Action___0__">CommonExtensions.ExecuteSilent&lt;T&gt;(T, Action&lt;T&gt;)</a>
-              </div>
               <div>
                   <a class="xref" href="InfinniPlatform.Dynamic.DynamicCollectionExtensions.html#InfinniPlatform_Dynamic_DynamicCollectionExtensions_GetItem_System_Object_System_Int32_">DynamicCollectionExtensions.GetItem(Object, Int32)</a>
               </div>
@@ -326,6 +323,9 @@
               <div>
                   <a class="xref" href="InfinniPlatform.Dynamic.ReflectionExtensions.html#InfinniPlatform_Dynamic_ReflectionExtensions_SetEventDelegate_System_Object_EventInfo_System_Object_">ReflectionExtensions.SetEventDelegate(Object, EventInfo, Object)</a>
               </div>
+              <div>
+                  <a class="xref" href="InfinniPlatform.Extensions.CommonExtensions.html#InfinniPlatform_Extensions_CommonExtensions_ExecuteSilent__1___0_Action___0__">CommonExtensions.ExecuteSilent&lt;T&gt;(T, Action&lt;T&gt;)</a>
+              </div>
                         </article>
           </div>
           
@@ -337,7 +337,7 @@
                     <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_BlobStorage_BlobStorageHttpService.md&amp;value=---%0Auid%3A%20InfinniPlatform.BlobStorage.BlobStorageHttpService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.BlobStorage.HttpService/BlobStorageHttpService.cs/#L19" class="contribution-link">View Source</a>
+                    <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.BlobStorage.HttpService/BlobStorageHttpService.cs/#L21" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
