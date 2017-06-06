@@ -19,7 +19,7 @@ Let's start by building a simple "Hello, world!" app.
 
 .. code-block:: bash
 
-    dotnet add package InfinniPlatform.Core -s https://www.myget.org/F/infinniplatform/ -v 2.3.4-*
+    dotnet add package InfinniPlatform.Core -s https://www.myget.org/F/infinniplatform/ -v 2.3.5-*
 
 **4.** Create MyHttpService.cs and define an HTTP service
 
@@ -83,7 +83,9 @@ Let's start by building a simple "Hello, world!" app.
         {
             public IServiceProvider ConfigureServices(IServiceCollection services)
             {
-                return services.BuildProvider(new[] { new MyAppContainerModule() });
+                services.AddContainerModule(new MyAppContainerModule());
+
+                return services.BuildProvider();
             }
 
             public void Configure(IApplicationBuilder app, IContainerResolver resolver)

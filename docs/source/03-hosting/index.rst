@@ -1,7 +1,7 @@
 Application Events
 ==================
 
-Any application may require initialization at the start and deinitialization in the end of app execution. First this implies that app may have
+Some applications may require initialization at the start and deinitialization in the end of app execution. First this implies that app may have
 pre-defined settings, for instance allocation of particular resources, data migration, cache pre-filling and so on. Second, at the stage of
 deinitialization, a reverse process take place, that is disposing allocated resources. Both stages are optional and depend on app logic and
 resources it manipulates.
@@ -12,34 +12,20 @@ Application Events Types
 
 InfinniPlatfrom apps may handle the following events:
 
-* Before app services launch
-* After app services launch
-* Before app services stop
-* After app services stop
+* After the application host has fully started and is about to wait for a graceful shutdown
+* After the application host has fully stopped and is not wait for new requests
 
-Event **before launch** :doc:`app services </07-services/index>` lets creation of configurable actions before app will start to respond the queries.
-This event handlers define a mandatory stage for successful app launch. For example, to perform data migration.
-
-Event **after launch** :doc:`app services </07-services/index>` lets to run optional background tasks at the app start. For example, :doc:`cache </11-cache/index>`
-pre-filling with data set or perform indexing can be done at this stage.
-
-Event **before stop** :doc:`app services </07-services/index>` lets to handle query to stop the app. For example, an :doc:`app log </05-logging/index>`
-record action can be initiated and inform other cluster nodes about this event to prepare app for shutdown.
-
-Event **after stop** :doc:`app services </07-services/index>` lets to handle the moment when app stops responding. This type event handlers practically
-command and then manage to correctly shutdown the app. You may dispose resources, save data retaining in memory and :doc:`inform </12-queues/index>`
-other cluster's nodes about this event.
+When the application host has fully **started** you have a chance to execute any kind of background tasks such as pre-filling data :doc:`cache </11-cache/index>`,
+data indexing and etc. When the application host has fully **stopped** you may dispose resources, save data retaining in memory and etc.
 
 .. note:: You should pay attention that application may stop by exception or forcefully unloaded by administrative tools. Don't rely that aforementioned
           event handlers will be invoked anyway. Instead of this the **restoration logic** should be implemented to help handle those emergencies.
 
 
-.. index:: ApplicationEventHandler
-.. index:: IApplicationEventHandler
-.. index:: IApplicationEventHandler.OnBeforeStart()
-.. index:: IApplicationEventHandler.OnAfterStart()
-.. index:: IApplicationEventHandler.OnBeforeStop()
-.. index:: IApplicationEventHandler.OnAfterStop()
+.. index:: IAppStartedHandler
+.. index:: IAppStartedHandler.Handle()
+.. index:: IAppStoppedHandler
+.. index:: IAppStoppedHandler.Handle()
 
 Application Event Handler
 -------------------------
@@ -128,4 +114,4 @@ You can view an example below of asynchronous event handling ``OnAfterStart()`` 
     }
 
 
-.. _`Task.Run()`: https://msdn.microsoft.com/en-US/library/system.threading.tasks.task.run(v=vs.110).aspx
+.. _`Task.Run()`: https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task.run?view=netcore-1.1#System_Threading_Tasks_Task_Run_System_Action_
