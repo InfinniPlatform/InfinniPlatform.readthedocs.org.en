@@ -33,7 +33,7 @@ Common structure of IoC-container module may look like this:
 Configuration IoC Container on Startup
 --------------------------------------
 
-To configure the IoC container in an ASP.NET Core application your need to create an instance of the IServiceProvider_ interface and return one
+To configure the IoC container in an ASP.NET Core application you need to create an instance of the IServiceProvider_ interface and return one
 from the `ConfigureServices()`_ method. For features that require substantial setup there are ``Add[Component]`` extension methods on IServiceCollection_.
 User defined modules are added by the `AddContainerModule()`_ extension method. The `BuildProvider()`_ extension method builds and returns an
 instance of the IServiceProvider_ interface.
