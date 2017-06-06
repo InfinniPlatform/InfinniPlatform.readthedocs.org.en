@@ -54,11 +54,11 @@ instance of the IServiceProvider_ interface.
     }
 
 
-.. _`IContainerModule`: /api/reference/InfinniPlatform.IoC.IContainerModule.html
-.. _`Load()`: /api/reference/InfinniPlatform.IoC.IContainerModule.html#InfinniPlatform_IoC_IContainerModule_Load_InfinniPlatform_IoC_IContainerBuilder_
-.. _`IContainerBuilder`: /api/reference/InfinniPlatform.IoC.IContainerBuilder.html
-.. _`AddContainerModule()`: /api/reference/InfinniPlatform.AspNetCore.CoreExtensions.html#InfinniPlatform_AspNetCore_CoreExtensions_AddContainerModule_IServiceCollection_InfinniPlatform_IoC_IContainerModule_
-.. _`BuildProvider()`: /api/reference/InfinniPlatform.AspNetCore.CoreExtensions.html#InfinniPlatform_AspNetCore_CoreExtensions_BuildProvider_IServiceCollection_
+.. _`IContainerModule`: ../api/reference/InfinniPlatform.IoC.IContainerModule.html
+.. _`Load()`: ../api/reference/InfinniPlatform.IoC.IContainerModule.html#InfinniPlatform_IoC_IContainerModule_Load_InfinniPlatform_IoC_IContainerBuilder_
+.. _`IContainerBuilder`: ../api/reference/InfinniPlatform.IoC.IContainerBuilder.html
+.. _`AddContainerModule()`: ../api/reference/InfinniPlatform.AspNetCore.CoreExtensions.html#InfinniPlatform_AspNetCore_CoreExtensions_AddContainerModule_IServiceCollection_InfinniPlatform_IoC_IContainerModule_
+.. _`BuildProvider()`: ../api/reference/InfinniPlatform.AspNetCore.CoreExtensions.html#InfinniPlatform_AspNetCore_CoreExtensions_BuildProvider_IServiceCollection_
 
 .. _`IServiceCollection`: https://docs.microsoft.com/en-us/aspnet/core/api/microsoft.extensions.dependencyinjection.iservicecollection
 .. _`IServiceProvider`: https://docs.microsoft.com/en-us/aspnet/core/fundamentals/dependency-injection

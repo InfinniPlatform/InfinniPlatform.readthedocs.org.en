@@ -311,12 +311,12 @@ service one should use method `IsRegistered()`_.
     }
 
 
-.. _`IContainerResolver`: /api/reference/InfinniPlatform.IoC.IContainerResolver.html
-.. _`Services`: /api/reference/InfinniPlatform.IoC.IContainerResolver.html#InfinniPlatform_IoC_IContainerResolver_Services
-.. _`IsRegistered()`: /api/reference/InfinniPlatform.IoC.IContainerResolver.html#InfinniPlatform_IoC_IContainerResolver_IsRegistered_Type_
-.. _`Resolve()`: /api/reference/InfinniPlatform.IoC.IContainerResolver.html#InfinniPlatform_IoC_IContainerResolver_Resolve_Type_
-.. _`TryResolve()`: /api/reference/InfinniPlatform.IoC.IContainerResolver.html#InfinniPlatform_IoC_IContainerResolver_TryResolve_Type_System_Object__
-.. _`ResolveOptional()`: /api/reference/InfinniPlatform.IoC.IContainerResolver.html#InfinniPlatform_IoC_IContainerResolver_ResolveOptional_Type_
+.. _`IContainerResolver`: ../api/reference/InfinniPlatform.IoC.IContainerResolver.html
+.. _`Services`: ../api/reference/InfinniPlatform.IoC.IContainerResolver.html#InfinniPlatform_IoC_IContainerResolver_Services
+.. _`IsRegistered()`: ../api/reference/InfinniPlatform.IoC.IContainerResolver.html#InfinniPlatform_IoC_IContainerResolver_IsRegistered_Type_
+.. _`Resolve()`: ../api/reference/InfinniPlatform.IoC.IContainerResolver.html#InfinniPlatform_IoC_IContainerResolver_Resolve_Type_
+.. _`TryResolve()`: ../api/reference/InfinniPlatform.IoC.IContainerResolver.html#InfinniPlatform_IoC_IContainerResolver_TryResolve_Type_System_Object__
+.. _`ResolveOptional()`: ../api/reference/InfinniPlatform.IoC.IContainerResolver.html#InfinniPlatform_IoC_IContainerResolver_ResolveOptional_Type_
 
 .. _`IEnumerable<T>`: https://docs.microsoft.com/en-us/dotnet/api/system.collections.generic.ienumerable-1?view=netcore-1.1
 .. _`Lazy<T>`: https://docs.microsoft.com/en-us/dotnet/api/system.lazy-1?view=netcore-1.1

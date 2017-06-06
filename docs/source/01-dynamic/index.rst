@@ -103,4 +103,4 @@ Serialization of Dynamic Objects
 Class instances DynamicDocument_ can be serialized and deserialized to/from JSON. You my find additional info here :doc:`/06-serialization/index`.
 
 
-.. _`DynamicDocument`: /api/reference/InfinniPlatform.Dynamic.DynamicDocument.html
+.. _`DynamicDocument`: ../api/reference/InfinniPlatform.Dynamic.DynamicDocument.html

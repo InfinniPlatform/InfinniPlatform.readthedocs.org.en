@@ -109,10 +109,10 @@ external component.
     builder.RegisterType<DisposableComponent>().ExternallyOwned();
 
 
-.. _`InstancePerDependency()`: /api/reference/InfinniPlatform.IoC.IContainerRegistrationRule.html#InfinniPlatform_IoC_IContainerRegistrationRule_InstancePerDependency
-.. _`InstancePerLifetimeScope()`: /api/reference/InfinniPlatform.IoC.IContainerRegistrationRule.html#InfinniPlatform_IoC_IContainerRegistrationRule_InstancePerLifetimeScope
-.. _`SingleInstance()`: /api/reference/InfinniPlatform.IoC.IContainerRegistrationRule.html#InfinniPlatform_IoC_IContainerRegistrationRule_SingleInstance
-.. _`ExternallyOwned()`: /api/reference/InfinniPlatform.IoC.IContainerRegistrationRule.html#InfinniPlatform_IoC_IContainerRegistrationRule_ExternallyOwned
+.. _`InstancePerDependency()`: ../api/reference/InfinniPlatform.IoC.IContainerRegistrationRule.html#InfinniPlatform_IoC_IContainerRegistrationRule_InstancePerDependency
+.. _`InstancePerLifetimeScope()`: ../api/reference/InfinniPlatform.IoC.IContainerRegistrationRule.html#InfinniPlatform_IoC_IContainerRegistrationRule_InstancePerLifetimeScope
+.. _`SingleInstance()`: ../api/reference/InfinniPlatform.IoC.IContainerRegistrationRule.html#InfinniPlatform_IoC_IContainerRegistrationRule_SingleInstance
+.. _`ExternallyOwned()`: ../api/reference/InfinniPlatform.IoC.IContainerRegistrationRule.html#InfinniPlatform_IoC_IContainerRegistrationRule_ExternallyOwned
 
 .. _`IDisposable`: https://docs.microsoft.com/en-us/dotnet/api/system.idisposable?view=netcore-1.1
 .. _`Dispose()`: https://docs.microsoft.com/en-us/dotnet/api/system.idisposable.dispose?view=netcore-1.1#System_IDisposable_Dispose

@@ -30,25 +30,17 @@ data indexing and etc. When the application host has fully **stopped** you may d
 Application Event Handler
 -------------------------
 
-To write an event handler to implement ``InfinniPlatform.Sdk.Hosting.IApplicationEventHandler`` interface and :doc:`register </02-ioc/container-builder>`
-its implementation in :doc:`IoC-container module </02-ioc/container-module>`. However the most simple way is to inherit the event handler from the
-abstract class ``InfinniPlatform.Sdk.Hosting.ApplicationEventHandler`` and override the most applicable methods.
+To handle the application events there are two type of handlers represented by IAppStartedHandler_ and IAppStoppedHandler_ interfaces. The first is
+invoked when the application has started, the last is invoked when the application has stopped. All you need is to implement an appropriate handler
+and :doc:`register </02-ioc/container-builder>` it in :doc:`IoC container </02-ioc/container-module>`.
 
-Interface ``InfinniPlatform.Sdk.Hosting.IApplicationEventHandler`` describes methods of handling for each event type:
-
-* ``OnBeforeStart()`` - to handle events before app launch
-* ``OnAfterStart()`` - to handle events after app launch
-* ``OnBeforeStop()`` - to handle events before app stop
-* ``OnAfterStop()`` - to handle events after app stop 
-
-Next example shows a handler which handles an event before app launch.
+Next example shows a handler which handles the application startup event.
 
 .. code-block:: csharp
-   :emphasize-lines: 1,3,12
 
-    public class MyApplicationEventHandler : InfinniPlatform.Sdk.Hosting.ApplicationEventHandler
+    public class MyAppStartedHandler : IAppStartedHandler
     {
-        public override void OnBeforeStart()
+        public void Handle()
         {
             // App initialization code
         }
@@ -56,62 +48,19 @@ Next example shows a handler which handles an event before app launch.
 
     // ...
 
-    builder.RegisterType<MyApplicationEventHandler>()
-           .As<InfinniPlatform.Sdk.Hosting.IApplicationEventHandler>()
-           .SingleInstance();
+    builder.RegisterType<MyAppStartedHandler>().As<IAppStartedHandler>().SingleInstance();
 
 
 Asynchronous Event Handling
 ---------------------------
 
-All methods defined in the ``InfinniPlatform.Sdk.Hosting.IApplicationEventHandler`` interface are called synchronously that is they don't return result
-until completed. Exceptions may occur in those methods are recorded in app log. Such behavior is intentionally predefined so the app could control
-the launch-stop-launch transitions on its own.
+The application events is handled synchronously that is they don't return result until completed. Such behavior is intentionally predefined so
+the application could control the launch-stop-launch transitions on its own. For instance, in the case when status of event handling is unnecessary
+you may enclose event handling in ``try/catch`` block, nevertheless it is highly recommended to recorded exception into the application
+:doc:`log </05-logging/index>`. If part of logics can be executed asynchronously it is recommended to run it in a new thread.
 
-In the case when status of event handling is unnecessary you may enclose event handling in ``try/catch`` block, nevertheless it is highly recommended
-to recorded exception into :doc:`app log </05-logging/index>`. If part of logics can be executed asynchronously it is recommended to run it in a new
-thread.
+.. note:: It is the good practice when you minimize duration of the application start and stop. Accordingly this will improve the speed of app
+          deployment and its re-launch.
 
-:ref:`You can see below <app-events>` listed a number of recommended ways to handle events depending on its type. For example, method code ``OnBeforeStart()``
-must be synchronous and execute mandatory actions before app launch. Method code ``OnAfterStart()`` must be asynchronous and not treat an exception as
-emergency, in addition to that, execute optional actions.
-
-.. note:: It is the good practice when you minimize execution time of ``OnBeforeStart()`` и ``OnAfterStop()``, so that can help to reduce launch and
-          stop time. Accordingly this will improve the speed of app deployment and its re-launch.
-
-
-.. _app-events:
-
-.. csv-table:: Recommended ways to handle app events
-   :header: "Handler method", "Handler type", "Can throw exception"
-
-    "``OnBeforeStart()``", "Synchronous", "Yes"
-    "``OnAfterStart()``", "Asynchronous", "No" 
-    "``OnBeforeStop()``", "Asynchronous", "No"
-    "``OnAfterStop()``", "Synchronous", "No"
-
-You can view an example below of asynchronous event handling ``OnAfterStart()`` using method `Task.Run()`_.
-
-.. code-block:: csharp
-   :emphasize-lines: 3,5,13
-
-    public class MyApplicationEventHandler : InfinniPlatform.Sdk.Hosting.ApplicationEventHandler
-    {
-        public override void OnAfterStart()
-        {
-            Task.Run(() =>
-                     {
-                         try
-                         {
-                             // Initialize app code
-                         }
-                         catch (Exception exception)
-                         {
-                             // Record exception into log
-                         }
-                     });
-        }
-    }
-
-
-.. _`Task.Run()`: https://docs.microsoft.com/en-us/dotnet/api/system.threading.tasks.task.run?view=netcore-1.1#System_Threading_Tasks_Task_Run_System_Action_
+.. _`IAppStartedHandler`: ../api/reference/InfinniPlatform.Hosting.IAppStartedHandler.html
+.. _`IAppStoppedHandler`: ../api/reference/InfinniPlatform.Hosting.IAppStoppedHandler.html

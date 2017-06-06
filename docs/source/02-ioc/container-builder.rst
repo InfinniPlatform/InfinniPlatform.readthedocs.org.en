@@ -104,12 +104,12 @@ cycle of all dependencies.
     builder.RegisterFactory(r => new A(r.Resolve<B>()));
 
 
-.. _`IContainerBuilder`: /api/reference/InfinniPlatform.IoC.IContainerBuilder.html
-.. _`RegisterType()`: /api/reference/InfinniPlatform.IoC.IContainerBuilder.html#InfinniPlatform_IoC_IContainerBuilder_RegisterType_Type_
-.. _`RegisterGeneric()`: /api/reference/InfinniPlatform.IoC.IContainerBuilder.html#InfinniPlatform_IoC_IContainerBuilder_RegisterGeneric_Type_
-.. _`RegisterInstance()`: /api/reference/InfinniPlatform.IoC.IContainerBuilder.html#InfinniPlatform_IoC_IContainerBuilder_RegisterInstance__1___0_
-.. _`RegisterFactory()`: /api/reference/InfinniPlatform.IoC.IContainerBuilder.html#InfinniPlatform_IoC_IContainerBuilder_RegisterFactory__1_Func_InfinniPlatform_IoC_IContainerResolver___0__
-.. _`As()`: /api/reference/InfinniPlatform.IoC.IContainerRegistrationRule.html#InfinniPlatform_IoC_IContainerRegistrationRule_As_Type___
+.. _`IContainerBuilder`: ../api/reference/InfinniPlatform.IoC.IContainerBuilder.html
+.. _`RegisterType()`: ../api/reference/InfinniPlatform.IoC.IContainerBuilder.html#InfinniPlatform_IoC_IContainerBuilder_RegisterType_Type_
+.. _`RegisterGeneric()`: ../api/reference/InfinniPlatform.IoC.IContainerBuilder.html#InfinniPlatform_IoC_IContainerBuilder_RegisterGeneric_Type_
+.. _`RegisterInstance()`: ../api/reference/InfinniPlatform.IoC.IContainerBuilder.html#InfinniPlatform_IoC_IContainerBuilder_RegisterInstance__1___0_
+.. _`RegisterFactory()`: ../api/reference/InfinniPlatform.IoC.IContainerBuilder.html#InfinniPlatform_IoC_IContainerBuilder_RegisterFactory__1_Func_InfinniPlatform_IoC_IContainerResolver___0__
+.. _`As()`: ../api/reference/InfinniPlatform.IoC.IContainerRegistrationRule.html#InfinniPlatform_IoC_IContainerRegistrationRule_As_Type___
 
 .. _reflection: https://msdn.microsoft.com/en-us/library/f7ykdhsy(v=vs.110).aspx
 .. _generic: https://msdn.microsoft.com/en-US/library/512aeb7t.aspx
