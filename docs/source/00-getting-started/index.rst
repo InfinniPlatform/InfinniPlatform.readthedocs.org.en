@@ -23,7 +23,7 @@ Let's start by building a simple "Hello, world!" app.
 
 **4.** Create MyHttpService.cs and define an HTTP service
 
-.. code-block:: bash
+.. code-block:: csharp
    :caption: MyHttpService.cs
    :emphasize-lines: 11,12
 
@@ -45,7 +45,7 @@ Let's start by building a simple "Hello, world!" app.
 
 **5.** Create MyAppContainerModule.cs and register the HTTP service
 
-.. code-block:: bash
+.. code-block:: csharp
    :caption: MyAppContainerModule.cs
    :emphasize-lines: 10
 
@@ -65,7 +65,7 @@ Let's start by building a simple "Hello, world!" app.
 
 **6.** Update the code in Startup.cs to use InfinniPlatform
 
-.. code-block:: bash
+.. code-block:: csharp
    :caption: Startup.cs
    :emphasize-lines: 15,20
 
