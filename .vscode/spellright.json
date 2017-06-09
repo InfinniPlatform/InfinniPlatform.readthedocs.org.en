@@ -13,7 +13,9 @@
     "statusBarIndicator": true,
     "suggestionsInHints": true,
     "ignoreWords": [],
-    "ignoreRegExps": [],
+    "ignoreRegExps": [
+        "/\\s{4,}.*/g"
+    ],
     "ignoreFiles": [
         "**/.gitignore",
         "**/.spellignore"

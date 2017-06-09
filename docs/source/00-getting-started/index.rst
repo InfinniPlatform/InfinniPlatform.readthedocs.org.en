@@ -19,7 +19,7 @@ Let's start by building a simple "Hello, world!" app.
 
 .. code-block:: bash
 
-    dotnet add package InfinniPlatform.Core -s https://www.myget.org/F/infinniplatform/ -v 2.3.5-*
+    dotnet add package InfinniPlatform.Core -s https://www.myget.org/F/infinniplatform/ -v 2.3.7-*
 
 **4.** Create MyHttpService.cs and define an HTTP service
 
