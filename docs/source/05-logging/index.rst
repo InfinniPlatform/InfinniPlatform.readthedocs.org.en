@@ -84,17 +84,17 @@ So you can recognize log events of the `IPerformanceLogger<T>`_ and route them t
 The Logger Name
 ---------------
 
-By default `ILogger<T>`_ uses ``T`` as the type who's name is used for the logger name. And with it the logger name is produce as the fully qualified
-name of the ``T``, including its namespace and excluding any generic arguments event if they are. So if you, for instance, have two classes ``A`` and
+By default `ILogger<T>`_ uses ``T`` as the type who's name is used for the logger name. And with it the logger name is produced as the fully qualified
+name of the ``T``, including its namespace and excluding any generic arguments even if they exist. So if you, for instance, have two classes ``A`` and
 its generic analogue ``A<T>``, the logger names for the both will be the same. In practice it is inconvenient because it can be difficult to define
 who is the real source of an event without looking at the code. Also if the component has a unique name using its full name is unnecessary and decreases
 readability of the logs.
 
-To solve above problems InfinniPlatform integrates with the logging API and sets the own rules of building names. According to these rules the logger
-name of the `ILogger<T>` is produced as C#-like representation of the type ``T``, including its generic arguments if they are.
+To solve above problems InfinniPlatform integrates with the logging API and sets the own rules of building logger names. According to these rules the
+logger name of the ``ILogger<T>`` is produced as C#-like representation of the type ``T``, including its generic arguments if they exist.
 
-For example, say you have the type ``MyComponent`` as below which tries to get the ``logger`` for itself. In this case the ``logger`` name will be
-``Namespace.To.The.MyComponent`` and that is no differences with default logic.
+For example, say you have the ``MyComponent`` type as below which tries to get the ``logger`` for itself. In this case the ``logger`` name will be
+``Namespace.To.The.MyComponent`` and that is no differences with the default logic.
 
 .. code-block:: csharp
    :emphasize-lines: 5
@@ -115,7 +115,7 @@ For example, say you have the type ``MyComponent`` as below which tries to get t
 Differences begin with generic types. Suppose the ``MyComponent`` is generic. In this case the ``logger`` name depends on ``T``
 and will be ``Namespace.To.The.MyComponent<T>`` where ``T`` is C#-like representation of the type ``T``. For example, the name
 of the ``ILogger<MyComponent<SomeType>>`` will be ``Namespace.To.The.MyComponent<Other.Namespace.To.The.SomeType>``. Thus you
-know exactly which component is the event source and can make right decision looking at an event.
+know exactly which component is the event source and can make right decision looking at the event.
 
 .. code-block:: csharp
    :emphasize-lines: 3,5
@@ -202,7 +202,7 @@ How to configure Serilog
 
 .. note:: Serilog_ is one of the most popular logging framework and has lots of ways to configuration. Here is one of them and we give it as an example.
 
-Serilog_ provides sinks for writing log events to storage in various formats. In our example we split log events by two streams. The first -
+Serilog_ provides `sinks` for writing log events to storage in various formats. In our example we split log events by two streams. The first -
 the application event log - catches all events, excepting events of `IPerformanceLogger<T>`_. The second - the application performance log -
 catches the only events of `IPerformanceLogger<T>`_. The first stream writes to one file the second to another, both use
 the ``Serilog.Sinks.RollingFile.RollingFileSink``.
@@ -242,7 +242,7 @@ Also there are two our properties which will be described later:
     Func<LogEvent, bool> performanceLoggerFilter = 
         Matching.WithProperty<string>(
             Constants.SourceContextPropertyName,
-            p => p.StartsWith(typeof(IPerformanceLogger).FullName));
+            p => p.StartsWith(nameof(IPerformanceLogger)));
 
 **3.** Configure Serilog_ logger:
 
@@ -357,19 +357,19 @@ And in the application performance log:
 .. code-block:: text
    :caption: logs/performance-20170609.log
 
-    2017-06-09T17:01:54.4129957+05:00|INF|0HL5F5T7R11QO||InfinniPlatform.Logging.IPerformanceLogger<JobScheduler>|{ "IsStarted": 2 }
-    2017-06-09T17:01:54.4179953+05:00|INF|0HL5F5T7R11QO||InfinniPlatform.Logging.IPerformanceLogger<JobScheduler>|{ "GetStatus": 1 }
-    2017-06-09T17:01:54.4189952+05:00|INF|0HL5F5T7R11QO||InfinniPlatform.Logging.IPerformanceLogger<JobScheduler>|{ "GetStatus": 0 }
-    2017-06-09T17:01:54.4204952+05:00|INF|0HL5F5T7R11QO||InfinniPlatform.Logging.IPerformanceLogger<JobScheduler>|{ "GetStatus": 0 }
-    2017-06-09T17:01:54.4250023+05:00|INF|0HL5F5T7R11QO||InfinniPlatform.Logging.IPerformanceLogger<IHttpService>|{ "GET::/info/scheduler": 91 }
-    2017-06-09T17:01:54.4740019+05:00|INF|0HL5F5T7R11QO||InfinniPlatform.Logging.IPerformanceLogger<GlobalHandlingAppLayer>|{ "GET::/info/scheduler": 141 }
-    2017-06-09T17:01:54.5090235+05:00|INF|0HL5F5T7R11QP||InfinniPlatform.Logging.IPerformanceLogger<IHttpService>|{ "GET::/{id}": 0 }
-    2017-06-09T17:01:54.5120237+05:00|INF|0HL5F5T7R11QP||InfinniPlatform.Logging.IPerformanceLogger<GlobalHandlingAppLayer>|{ "GET::/favicon.ico": 4 }
-    2017-06-09T17:01:58.0791573+05:00|INF|0HL5F5T7R11QQ||InfinniPlatform.Logging.IPerformanceLogger<JobScheduler>|{ "GetStatus": 1 }
-    2017-06-09T17:01:58.0811566+05:00|INF|0HL5F5T7R11QQ||InfinniPlatform.Logging.IPerformanceLogger<IHttpService>|{ "GET::/scheduler/jobs": 221 }
-    2017-06-09T17:01:58.0891579+05:00|INF|0HL5F5T7R11QQ||InfinniPlatform.Logging.IPerformanceLogger<GlobalHandlingAppLayer>|{ "GET::/scheduler/jobs": 236 }
-    2017-06-09T17:01:58.1231732+05:00|INF|0HL5F5T7R11QR||InfinniPlatform.Logging.IPerformanceLogger<IHttpService>|{ "GET::/{id}": 0 }
-    2017-06-09T17:01:58.1261729+05:00|INF|0HL5F5T7R11QR||InfinniPlatform.Logging.IPerformanceLogger<GlobalHandlingAppLayer>|{ "GET::/favicon.ico": 4 }
+    2017-06-09T17:01:54.4129957+05:00|INF|0HL5F5T7R11QO||IPerformanceLogger<JobScheduler>|{ "IsStarted": 2 }
+    2017-06-09T17:01:54.4179953+05:00|INF|0HL5F5T7R11QO||IPerformanceLogger<JobScheduler>|{ "GetStatus": 1 }
+    2017-06-09T17:01:54.4189952+05:00|INF|0HL5F5T7R11QO||IPerformanceLogger<JobScheduler>|{ "GetStatus": 0 }
+    2017-06-09T17:01:54.4204952+05:00|INF|0HL5F5T7R11QO||IPerformanceLogger<JobScheduler>|{ "GetStatus": 0 }
+    2017-06-09T17:01:54.4250023+05:00|INF|0HL5F5T7R11QO||IPerformanceLogger<IHttpService>|{ "GET::/info/scheduler": 91 }
+    2017-06-09T17:01:54.4740019+05:00|INF|0HL5F5T7R11QO||IPerformanceLogger<GlobalHandlingAppLayer>|{ "GET::/info/scheduler": 141 }
+    2017-06-09T17:01:54.5090235+05:00|INF|0HL5F5T7R11QP||IPerformanceLogger<IHttpService>|{ "GET::/{id}": 0 }
+    2017-06-09T17:01:54.5120237+05:00|INF|0HL5F5T7R11QP||IPerformanceLogger<GlobalHandlingAppLayer>|{ "GET::/favicon.ico": 4 }
+    2017-06-09T17:01:58.0791573+05:00|INF|0HL5F5T7R11QQ||IPerformanceLogger<JobScheduler>|{ "GetStatus": 1 }
+    2017-06-09T17:01:58.0811566+05:00|INF|0HL5F5T7R11QQ||IPerformanceLogger<IHttpService>|{ "GET::/scheduler/jobs": 221 }
+    2017-06-09T17:01:58.0891579+05:00|INF|0HL5F5T7R11QQ||IPerformanceLogger<GlobalHandlingAppLayer>|{ "GET::/scheduler/jobs": 236 }
+    2017-06-09T17:01:58.1231732+05:00|INF|0HL5F5T7R11QR||IPerformanceLogger<IHttpService>|{ "GET::/{id}": 0 }
+    2017-06-09T17:01:58.1261729+05:00|INF|0HL5F5T7R11QR||IPerformanceLogger<GlobalHandlingAppLayer>|{ "GET::/favicon.ico": 4 }
 
 
 .. _`ILogger<T>`: https://docs.microsoft.com/ru-ru/aspnet/core/api/microsoft.extensions.logging.ilogger-1
