@@ -4,15 +4,21 @@
 {
     "language": "en",
     "documentTypes": [
-        "restructuredtext",
         "markdown",
         "latex",
-        "plaintext"
+        "plaintext",
+        "restructuredtext"
     ],
     "groupDictionaries": true,
     "statusBarIndicator": true,
     "suggestionsInHints": true,
-    "ignoreWords": [],
+    "ignoreWords": [
+        "deserialize",
+        "Json",
+        "InfinniPlatfrom",
+        "Serializer",
+        "serializers"
+    ],
     "ignoreRegExps": [
         "/\\s{4,}.*/g"
     ],

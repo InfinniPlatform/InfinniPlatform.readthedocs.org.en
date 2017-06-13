@@ -17,10 +17,10 @@ Data Serialization is represented as `JsonObjectSerializer`_ class which impleme
 and `IJsonObjectSerializer`_. The first - `IObjectSerializer`_ declares common methods of serializers. The second - `IJsonObjectSerializer`_ extends
 the first and contains few special methods which are appropriate to JSON format.
 
-`JsonObjectSerializer`_ class is thread-safe and it has two singleton instances - `Default`_ and `Formated`_. `Default`_ instance uses UTF-8 encoding
-(without BOM) and serializes objects without formatting. `Formated`_ instance is the same as `Default`_ but serializes objects with formatting (for
+`JsonObjectSerializer`_ class is thread-safe and it has two singleton instances - `Default`_ and `Formatted`_. `Default`_ instance uses UTF-8 encoding
+(without BOM) and serializes objects without formatting. `Formatted`_ instance is the same as `Default`_ but serializes objects with formatting (for
 getting easy-to-read JSON). Both of them do not have any other settings which you can pass to the constructor of `JsonObjectSerializer`_. You can use
-`Default`_ and `Formated`_ instances explicitly but if you have access to :doc:`IoC Container </02-ioc/index>` we strongly recommend getting instance
+`Default`_ and `Formatted`_ instances explicitly but if you have access to :doc:`IoC Container </02-ioc/index>` we strongly recommend getting instance
 `IJsonObjectSerializer`_ via IoC. For example acquire `IJsonObjectSerializer`_ through :doc:`a constructor </02-ioc/container-resolver>` of the class
 where you need this dependency. It allows to use the same settings of the data serialization in an application and customize them in one place.
 
@@ -37,8 +37,8 @@ where you need this dependency. It allows to use the same settings of the data s
 
 
 .. _`Json.NET`: http://www.newtonsoft.com/json
-.. _`JsonObjectSerializer`: /api/reference/InfinniPlatform.Sdk.Serialization.JsonObjectSerializer.html
-.. _`IObjectSerializer`: /api/reference/InfinniPlatform.Sdk.Serialization.IObjectSerializer.html
-.. _`IJsonObjectSerializer`: /api/reference/InfinniPlatform.Sdk.Serialization.IJsonObjectSerializer.html
-.. _`Default`: /api/reference/InfinniPlatform.Sdk.Serialization.JsonObjectSerializer.html#InfinniPlatform_Sdk_Serialization_JsonObjectSerializer_Default
-.. _`Formated`: /api/reference/InfinniPlatform.Sdk.Serialization.JsonObjectSerializer.html#InfinniPlatform_Sdk_Serialization_JsonObjectSerializer_Formated
+.. _`IObjectSerializer`: ../api/reference/InfinniPlatform.Serialization.IObjectSerializer.html
+.. _`IJsonObjectSerializer`: ../api/reference/InfinniPlatform.Serialization.IJsonObjectSerializer.html
+.. _`JsonObjectSerializer`: ../api/reference/InfinniPlatform.Serialization.JsonObjectSerializer.html
+.. _`Default`: ../api/reference/InfinniPlatform.Serialization.JsonObjectSerializer.html#InfinniPlatform_Serialization_JsonObjectSerializer_Default
+.. _`Formatted`: ../api/reference/InfinniPlatform.Serialization.JsonObjectSerializer.html#InfinniPlatform_Serialization_JsonObjectSerializer_Formatted
