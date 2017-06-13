@@ -129,13 +129,13 @@ of type `IHttpRequestFile`_ and each of them allows to get the file name and the
 
 .. _`Content-Type`: https://www.w3.org/Protocols/rfc1341/4_Content-Type.html
 .. _`Media Types`: http://www.iana.org/assignments/media-types/media-types.xhtml
-.. _`Stream`: https://msdn.microsoft.com/en-US/library/system.io.stream(v=vs.110).aspx
+.. _`Stream`: https://docs.microsoft.com/en-us/dotnet/api/system.io.stream?view=netcore-1.1
 
-.. _`IHttpRequest`: /api/reference/InfinniPlatform.Sdk.Http.Services.IHttpRequest.html
-.. _`Parameters`: /api/reference/InfinniPlatform.Sdk.Http.Services.IHttpRequest.html#InfinniPlatform_Sdk_Http_Services_IHttpRequest_Parameters
-.. _`Query`: /api/reference/InfinniPlatform.Sdk.Http.Services.IHttpRequest.html#InfinniPlatform_Sdk_Http_Services_IHttpRequest_Query
-.. _`Form`: /api/reference/InfinniPlatform.Sdk.Http.Services.IHttpRequest.html#InfinniPlatform_Sdk_Http_Services_IHttpRequest_Form
-.. _`Content`: /api/reference/InfinniPlatform.Sdk.Http.Services.IHttpRequest.html#InfinniPlatform_Sdk_Http_Services_IHttpRequest_Content
-.. _`Files`: /api/reference/InfinniPlatform.Sdk.Http.Services.IHttpRequest.html#InfinniPlatform_Sdk_Http_Services_IHttpRequest_Files
-.. _`IHttpRequestFile`: /api/reference/InfinniPlatform.Sdk.Http.Services.IHttpRequestFile.html
-.. _`IJsonObjectSerializer`: /api/reference/InfinniPlatform.Sdk.Serialization.IJsonObjectSerializer.html
+.. _`IHttpRequest`: ../api/reference/InfinniPlatform.Http.IHttpRequest.html
+.. _`Parameters`: ../api/reference/InfinniPlatform.Http.IHttpRequest.html#InfinniPlatform_Http_IHttpRequest_Parameters
+.. _`Query`: ../api/reference/InfinniPlatform.Http.IHttpRequest.html#InfinniPlatform_Http_IHttpRequest_Query
+.. _`Form`: ../api/reference/InfinniPlatform.Http.IHttpRequest.html#InfinniPlatform_Http_IHttpRequest_Form
+.. _`Content`: ../api/reference/InfinniPlatform.Http.IHttpRequest.html#InfinniPlatform_Http_IHttpRequest_Content
+.. _`Files`: ../api/reference/InfinniPlatform.Http.IHttpRequest.html#InfinniPlatform_Http_IHttpRequest_Files
+.. _`IHttpRequestFile`: ../api/reference/InfinniPlatform.Http.IHttpRequestFile.html
+.. _`IJsonObjectSerializer`: ../api/reference/InfinniPlatform.Serialization.IJsonObjectSerializer.html

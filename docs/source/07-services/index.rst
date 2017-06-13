@@ -6,16 +6,14 @@ and ``DELETE`` requests. It is very easy to create new HTTP service just look at
 
 .. code-block:: csharp
 
-    public class HelloHttpService : IHttpService
+    class MyHttpService : IHttpService
     {
         public void Load(IHttpServiceBuilder builder)
         {
-            builder.Get["/"] = request => Task.FromResult<object>("Hello World");
+            builder.Get["/hello"] = async request =>
+                await Task.FromResult("Hello from InfinniPlatform!");
         }
     }
-
-InfinniPlatform fully integrated with `NancyFx`_ - lightweight, low-ceremony, framework for building HTTP based services. So you have all benefits of
-`NancyFx`_ and can use all features of InfinniPlatform.
 
 
 .. toctree::
@@ -25,6 +23,3 @@ InfinniPlatform fully integrated with `NancyFx`_ - lightweight, low-ceremony, fr
     services-request.rst
     services-response.rst
     services-interception.rst
-
-
-.. _`NancyFx`: http://nancyfx.org/

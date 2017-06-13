@@ -5,7 +5,6 @@
 .. index:: JsonHttpResponse
 .. index:: StreamHttpResponse
 .. index:: RedirectHttpResponse
-.. index:: ViewHttpResponce
 .. index:: PrintViewHttpResponse
 
 .. index:: HttpResponse.Ok
@@ -24,7 +23,6 @@ usability.
 * `JsonHttpResponse`_ represents a JSON response;
 * `StreamHttpResponse`_ represents a stream response of a given `Content-Type`_;
 * `RedirectHttpResponse`_ represents an HTTP redirect response;
-* `ViewHttpResponce`_ represents a response of the :doc:`View Engine </14-view-engine/index>`;
 * `PrintViewHttpResponse`_ represents a response of the :doc:`Print View </15-print-view/index>`.
 
 Besides several prepared responses were added which are used very often:
@@ -82,24 +80,23 @@ Next converter wraps a result to the JSON object with a single property ``Result
 .. _`HTTP headers`: http://www.iana.org/assignments/message-headers/message-headers.xml
 .. _`Content-Type`: https://www.w3.org/Protocols/rfc1341/4_Content-Type.html
 
-.. _`ResultConverter`: /api/reference/InfinniPlatform.Sdk.Http.Services.IHttpServiceBuilder.html#InfinniPlatform_Sdk_Http_Services_IHttpServiceBuilder_ResultConverter
-.. _`IHttpResponse`: /api/reference/InfinniPlatform.Sdk.Http.Services.IHttpResponse.html
-.. _`DefaultHttpResultConverter`: /api/reference/InfinniPlatform.Sdk.Http.Services.DefaultHttpResultConverter.html
-.. _`HttpResponse`: /api/reference/InfinniPlatform.Sdk.Http.Services.HttpResponse.html
-.. _`HttpResponse.Ok`: /api/reference/InfinniPlatform.Sdk.Http.Services.HttpResponse.html#InfinniPlatform_Sdk_Http_Services_HttpResponse_Ok
-.. _`HttpResponse.NotFound`: /api/reference/InfinniPlatform.Sdk.Http.Services.HttpResponse.html#InfinniPlatform_Sdk_Http_Services_HttpResponse_NotFound
-.. _`HttpResponse.Unauthorized`: /api/reference/InfinniPlatform.Sdk.Http.Services.HttpResponse.html#InfinniPlatform_Sdk_Http_Services_HttpResponse_Unauthorized
-.. _`HttpResponse.Forbidden`: /api/reference/InfinniPlatform.Sdk.Http.Services.HttpResponse.html#InfinniPlatform_Sdk_Http_Services_HttpResponse_Forbidden
-.. _`TextHttpResponse`: /api/reference/InfinniPlatform.Sdk.Http.Services.TextHttpResponse.html
-.. _`StreamHttpResponse`: /api/reference/InfinniPlatform.Sdk.Http.Services.StreamHttpResponse.html
-.. _`JsonHttpResponse`: /api/reference/InfinniPlatform.Sdk.Http.Services.JsonHttpResponse.html
-.. _`RedirectHttpResponse`: /api/reference/InfinniPlatform.Sdk.Http.Services.RedirectHttpResponse.html
-.. _`ViewHttpResponce`: /api/reference/InfinniPlatform.Sdk.Http.Services.ViewHttpResponce.html
-.. _`PrintViewHttpResponse`: /api/reference/InfinniPlatform.PrintView.Contract.PrintViewHttpResponse.html
+.. _`ResultConverter`: ../api/reference/InfinniPlatform.Http.IHttpServiceBuilder.html#InfinniPlatform_Http_IHttpServiceBuilder_ResultConverter
+.. _`IHttpResponse`: ../api/reference/InfinniPlatform.Http.IHttpResponse.html
+.. _`DefaultHttpResultConverter`: ../api/reference/InfinniPlatform.Http.DefaultHttpResultConverter.html
+.. _`HttpResponse`: ../api/reference/InfinniPlatform.Http.HttpResponse.html
+.. _`HttpResponse.Ok`: ../api/reference/InfinniPlatform.Http.HttpResponse.html#InfinniPlatform_Http_HttpResponse_Ok
+.. _`HttpResponse.NotFound`: ../api/reference/InfinniPlatform.Http.HttpResponse.html#InfinniPlatform_Http_HttpResponse_NotFound
+.. _`HttpResponse.Unauthorized`: ../api/reference/InfinniPlatform.Http.HttpResponse.html#InfinniPlatform_Http_HttpResponse_Unauthorized
+.. _`HttpResponse.Forbidden`: ../api/reference/InfinniPlatform.Http.HttpResponse.html#InfinniPlatform_Http_HttpResponse_Forbidden
+.. _`TextHttpResponse`: ../api/reference/InfinniPlatform.Http.TextHttpResponse.html
+.. _`StreamHttpResponse`: ../api/reference/InfinniPlatform.Http.StreamHttpResponse.html
+.. _`JsonHttpResponse`: ../api/reference/InfinniPlatform.Http.JsonHttpResponse.html
+.. _`RedirectHttpResponse`: ../api/reference/InfinniPlatform.Http.RedirectHttpResponse.html
+.. _`PrintViewHttpResponse`: ../api/reference/InfinniPlatform.PrintView.PrintViewHttpResponse.html
 
-.. _`int`: https://msdn.microsoft.com/en-US/library/system.int32(v=vs.110).aspx
-.. _`string`: https://msdn.microsoft.com/en-US/library/system.string(v=vs.110).aspx
-.. _`byte[]`: https://msdn.microsoft.com/en-US/library/system.byte(v=vs.110).aspx
-.. _`Stream`: https://msdn.microsoft.com/en-US/library/system.io.stream(v=vs.110).aspx
-.. _`Func<Stream>`: https://msdn.microsoft.com/en-US/library/system.io.stream(v=vs.110).aspx
-.. _`Exception`: https://msdn.microsoft.com/en-US/library/system.exception(v=vs.110).aspx
+.. _`int`: https://docs.microsoft.com/en-us/dotnet/api/system.int32?view=netcore-1.1
+.. _`string`: https://docs.microsoft.com/en-us/dotnet/api/system.string?view=netcore-1.1
+.. _`byte[]`: https://docs.microsoft.com/en-us/dotnet/api/system.byte?view=netcore-1.1
+.. _`Stream`: https://docs.microsoft.com/en-us/dotnet/api/system.io.stream?view=netcore-1.1
+.. _`Func<Stream>`: https://docs.microsoft.com/en-us/dotnet/api/system.io.stream?view=netcore-1.1
+.. _`Exception`: https://docs.microsoft.com/en-us/dotnet/api/system.io.stream?view=netcore-1.1

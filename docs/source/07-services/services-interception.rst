@@ -96,8 +96,8 @@ To define the application level HTTP handler you need to implement the `IHttpGlo
 the implementation in :doc:`IoC Container </02-ioc/index>`.
 
 
-.. _`OnBefore`: /api/reference/InfinniPlatform.Sdk.Http.Services.IHttpServiceBuilder.html#InfinniPlatform_Sdk_Http_Services_IHttpServiceBuilder_OnBefore
-.. _`OnAfter`: /api/reference/InfinniPlatform.Sdk.Http.Services.IHttpServiceBuilder.html#InfinniPlatform_Sdk_Http_Services_IHttpServiceBuilder_OnAfter
-.. _`OnError`: /api/reference/InfinniPlatform.Sdk.Http.Services.IHttpServiceBuilder.html#InfinniPlatform_Sdk_Http_Services_IHttpServiceBuilder_OnError
-.. _`IHttpRequest`: /api/reference/InfinniPlatform.Sdk.Http.Services.IHttpRequest.html
-.. _`IHttpGlobalHandler`: /api/reference/InfinniPlatform.Sdk.Http.Services.IHttpGlobalHandler.html
+.. _`OnBefore`: ../api/reference/InfinniPlatform.Http.IHttpServiceBuilder.html#InfinniPlatform_Http_IHttpServiceBuilder_OnBefore
+.. _`OnAfter`: ../api/reference/InfinniPlatform.Http.IHttpServiceBuilder.html#InfinniPlatform_Http_IHttpServiceBuilder_OnAfter
+.. _`OnError`: ../api/reference/InfinniPlatform.Http.IHttpServiceBuilder.html#InfinniPlatform_Http_IHttpServiceBuilder_OnError
+.. _`IHttpRequest`: ../api/reference/InfinniPlatform.Http.IHttpRequest.html
+.. _`IHttpGlobalHandler`: ../api/reference/InfinniPlatform.Http.IHttpGlobalHandler.html

@@ -5,10 +5,10 @@ Defining Modules
 ================
 
 Modules are key concept and the one thing which you have to know to develop HTTP services. A module is created by inheriting from the `IHttpService`_
-interface. Each module implements the ``Load()`` method where you can define the behaviors of your HTTP service, in the form of routes and the actions
+interface. Each module implements the `Load()`_ method where you can define the behaviors of your HTTP service, in the form of routes and the actions
 they should perform if they are invoked.
 
-The ``Load()`` method gets an instance of the `IHttpServiceBuilder`_ interface which with using `DSL`_ style allows define routes and their actions.
+The `Load()`_ method gets an instance of the `IHttpServiceBuilder`_ interface which with using `DSL`_ style allows define routes and their actions.
 Each action gets an information about request and handles it asynchronously. Requests are represented as the `IHttpRequest`_ interface and give a
 comprehensive information to their handling.
 
@@ -16,7 +16,7 @@ Next example shows the registration of two handlers for ``GET`` requests.
 
 .. code-block:: csharp
 
-    public class SomeHttpService : IHttpService
+    public class MyHttpService : IHttpService
     {
         public void Load(IHttpServiceBuilder builder)
         {
@@ -26,14 +26,14 @@ Next example shows the registration of two handlers for ``GET`` requests.
     }
 
 
-.. note:: The ``Load()`` method will be invoked only once on an application startup.
+.. note:: The `Load()`_ method will be invoked only once on an application startup.
 
 
 Modules can be declared anywhere you like just register them in :doc:`IoC Container </02-ioc/index>`.
 
 .. code-block:: csharp
 
-    builder.RegisterType<SomeHttpService>()
+    builder.RegisterType<MyHttpService>()
            .As<IHttpService>()
            .SingleInstance();
 
@@ -55,7 +55,7 @@ Request handlers are asynchronous by default so you can use ``async``/``await`` 
 
 .. code-block:: csharp
 
-    public class SomeHttpService : IHttpService
+    public class MyHttpService : IHttpService
     {
         public void Load(IHttpServiceBuilder builder)
         {
@@ -89,7 +89,7 @@ routes together based on their relationship.
 .. code-block:: csharp
    :emphasize-lines: 5
 
-    public class SomeHttpService : IHttpService
+    public class MyHttpService : IHttpService
     {
         public void Load(IHttpServiceBuilder builder)
         {
@@ -103,7 +103,8 @@ routes together based on their relationship.
 
 
 .. _DSL: https://en.wikipedia.org/wiki/Domain-specific_language
-.. _`IHttpService`: /api/reference/InfinniPlatform.Sdk.Http.Services.IHttpService.html
-.. _`IHttpServiceBuilder`: /api/reference/InfinniPlatform.Sdk.Http.Services.IHttpServiceBuilder.html
-.. _`IHttpRequest`: /api/reference/InfinniPlatform.Sdk.Http.Services.IHttpRequest.html
-.. _`RegisterHttpServices()`: /api/reference/InfinniPlatform.Sdk.Http.Services.ServiceExtentions.html#InfinniPlatform_Sdk_Http_Services_ServiceExtentions_RegisterHttpServices_InfinniPlatform_Sdk_IoC_IContainerBuilder_System_Reflection_Assembly_
+.. _`IHttpService`: ../api/reference/InfinniPlatform.Http.IHttpService.html
+.. _`Load()`: ../api/reference/InfinniPlatform.Http.IHttpService.html#InfinniPlatform_Http_IHttpService_Load_InfinniPlatform_Http_IHttpServiceBuilder_
+.. _`IHttpServiceBuilder`: ../api/reference/InfinniPlatform.Http.IHttpServiceBuilder.html
+.. _`IHttpRequest`: ../api/reference/InfinniPlatform.Http.IHttpRequest.html
+.. _`RegisterHttpServices()`: ../api/reference/InfinniPlatform.Http.ServiceExtentions.html#InfinniPlatform_Http_ServiceExtentions_RegisterHttpServices_InfinniPlatform_IoC_IContainerBuilder_Assembly_
