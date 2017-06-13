@@ -67,8 +67,8 @@ The `JsonObjectSerializer`_ supports these types and serializes them using next 
 
 .. _`ISO 8601`: https://en.wikipedia.org/wiki/ISO_8601
 .. _`Unix time`: https://en.wikipedia.org/wiki/Unix_time
-.. _`64-bit signed integer`: https://msdn.microsoft.com/en-US/library/system.int64(v=vs.110).aspx
-.. _`double-precision floating-point number`: https://msdn.microsoft.com/en-US/library/system.double(v=vs.110).aspx
-.. _`JsonObjectSerializer`: /api/reference/InfinniPlatform.Sdk.Serialization.JsonObjectSerializer.html
-.. _`Date`: /api/reference/InfinniPlatform.Sdk.Types.Date.html
-.. _`Time`: /api/reference/InfinniPlatform.Sdk.Types.Time.html
+.. _`64-bit signed integer`: https://docs.microsoft.com/en-us/dotnet/api/system.int64?view=netcore-1.1
+.. _`double-precision floating-point number`: https://docs.microsoft.com/en-us/dotnet/api/system.double?view=netcore-1.1
+.. _`JsonObjectSerializer`: ../api/reference/InfinniPlatform.Serialization.JsonObjectSerializer.html
+.. _`Date`: ../api/reference/InfinniPlatform.Types.Date.html
+.. _`Time`: ../api/reference/InfinniPlatform.Types.Time.html

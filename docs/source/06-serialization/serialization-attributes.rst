@@ -73,7 +73,7 @@ the .NET property. This attribute allows the name to be customized.
     }
 
 
-.. _`NonSerializedAttribute`: https://msdn.microsoft.com/en-US/library/system.nonserializedattribute(v=vs.110).aspx
-.. _`JsonObjectSerializer`: /api/reference/InfinniPlatform.Sdk.Serialization.JsonObjectSerializer.html
-.. _`SerializerVisibleAttribute`: /api/reference/InfinniPlatform.Sdk.Serialization.SerializerVisibleAttribute.html
-.. _`SerializerPropertyNameAttribute`: /api/reference/InfinniPlatform.Sdk.Serialization.SerializerPropertyNameAttribute.html
+.. _`NonSerializedAttribute`: https://docs.microsoft.com/en-us/dotnet/api/system.nonserializedattribute?view=netcore-1.1
+.. _`JsonObjectSerializer`: ../api/reference/InfinniPlatform.Serialization.JsonObjectSerializer.html
+.. _`SerializerVisibleAttribute`: ../api/reference/InfinniPlatform.Serialization.SerializerVisibleAttribute.html
+.. _`SerializerPropertyNameAttribute`: ../api/reference/InfinniPlatform.Serialization.SerializerPropertyNameAttribute.html

@@ -1,19 +1,19 @@
 .. index:: IMemberValueConverter
 
-Serialization Convertes
-=======================
+Serialization Converters
+========================
 
 In some cases JSON view of an object must have a little different representation than it is described in the object type. The differences can be
 related to the data schema or the data type of certain fields or properties. There are many reasons for that. For example to store data in a database
 or to transfer data by network it is more convenient to use different representation than it is described in the data type. Also perhaps you cannot
 change a data type because of using an external library or you have to use different format because of communicating with an external system.
 
-Serialization Convertes provide a way to customize how an object will be serialised and deserialized. For that you need to implement the interface
+Serialization Converters provide a way to customize how an object will be serialized and deserialized. For that you need to implement the interface
 `IMemberValueConverter`_ and pass it into the `JsonObjectSerializer`_ constructor directly or via :doc:`IoC Container </02-ioc/index>`.
 
 .. note:: The `XmlDateMemberValueConverter`_ implements `IMemberValueConverter`_ for ``DateTime`` members which have `XmlElementAttribute`_
           with ``DataType`` property equals ``date``. In this case we have to use only the date part of ``DateTime`` value (without the time part).
-          The `XmlDateMemberValueConverter`_ handles these cases and converts ``DateTime`` value to `Date`_ which can be serialised as the Unix time.
+          The `XmlDateMemberValueConverter`_ handles these cases and converts ``DateTime`` value to `Date`_ which can be serialized as the Unix time.
           It can be useful during integration with SOAP services.
 
 The `IMemberValueConverter`_ has three methods:
@@ -111,8 +111,8 @@ Next example converts all ``DateTime`` members to the Unix time during serializa
     //2000/01/01
 
 
-.. _`XmlElementAttribute`: https://msdn.microsoft.com/en-US/library/system.xml.serialization.xmlelementattribute(v=vs.110).aspx
-.. _`JsonObjectSerializer`: /api/reference/InfinniPlatform.Sdk.Serialization.JsonObjectSerializer.html
-.. _`IMemberValueConverter`: /api/reference/InfinniPlatform.Sdk.Serialization.IMemberValueConverter.html
-.. _`XmlDateMemberValueConverter`: /api/reference/InfinniPlatform.Sdk.Serialization.XmlDateMemberValueConverter.html
-.. _`Date`: /api/reference/InfinniPlatform.Sdk.Types.Date.html
+.. _`XmlElementAttribute`: https://docs.microsoft.com/en-us/dotnet/api/system.xml.serialization.xmlelementattribute?view=netcore-1.1
+.. _`JsonObjectSerializer`: ../api/reference/InfinniPlatform.Serialization.JsonObjectSerializer.html
+.. _`IMemberValueConverter`: ../api/reference/InfinniPlatform.Serialization.IMemberValueConverter.html
+.. _`XmlDateMemberValueConverter`: ../api/reference/InfinniPlatform.Serialization.XmlDateMemberValueConverter.html
+.. _`Date`: ../api/reference/InfinniPlatform.Types.Date.html

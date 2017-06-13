@@ -2,7 +2,7 @@ Reducing Serialized JSON Size
 =============================
 
 One of the common problems encountered when serializing .NET objects to JSON is that the JSON ends up containing a lot of unwanted properties and values.
-This can be especially significant when returning JSON to the client. More JSON means more bandwidth and a lower perfornance. To solve the issue of
+This can be especially significant when returning JSON to the client. More JSON means more bandwidth and a lower performance. To solve the issue of
 unwanted JSON, InfinniPlatform has a range of built-in options to fine-tune what gets written from a serialized object.
 
 By default public fields and properties are included to serialization. Adding the `NonSerializedAttribute`_ to a property tells the serializer to
@@ -91,9 +91,9 @@ the other hand keeps the JSON result small, skipping all unnecessary spaces and 
     //{"FirstName":"John","LastName":"Smith"}
 
 For more complex cases you can use :doc:`serialization converters </06-serialization/serialization-converters>` which provide a way to customize how
-an object will be serialised and deserialized, including changing serialization behavior at runtime.
+an object will be serialized and deserialized, including changing serialization behavior at runtime.
 
 
-.. _`NonSerializedAttribute`: https://msdn.microsoft.com/en-US/library/system.nonserializedattribute(v=vs.110).aspx
-.. _`DataContractAttribute`: https://msdn.microsoft.com/en-US/library/system.runtime.serialization.datacontractattribute(v=vs.110).aspx
-.. _`DataMemberAttribute`: https://msdn.microsoft.com/en-US/library/system.runtime.serialization.datamemberattribute(v=vs.110).aspx
+.. _`NonSerializedAttribute`: https://docs.microsoft.com/en-us/dotnet/api/system.nonserializedattribute?view=netcore-1.1
+.. _`DataContractAttribute`: https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.datacontractattribute?view=netcore-1.1
+.. _`DataMemberAttribute`: https://docs.microsoft.com/en-us/dotnet/api/system.runtime.serialization.datamemberattribute?view=netcore-1.1

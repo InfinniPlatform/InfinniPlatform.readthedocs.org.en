@@ -64,6 +64,6 @@ Next example ignores all exceptions during serialization and deserialization.
     //}
 
 
-.. _`JsonObjectSerializer`: /api/reference/InfinniPlatform.Sdk.Serialization.JsonObjectSerializer.html
-.. _`ISerializerErrorHandler`: /api/reference/InfinniPlatform.Sdk.Serialization.ISerializerErrorHandler.html
-.. _`IgnoreSerializerErrorHandler`: /api/reference/InfinniPlatform.Sdk.Serialization.IgnoreSerializerErrorHandler.html
+.. _`JsonObjectSerializer`: ../api/reference/InfinniPlatform.Serialization.JsonObjectSerializer.html
+.. _`ISerializerErrorHandler`: ../api/reference/InfinniPlatform.Serialization.ISerializerErrorHandler.html
+.. _`IgnoreSerializerErrorHandler`: ../api/reference/InfinniPlatform.Serialization.IgnoreSerializerErrorHandler.html

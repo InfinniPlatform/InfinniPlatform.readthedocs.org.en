@@ -17,7 +17,11 @@
         "Json",
         "InfinniPlatfrom",
         "Serializer",
-        "serializers"
+        "serializers",
+        "deserializes",
+        "deserialized",
+        "Infinni",
+        "deserializing"
     ],
     "ignoreRegExps": [
         "/\\s{4,}.*/g"

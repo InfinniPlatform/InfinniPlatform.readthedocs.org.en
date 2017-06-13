@@ -1,4 +1,4 @@
-.. index:: DynamicWrapper
+.. index:: DynamicDocument
 
 Serialization Dynamic Objects
 =============================
@@ -38,4 +38,4 @@ The `JsonObjectSerializer`_ supports :doc:`dynamic objects </01-dynamic/index>`.
     //1/2/2000 3:04:05 AM
 
 
-.. _`JsonObjectSerializer`: /api/reference/InfinniPlatform.Sdk.Serialization.JsonObjectSerializer.html
+.. _`JsonObjectSerializer`: ../api/reference/InfinniPlatform.Serialization.JsonObjectSerializer.html

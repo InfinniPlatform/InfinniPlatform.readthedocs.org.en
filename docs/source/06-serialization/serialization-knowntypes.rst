@@ -53,15 +53,27 @@ about specific type of the property.
     //}
 
     serializer.Deserialize<C>(json);
-    // JsonSerializationException:  Could not create an instance of type I.
+    // JsonSerializationException: Could not create an instance of type I.
     // Type is an interface or abstract class and cannot be instantiated.
 
-To solve this problem you can use `KnownTypesContainer`_ and pass it into the `JsonObjectSerializer`_ constructor directly or via :doc:`IoC Container </02-ioc/index>`.
+To solve this problem you can use `IKnownTypesSource`_ and pass it into the `JsonObjectSerializer`_ constructor directly or via :doc:`IoC Container </02-ioc/index>`.
 Known types allow to include type information into resultant JSON during serialization and rely on it during deserialization. All you need is to add
 an unique alias for each type which can be use as value of a property with abstract type.
 
 .. code-block:: csharp
-   :emphasize-lines: 7-9,13,18,23,29
+   :emphasize-lines: 5-7,22,27,32,38
+
+    class MyKnownTypesSource : IKnownTypesSource
+    {
+        public void AddKnownTypes(KnownTypesContainer knownTypesContainer)
+        {
+            knownTypesContainer
+                .Add<A>("A")
+                .Add<B>("B");
+        }
+    }
+
+    // ...
 
     var value = new C
                 {
@@ -69,11 +81,8 @@ an unique alias for each type which can be use as value of a property with abstr
                     Property2 = new B { PropertyB = "ValueB" }
                 };
 
-    var knownTypes = new KnownTypesContainer()
-        .Add<A>("A")
-        .Add<B>("B");
-
-    var serializer = new JsonObjectSerializer(withFormatting: true, knownTypes: knownTypes);
+    var serializer = new JsonObjectSerializer(withFormatting: true,
+                            knownTypes: new[] { new MyKnownTypesSource() });
 
     var json = serializer.ConvertToString(value);
 
@@ -100,5 +109,6 @@ an unique alias for each type which can be use as value of a property with abstr
     // ValueB
 
 
-.. _`JsonObjectSerializer`: /api/reference/InfinniPlatform.Sdk.Serialization.JsonObjectSerializer.html
-.. _`KnownTypesContainer`: /api/reference/InfinniPlatform.Sdk.Serialization.KnownTypesContainer.html
+.. _`JsonObjectSerializer`: ../api/reference/InfinniPlatform.Serialization.JsonObjectSerializer.html
+.. _`IKnownTypesSource`: ../api/reference/InfinniPlatform.Serialization.IKnownTypesSource.html
+.. _`KnownTypesContainer`: ../api/reference/InfinniPlatform.Serialization.KnownTypesContainer.html
