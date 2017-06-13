@@ -55,18 +55,6 @@ references:
   commentId: F:InfinniPlatform.AppOptions.Default
   fullName: InfinniPlatform.AppOptions.Default
   nameWithType: AppOptions.Default
-- uid: InfinniPlatform.AppOptions.PerformanceLoggerNamePrefix
-  name: PerformanceLoggerNamePrefix
-  href: reference/InfinniPlatform.AppOptions.html#InfinniPlatform_AppOptions_PerformanceLoggerNamePrefix
-  commentId: P:InfinniPlatform.AppOptions.PerformanceLoggerNamePrefix
-  fullName: InfinniPlatform.AppOptions.PerformanceLoggerNamePrefix
-  nameWithType: AppOptions.PerformanceLoggerNamePrefix
-- uid: InfinniPlatform.AppOptions.PerformanceLoggerNamePrefix*
-  name: PerformanceLoggerNamePrefix
-  href: reference/InfinniPlatform.AppOptions.html#InfinniPlatform_AppOptions_PerformanceLoggerNamePrefix_
-  commentId: Overload:InfinniPlatform.AppOptions.PerformanceLoggerNamePrefix
-  fullName: InfinniPlatform.AppOptions.PerformanceLoggerNamePrefix
-  nameWithType: AppOptions.PerformanceLoggerNamePrefix
 - uid: InfinniPlatform.AppOptions.SectionName
   name: SectionName
   href: reference/InfinniPlatform.AppOptions.html#InfinniPlatform_AppOptions_SectionName
@@ -16994,15 +16982,15 @@ references:
   commentId: T:InfinniPlatform.Http.Middlewares.ErrorHandlingAppLayer
   fullName: InfinniPlatform.Http.Middlewares.ErrorHandlingAppLayer
   nameWithType: ErrorHandlingAppLayer
-- uid: InfinniPlatform.Http.Middlewares.ErrorHandlingAppLayer.#ctor(ILogger{InfinniPlatform.Http.Middlewares.ErrorHandlingAppLayer},InfinniPlatform.Logging.IPerformanceLogger{InfinniPlatform.Http.Middlewares.ErrorHandlingAppLayer})
-  name: ErrorHandlingAppLayer(ILogger<ErrorHandlingAppLayer>, IPerformanceLogger<ErrorHandlingAppLayer>)
-  href: reference/InfinniPlatform.Http.Middlewares.ErrorHandlingAppLayer.html#InfinniPlatform_Http_Middlewares_ErrorHandlingAppLayer__ctor_ILogger_InfinniPlatform_Http_Middlewares_ErrorHandlingAppLayer__InfinniPlatform_Logging_IPerformanceLogger_InfinniPlatform_Http_Middlewares_ErrorHandlingAppLayer__
-  commentId: M:InfinniPlatform.Http.Middlewares.ErrorHandlingAppLayer.#ctor(ILogger{InfinniPlatform.Http.Middlewares.ErrorHandlingAppLayer},InfinniPlatform.Logging.IPerformanceLogger{InfinniPlatform.Http.Middlewares.ErrorHandlingAppLayer})
-  name.vb: ErrorHandlingAppLayer(ILogger(Of ErrorHandlingAppLayer), IPerformanceLogger(Of ErrorHandlingAppLayer))
-  fullName: InfinniPlatform.Http.Middlewares.ErrorHandlingAppLayer.ErrorHandlingAppLayer(ILogger<InfinniPlatform.Http.Middlewares.ErrorHandlingAppLayer>, InfinniPlatform.Logging.IPerformanceLogger<InfinniPlatform.Http.Middlewares.ErrorHandlingAppLayer>)
-  fullName.vb: InfinniPlatform.Http.Middlewares.ErrorHandlingAppLayer.ErrorHandlingAppLayer(ILogger(Of InfinniPlatform.Http.Middlewares.ErrorHandlingAppLayer), InfinniPlatform.Logging.IPerformanceLogger(Of InfinniPlatform.Http.Middlewares.ErrorHandlingAppLayer))
-  nameWithType: ErrorHandlingAppLayer.ErrorHandlingAppLayer(ILogger<ErrorHandlingAppLayer>, IPerformanceLogger<ErrorHandlingAppLayer>)
-  nameWithType.vb: ErrorHandlingAppLayer.ErrorHandlingAppLayer(ILogger(Of ErrorHandlingAppLayer), IPerformanceLogger(Of ErrorHandlingAppLayer))
+- uid: InfinniPlatform.Http.Middlewares.ErrorHandlingAppLayer.#ctor(ILogger{InfinniPlatform.Http.Middlewares.ErrorHandlingAppLayer})
+  name: ErrorHandlingAppLayer(ILogger<ErrorHandlingAppLayer>)
+  href: reference/InfinniPlatform.Http.Middlewares.ErrorHandlingAppLayer.html#InfinniPlatform_Http_Middlewares_ErrorHandlingAppLayer__ctor_ILogger_InfinniPlatform_Http_Middlewares_ErrorHandlingAppLayer__
+  commentId: M:InfinniPlatform.Http.Middlewares.ErrorHandlingAppLayer.#ctor(ILogger{InfinniPlatform.Http.Middlewares.ErrorHandlingAppLayer})
+  name.vb: ErrorHandlingAppLayer(ILogger(Of ErrorHandlingAppLayer))
+  fullName: InfinniPlatform.Http.Middlewares.ErrorHandlingAppLayer.ErrorHandlingAppLayer(ILogger<InfinniPlatform.Http.Middlewares.ErrorHandlingAppLayer>)
+  fullName.vb: InfinniPlatform.Http.Middlewares.ErrorHandlingAppLayer.ErrorHandlingAppLayer(ILogger(Of InfinniPlatform.Http.Middlewares.ErrorHandlingAppLayer))
+  nameWithType: ErrorHandlingAppLayer.ErrorHandlingAppLayer(ILogger<ErrorHandlingAppLayer>)
+  nameWithType.vb: ErrorHandlingAppLayer.ErrorHandlingAppLayer(ILogger(Of ErrorHandlingAppLayer))
 - uid: InfinniPlatform.Http.Middlewares.ErrorHandlingAppLayer.#ctor*
   name: ErrorHandlingAppLayer
   href: reference/InfinniPlatform.Http.Middlewares.ErrorHandlingAppLayer.html#InfinniPlatform_Http_Middlewares_ErrorHandlingAppLayer__ctor_
@@ -17021,6 +17009,39 @@ references:
   commentId: Overload:InfinniPlatform.Http.Middlewares.ErrorHandlingAppLayer.Configure
   fullName: InfinniPlatform.Http.Middlewares.ErrorHandlingAppLayer.Configure
   nameWithType: ErrorHandlingAppLayer.Configure
+- uid: InfinniPlatform.Http.Middlewares.GlobalHandlingAppLayer
+  name: GlobalHandlingAppLayer
+  href: reference/InfinniPlatform.Http.Middlewares.GlobalHandlingAppLayer.html
+  commentId: T:InfinniPlatform.Http.Middlewares.GlobalHandlingAppLayer
+  fullName: InfinniPlatform.Http.Middlewares.GlobalHandlingAppLayer
+  nameWithType: GlobalHandlingAppLayer
+- uid: InfinniPlatform.Http.Middlewares.GlobalHandlingAppLayer.#ctor(InfinniPlatform.Logging.IPerformanceLogger{InfinniPlatform.Http.Middlewares.GlobalHandlingAppLayer})
+  name: GlobalHandlingAppLayer(IPerformanceLogger<GlobalHandlingAppLayer>)
+  href: reference/InfinniPlatform.Http.Middlewares.GlobalHandlingAppLayer.html#InfinniPlatform_Http_Middlewares_GlobalHandlingAppLayer__ctor_InfinniPlatform_Logging_IPerformanceLogger_InfinniPlatform_Http_Middlewares_GlobalHandlingAppLayer__
+  commentId: M:InfinniPlatform.Http.Middlewares.GlobalHandlingAppLayer.#ctor(InfinniPlatform.Logging.IPerformanceLogger{InfinniPlatform.Http.Middlewares.GlobalHandlingAppLayer})
+  name.vb: GlobalHandlingAppLayer(IPerformanceLogger(Of GlobalHandlingAppLayer))
+  fullName: InfinniPlatform.Http.Middlewares.GlobalHandlingAppLayer.GlobalHandlingAppLayer(InfinniPlatform.Logging.IPerformanceLogger<InfinniPlatform.Http.Middlewares.GlobalHandlingAppLayer>)
+  fullName.vb: InfinniPlatform.Http.Middlewares.GlobalHandlingAppLayer.GlobalHandlingAppLayer(InfinniPlatform.Logging.IPerformanceLogger(Of InfinniPlatform.Http.Middlewares.GlobalHandlingAppLayer))
+  nameWithType: GlobalHandlingAppLayer.GlobalHandlingAppLayer(IPerformanceLogger<GlobalHandlingAppLayer>)
+  nameWithType.vb: GlobalHandlingAppLayer.GlobalHandlingAppLayer(IPerformanceLogger(Of GlobalHandlingAppLayer))
+- uid: InfinniPlatform.Http.Middlewares.GlobalHandlingAppLayer.#ctor*
+  name: GlobalHandlingAppLayer
+  href: reference/InfinniPlatform.Http.Middlewares.GlobalHandlingAppLayer.html#InfinniPlatform_Http_Middlewares_GlobalHandlingAppLayer__ctor_
+  commentId: Overload:InfinniPlatform.Http.Middlewares.GlobalHandlingAppLayer.#ctor
+  fullName: InfinniPlatform.Http.Middlewares.GlobalHandlingAppLayer.GlobalHandlingAppLayer
+  nameWithType: GlobalHandlingAppLayer.GlobalHandlingAppLayer
+- uid: InfinniPlatform.Http.Middlewares.GlobalHandlingAppLayer.Configure(IApplicationBuilder)
+  name: Configure(IApplicationBuilder)
+  href: reference/InfinniPlatform.Http.Middlewares.GlobalHandlingAppLayer.html#InfinniPlatform_Http_Middlewares_GlobalHandlingAppLayer_Configure_IApplicationBuilder_
+  commentId: M:InfinniPlatform.Http.Middlewares.GlobalHandlingAppLayer.Configure(IApplicationBuilder)
+  fullName: InfinniPlatform.Http.Middlewares.GlobalHandlingAppLayer.Configure(IApplicationBuilder)
+  nameWithType: GlobalHandlingAppLayer.Configure(IApplicationBuilder)
+- uid: InfinniPlatform.Http.Middlewares.GlobalHandlingAppLayer.Configure*
+  name: Configure
+  href: reference/InfinniPlatform.Http.Middlewares.GlobalHandlingAppLayer.html#InfinniPlatform_Http_Middlewares_GlobalHandlingAppLayer_Configure_
+  commentId: Overload:InfinniPlatform.Http.Middlewares.GlobalHandlingAppLayer.Configure
+  fullName: InfinniPlatform.Http.Middlewares.GlobalHandlingAppLayer.Configure
+  nameWithType: GlobalHandlingAppLayer.Configure
 - uid: InfinniPlatform.Http.Middlewares.IAfterAuthenticationAppLayer
   name: IAfterAuthenticationAppLayer
   href: reference/InfinniPlatform.Http.Middlewares.IAfterAuthenticationAppLayer.html
@@ -18164,14 +18185,15 @@ references:
   fullName.vb: InfinniPlatform.Logging.PerformanceLogger(Of TComponent)
   nameWithType: PerformanceLogger<TComponent>
   nameWithType.vb: PerformanceLogger(Of TComponent)
-- uid: InfinniPlatform.Logging.PerformanceLogger`1.#ctor(InfinniPlatform.AppOptions,ILoggerFactory)
-  name: PerformanceLogger(AppOptions, ILoggerFactory)
-  href: reference/InfinniPlatform.Logging.PerformanceLogger-1.html#InfinniPlatform_Logging_PerformanceLogger_1__ctor_InfinniPlatform_AppOptions_ILoggerFactory_
-  commentId: M:InfinniPlatform.Logging.PerformanceLogger`1.#ctor(InfinniPlatform.AppOptions,ILoggerFactory)
-  fullName: InfinniPlatform.Logging.PerformanceLogger<TComponent>.PerformanceLogger(InfinniPlatform.AppOptions, ILoggerFactory)
-  fullName.vb: InfinniPlatform.Logging.PerformanceLogger(Of TComponent).PerformanceLogger(InfinniPlatform.AppOptions, ILoggerFactory)
-  nameWithType: PerformanceLogger<TComponent>.PerformanceLogger(AppOptions, ILoggerFactory)
-  nameWithType.vb: PerformanceLogger(Of TComponent).PerformanceLogger(AppOptions, ILoggerFactory)
+- uid: InfinniPlatform.Logging.PerformanceLogger`1.#ctor(ILogger{InfinniPlatform.Logging.IPerformanceLogger{`0}})
+  name: PerformanceLogger(ILogger<IPerformanceLogger<TComponent>>)
+  href: reference/InfinniPlatform.Logging.PerformanceLogger-1.html#InfinniPlatform_Logging_PerformanceLogger_1__ctor_ILogger_InfinniPlatform_Logging_IPerformanceLogger__0___
+  commentId: M:InfinniPlatform.Logging.PerformanceLogger`1.#ctor(ILogger{InfinniPlatform.Logging.IPerformanceLogger{`0}})
+  name.vb: PerformanceLogger(ILogger(Of IPerformanceLogger(Of TComponent)))
+  fullName: InfinniPlatform.Logging.PerformanceLogger<TComponent>.PerformanceLogger(ILogger<InfinniPlatform.Logging.IPerformanceLogger<TComponent>>)
+  fullName.vb: InfinniPlatform.Logging.PerformanceLogger(Of TComponent).PerformanceLogger(ILogger(Of InfinniPlatform.Logging.IPerformanceLogger(Of TComponent)))
+  nameWithType: PerformanceLogger<TComponent>.PerformanceLogger(ILogger<IPerformanceLogger<TComponent>>)
+  nameWithType.vb: PerformanceLogger(Of TComponent).PerformanceLogger(ILogger(Of IPerformanceLogger(Of TComponent)))
 - uid: InfinniPlatform.Logging.PerformanceLogger`1.#ctor*
   name: PerformanceLogger
   href: reference/InfinniPlatform.Logging.PerformanceLogger-1.html#InfinniPlatform_Logging_PerformanceLogger_1__ctor_
@@ -28123,12 +28145,12 @@ references:
   commentId: Overload:InfinniPlatform.Serialization.JsonObjectSerializer.Encoding
   fullName: InfinniPlatform.Serialization.JsonObjectSerializer.Encoding
   nameWithType: JsonObjectSerializer.Encoding
-- uid: InfinniPlatform.Serialization.JsonObjectSerializer.Formated
-  name: Formated
-  href: reference/InfinniPlatform.Serialization.JsonObjectSerializer.html#InfinniPlatform_Serialization_JsonObjectSerializer_Formated
-  commentId: F:InfinniPlatform.Serialization.JsonObjectSerializer.Formated
-  fullName: InfinniPlatform.Serialization.JsonObjectSerializer.Formated
-  nameWithType: JsonObjectSerializer.Formated
+- uid: InfinniPlatform.Serialization.JsonObjectSerializer.Formatted
+  name: Formatted
+  href: reference/InfinniPlatform.Serialization.JsonObjectSerializer.html#InfinniPlatform_Serialization_JsonObjectSerializer_Formatted
+  commentId: F:InfinniPlatform.Serialization.JsonObjectSerializer.Formatted
+  fullName: InfinniPlatform.Serialization.JsonObjectSerializer.Formatted
+  nameWithType: JsonObjectSerializer.Formatted
 - uid: InfinniPlatform.Serialization.JsonObjectSerializer.Serialize(Stream,System.Object)
   name: Serialize(Stream, Object)
   href: reference/InfinniPlatform.Serialization.JsonObjectSerializer.html#InfinniPlatform_Serialization_JsonObjectSerializer_Serialize_Stream_System_Object_
@@ -28405,6 +28427,36 @@ references:
   commentId: Overload:InfinniPlatform.ServiceHost.ContainerModule.Load
   fullName: InfinniPlatform.ServiceHost.ContainerModule.Load
   nameWithType: ContainerModule.Load
+- uid: InfinniPlatform.ServiceHost.HttpContextLogEventEnricher
+  name: HttpContextLogEventEnricher
+  href: reference/InfinniPlatform.ServiceHost.HttpContextLogEventEnricher.html
+  commentId: T:InfinniPlatform.ServiceHost.HttpContextLogEventEnricher
+  fullName: InfinniPlatform.ServiceHost.HttpContextLogEventEnricher
+  nameWithType: HttpContextLogEventEnricher
+- uid: InfinniPlatform.ServiceHost.HttpContextLogEventEnricher.#ctor(IHttpContextAccessor)
+  name: HttpContextLogEventEnricher(IHttpContextAccessor)
+  href: reference/InfinniPlatform.ServiceHost.HttpContextLogEventEnricher.html#InfinniPlatform_ServiceHost_HttpContextLogEventEnricher__ctor_IHttpContextAccessor_
+  commentId: M:InfinniPlatform.ServiceHost.HttpContextLogEventEnricher.#ctor(IHttpContextAccessor)
+  fullName: InfinniPlatform.ServiceHost.HttpContextLogEventEnricher.HttpContextLogEventEnricher(IHttpContextAccessor)
+  nameWithType: HttpContextLogEventEnricher.HttpContextLogEventEnricher(IHttpContextAccessor)
+- uid: InfinniPlatform.ServiceHost.HttpContextLogEventEnricher.#ctor*
+  name: HttpContextLogEventEnricher
+  href: reference/InfinniPlatform.ServiceHost.HttpContextLogEventEnricher.html#InfinniPlatform_ServiceHost_HttpContextLogEventEnricher__ctor_
+  commentId: Overload:InfinniPlatform.ServiceHost.HttpContextLogEventEnricher.#ctor
+  fullName: InfinniPlatform.ServiceHost.HttpContextLogEventEnricher.HttpContextLogEventEnricher
+  nameWithType: HttpContextLogEventEnricher.HttpContextLogEventEnricher
+- uid: InfinniPlatform.ServiceHost.HttpContextLogEventEnricher.Enrich(LogEvent,ILogEventPropertyFactory)
+  name: Enrich(LogEvent, ILogEventPropertyFactory)
+  href: reference/InfinniPlatform.ServiceHost.HttpContextLogEventEnricher.html#InfinniPlatform_ServiceHost_HttpContextLogEventEnricher_Enrich_LogEvent_ILogEventPropertyFactory_
+  commentId: M:InfinniPlatform.ServiceHost.HttpContextLogEventEnricher.Enrich(LogEvent,ILogEventPropertyFactory)
+  fullName: InfinniPlatform.ServiceHost.HttpContextLogEventEnricher.Enrich(LogEvent, ILogEventPropertyFactory)
+  nameWithType: HttpContextLogEventEnricher.Enrich(LogEvent, ILogEventPropertyFactory)
+- uid: InfinniPlatform.ServiceHost.HttpContextLogEventEnricher.Enrich*
+  name: Enrich
+  href: reference/InfinniPlatform.ServiceHost.HttpContextLogEventEnricher.html#InfinniPlatform_ServiceHost_HttpContextLogEventEnricher_Enrich_
+  commentId: Overload:InfinniPlatform.ServiceHost.HttpContextLogEventEnricher.Enrich
+  fullName: InfinniPlatform.ServiceHost.HttpContextLogEventEnricher.Enrich
+  nameWithType: HttpContextLogEventEnricher.Enrich
 - uid: InfinniPlatform.ServiceHost.Program
   name: Program
   href: reference/InfinniPlatform.ServiceHost.Program.html
@@ -28444,12 +28496,12 @@ references:
   commentId: Overload:InfinniPlatform.ServiceHost.Startup.#ctor
   fullName: InfinniPlatform.ServiceHost.Startup.Startup
   nameWithType: Startup.Startup
-- uid: InfinniPlatform.ServiceHost.Startup.Configure(IApplicationBuilder,IContainerResolver,ILoggerFactory,IApplicationLifetime)
-  name: Configure(IApplicationBuilder, IContainerResolver, ILoggerFactory, IApplicationLifetime)
-  href: reference/InfinniPlatform.ServiceHost.Startup.html#InfinniPlatform_ServiceHost_Startup_Configure_IApplicationBuilder_IContainerResolver_ILoggerFactory_IApplicationLifetime_
-  commentId: M:InfinniPlatform.ServiceHost.Startup.Configure(IApplicationBuilder,IContainerResolver,ILoggerFactory,IApplicationLifetime)
-  fullName: InfinniPlatform.ServiceHost.Startup.Configure(IApplicationBuilder, IContainerResolver, ILoggerFactory, IApplicationLifetime)
-  nameWithType: Startup.Configure(IApplicationBuilder, IContainerResolver, ILoggerFactory, IApplicationLifetime)
+- uid: InfinniPlatform.ServiceHost.Startup.Configure(IApplicationBuilder,IContainerResolver,ILoggerFactory,IApplicationLifetime,IHttpContextAccessor)
+  name: Configure(IApplicationBuilder, IContainerResolver, ILoggerFactory, IApplicationLifetime, IHttpContextAccessor)
+  href: reference/InfinniPlatform.ServiceHost.Startup.html#InfinniPlatform_ServiceHost_Startup_Configure_IApplicationBuilder_IContainerResolver_ILoggerFactory_IApplicationLifetime_IHttpContextAccessor_
+  commentId: M:InfinniPlatform.ServiceHost.Startup.Configure(IApplicationBuilder,IContainerResolver,ILoggerFactory,IApplicationLifetime,IHttpContextAccessor)
+  fullName: InfinniPlatform.ServiceHost.Startup.Configure(IApplicationBuilder, IContainerResolver, ILoggerFactory, IApplicationLifetime, IHttpContextAccessor)
+  nameWithType: Startup.Configure(IApplicationBuilder, IContainerResolver, ILoggerFactory, IApplicationLifetime, IHttpContextAccessor)
 - uid: InfinniPlatform.ServiceHost.Startup.Configure*
   name: Configure
   href: reference/InfinniPlatform.ServiceHost.Startup.html#InfinniPlatform_ServiceHost_Startup_Configure_
