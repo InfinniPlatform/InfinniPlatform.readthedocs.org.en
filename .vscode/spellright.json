@@ -21,7 +21,8 @@
         "deserializes",
         "deserialized",
         "Infinni",
-        "deserializing"
+        "deserializing",
+        "nginx"
     ],
     "ignoreRegExps": [
         "/\\s{4,}.*/g"

@@ -5,9 +5,9 @@ Below you will find the steps to build your first ASP.NET Core app powered by In
 
 Let's start by building a simple "Hello, world!" app.
 
-**1.** Install .NET Core. See installation steps for Windows, macOS, and Linux `here <https://dot.net/core>`_.
+**1.** Install `.NET Core <https://dot.net/core>`_
 
-**2.** Create a new ASP.NET Core project
+**2.** Create a new ASP.NET Core project:
 
 .. code-block:: bash
 
@@ -15,13 +15,13 @@ Let's start by building a simple "Hello, world!" app.
     cd myapp
     dotnet new web
 
-**3.** Install InfinniPlatform.Core package
+**3.** Install InfinniPlatform.Core package:
 
 .. code-block:: bash
 
     dotnet add package InfinniPlatform.Core -s https://www.myget.org/F/infinniplatform/ -v 2.3.8-*
 
-**4.** Create MyHttpService.cs and define an HTTP service
+**4.** Create MyHttpService.cs and define an HTTP service:
 
 .. code-block:: csharp
    :caption: MyHttpService.cs
@@ -43,7 +43,7 @@ Let's start by building a simple "Hello, world!" app.
         }
     }
 
-**5.** Create MyAppContainerModule.cs and register the HTTP service
+**5.** Create MyAppContainerModule.cs and register the HTTP service:
 
 .. code-block:: csharp
    :caption: MyAppContainerModule.cs
@@ -63,7 +63,7 @@ Let's start by building a simple "Hello, world!" app.
         }
     }
 
-**6.** Update the code in Startup.cs to use InfinniPlatform
+**6.** Update the code in Startup.cs to use InfinniPlatform:
 
 .. code-block:: csharp
    :caption: Startup.cs
@@ -95,13 +95,13 @@ Let's start by building a simple "Hello, world!" app.
         }
     }
 
-**7.** Restore the packages
+**7.** Restore the packages:
 
 .. code-block:: bash
 
     dotnet restore -s https://www.myget.org/F/infinniplatform/
 
-**8.** Run the app (the dotnet run command will build the app when it's out of date)
+**8.** Run the app (the dotnet run command will build the app when it's out of date):
 
 .. code-block:: bash
 
