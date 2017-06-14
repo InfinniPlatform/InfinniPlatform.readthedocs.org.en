@@ -28,16 +28,12 @@ to use as well to all.
    06-serialization/index.rst
    07-services/index.rst
    08-document-storage/index.rst
-   09-document-services/index.rst
    10-blob-storage/index.rst
    11-cache/index.rst
    12-queues/index.rst
-   13-static-files/index.rst
-   14-view-engine/index.rst
    15-print-view/index.rst
    16-security/index.rst
    17-scheduler/index.rst
-   18-deploy/index.rst
    API Reference <../api/reference/index.html#://>
    release-notes/index.rst
 
