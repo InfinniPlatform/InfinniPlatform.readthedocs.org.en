@@ -15,7 +15,7 @@ Let's start by building a simple "Hello, world!" app.
     cd myapp
     dotnet new web
 
-**3.** Install InfinniPlatform.Core package:
+**3.** Install ``InfinniPlatform.Core`` package:
 
 .. code-block:: bash
 
