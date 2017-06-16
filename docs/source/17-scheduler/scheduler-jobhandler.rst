@@ -3,49 +3,25 @@
 Job Handler
 ===========
 
-Обработчик заданий - это класс, реализующий интерфейс ``InfinniPlatform.Scheduler.Contract.IJobHandler``.
-Каждое расписание должно быть :doc:`сопоставлено </17-scheduler/scheduler-jobinfo>` с определенным
-типом обработчика. В указанные в расписании моменты времени планировщик заданий производит вызов
-метода ``Handle()`` соответствующего обработчика.
+Each schedule must relate to an implementation of the IJobHandler_ interface. As a result the handler will be invoked according to its schedule.
 
-.. warning:: При реализации обработчиков заданий следует предусмотреть обработку возможных конфликтных ситуаций.
-             Например, случай, когда задания обрабатываются медленней, чем возникают. Также возможны пропуски
-             заданий, например, из-за остановки работы приложение на некоторое время. Или, наоборот, вызов
-             досрочного, незапланированного выполнения задания, а также вызов обработчика не совсем точно
-             в моменты, определенные в расписании.
+.. note:: A job handler must analyze all possible situation. For example, when the handler was invoked but previous handling has not finished yet;
+          there are misfire tasks because the application was stopped for a while; the handler was invoked early than it was planned; the handler was
+          not invoked at the exact time, and so forth.
 
-
-.. index:: IContainerBuilder.RegisterJobHandlers
 
 Registering Job Handlers
 ------------------------
 
-Создание экземпляров обработчиков заданий и управление ими осуществляется посредством :doc:`IoC-контейнера </02-ioc/index>`.
-По этой причине все обработчики должны быть :doc:`зарегистрированы в IoC-контейнере </02-ioc/container-builder>`,
-например, так, как показано в следующем примере. Следует обратить внимание, что каждый обработчик *обязательно*
-должен быть зарегистрирован как самостоятельный компонент с помощью метода ``AsSelf()``.
+Job handlers are created and managed by :doc:`IoC container </02-ioc/index>` so the handlers must be :doc:`registered </02-ioc/container-builder>`:
 
 .. code-block:: csharp
-   :emphasize-lines: 7
 
-    IContainerBuilder builder;
+    builder.RegisterType<MyJobHandler>().AsSelf().As<IJobHandler>().SingleInstance();
 
-    ...
-
-    builder.RegisterType<SomeJobHandler>()
-           .As<IJobHandler>()
-           .AsSelf()
-           .SingleInstance();
-
-Чтобы не производить регистрацию каждого обработчика в отдельности, можно воспользоваться универсальным методом
-расширения ``RegisterJobHandlers()``, который производит регистрацию всех обработчиков указанной сборки.
+To register all handlers of an assembly use the `RegisterJobHandlers()`_ helper:
 
 .. code-block:: csharp
-   :emphasize-lines: 5
-
-    IContainerBuilder builder;
-
-    ...
 
     builder.RegisterJobHandlers(assembly);
 
@@ -56,65 +32,46 @@ Registering Job Handlers
 Job Handler Context
 -------------------
 
-Вызов метода ``Handle()`` обработчика заданий в общем случае производится в указанные в расписании моменты времени.
-Момент вызова обработчика, а также дополнительная информация, необходимая для обработки задания, называется контекстом
-обработки задания. Контекст представлен интерфейсом ``InfinniPlatform.Scheduler.Contract.IJobHandlerContext``, экземпляр
-которого передается вторым параметром метода ``Handle()``.
+When a job handler is invoked it gets an information to process task. This information is called the job handler context and presented as
+the IJobHandlerContext_ interface. The IJobHandlerContext_ interface has next properties.
 
-.. code-block:: csharp
-   :emphasize-lines: 3
+:InstanceId_:           The unique job instance identifier. Formed automatically with using IJobInfo_. Each instance is handled only once by some cluster node.
 
-    public class SomeJobHandler : IJobHandler
-    {
-        public Task Handle(IJobInfo jobInfo, IJobHandlerContext context)
-        {
-            // Обработка задания...
-        }
-    }
+:FireTimeUtc_:          The actual time the trigger fired. For instance the scheduled time may have been ``10:00:00`` but the actual fire time may have been ``10:00:03`` if the scheduler was too busy.
 
-Ниже приведено описание атрибутов контекста обработки задания.
+:ScheduledFireTimeUtc_: The scheduled time the trigger fired for. For instance the scheduled time may have been ``10:00:00`` but the actual fire time may have been ``10:00:03`` if the scheduler was too busy.
 
-* ``InstanceId``. Уникальный идентификатор экземпляра задания. Формируется на основе уникального идентификатора задания
-  ``IJobInfo.Id``, указанного при определении :doc:`информации о задании </17-scheduler/index>`, и запланированного
-  времени выполнения ``ScheduledFireTimeUtc``. Каждый экземпляр задания обрабатывается один раз на одном из узлов
-  кластера, при этом сам факт обработки задания фиксируется в :ref:`журнале планировщика заданий <job-instance>`.
+:PreviousFireTimeUtc_:  Gets the previous fire time or ``null`` if the handler was invoked the first time.
 
-* ``FireTimeUtc``. Фактическое время выполнения задания (в формате UTC). В общем случае не должно сильно отличаться от
-  запланированного времени выполнения ``ScheduledFireTimeUtc``, тем не менее, такие ситуации возможны.
+:NextFireTimeUtc_:      Gets the next fire time ot ``null`` if the handler will not be invoked anymore.
 
-* ``ScheduledFireTimeUtc``. Запланированное время выполнения задания (в формате UTC). Соответствует правилам, указанным
-  при определении :doc:`информации о задании </17-scheduler/index>`.
-
-* ``PreviousFireTimeUtc``. Время предыдущего запланированного выполнения задания (в формате UTC). Равно значению ``ScheduledFireTimeUtc``
-  предыдущего задания или ``null``, если обработчик вызывается первый раз или не по расписанию.
-
-* ``NextFireTimeUtc``. Время следующего запланированного выполнения задания (в формате UTC). Равно значению ``ScheduledFireTimeUtc``
-  следующего задания или ``null``, если последующие срабатывания не предусмотрены или обработчик вызывается не по расписанию. 
-
-* ``Data``. Данные для выполнения задания. Указывается при определении :doc:`информации о задании </17-scheduler/index>` или
-  при вызове досрочного выполнения задания.
+:Data_:                 The job data which is defined by :doc:`the job info </17-scheduler/index>`.
 
 
 Job Handler Example
 -------------------
 
-Для создания обработчика заданий достаточно создать класс, реализующий интерфейс ``InfinniPlatform.Scheduler.Contract.IJobHandler``
-с единственным методом ``Handle()``. В конструктор обработчика можно передать любые зависимости, 
-:doc:`зарегистрированные в IoC-контейнере </02-ioc/container-builder>`. Важно отметить, что метод
-``Handle()`` является асинхронным, благодаря чему становится возможным использовать все преимущества
-асинхронного программирования с использованием ключевых слов `async/await`_.
+To define a job handler you need to implement the IJobHandler_ interface.
 
 .. code-block:: csharp
-   :emphasize-lines: 1,3
 
-    public class SomeJobHandler : IJobHandler
+    class MyJobHandler : IJobHandler
     {
         public async Task Handle(IJobInfo jobInfo, IJobHandlerContext context)
         {
-            // Обработка задания...
-            await Console.Out.WriteLineAsync($"Greetings from {nameof(SomeJobHandler)}!");
+            await Console.Out.WriteLineAsync($"Greetings from {nameof(MyJobHandler)}!");
         }
     }
 
 
-.. _`async/await`: https://msdn.microsoft.com/en-us/library/mt674882.aspx
+.. _`IJobInfo`: ../api/reference/InfinniPlatform.Scheduler.IJobInfo.html
+.. _`IJobHandler`: ../api/reference/InfinniPlatform.Scheduler.IJobHandler.html
+.. _`RegisterJobHandlers()`: ../api/reference/InfinniPlatform.Scheduler.SchedulerExtensions.html#InfinniPlatform_Scheduler_SchedulerExtensions_RegisterJobHandlers_InfinniPlatform_IoC_IContainerBuilder_Assembly_
+.. _`IJobHandlerContext`: /api/reference/InfinniPlatform.Scheduler.IJobHandlerContext.html
+
+.. _`InstanceId`: ../api/reference/InfinniPlatform.Scheduler.IJobHandlerContext.html#InfinniPlatform_Scheduler_IJobHandlerContext_InstanceId
+.. _`FireTimeUtc`: ../api/reference/InfinniPlatform.Scheduler.IJobHandlerContext.html#InfinniPlatform_Scheduler_IJobHandlerContext_FireTimeUtc
+.. _`ScheduledFireTimeUtc`: ../api/reference/InfinniPlatform.Scheduler.IJobHandlerContext.html#InfinniPlatform_Scheduler_IJobHandlerContext_ScheduledFireTimeUtc
+.. _`PreviousFireTimeUtc`: ../api/reference/InfinniPlatform.Scheduler.IJobHandlerContext.html#InfinniPlatform_Scheduler_IJobHandlerContext_PreviousFireTimeUtc
+.. _`NextFireTimeUtc`: ../api/reference/InfinniPlatform.Scheduler.IJobHandlerContext.html#InfinniPlatform_Scheduler_IJobHandlerContext_NextFireTimeUtc
+.. _`Data`: ../api/reference/InfinniPlatform.Scheduler.IJobHandlerContext.html#InfinniPlatform_Scheduler_IJobHandlerContext_Data

@@ -74,12 +74,12 @@ CRON Special Characters
 
 
 .. index:: IJobInfoBuilder
+.. index:: IJobInfoBuilder.CronExpression()
 
 Defining CRON Expression
 ------------------------
 
-CRON expression can be used when :doc:`job info </17-scheduler/index>` is created. In this case one of ``CronExpression()`` methods can be used which
-is defined in ``InfinniPlatform.Scheduler.Contract.IJobInfoBuilder`` interface.
+CRON expression can be used when :doc:`job info </17-scheduler/index>` is created. In this case one of `CronExpression()`_ overloads can be used.
 
 .. code-block:: csharp
    :emphasize-lines: 7,8
@@ -88,14 +88,14 @@ is defined in ``InfinniPlatform.Scheduler.Contract.IJobInfoBuilder`` interface.
 
     ...
 
-    // Job "SomeJob" will be executed daily
-    // at 10:35 by SomeJobHandler handler
-    factory.CreateJobInfo<SomeJobHandler>("SomeJob",
+    // Job "MyJob" will be executed daily
+    // at 10:35 by MyJobHandler handler
+    factory.CreateJobInfo<MyJobHandler>("MyJob",
         b => b.CronExpression("0 35 10 * * ?"))
 
 As you can see CRON expressions are simple and main principle of building expressions is quite clear. But it is quite easy to forget meaning of parts
-CRON expression or some rules of building expressions. So ``CronExpression()`` method has a few overloads which uses `DSL`_ (Domain Specific Language)
-concept. DSL is represented as `fluent interface`_. Next example shows recently reviewed example but with using DSL-version of ``CronExpression()``
+CRON expression or some rules of building expressions. So the `CronExpression()`_ method has a few overloads which uses `DSL`_ (Domain Specific Language)
+concept. DSL is represented as `fluent interface`_. Next example shows recently reviewed example but with using DSL-version of the `CronExpression()`_
 method.
 
 .. code-block:: csharp
@@ -105,9 +105,9 @@ method.
 
     ...
 
-    // Job "SomeJob" will be executed daily
-    // at 10:35 by SomeJobHandler handler
-    factory.CreateJobInfo<SomeJobHandler>("SomeJob",
+    // Job "MyJob" will be executed daily
+    // at 10:35 by MyJobHandler handler
+    factory.CreateJobInfo<MyJobHandler>("MyJob",
         b => b.CronExpression(e => e.AtHourAndMinuteDaily(10, 35)))
 
 
@@ -116,8 +116,7 @@ method.
 CRON Expressions Examples
 -------------------------
 
-You can see examples of CRON expressions below: left - original CRON expression, right - lambda-expression to build the same expression with using
-``InfinniPlatform.Scheduler.Contract.ICronExpressionBuilder``.
+You can see examples of CRON expressions below: left - original CRON expression, right - lambda-expression to build the same expression with using ICronExpressionBuilder_.
 
 :``* * * * * ?``:
     .. code-block:: csharp
@@ -263,3 +262,6 @@ You can see examples of CRON expressions below: left - original CRON expression,
 
 .. _DSL: https://en.wikipedia.org/wiki/Domain-specific_language
 .. _`fluent interface`: http://martinfowler.com/bliki/FluentInterface.html
+
+.. _`CronExpression()`: ../api/reference/InfinniPlatform.Scheduler.IJobInfoBuilder.html#InfinniPlatform_Scheduler_IJobInfoBuilder_CronExpression_System_String_
+.. _`ICronExpressionBuilder`: ../api/reference/InfinniPlatform.Scheduler.ICronExpressionBuilder.html

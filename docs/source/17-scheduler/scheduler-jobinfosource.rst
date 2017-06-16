@@ -3,42 +3,22 @@
 Job Info Source
 ===============
 
-В приложении InfinniPlatform могут быть определены несколько источников заданий - объектов, предоставляющих
-:doc:`информацию о запланированных заданиях </17-scheduler/index>` планировщика. Источник заданий - это
-класс, реализующий интерфейс ``InfinniPlatform.Scheduler.Contract.IJobInfoSource``. Источники заданий
-опрашиваются :doc:`после запуска приложения </03-hosting/index>`, чтобы произвести инициализацию
-планировщика заданий. При этом у каждого источника вызывается метод ``GetJobs()``.
+To schedule jobs you need to define the source, that is, implement the IJobInfoSource_ interface. After an application is started the scheduler gets
+all :doc:`registered </02-ioc/container-builder>` sources and inquires them to get scheduled jobs and make initialization.
 
-
-.. index:: IContainerBuilder.RegisterJobInfoSources
 
 Registering Job Info Source
 ---------------------------
 
-Создание экземпляров источников заданий и управление ими осуществляется посредством :doc:`IoC-контейнера </02-ioc/index>`.
-По этой причине все источники должны быть :doc:`зарегистрированы в IoC-контейнере </02-ioc/container-builder>`,
-например, так, как показано в следующем примере.
+Job sources are created and managed by :doc:`IoC container </02-ioc/index>` so the sources must be :doc:`registered </02-ioc/container-builder>`:
 
 .. code-block:: csharp
-   :emphasize-lines: 6
 
-    IContainerBuilder builder;
+    builder.RegisterType<MyJobInfoSource>().As<IJobInfoSource>().SingleInstance();
 
-    ...
-
-    builder.RegisterType<SomeJobInfoSource>()
-           .As<IJobInfoSource>()
-           .SingleInstance();
-
-Чтобы не производить регистрацию каждого источника в отдельности, можно воспользоваться универсальным методом
-расширения ``RegisterJobInfoSources()``, который производит регистрацию всех обработчиков указанной сборки.
+To register all sources of an assembly use the `RegisterJobHandlers()`_ helper:
 
 .. code-block:: csharp
-   :emphasize-lines: 5
-
-    IContainerBuilder builder;
-
-    ...
 
     builder.RegisterJobInfoSources(assembly);
 
@@ -48,39 +28,28 @@ Registering Job Info Source
 Persistent Job Info Source
 --------------------------
 
-При реализации функциональных требований приложения может возникнуть потребность в добавлении заданий во время работы приложения
-и сохранении :doc:`информации об этих заданиях </17-scheduler/index>` в :doc:`постоянном хранилище </08-document-storage/index>`,
-чтобы гарантировать их выполнение после перезапуска приложения. Например, в качестве таких заданий могут быть персональные
-напоминания пользователя или какие-либо иные задания, появление которых нельзя предсказать заранее.
-
-Планировщик задач InfinniPlatform имеет встроенный источник сохраненных заданий. Все задания, :ref:`добавленные <add-or-update-job>`
-с помощью метода ``IJobScheduler.AddOrUpdateJob()``, сохраняются в постоянное хранилище и учитываются при запуске приложения.
-Управление такими заданиями ничем не отличается от :doc:`управления </17-scheduler/scheduler-jobscheduler>` обычными заданиями,
-описанными в коде приложения.
+The scheduler allows to add jobs and manage them at runtime using IJobScheduler_. By default added at runtime jobs are stored in the memory of the web
+server so they will be lost after restarting the application. To store jobs in a persistent storage you should install an implementation of
+:doc:`the document storage </08-document-storage/index>` or implement the IJobSchedulerRepository_ interface, then the jobs will be scheduled
+even after restarting the application.
 
 
 Job Info Source Example
 -----------------------
 
-Для создания источника заданий достаточно создать класс, реализующий интерфейс ``InfinniPlatform.Scheduler.Contract.IJobInfoSource``
-с единственным методом ``GetJobs()``. В конструктор источника можно передать любые зависимости, 
-:doc:`зарегистрированные в IoC-контейнере </02-ioc/container-builder>`. Важно отметить, что метод
-``GetJobs()`` является асинхронным, благодаря чему становится возможным использовать все преимущества
-асинхронного программирования с использованием ключевых слов `async/await`_.
+To define a job info source you need to implement the IJobInfoSource_ interface.
 
-.. code-block:: csharp
-   :emphasize-lines: 1,3
+.. code-block:: js
 
-    public class SomeJobInfoSource : IJobInfoSource
+    class MyJobInfoSource : IJobInfoSource
     {
         public Task<IEnumerable<IJobInfo>> GetJobs(IJobInfoFactory factory)
         {
             var jobs = new[]
                        {
-                           // Задание с именем "SomeJob" будет выполняться ежедневно
-                           // в 10:35 с помощью обработчика SomeJobHandler
-                           factory.CreateJobInfo<SomeJobHandler>("SomeJob",
-                               b => b.CronExpression(e => e.AtHourAndMinuteDaily(10, 35)))
+                           // Job will be handled every 5 seconds
+                           factory.CreateJobInfo<MyJobHandler>("MyJob",
+                               b => b.CronExpression(e => e.Seconds(i => i.Each(0, 5))))
                        };
 
             return Task.FromResult<IEnumerable<IJobInfo>>(jobs);
@@ -88,4 +57,6 @@ Job Info Source Example
     }
 
 
-.. _`async/await`: https://msdn.microsoft.com/en-us/library/mt674882.aspx
+.. _`IJobInfoSource`: ../api/reference/InfinniPlatform.Scheduler.IJobInfoSource.html
+.. _`IJobScheduler`: ../api/reference/InfinniPlatform.Scheduler.IJobScheduler.html
+.. _`IJobSchedulerRepository`: ../api/reference/InfinniPlatform.Scheduler.IJobSchedulerRepository.html

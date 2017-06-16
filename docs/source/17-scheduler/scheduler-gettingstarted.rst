@@ -3,57 +3,63 @@ Getting Started with Job Scheduler
 
 This is a brief manual to get started with the InfinniPlatform job scheduler.
 
-Installing Job Scheduler
-------------------------
-
-InfinniPlatform job scheduler is a NuGet-package ``InfinniPlatform.Scheduler`` which you may install by running a command in `Package Manager Console`_.
+**1.** Install ``InfinniPlatform.Scheduler.Quartz`` package:
 
 .. code-block:: bash
 
-    PM> Install-Package InfinniPlatform.Scheduler -Pre
+    dotnet add package InfinniPlatform.Scheduler.Quartz -s https://www.myget.org/F/infinniplatform/
 
+**2.** Call `AddQuartzScheduler()`_ in ``ConfigureServices()``:
 
-Job Handling Example
---------------------
-
-Add to the project a file ``SomeJobHandler.cs`` for defining :doc:`job handler </17-scheduler/scheduler-jobhandler>`.
-
-.. code-block:: js
-   :caption: SomeJobHandler.cs
-   :emphasize-lines: 6,8
+.. code-block:: csharp
+   :emphasize-lines: 11
 
     using System;
-    using System.Threading.Tasks;
 
-    using InfinniPlatform.Scheduler.Contract;
+    using InfinniPlatform.AspNetCore;
 
-    public class SomeJobHandler : IJobHandler
+    using Microsoft.Extensions.DependencyInjection;
+
+    public class Startup
+    {
+        public IServiceProvider ConfigureServices(IServiceCollection services)
+        {
+            services.AddQuartzScheduler();
+
+            // ...
+
+            return services.BuildProvider();
+        }
+
+        // ...
+    }
+
+**3.** Create MyJobHandler.cs and define :doc:`job handler </17-scheduler/scheduler-jobhandler>`:
+
+.. code-block:: csharp
+   :caption: MyJobHandler.cs
+
+    class MyJobHandler : IJobHandler
     {
         public async Task Handle(IJobInfo jobInfo, IJobHandlerContext context)
         {
-            await Console.Out.WriteLineAsync($"Greetings from {nameof(SomeJobHandler)}!");
+            await Console.Out.WriteLineAsync($"Greetings from {nameof(MyJobHandler)}!");
         }
     }
 
-Add to the project a file ``SomeJobInfoSource.cs`` for defining :doc:`job info source </17-scheduler/scheduler-jobinfosource>`.
+**4.** Create MyJobInfoSource.cs and define :doc:`job info source </17-scheduler/scheduler-jobinfosource>`:
 
 .. code-block:: js
-   :caption: SomeJobInfoSource.cs
-   :emphasize-lines: 6,8,13,14
+   :caption: MyJobInfoSource.cs
 
-    using System.Collections.Generic;
-    using System.Threading.Tasks;
-
-    using InfinniPlatform.Scheduler.Contract;
-
-    public class SomeJobInfoSource : IJobInfoSource
+    class MyJobInfoSource : IJobInfoSource
     {
         public Task<IEnumerable<IJobInfo>> GetJobs(IJobInfoFactory factory)
         {
             var jobs = new[]
                        {
                            // Job will be handled every 5 seconds
-                           factory.CreateJobInfo<SomeJobHandler>("SomeJob",
+                           factory.CreateJobInfo<MyJobHandler>("MyJob",
                                b => b.CronExpression(e => e.Seconds(i => i.Each(0, 5))))
                        };
 
@@ -61,27 +67,12 @@ Add to the project a file ``SomeJobInfoSource.cs`` for defining :doc:`job info s
         }
     }
 
-:doc:`Register in IoC-container </02-ioc/container-builder>` job handlers and job sources.
+**5.** :doc:`Register in IoC-container </02-ioc/container-builder>` the job handler and the job source:
 
-.. code-block:: js
-   :caption: ContainerModule.cs
-   :emphasize-lines: 10,11
+.. code-block:: csharp
 
-    using InfinniPlatform.Scheduler.Contract;
-    using InfinniPlatform.Sdk.IoC;
-
-    public class ContainerModule : IContainerModule
-    {
-        public void Load(IContainerBuilder builder)
-        {
-            var assembly = typeof(ContainerModule).Assembly;
-
-            builder.RegisterJobHandlers(assembly);
-            builder.RegisterJobInfoSources(assembly);
-
-            // Other dependencies...
-        }
-    }
+    builder.RegisterType<MyJobHandler>().AsSelf().As<IJobHandler>().SingleInstance();
+    builder.RegisterType<MyJobInfoSource>().As<IJobInfoSource>().SingleInstance();
 
 
-.. _`Package Manager Console`: http://docs.nuget.org/consume/package-manager-console
+.. _`AddQuartzScheduler()`: ../api/reference/InfinniPlatform.AspNetCore.QuartzSchedulerExtensions.html#InfinniPlatform_AspNetCore_QuartzSchedulerExtensions_AddQuartzScheduler_IServiceCollection_

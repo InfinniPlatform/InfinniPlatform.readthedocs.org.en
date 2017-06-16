@@ -1,10 +1,8 @@
 Job Scheduler
 =============
 
-Some applications may require execution of jobs accordingly particular time schedule. These tasks can be done by using **job scheduler** and installed
-as a separate NuGet-package ``InfinniPlatform.Scheduler``.
-
-InfinniPlatform scheduler can run jobs in accordance with specific time or period. There are two key things of scheduler: :doc:`schedule </17-scheduler/scheduler-cronexpression>`
+Some applications may require execution of jobs accordingly particular time schedule. These tasks can be done by using **job scheduler**. The scheduler
+can run jobs in accordance with specific time or period. There are two key things of scheduler: :doc:`schedule </17-scheduler/scheduler-cronexpression>`
 and :doc:`job handler </17-scheduler/scheduler-jobhandler>`. Those can be bound by "one to many" relation. Schedule describes a specific handler call
 time while the handler may be used in many schedules. So you can use one job handler in different schedules.
 
@@ -23,4 +21,4 @@ that guarantees processing of the job by one of the clusters nodes while computi
    scheduler-jobhandler.rst
    scheduler-jobinfosource.rst
    scheduler-jobscheduler.rst
-   scheduler-settings.rst
+   scheduler-httpservice.rst

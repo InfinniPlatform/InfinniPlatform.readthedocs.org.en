@@ -3,8 +3,7 @@
 Job Scheduler Management
 ========================
 
-Управление планировщиком заданий осуществляется с помощью методов интерфейса ``InfinniPlatform.Scheduler.Contract.IJobScheduler``.
-Все методы, описанные ниже применяются не к отдельному узлу кластера, в котором они были вызваны, а ко всем узлам кластера.
+To manage the scheduler use the IJobScheduler_.
 
 
 .. _add-or-update-job:
@@ -14,18 +13,11 @@ Job Scheduler Management
 Adding and Updating Jobs
 ------------------------
 
-Метод ``AddOrUpdateJob()`` добавляет или обновляет :doc:`информацию о запланированных заданиях </17-scheduler/scheduler-jobinfo>`.
-В результате работы этого метода информация о задании сохраняется в :doc:`постоянном хранилище </08-document-storage/index>`,
-что гарантирует выполнение этих заданий даже после перезапуска приложения. Данная функциональность обеспечивается встроенным
-:ref:`источником сохраненных заданий <persistent-job-info-source>`.
-
-Помимо этого метод ``AddOrUpdateJob()`` предоставляет возможность добавлять задание в приостановленном
-состоянии - ``JobState.Paused``, чтобы иметь возможность начать его планирование не сразу после добавления
-в планировщик, а только тогда, когда от приложения поступит соответствующий запрос, например, 
-при :ref:`возобновления планирования задания <resume-job>` с помощью метода ``ResumeJob()``.
-
-Для добавления или обновления сразу нескольких заданий, следует использовать метод ``AddOrUpdateJobs()``,
-который выполняет все вышеуказанные действия, применительно к каждому из указанных заданий.
+The `AddOrUpdateJob()`_ method adds or updates a :doc:`job information </17-scheduler/scheduler-jobinfo>`. By default added at runtime jobs are stored
+in the memory of the web server so they will be lost after restarting the application. To store jobs in a persistent storage you should install an
+implementation of :doc:`the document storage </08-document-storage/index>` or implement the IJobSchedulerRepository_ interface, then the jobs will be
+scheduled even after restarting the application. To add several jobs at once use the `AddOrUpdateJobs()`_ method. Also you can add a Paused_ job and
+not start planning it not immediately after the addition.
 
 
 .. _delete-job:
@@ -36,15 +28,9 @@ Adding and Updating Jobs
 Deleting Jobs
 -------------
 
-Метод ``DeleteJob()`` позволяет удалить указанное задание. Удаление задания означает не только
-прекращение его планирования, но и удаление :doc:`информации об этом задании </17-scheduler/scheduler-jobinfo>`
-из :doc:`постоянного хранилища </08-document-storage/index>`. По этой причине нет никакой возможности
-:ref:`возобновления планирования задания <resume-job>`, например, с помощью метода ``ResumeJob()``.
-Однако планирование удаленных заданий, :doc:`объявленных в коде </17-scheduler/scheduler-jobinfosource>`,
-будет прекращено лишь до момента перезапуска приложения.
-
-Для удаления сразу нескольких или всех заданий, следует использовать соответственно методы ``DeleteJobs()``
-или ``DeleteAllJobs()``. Эти методы выполняют все вышеуказанные действия, применительно к каждому из заданий.
+The `DeleteJob()`_ method deletes the specified job. After that the job will be unscheduled and removed from :ref:`the storage <persistent-job-info-source>`.
+Thus you cannot resume :ref:`resume <resume-job>` the job after its the deletion. Nonetheless, jobs are declared in :doc:`the code </17-scheduler/scheduler-jobinfosource>`
+will be stopped just until restarting the application. To delete several jobs at once use `DeleteJobs()`_ or `DeleteAllJobs()`_ methods.
 
 
 .. _pause-job:
@@ -55,12 +41,7 @@ Deleting Jobs
 Pausing Jobs
 ------------
 
-Метод ``PauseJob()`` приостанавливает планирование указанного задания. Если :doc:`информация об этом задании </17-scheduler/scheduler-jobinfo>`
-была сохранена в :doc:`постоянном хранилище </08-document-storage/index>`, она будет обновлена. :ref:`Возобновить планирование <resume-job>`
-приостановленного таким образом задания можно, например, с помощью метода ``ResumeJob()``.
-
-Для приостановки планирования сразу нескольких или всех заданий, следует использовать соответственно методы ``PauseJobs()``
-или ``PauseAllJobs()``. Эти методы выполняют все вышеуказанные действия, применительно к каждому из заданий.
+The `PauseJob()`_ method stops scheduling the specified job. To pause several jobs at once use `PauseJobs()`_ or `PauseAllJobs()`_ methods.
 
 
 .. _resume-job:
@@ -71,11 +52,7 @@ Pausing Jobs
 Resuming Jobs
 -------------
 
-Метод ``ResumeJob()`` возобновляет планирование указанного задания. Если :doc:`информация об этом задании </17-scheduler/scheduler-jobinfo>`
-была сохранена в :doc:`постоянном хранилище </08-document-storage/index>`, она будет обновлена.
-
-Для возобновления планирования сразу нескольких или всех заданий, следует использовать соответственно методы ``ResumeJobs()``
-или ``ResumeAllJobs()``. Эти методы выполняют все вышеуказанные действия, применительно к каждому из заданий.
+The `ResumeJob()`_ method starts scheduling the specified job. To pause several jobs at once use `ResumeJobs()`_ or `ResumeAllJobs()`_ methods.
 
 
 .. _trigger-job:
@@ -86,14 +63,8 @@ Resuming Jobs
 Triggering Jobs
 ---------------
 
-Метод ``TriggerJob()`` вызывает досрочное выполнение указанного задания. Перед выполнением этого метода нужно убедиться,
-что задание было :ref:`добавлено <add-or-update-job>` и находится в запланированном состоянии - ``JobState.Planned``.
-
-При досрочном выполнении задания существует возможность указать данные для выполнения задания, отличные от тех, которые
-были указаны при определении :doc:`информации о задании </17-scheduler/scheduler-jobinfo>`.
-
-Для вызова досрочного выполнения сразу нескольких или всех заданий, следует использовать соответственно методы ``TriggerJobs()``
-или ``TriggerAllJob()``. Эти методы выполняют все вышеуказанные действия, применительно к каждому из заданий.
+The `TriggerJob()`_ method invokes processing the specified job despite its schedule. Before triggering a job make sure it is Planned_. To trigger
+several jobs at once use `TriggerJobs()`_ or `TriggerAllJob()`_ methods.
 
 
 .. index:: IJobScheduler.IsStarted
@@ -102,20 +73,35 @@ Triggering Jobs
 Getting Job Scheduler Status
 ----------------------------
 
-Планировщик заданий также предоставляет два дополнительных метода, позволяющих определить его состояние во время работы приложения.
-
-Метод ``IsStarted()`` определяет, запущено ли планирование заданий. При нормальной работе приложения этот метод должен возвращать
-значение ``true``. В противном случае необходимо анализировать :doc:`журнал работы приложения </05-logging/index>`.
-
-Метод ``GetStatus()`` позволяет сделать выборку для определения текущего статуса заданий. Следующий пример определяет количество
-запланированных заданий на момент вызова метода ``GetStatus()``.
+There are two additional methods getting the scheduler status: `IsStarted()`_ and `GetStatus()`_. The `IsStarted()`_ method checks whether the scheduler
+is started and returns ``true`` if it is started. The `GetStatus()`_ method allows to check status of the current jobs.
 
 .. code-block:: csharp
-   :emphasize-lines: 5
 
     IJobScheduler jobScheduler;
 
-    ...
+    // ...
 
     var plannedCount = await jobScheduler.GetStatus(i => i.Count(j => j.State == JobState.Planned)); 
 
+
+.. _`IJobSchedulerRepository`: ../api/reference/InfinniPlatform.Scheduler.IJobSchedulerRepository.html
+.. _`IJobInfoSource`: ../api/reference/InfinniPlatform.Scheduler.IJobInfoSource.html
+.. _`AddOrUpdateJob()`: ../api/reference/InfinniPlatform.Scheduler.IJobScheduler.html#InfinniPlatform_Scheduler_IJobScheduler_AddOrUpdateJob_InfinniPlatform_Scheduler_IJobInfo_
+.. _`AddOrUpdateJobs()`: ../api/reference/InfinniPlatform.Scheduler.IJobScheduler.html#InfinniPlatform_Scheduler_IJobScheduler_AddOrUpdateJobs_IEnumerable_InfinniPlatform_Scheduler_IJobInfo__
+.. _`DeleteJob()`: ../api/reference/InfinniPlatform.Scheduler.IJobScheduler.html#InfinniPlatform_Scheduler_IJobScheduler_DeleteJob_System_String_
+.. _`DeleteJobs()`: ../api/reference/InfinniPlatform.Scheduler.IJobScheduler.html#InfinniPlatform_Scheduler_IJobScheduler_DeleteJobs_IEnumerable_System_String__
+.. _`DeleteAllJobs()`: ../api/reference/InfinniPlatform.Scheduler.IJobScheduler.html#InfinniPlatform_Scheduler_IJobScheduler_DeleteAllJobs
+.. _`PauseJob()`: ../api/reference/InfinniPlatform.Scheduler.IJobScheduler.html#InfinniPlatform_Scheduler_IJobScheduler_PauseJob_System_String_
+.. _`PauseJobs()`: ../api/reference/InfinniPlatform.Scheduler.IJobScheduler.html#InfinniPlatform_Scheduler_IJobScheduler_PauseJobs_IEnumerable_System_String__
+.. _`PauseAllJobs()`: ../api/reference/InfinniPlatform.Scheduler.IJobScheduler.html#InfinniPlatform_Scheduler_IJobScheduler_PauseAllJobs
+.. _`ResumeJob()`: ../api/reference/InfinniPlatform.Scheduler.IJobScheduler.html#InfinniPlatform_Scheduler_IJobScheduler_ResumeJob_System_String_
+.. _`ResumeJobs()`: ../api/reference/InfinniPlatform.Scheduler.IJobScheduler.html#InfinniPlatform_Scheduler_IJobScheduler_PauseJobs_IEnumerable_System_String__
+.. _`ResumeAllJobs()`: ../api/reference/InfinniPlatform.Scheduler.IJobScheduler.html#InfinniPlatform_Scheduler_IJobScheduler_ResumeAllJobs
+.. _`TriggerJob()`: ../api/reference/InfinniPlatform.Scheduler.IJobScheduler.html#InfinniPlatform_Scheduler_IJobScheduler_TriggerJob_System_String_InfinniPlatform_Dynamic_DynamicDocument_
+.. _`TriggerJobs()`: ../api/reference/InfinniPlatform.Scheduler.IJobScheduler.html#InfinniPlatform_Scheduler_IJobScheduler_TriggerJobs_IEnumerable_System_String__InfinniPlatform_Dynamic_DynamicDocument_
+.. _`TriggerAllJob()`: ../api/reference/InfinniPlatform.Scheduler.IJobScheduler.html#InfinniPlatform_Scheduler_IJobScheduler_TriggerAllJob_InfinniPlatform_Dynamic_DynamicDocument_
+.. _`IsStarted()`: ../api/reference/InfinniPlatform.Scheduler.IJobScheduler.html#InfinniPlatform_Scheduler_IJobScheduler_IsStarted
+.. _`GetStatus()`: ../api/reference/InfinniPlatform.Scheduler.IJobScheduler.html#InfinniPlatform_Scheduler_IJobScheduler_GetStatus__1_Func_IEnumerable_InfinniPlatform_Scheduler_IJobStatus____0__
+.. _`Paused`: ../api/reference/InfinniPlatform.Scheduler.JobState.html
+.. _`Planned`: ../api/reference/InfinniPlatform.Scheduler.JobState.html
