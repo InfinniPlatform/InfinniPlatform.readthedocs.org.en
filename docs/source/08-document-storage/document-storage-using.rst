@@ -3,6 +3,9 @@ Using Document Storage
 
 Next instruction shows how to use the document storage API in conjunction with MongoDB_.
 
+
+.. index:: AddMongoDocumentStorage()
+
 Configuring Document Storage
 ----------------------------
 
@@ -43,6 +46,10 @@ Next using of the document storage differs depending on context: typed_ or dynam
 
 
 .. _typed:
+
+.. index:: Document
+.. index:: IDocumentStorage<TDocument>
+.. index:: IDocumentStorageFactory
 
 Typed Context
 -------------
@@ -102,6 +109,9 @@ When a document can be presented as a normal .NET class then better use the type
 
 
 .. _dynamic:
+
+.. index:: DynamicDocument
+.. index:: IDocumentStorage
 
 Dynamic Context
 ---------------

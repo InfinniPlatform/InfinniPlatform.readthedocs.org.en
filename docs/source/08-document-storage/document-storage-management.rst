@@ -10,6 +10,9 @@ a specific field or set of fields, ordered by the value of the field. The orderi
 range-based query operations.
 
 
+.. index:: Document
+.. index:: DocumentHeader
+
 Default Indexes
 ---------------
 
@@ -27,6 +30,12 @@ document contains at least two indexes:
 
 .. note:: The IDocumentStorage_ interface implementation works the same but instead of the Document_ it uses DynamicDocument_.
 
+
+.. index:: DocumentMetadata
+.. index:: DocumentIndex
+.. index:: Indexes
+.. index:: IDocumentStorageManager
+.. index:: IDocumentStorageManager.CreateStorageAsync()
 
 Additional Indexes
 ------------------
@@ -60,6 +69,9 @@ After that you must get IDocumentStorageManager_ and invoke the `CreateStorageAs
 
     storageManager.CreateStorageAsync(userStoreMetadata);
 
+
+.. index:: IDocumentStorageProvider<TDocument>
+.. index:: IDocumentStorageProvider
 
 Storage Provider
 ----------------

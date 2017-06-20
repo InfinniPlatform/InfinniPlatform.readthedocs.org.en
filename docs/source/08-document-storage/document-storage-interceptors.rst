@@ -8,6 +8,11 @@ of the accessing, inject or restrict data and so forth.
 
 .. _typed-interceptor:
 
+.. index:: IDocumentStorageInterceptor<TDocument>
+.. index:: DocumentStorageInterceptor<TDocument>
+.. index:: IDocumentStorageInterceptor
+.. index:: DocumentStorageInterceptor
+
 Intercept Typed Documents
 -------------------------
 
