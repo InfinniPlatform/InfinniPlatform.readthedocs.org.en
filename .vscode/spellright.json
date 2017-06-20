@@ -23,7 +23,8 @@
         "Infinni",
         "deserializing",
         "nginx",
-        "Cron"
+        "Cron",
+        "multitenancy"
     ],
     "ignoreRegExps": [
         "/\\s{4,}.*/g"

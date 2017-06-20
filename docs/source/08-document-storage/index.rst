@@ -12,11 +12,11 @@ InfinniPlatform provides abstraction layer to work with a document-oriented data
 
     document-storage-using.rst
     document-storage-interceptors.rst
-    document-storage-metadata.rst
+    document-storage-management.rst
     document-storage-attributes.rst
     document-storage-specifications.rst
     document-storage-transactions.rst
-
+    document-storage-httpservice.rst
 
 .. _`NoSQL`: https://en.wikipedia.org/wiki/NoSQL
 .. _`MongoDB`: https://www.mongodb.com/
