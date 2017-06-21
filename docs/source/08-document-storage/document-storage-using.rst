@@ -15,7 +15,8 @@ Configuring Document Storage
 
 .. code-block:: bash
 
-    dotnet add package InfinniPlatform.DocumentStorage.MongoDB -s https://www.myget.org/F/infinniplatform
+    dotnet add package InfinniPlatform.DocumentStorage.MongoDB \
+        -s https://www.myget.org/F/infinniplatform
 
 **3.** Call `AddMongoDocumentStorage()`_ in ``ConfigureServices()``:
 
