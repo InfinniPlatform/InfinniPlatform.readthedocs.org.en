@@ -19,21 +19,21 @@ to use as well to all.
 .. toctree::
    :maxdepth: 2
 
-   00-getting-started/index.rst
-   01-dynamic/index.rst
-   02-ioc/index.rst
-   03-hosting/index.rst
-   04-settings/index.rst
-   05-logging/index.rst
-   06-serialization/index.rst
-   07-services/index.rst
-   08-document-storage/index.rst
-   10-blob-storage/index.rst
-   11-cache/index.rst
-   12-queues/index.rst
-   15-print-view/index.rst
-   16-security/index.rst
-   17-scheduler/index.rst
+   getting-started/index.rst
+   dynamic/index.rst
+   ioc/index.rst
+   hosting/index.rst
+   settings/index.rst
+   logging/index.rst
+   serialization/index.rst
+   services/index.rst
+   document-storage/index.rst
+   blob-storage/index.rst
+   cache/index.rst
+   queues/index.rst
+   print-view/index.rst
+   security/index.rst
+   scheduler/index.rst
    API Reference <../api/reference/index.html#://>
    release-notes/index.rst
 
