@@ -79,6 +79,204 @@ references:
   commentId: N:InfinniPlatform.AspNetCore
   fullName: InfinniPlatform.AspNetCore
   nameWithType: InfinniPlatform.AspNetCore
+- uid: InfinniPlatform.AspNetCore.AppLayersMap
+  name: AppLayersMap
+  href: reference/InfinniPlatform.AspNetCore.AppLayersMap.html
+  commentId: T:InfinniPlatform.AspNetCore.AppLayersMap
+  fullName: InfinniPlatform.AspNetCore.AppLayersMap
+  nameWithType: AppLayersMap
+- uid: InfinniPlatform.AspNetCore.AppLayersMap.#ctor(InfinniPlatform.IoC.IContainerResolver)
+  name: AppLayersMap(IContainerResolver)
+  href: reference/InfinniPlatform.AspNetCore.AppLayersMap.html#InfinniPlatform_AspNetCore_AppLayersMap__ctor_InfinniPlatform_IoC_IContainerResolver_
+  commentId: M:InfinniPlatform.AspNetCore.AppLayersMap.#ctor(InfinniPlatform.IoC.IContainerResolver)
+  fullName: InfinniPlatform.AspNetCore.AppLayersMap.AppLayersMap(InfinniPlatform.IoC.IContainerResolver)
+  nameWithType: AppLayersMap.AppLayersMap(IContainerResolver)
+- uid: InfinniPlatform.AspNetCore.AppLayersMap.#ctor*
+  name: AppLayersMap
+  href: reference/InfinniPlatform.AspNetCore.AppLayersMap.html#InfinniPlatform_AspNetCore_AppLayersMap__ctor_
+  commentId: Overload:InfinniPlatform.AspNetCore.AppLayersMap.#ctor
+  fullName: InfinniPlatform.AspNetCore.AppLayersMap.AppLayersMap
+  nameWithType: AppLayersMap.AppLayersMap
+- uid: InfinniPlatform.AspNetCore.AppLayersMap.AddAfterAuthenticationAppLayer(Type)
+  name: AddAfterAuthenticationAppLayer(Type)
+  href: reference/InfinniPlatform.AspNetCore.AppLayersMap.html#InfinniPlatform_AspNetCore_AppLayersMap_AddAfterAuthenticationAppLayer_Type_
+  commentId: M:InfinniPlatform.AspNetCore.AppLayersMap.AddAfterAuthenticationAppLayer(Type)
+  fullName: InfinniPlatform.AspNetCore.AppLayersMap.AddAfterAuthenticationAppLayer(Type)
+  nameWithType: AppLayersMap.AddAfterAuthenticationAppLayer(Type)
+- uid: InfinniPlatform.AspNetCore.AppLayersMap.AddAfterAuthenticationAppLayer*
+  name: AddAfterAuthenticationAppLayer
+  href: reference/InfinniPlatform.AspNetCore.AppLayersMap.html#InfinniPlatform_AspNetCore_AppLayersMap_AddAfterAuthenticationAppLayer_
+  commentId: Overload:InfinniPlatform.AspNetCore.AppLayersMap.AddAfterAuthenticationAppLayer
+  fullName: InfinniPlatform.AspNetCore.AppLayersMap.AddAfterAuthenticationAppLayer
+  nameWithType: AppLayersMap.AddAfterAuthenticationAppLayer
+- uid: InfinniPlatform.AspNetCore.AppLayersMap.AddAfterAuthenticationAppLayer``1
+  name: AddAfterAuthenticationAppLayer<T>()
+  href: reference/InfinniPlatform.AspNetCore.AppLayersMap.html#InfinniPlatform_AspNetCore_AppLayersMap_AddAfterAuthenticationAppLayer__1
+  commentId: M:InfinniPlatform.AspNetCore.AppLayersMap.AddAfterAuthenticationAppLayer``1
+  name.vb: AddAfterAuthenticationAppLayer(Of T)()
+  fullName: InfinniPlatform.AspNetCore.AppLayersMap.AddAfterAuthenticationAppLayer<T>()
+  fullName.vb: InfinniPlatform.AspNetCore.AppLayersMap.AddAfterAuthenticationAppLayer(Of T)()
+  nameWithType: AppLayersMap.AddAfterAuthenticationAppLayer<T>()
+  nameWithType.vb: AppLayersMap.AddAfterAuthenticationAppLayer(Of T)()
+- uid: InfinniPlatform.AspNetCore.AppLayersMap.AddAuthenticationBarrierAppLayer(Type)
+  name: AddAuthenticationBarrierAppLayer(Type)
+  href: reference/InfinniPlatform.AspNetCore.AppLayersMap.html#InfinniPlatform_AspNetCore_AppLayersMap_AddAuthenticationBarrierAppLayer_Type_
+  commentId: M:InfinniPlatform.AspNetCore.AppLayersMap.AddAuthenticationBarrierAppLayer(Type)
+  fullName: InfinniPlatform.AspNetCore.AppLayersMap.AddAuthenticationBarrierAppLayer(Type)
+  nameWithType: AppLayersMap.AddAuthenticationBarrierAppLayer(Type)
+- uid: InfinniPlatform.AspNetCore.AppLayersMap.AddAuthenticationBarrierAppLayer*
+  name: AddAuthenticationBarrierAppLayer
+  href: reference/InfinniPlatform.AspNetCore.AppLayersMap.html#InfinniPlatform_AspNetCore_AppLayersMap_AddAuthenticationBarrierAppLayer_
+  commentId: Overload:InfinniPlatform.AspNetCore.AppLayersMap.AddAuthenticationBarrierAppLayer
+  fullName: InfinniPlatform.AspNetCore.AppLayersMap.AddAuthenticationBarrierAppLayer
+  nameWithType: AppLayersMap.AddAuthenticationBarrierAppLayer
+- uid: InfinniPlatform.AspNetCore.AppLayersMap.AddAuthenticationBarrierAppLayer``1
+  name: AddAuthenticationBarrierAppLayer<T>()
+  href: reference/InfinniPlatform.AspNetCore.AppLayersMap.html#InfinniPlatform_AspNetCore_AppLayersMap_AddAuthenticationBarrierAppLayer__1
+  commentId: M:InfinniPlatform.AspNetCore.AppLayersMap.AddAuthenticationBarrierAppLayer``1
+  name.vb: AddAuthenticationBarrierAppLayer(Of T)()
+  fullName: InfinniPlatform.AspNetCore.AppLayersMap.AddAuthenticationBarrierAppLayer<T>()
+  fullName.vb: InfinniPlatform.AspNetCore.AppLayersMap.AddAuthenticationBarrierAppLayer(Of T)()
+  nameWithType: AppLayersMap.AddAuthenticationBarrierAppLayer<T>()
+  nameWithType.vb: AppLayersMap.AddAuthenticationBarrierAppLayer(Of T)()
+- uid: InfinniPlatform.AspNetCore.AppLayersMap.AddBeforeAuthenticationAppLayer(Type)
+  name: AddBeforeAuthenticationAppLayer(Type)
+  href: reference/InfinniPlatform.AspNetCore.AppLayersMap.html#InfinniPlatform_AspNetCore_AppLayersMap_AddBeforeAuthenticationAppLayer_Type_
+  commentId: M:InfinniPlatform.AspNetCore.AppLayersMap.AddBeforeAuthenticationAppLayer(Type)
+  fullName: InfinniPlatform.AspNetCore.AppLayersMap.AddBeforeAuthenticationAppLayer(Type)
+  nameWithType: AppLayersMap.AddBeforeAuthenticationAppLayer(Type)
+- uid: InfinniPlatform.AspNetCore.AppLayersMap.AddBeforeAuthenticationAppLayer*
+  name: AddBeforeAuthenticationAppLayer
+  href: reference/InfinniPlatform.AspNetCore.AppLayersMap.html#InfinniPlatform_AspNetCore_AppLayersMap_AddBeforeAuthenticationAppLayer_
+  commentId: Overload:InfinniPlatform.AspNetCore.AppLayersMap.AddBeforeAuthenticationAppLayer
+  fullName: InfinniPlatform.AspNetCore.AppLayersMap.AddBeforeAuthenticationAppLayer
+  nameWithType: AppLayersMap.AddBeforeAuthenticationAppLayer
+- uid: InfinniPlatform.AspNetCore.AppLayersMap.AddBeforeAuthenticationAppLayer``1
+  name: AddBeforeAuthenticationAppLayer<T>()
+  href: reference/InfinniPlatform.AspNetCore.AppLayersMap.html#InfinniPlatform_AspNetCore_AppLayersMap_AddBeforeAuthenticationAppLayer__1
+  commentId: M:InfinniPlatform.AspNetCore.AppLayersMap.AddBeforeAuthenticationAppLayer``1
+  name.vb: AddBeforeAuthenticationAppLayer(Of T)()
+  fullName: InfinniPlatform.AspNetCore.AppLayersMap.AddBeforeAuthenticationAppLayer<T>()
+  fullName.vb: InfinniPlatform.AspNetCore.AppLayersMap.AddBeforeAuthenticationAppLayer(Of T)()
+  nameWithType: AppLayersMap.AddBeforeAuthenticationAppLayer<T>()
+  nameWithType.vb: AppLayersMap.AddBeforeAuthenticationAppLayer(Of T)()
+- uid: InfinniPlatform.AspNetCore.AppLayersMap.AddBusinessAppLayer(Type)
+  name: AddBusinessAppLayer(Type)
+  href: reference/InfinniPlatform.AspNetCore.AppLayersMap.html#InfinniPlatform_AspNetCore_AppLayersMap_AddBusinessAppLayer_Type_
+  commentId: M:InfinniPlatform.AspNetCore.AppLayersMap.AddBusinessAppLayer(Type)
+  fullName: InfinniPlatform.AspNetCore.AppLayersMap.AddBusinessAppLayer(Type)
+  nameWithType: AppLayersMap.AddBusinessAppLayer(Type)
+- uid: InfinniPlatform.AspNetCore.AppLayersMap.AddBusinessAppLayer*
+  name: AddBusinessAppLayer
+  href: reference/InfinniPlatform.AspNetCore.AppLayersMap.html#InfinniPlatform_AspNetCore_AppLayersMap_AddBusinessAppLayer_
+  commentId: Overload:InfinniPlatform.AspNetCore.AppLayersMap.AddBusinessAppLayer
+  fullName: InfinniPlatform.AspNetCore.AppLayersMap.AddBusinessAppLayer
+  nameWithType: AppLayersMap.AddBusinessAppLayer
+- uid: InfinniPlatform.AspNetCore.AppLayersMap.AddBusinessAppLayer``1
+  name: AddBusinessAppLayer<T>()
+  href: reference/InfinniPlatform.AspNetCore.AppLayersMap.html#InfinniPlatform_AspNetCore_AppLayersMap_AddBusinessAppLayer__1
+  commentId: M:InfinniPlatform.AspNetCore.AppLayersMap.AddBusinessAppLayer``1
+  name.vb: AddBusinessAppLayer(Of T)()
+  fullName: InfinniPlatform.AspNetCore.AppLayersMap.AddBusinessAppLayer<T>()
+  fullName.vb: InfinniPlatform.AspNetCore.AppLayersMap.AddBusinessAppLayer(Of T)()
+  nameWithType: AppLayersMap.AddBusinessAppLayer<T>()
+  nameWithType.vb: AppLayersMap.AddBusinessAppLayer(Of T)()
+- uid: InfinniPlatform.AspNetCore.AppLayersMap.AddErrorHandlingAppLayer(Type)
+  name: AddErrorHandlingAppLayer(Type)
+  href: reference/InfinniPlatform.AspNetCore.AppLayersMap.html#InfinniPlatform_AspNetCore_AppLayersMap_AddErrorHandlingAppLayer_Type_
+  commentId: M:InfinniPlatform.AspNetCore.AppLayersMap.AddErrorHandlingAppLayer(Type)
+  fullName: InfinniPlatform.AspNetCore.AppLayersMap.AddErrorHandlingAppLayer(Type)
+  nameWithType: AppLayersMap.AddErrorHandlingAppLayer(Type)
+- uid: InfinniPlatform.AspNetCore.AppLayersMap.AddErrorHandlingAppLayer*
+  name: AddErrorHandlingAppLayer
+  href: reference/InfinniPlatform.AspNetCore.AppLayersMap.html#InfinniPlatform_AspNetCore_AppLayersMap_AddErrorHandlingAppLayer_
+  commentId: Overload:InfinniPlatform.AspNetCore.AppLayersMap.AddErrorHandlingAppLayer
+  fullName: InfinniPlatform.AspNetCore.AppLayersMap.AddErrorHandlingAppLayer
+  nameWithType: AppLayersMap.AddErrorHandlingAppLayer
+- uid: InfinniPlatform.AspNetCore.AppLayersMap.AddErrorHandlingAppLayer``1
+  name: AddErrorHandlingAppLayer<T>()
+  href: reference/InfinniPlatform.AspNetCore.AppLayersMap.html#InfinniPlatform_AspNetCore_AppLayersMap_AddErrorHandlingAppLayer__1
+  commentId: M:InfinniPlatform.AspNetCore.AppLayersMap.AddErrorHandlingAppLayer``1
+  name.vb: AddErrorHandlingAppLayer(Of T)()
+  fullName: InfinniPlatform.AspNetCore.AppLayersMap.AddErrorHandlingAppLayer<T>()
+  fullName.vb: InfinniPlatform.AspNetCore.AppLayersMap.AddErrorHandlingAppLayer(Of T)()
+  nameWithType: AppLayersMap.AddErrorHandlingAppLayer<T>()
+  nameWithType.vb: AppLayersMap.AddErrorHandlingAppLayer(Of T)()
+- uid: InfinniPlatform.AspNetCore.AppLayersMap.AddExternalAuthenticationAppLayer(Type)
+  name: AddExternalAuthenticationAppLayer(Type)
+  href: reference/InfinniPlatform.AspNetCore.AppLayersMap.html#InfinniPlatform_AspNetCore_AppLayersMap_AddExternalAuthenticationAppLayer_Type_
+  commentId: M:InfinniPlatform.AspNetCore.AppLayersMap.AddExternalAuthenticationAppLayer(Type)
+  fullName: InfinniPlatform.AspNetCore.AppLayersMap.AddExternalAuthenticationAppLayer(Type)
+  nameWithType: AppLayersMap.AddExternalAuthenticationAppLayer(Type)
+- uid: InfinniPlatform.AspNetCore.AppLayersMap.AddExternalAuthenticationAppLayer*
+  name: AddExternalAuthenticationAppLayer
+  href: reference/InfinniPlatform.AspNetCore.AppLayersMap.html#InfinniPlatform_AspNetCore_AppLayersMap_AddExternalAuthenticationAppLayer_
+  commentId: Overload:InfinniPlatform.AspNetCore.AppLayersMap.AddExternalAuthenticationAppLayer
+  fullName: InfinniPlatform.AspNetCore.AppLayersMap.AddExternalAuthenticationAppLayer
+  nameWithType: AppLayersMap.AddExternalAuthenticationAppLayer
+- uid: InfinniPlatform.AspNetCore.AppLayersMap.AddExternalAuthenticationAppLayer``1
+  name: AddExternalAuthenticationAppLayer<T>()
+  href: reference/InfinniPlatform.AspNetCore.AppLayersMap.html#InfinniPlatform_AspNetCore_AppLayersMap_AddExternalAuthenticationAppLayer__1
+  commentId: M:InfinniPlatform.AspNetCore.AppLayersMap.AddExternalAuthenticationAppLayer``1
+  name.vb: AddExternalAuthenticationAppLayer(Of T)()
+  fullName: InfinniPlatform.AspNetCore.AppLayersMap.AddExternalAuthenticationAppLayer<T>()
+  fullName.vb: InfinniPlatform.AspNetCore.AppLayersMap.AddExternalAuthenticationAppLayer(Of T)()
+  nameWithType: AppLayersMap.AddExternalAuthenticationAppLayer<T>()
+  nameWithType.vb: AppLayersMap.AddExternalAuthenticationAppLayer(Of T)()
+- uid: InfinniPlatform.AspNetCore.AppLayersMap.AddGlobalHandlingAppLayer(Type)
+  name: AddGlobalHandlingAppLayer(Type)
+  href: reference/InfinniPlatform.AspNetCore.AppLayersMap.html#InfinniPlatform_AspNetCore_AppLayersMap_AddGlobalHandlingAppLayer_Type_
+  commentId: M:InfinniPlatform.AspNetCore.AppLayersMap.AddGlobalHandlingAppLayer(Type)
+  fullName: InfinniPlatform.AspNetCore.AppLayersMap.AddGlobalHandlingAppLayer(Type)
+  nameWithType: AppLayersMap.AddGlobalHandlingAppLayer(Type)
+- uid: InfinniPlatform.AspNetCore.AppLayersMap.AddGlobalHandlingAppLayer*
+  name: AddGlobalHandlingAppLayer
+  href: reference/InfinniPlatform.AspNetCore.AppLayersMap.html#InfinniPlatform_AspNetCore_AppLayersMap_AddGlobalHandlingAppLayer_
+  commentId: Overload:InfinniPlatform.AspNetCore.AppLayersMap.AddGlobalHandlingAppLayer
+  fullName: InfinniPlatform.AspNetCore.AppLayersMap.AddGlobalHandlingAppLayer
+  nameWithType: AppLayersMap.AddGlobalHandlingAppLayer
+- uid: InfinniPlatform.AspNetCore.AppLayersMap.AddGlobalHandlingAppLayer``1
+  name: AddGlobalHandlingAppLayer<T>()
+  href: reference/InfinniPlatform.AspNetCore.AppLayersMap.html#InfinniPlatform_AspNetCore_AppLayersMap_AddGlobalHandlingAppLayer__1
+  commentId: M:InfinniPlatform.AspNetCore.AppLayersMap.AddGlobalHandlingAppLayer``1
+  name.vb: AddGlobalHandlingAppLayer(Of T)()
+  fullName: InfinniPlatform.AspNetCore.AppLayersMap.AddGlobalHandlingAppLayer<T>()
+  fullName.vb: InfinniPlatform.AspNetCore.AppLayersMap.AddGlobalHandlingAppLayer(Of T)()
+  nameWithType: AppLayersMap.AddGlobalHandlingAppLayer<T>()
+  nameWithType.vb: AppLayersMap.AddGlobalHandlingAppLayer(Of T)()
+- uid: InfinniPlatform.AspNetCore.AppLayersMap.AddInternalAuthenticationAppLayer(Type)
+  name: AddInternalAuthenticationAppLayer(Type)
+  href: reference/InfinniPlatform.AspNetCore.AppLayersMap.html#InfinniPlatform_AspNetCore_AppLayersMap_AddInternalAuthenticationAppLayer_Type_
+  commentId: M:InfinniPlatform.AspNetCore.AppLayersMap.AddInternalAuthenticationAppLayer(Type)
+  fullName: InfinniPlatform.AspNetCore.AppLayersMap.AddInternalAuthenticationAppLayer(Type)
+  nameWithType: AppLayersMap.AddInternalAuthenticationAppLayer(Type)
+- uid: InfinniPlatform.AspNetCore.AppLayersMap.AddInternalAuthenticationAppLayer*
+  name: AddInternalAuthenticationAppLayer
+  href: reference/InfinniPlatform.AspNetCore.AppLayersMap.html#InfinniPlatform_AspNetCore_AppLayersMap_AddInternalAuthenticationAppLayer_
+  commentId: Overload:InfinniPlatform.AspNetCore.AppLayersMap.AddInternalAuthenticationAppLayer
+  fullName: InfinniPlatform.AspNetCore.AppLayersMap.AddInternalAuthenticationAppLayer
+  nameWithType: AppLayersMap.AddInternalAuthenticationAppLayer
+- uid: InfinniPlatform.AspNetCore.AppLayersMap.AddInternalAuthenticationAppLayer``1
+  name: AddInternalAuthenticationAppLayer<T>()
+  href: reference/InfinniPlatform.AspNetCore.AppLayersMap.html#InfinniPlatform_AspNetCore_AppLayersMap_AddInternalAuthenticationAppLayer__1
+  commentId: M:InfinniPlatform.AspNetCore.AppLayersMap.AddInternalAuthenticationAppLayer``1
+  name.vb: AddInternalAuthenticationAppLayer(Of T)()
+  fullName: InfinniPlatform.AspNetCore.AppLayersMap.AddInternalAuthenticationAppLayer<T>()
+  fullName.vb: InfinniPlatform.AspNetCore.AppLayersMap.AddInternalAuthenticationAppLayer(Of T)()
+  nameWithType: AppLayersMap.AddInternalAuthenticationAppLayer<T>()
+  nameWithType.vb: AppLayersMap.AddInternalAuthenticationAppLayer(Of T)()
+- uid: InfinniPlatform.AspNetCore.AppLayersMap.GetMap
+  name: GetMap()
+  href: reference/InfinniPlatform.AspNetCore.AppLayersMap.html#InfinniPlatform_AspNetCore_AppLayersMap_GetMap
+  commentId: M:InfinniPlatform.AspNetCore.AppLayersMap.GetMap
+  fullName: InfinniPlatform.AspNetCore.AppLayersMap.GetMap()
+  nameWithType: AppLayersMap.GetMap()
+- uid: InfinniPlatform.AspNetCore.AppLayersMap.GetMap*
+  name: GetMap
+  href: reference/InfinniPlatform.AspNetCore.AppLayersMap.html#InfinniPlatform_AspNetCore_AppLayersMap_GetMap_
+  commentId: Overload:InfinniPlatform.AspNetCore.AppLayersMap.GetMap
+  fullName: InfinniPlatform.AspNetCore.AppLayersMap.GetMap
+  nameWithType: AppLayersMap.GetMap
 - uid: InfinniPlatform.AspNetCore.AuthExtensions
   name: AuthExtensions
   href: reference/InfinniPlatform.AspNetCore.AuthExtensions.html
@@ -139,6 +337,63 @@ references:
   fullName.vb: InfinniPlatform.AspNetCore.AuthExtensions.AddAuthInternal(Of TUser, TRole)(IServiceCollection, InfinniPlatform.Auth.AuthOptions)
   nameWithType: AuthExtensions.AddAuthInternal<TUser, TRole>(IServiceCollection, AuthOptions)
   nameWithType.vb: AuthExtensions.AddAuthInternal(Of TUser, TRole)(IServiceCollection, AuthOptions)
+- uid: InfinniPlatform.AspNetCore.AuthHttpServiceExtensions
+  name: AuthHttpServiceExtensions
+  href: reference/InfinniPlatform.AspNetCore.AuthHttpServiceExtensions.html
+  commentId: T:InfinniPlatform.AspNetCore.AuthHttpServiceExtensions
+  fullName: InfinniPlatform.AspNetCore.AuthHttpServiceExtensions
+  nameWithType: AuthHttpServiceExtensions
+- uid: InfinniPlatform.AspNetCore.AuthHttpServiceExtensions.AddAuthHttpService(IServiceCollection)
+  name: AddAuthHttpService(IServiceCollection)
+  href: reference/InfinniPlatform.AspNetCore.AuthHttpServiceExtensions.html#InfinniPlatform_AspNetCore_AuthHttpServiceExtensions_AddAuthHttpService_IServiceCollection_
+  commentId: M:InfinniPlatform.AspNetCore.AuthHttpServiceExtensions.AddAuthHttpService(IServiceCollection)
+  fullName: InfinniPlatform.AspNetCore.AuthHttpServiceExtensions.AddAuthHttpService(IServiceCollection)
+  nameWithType: AuthHttpServiceExtensions.AddAuthHttpService(IServiceCollection)
+- uid: InfinniPlatform.AspNetCore.AuthHttpServiceExtensions.AddAuthHttpService(IServiceCollection,IConfigurationRoot)
+  name: AddAuthHttpService(IServiceCollection, IConfigurationRoot)
+  href: reference/InfinniPlatform.AspNetCore.AuthHttpServiceExtensions.html#InfinniPlatform_AspNetCore_AuthHttpServiceExtensions_AddAuthHttpService_IServiceCollection_IConfigurationRoot_
+  commentId: M:InfinniPlatform.AspNetCore.AuthHttpServiceExtensions.AddAuthHttpService(IServiceCollection,IConfigurationRoot)
+  fullName: InfinniPlatform.AspNetCore.AuthHttpServiceExtensions.AddAuthHttpService(IServiceCollection, IConfigurationRoot)
+  nameWithType: AuthHttpServiceExtensions.AddAuthHttpService(IServiceCollection, IConfigurationRoot)
+- uid: InfinniPlatform.AspNetCore.AuthHttpServiceExtensions.AddAuthHttpService(IServiceCollection,InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions)
+  name: AddAuthHttpService(IServiceCollection, AuthHttpServiceOptions)
+  href: reference/InfinniPlatform.AspNetCore.AuthHttpServiceExtensions.html#InfinniPlatform_AspNetCore_AuthHttpServiceExtensions_AddAuthHttpService_IServiceCollection_InfinniPlatform_Auth_HttpService_AuthHttpServiceOptions_
+  commentId: M:InfinniPlatform.AspNetCore.AuthHttpServiceExtensions.AddAuthHttpService(IServiceCollection,InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions)
+  fullName: InfinniPlatform.AspNetCore.AuthHttpServiceExtensions.AddAuthHttpService(IServiceCollection, InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions)
+  nameWithType: AuthHttpServiceExtensions.AddAuthHttpService(IServiceCollection, AuthHttpServiceOptions)
+- uid: InfinniPlatform.AspNetCore.AuthHttpServiceExtensions.AddAuthHttpService*
+  name: AddAuthHttpService
+  href: reference/InfinniPlatform.AspNetCore.AuthHttpServiceExtensions.html#InfinniPlatform_AspNetCore_AuthHttpServiceExtensions_AddAuthHttpService_
+  commentId: Overload:InfinniPlatform.AspNetCore.AuthHttpServiceExtensions.AddAuthHttpService
+  fullName: InfinniPlatform.AspNetCore.AuthHttpServiceExtensions.AddAuthHttpService
+  nameWithType: AuthHttpServiceExtensions.AddAuthHttpService
+- uid: InfinniPlatform.AspNetCore.AuthHttpServiceExtensions.AddAuthHttpService``1(IServiceCollection)
+  name: AddAuthHttpService<TUser>(IServiceCollection)
+  href: reference/InfinniPlatform.AspNetCore.AuthHttpServiceExtensions.html#InfinniPlatform_AspNetCore_AuthHttpServiceExtensions_AddAuthHttpService__1_IServiceCollection_
+  commentId: M:InfinniPlatform.AspNetCore.AuthHttpServiceExtensions.AddAuthHttpService``1(IServiceCollection)
+  name.vb: AddAuthHttpService(Of TUser)(IServiceCollection)
+  fullName: InfinniPlatform.AspNetCore.AuthHttpServiceExtensions.AddAuthHttpService<TUser>(IServiceCollection)
+  fullName.vb: InfinniPlatform.AspNetCore.AuthHttpServiceExtensions.AddAuthHttpService(Of TUser)(IServiceCollection)
+  nameWithType: AuthHttpServiceExtensions.AddAuthHttpService<TUser>(IServiceCollection)
+  nameWithType.vb: AuthHttpServiceExtensions.AddAuthHttpService(Of TUser)(IServiceCollection)
+- uid: InfinniPlatform.AspNetCore.AuthHttpServiceExtensions.AddAuthHttpService``1(IServiceCollection,IConfigurationRoot)
+  name: AddAuthHttpService<TUser>(IServiceCollection, IConfigurationRoot)
+  href: reference/InfinniPlatform.AspNetCore.AuthHttpServiceExtensions.html#InfinniPlatform_AspNetCore_AuthHttpServiceExtensions_AddAuthHttpService__1_IServiceCollection_IConfigurationRoot_
+  commentId: M:InfinniPlatform.AspNetCore.AuthHttpServiceExtensions.AddAuthHttpService``1(IServiceCollection,IConfigurationRoot)
+  name.vb: AddAuthHttpService(Of TUser)(IServiceCollection, IConfigurationRoot)
+  fullName: InfinniPlatform.AspNetCore.AuthHttpServiceExtensions.AddAuthHttpService<TUser>(IServiceCollection, IConfigurationRoot)
+  fullName.vb: InfinniPlatform.AspNetCore.AuthHttpServiceExtensions.AddAuthHttpService(Of TUser)(IServiceCollection, IConfigurationRoot)
+  nameWithType: AuthHttpServiceExtensions.AddAuthHttpService<TUser>(IServiceCollection, IConfigurationRoot)
+  nameWithType.vb: AuthHttpServiceExtensions.AddAuthHttpService(Of TUser)(IServiceCollection, IConfigurationRoot)
+- uid: InfinniPlatform.AspNetCore.AuthHttpServiceExtensions.AddAuthHttpService``1(IServiceCollection,InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions)
+  name: AddAuthHttpService<TUser>(IServiceCollection, AuthHttpServiceOptions)
+  href: reference/InfinniPlatform.AspNetCore.AuthHttpServiceExtensions.html#InfinniPlatform_AspNetCore_AuthHttpServiceExtensions_AddAuthHttpService__1_IServiceCollection_InfinniPlatform_Auth_HttpService_AuthHttpServiceOptions_
+  commentId: M:InfinniPlatform.AspNetCore.AuthHttpServiceExtensions.AddAuthHttpService``1(IServiceCollection,InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions)
+  name.vb: AddAuthHttpService(Of TUser)(IServiceCollection, AuthHttpServiceOptions)
+  fullName: InfinniPlatform.AspNetCore.AuthHttpServiceExtensions.AddAuthHttpService<TUser>(IServiceCollection, InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions)
+  fullName.vb: InfinniPlatform.AspNetCore.AuthHttpServiceExtensions.AddAuthHttpService(Of TUser)(IServiceCollection, InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions)
+  nameWithType: AuthHttpServiceExtensions.AddAuthHttpService<TUser>(IServiceCollection, AuthHttpServiceOptions)
+  nameWithType.vb: AuthHttpServiceExtensions.AddAuthHttpService(Of TUser)(IServiceCollection, AuthHttpServiceOptions)
 - uid: InfinniPlatform.AspNetCore.BlobStorageHttpServiceExtensions
   name: BlobStorageHttpServiceExtensions
   href: reference/InfinniPlatform.AspNetCore.BlobStorageHttpServiceExtensions.html
@@ -223,6 +478,45 @@ references:
   commentId: Overload:InfinniPlatform.AspNetCore.CoreExtensions.UseDefaultAppLayers
   fullName: InfinniPlatform.AspNetCore.CoreExtensions.UseDefaultAppLayers
   nameWithType: CoreExtensions.UseDefaultAppLayers
+- uid: InfinniPlatform.AspNetCore.CoreServiceCollectionExtensions
+  name: CoreServiceCollectionExtensions
+  href: reference/InfinniPlatform.AspNetCore.CoreServiceCollectionExtensions.html
+  commentId: T:InfinniPlatform.AspNetCore.CoreServiceCollectionExtensions
+  fullName: InfinniPlatform.AspNetCore.CoreServiceCollectionExtensions
+  nameWithType: CoreServiceCollectionExtensions
+- uid: InfinniPlatform.AspNetCore.CoreServiceCollectionExtensions.BuildProvider(IServiceCollection,IConfigurationRoot,IEnumerable{InfinniPlatform.IoC.IContainerModule})
+  name: BuildProvider(IServiceCollection, IConfigurationRoot, IEnumerable<IContainerModule>)
+  href: reference/InfinniPlatform.AspNetCore.CoreServiceCollectionExtensions.html#InfinniPlatform_AspNetCore_CoreServiceCollectionExtensions_BuildProvider_IServiceCollection_IConfigurationRoot_IEnumerable_InfinniPlatform_IoC_IContainerModule__
+  commentId: M:InfinniPlatform.AspNetCore.CoreServiceCollectionExtensions.BuildProvider(IServiceCollection,IConfigurationRoot,IEnumerable{InfinniPlatform.IoC.IContainerModule})
+  name.vb: BuildProvider(IServiceCollection, IConfigurationRoot, IEnumerable(Of IContainerModule))
+  fullName: InfinniPlatform.AspNetCore.CoreServiceCollectionExtensions.BuildProvider(IServiceCollection, IConfigurationRoot, IEnumerable<InfinniPlatform.IoC.IContainerModule>)
+  fullName.vb: InfinniPlatform.AspNetCore.CoreServiceCollectionExtensions.BuildProvider(IServiceCollection, IConfigurationRoot, IEnumerable(Of InfinniPlatform.IoC.IContainerModule))
+  nameWithType: CoreServiceCollectionExtensions.BuildProvider(IServiceCollection, IConfigurationRoot, IEnumerable<IContainerModule>)
+  nameWithType.vb: CoreServiceCollectionExtensions.BuildProvider(IServiceCollection, IConfigurationRoot, IEnumerable(Of IContainerModule))
+- uid: InfinniPlatform.AspNetCore.CoreServiceCollectionExtensions.BuildProvider(IServiceCollection,IEnumerable{InfinniPlatform.IoC.IContainerModule})
+  name: BuildProvider(IServiceCollection, IEnumerable<IContainerModule>)
+  href: reference/InfinniPlatform.AspNetCore.CoreServiceCollectionExtensions.html#InfinniPlatform_AspNetCore_CoreServiceCollectionExtensions_BuildProvider_IServiceCollection_IEnumerable_InfinniPlatform_IoC_IContainerModule__
+  commentId: M:InfinniPlatform.AspNetCore.CoreServiceCollectionExtensions.BuildProvider(IServiceCollection,IEnumerable{InfinniPlatform.IoC.IContainerModule})
+  name.vb: BuildProvider(IServiceCollection, IEnumerable(Of IContainerModule))
+  fullName: InfinniPlatform.AspNetCore.CoreServiceCollectionExtensions.BuildProvider(IServiceCollection, IEnumerable<InfinniPlatform.IoC.IContainerModule>)
+  fullName.vb: InfinniPlatform.AspNetCore.CoreServiceCollectionExtensions.BuildProvider(IServiceCollection, IEnumerable(Of InfinniPlatform.IoC.IContainerModule))
+  nameWithType: CoreServiceCollectionExtensions.BuildProvider(IServiceCollection, IEnumerable<IContainerModule>)
+  nameWithType.vb: CoreServiceCollectionExtensions.BuildProvider(IServiceCollection, IEnumerable(Of IContainerModule))
+- uid: InfinniPlatform.AspNetCore.CoreServiceCollectionExtensions.BuildProvider(IServiceCollection,InfinniPlatform.AppOptions,IEnumerable{InfinniPlatform.IoC.IContainerModule})
+  name: BuildProvider(IServiceCollection, AppOptions, IEnumerable<IContainerModule>)
+  href: reference/InfinniPlatform.AspNetCore.CoreServiceCollectionExtensions.html#InfinniPlatform_AspNetCore_CoreServiceCollectionExtensions_BuildProvider_IServiceCollection_InfinniPlatform_AppOptions_IEnumerable_InfinniPlatform_IoC_IContainerModule__
+  commentId: M:InfinniPlatform.AspNetCore.CoreServiceCollectionExtensions.BuildProvider(IServiceCollection,InfinniPlatform.AppOptions,IEnumerable{InfinniPlatform.IoC.IContainerModule})
+  name.vb: BuildProvider(IServiceCollection, AppOptions, IEnumerable(Of IContainerModule))
+  fullName: InfinniPlatform.AspNetCore.CoreServiceCollectionExtensions.BuildProvider(IServiceCollection, InfinniPlatform.AppOptions, IEnumerable<InfinniPlatform.IoC.IContainerModule>)
+  fullName.vb: InfinniPlatform.AspNetCore.CoreServiceCollectionExtensions.BuildProvider(IServiceCollection, InfinniPlatform.AppOptions, IEnumerable(Of InfinniPlatform.IoC.IContainerModule))
+  nameWithType: CoreServiceCollectionExtensions.BuildProvider(IServiceCollection, AppOptions, IEnumerable<IContainerModule>)
+  nameWithType.vb: CoreServiceCollectionExtensions.BuildProvider(IServiceCollection, AppOptions, IEnumerable(Of IContainerModule))
+- uid: InfinniPlatform.AspNetCore.CoreServiceCollectionExtensions.BuildProvider*
+  name: BuildProvider
+  href: reference/InfinniPlatform.AspNetCore.CoreServiceCollectionExtensions.html#InfinniPlatform_AspNetCore_CoreServiceCollectionExtensions_BuildProvider_
+  commentId: Overload:InfinniPlatform.AspNetCore.CoreServiceCollectionExtensions.BuildProvider
+  fullName: InfinniPlatform.AspNetCore.CoreServiceCollectionExtensions.BuildProvider
+  nameWithType: CoreServiceCollectionExtensions.BuildProvider
 - uid: InfinniPlatform.AspNetCore.DocumentStorageHttpServiceExtensions
   name: DocumentStorageHttpServiceExtensions
   href: reference/InfinniPlatform.AspNetCore.DocumentStorageHttpServiceExtensions.html
@@ -1201,30 +1495,6 @@ references:
   commentId: Overload:InfinniPlatform.Auth.AuthOptions.IdentityOptions
   fullName: InfinniPlatform.Auth.AuthOptions.IdentityOptions
   nameWithType: AuthOptions.IdentityOptions
-- uid: InfinniPlatform.Auth.AuthOptions.LoginPath
-  name: LoginPath
-  href: reference/InfinniPlatform.Auth.AuthOptions.html#InfinniPlatform_Auth_AuthOptions_LoginPath
-  commentId: P:InfinniPlatform.Auth.AuthOptions.LoginPath
-  fullName: InfinniPlatform.Auth.AuthOptions.LoginPath
-  nameWithType: AuthOptions.LoginPath
-- uid: InfinniPlatform.Auth.AuthOptions.LoginPath*
-  name: LoginPath
-  href: reference/InfinniPlatform.Auth.AuthOptions.html#InfinniPlatform_Auth_AuthOptions_LoginPath_
-  commentId: Overload:InfinniPlatform.Auth.AuthOptions.LoginPath
-  fullName: InfinniPlatform.Auth.AuthOptions.LoginPath
-  nameWithType: AuthOptions.LoginPath
-- uid: InfinniPlatform.Auth.AuthOptions.LogoutPath
-  name: LogoutPath
-  href: reference/InfinniPlatform.Auth.AuthOptions.html#InfinniPlatform_Auth_AuthOptions_LogoutPath
-  commentId: P:InfinniPlatform.Auth.AuthOptions.LogoutPath
-  fullName: InfinniPlatform.Auth.AuthOptions.LogoutPath
-  nameWithType: AuthOptions.LogoutPath
-- uid: InfinniPlatform.Auth.AuthOptions.LogoutPath*
-  name: LogoutPath
-  href: reference/InfinniPlatform.Auth.AuthOptions.html#InfinniPlatform_Auth_AuthOptions_LogoutPath_
-  commentId: Overload:InfinniPlatform.Auth.AuthOptions.LogoutPath
-  fullName: InfinniPlatform.Auth.AuthOptions.LogoutPath
-  nameWithType: AuthOptions.LogoutPath
 - uid: InfinniPlatform.Auth.AuthOptions.LookupNormalizerFactory
   name: LookupNormalizerFactory
   href: reference/InfinniPlatform.Auth.AuthOptions.html#InfinniPlatform_Auth_AuthOptions_LookupNormalizerFactory
@@ -2474,6 +2744,72 @@ references:
   commentId: N:InfinniPlatform.Auth.HttpService
   fullName: InfinniPlatform.Auth.HttpService
   nameWithType: InfinniPlatform.Auth.HttpService
+- uid: InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions
+  name: AuthHttpServiceOptions
+  href: reference/InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.html
+  commentId: T:InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions
+  fullName: InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions
+  nameWithType: AuthHttpServiceOptions
+- uid: InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.#ctor
+  name: AuthHttpServiceOptions()
+  href: reference/InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.html#InfinniPlatform_Auth_HttpService_AuthHttpServiceOptions__ctor
+  commentId: M:InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.#ctor
+  fullName: InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.AuthHttpServiceOptions()
+  nameWithType: AuthHttpServiceOptions.AuthHttpServiceOptions()
+- uid: InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.#ctor*
+  name: AuthHttpServiceOptions
+  href: reference/InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.html#InfinniPlatform_Auth_HttpService_AuthHttpServiceOptions__ctor_
+  commentId: Overload:InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.#ctor
+  fullName: InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.AuthHttpServiceOptions
+  nameWithType: AuthHttpServiceOptions.AuthHttpServiceOptions
+- uid: InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.Default
+  name: Default
+  href: reference/InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.html#InfinniPlatform_Auth_HttpService_AuthHttpServiceOptions_Default
+  commentId: F:InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.Default
+  fullName: InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.Default
+  nameWithType: AuthHttpServiceOptions.Default
+- uid: InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.DefaultFailureUrl
+  name: DefaultFailureUrl
+  href: reference/InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.html#InfinniPlatform_Auth_HttpService_AuthHttpServiceOptions_DefaultFailureUrl
+  commentId: F:InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.DefaultFailureUrl
+  fullName: InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.DefaultFailureUrl
+  nameWithType: AuthHttpServiceOptions.DefaultFailureUrl
+- uid: InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.DefaultSuccessUrl
+  name: DefaultSuccessUrl
+  href: reference/InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.html#InfinniPlatform_Auth_HttpService_AuthHttpServiceOptions_DefaultSuccessUrl
+  commentId: F:InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.DefaultSuccessUrl
+  fullName: InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.DefaultSuccessUrl
+  nameWithType: AuthHttpServiceOptions.DefaultSuccessUrl
+- uid: InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.FailureUrl
+  name: FailureUrl
+  href: reference/InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.html#InfinniPlatform_Auth_HttpService_AuthHttpServiceOptions_FailureUrl
+  commentId: P:InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.FailureUrl
+  fullName: InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.FailureUrl
+  nameWithType: AuthHttpServiceOptions.FailureUrl
+- uid: InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.FailureUrl*
+  name: FailureUrl
+  href: reference/InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.html#InfinniPlatform_Auth_HttpService_AuthHttpServiceOptions_FailureUrl_
+  commentId: Overload:InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.FailureUrl
+  fullName: InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.FailureUrl
+  nameWithType: AuthHttpServiceOptions.FailureUrl
+- uid: InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.SectionName
+  name: SectionName
+  href: reference/InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.html#InfinniPlatform_Auth_HttpService_AuthHttpServiceOptions_SectionName
+  commentId: F:InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.SectionName
+  fullName: InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.SectionName
+  nameWithType: AuthHttpServiceOptions.SectionName
+- uid: InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.SuccessUrl
+  name: SuccessUrl
+  href: reference/InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.html#InfinniPlatform_Auth_HttpService_AuthHttpServiceOptions_SuccessUrl
+  commentId: P:InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.SuccessUrl
+  fullName: InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.SuccessUrl
+  nameWithType: AuthHttpServiceOptions.SuccessUrl
+- uid: InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.SuccessUrl*
+  name: SuccessUrl
+  href: reference/InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.html#InfinniPlatform_Auth_HttpService_AuthHttpServiceOptions_SuccessUrl_
+  commentId: Overload:InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.SuccessUrl
+  fullName: InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions.SuccessUrl
+  nameWithType: AuthHttpServiceOptions.SuccessUrl
 - uid: InfinniPlatform.Auth.HttpService.Extensions
   name: Extensions
   href: reference/InfinniPlatform.Auth.HttpService.Extensions.html
@@ -2546,6 +2882,22 @@ references:
   fullName.vb: InfinniPlatform.Auth.HttpService.IoC.AuthHttpServiceContainerModule(Of TUser)
   nameWithType: AuthHttpServiceContainerModule<TUser>
   nameWithType.vb: AuthHttpServiceContainerModule(Of TUser)
+- uid: InfinniPlatform.Auth.HttpService.IoC.AuthHttpServiceContainerModule`1.#ctor(InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions)
+  name: AuthHttpServiceContainerModule(AuthHttpServiceOptions)
+  href: reference/InfinniPlatform.Auth.HttpService.IoC.AuthHttpServiceContainerModule-1.html#InfinniPlatform_Auth_HttpService_IoC_AuthHttpServiceContainerModule_1__ctor_InfinniPlatform_Auth_HttpService_AuthHttpServiceOptions_
+  commentId: M:InfinniPlatform.Auth.HttpService.IoC.AuthHttpServiceContainerModule`1.#ctor(InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions)
+  fullName: InfinniPlatform.Auth.HttpService.IoC.AuthHttpServiceContainerModule<TUser>.AuthHttpServiceContainerModule(InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions)
+  fullName.vb: InfinniPlatform.Auth.HttpService.IoC.AuthHttpServiceContainerModule(Of TUser).AuthHttpServiceContainerModule(InfinniPlatform.Auth.HttpService.AuthHttpServiceOptions)
+  nameWithType: AuthHttpServiceContainerModule<TUser>.AuthHttpServiceContainerModule(AuthHttpServiceOptions)
+  nameWithType.vb: AuthHttpServiceContainerModule(Of TUser).AuthHttpServiceContainerModule(AuthHttpServiceOptions)
+- uid: InfinniPlatform.Auth.HttpService.IoC.AuthHttpServiceContainerModule`1.#ctor*
+  name: AuthHttpServiceContainerModule
+  href: reference/InfinniPlatform.Auth.HttpService.IoC.AuthHttpServiceContainerModule-1.html#InfinniPlatform_Auth_HttpService_IoC_AuthHttpServiceContainerModule_1__ctor_
+  commentId: Overload:InfinniPlatform.Auth.HttpService.IoC.AuthHttpServiceContainerModule`1.#ctor
+  fullName: InfinniPlatform.Auth.HttpService.IoC.AuthHttpServiceContainerModule<TUser>.AuthHttpServiceContainerModule
+  fullName.vb: InfinniPlatform.Auth.HttpService.IoC.AuthHttpServiceContainerModule(Of TUser).AuthHttpServiceContainerModule
+  nameWithType: AuthHttpServiceContainerModule<TUser>.AuthHttpServiceContainerModule
+  nameWithType.vb: AuthHttpServiceContainerModule(Of TUser).AuthHttpServiceContainerModule
 - uid: InfinniPlatform.Auth.HttpService.IoC.AuthHttpServiceContainerModule`1.Load(InfinniPlatform.IoC.IContainerBuilder)
   name: Load(IContainerBuilder)
   href: reference/InfinniPlatform.Auth.HttpService.IoC.AuthHttpServiceContainerModule-1.html#InfinniPlatform_Auth_HttpService_IoC_AuthHttpServiceContainerModule_1_Load_InfinniPlatform_IoC_IContainerBuilder_
@@ -2766,15 +3118,15 @@ references:
   commentId: T:InfinniPlatform.Auth.Middlewares.AuthCookieAppLayer
   fullName: InfinniPlatform.Auth.Middlewares.AuthCookieAppLayer
   nameWithType: AuthCookieAppLayer
-- uid: InfinniPlatform.Auth.Middlewares.AuthCookieAppLayer.#ctor(InfinniPlatform.Auth.AuthOptions,IOptions{IdentityOptions})
-  name: AuthCookieAppLayer(AuthOptions, IOptions<IdentityOptions>)
-  href: reference/InfinniPlatform.Auth.Middlewares.AuthCookieAppLayer.html#InfinniPlatform_Auth_Middlewares_AuthCookieAppLayer__ctor_InfinniPlatform_Auth_AuthOptions_IOptions_IdentityOptions__
-  commentId: M:InfinniPlatform.Auth.Middlewares.AuthCookieAppLayer.#ctor(InfinniPlatform.Auth.AuthOptions,IOptions{IdentityOptions})
-  name.vb: AuthCookieAppLayer(AuthOptions, IOptions(Of IdentityOptions))
-  fullName: InfinniPlatform.Auth.Middlewares.AuthCookieAppLayer.AuthCookieAppLayer(InfinniPlatform.Auth.AuthOptions, IOptions<IdentityOptions>)
-  fullName.vb: InfinniPlatform.Auth.Middlewares.AuthCookieAppLayer.AuthCookieAppLayer(InfinniPlatform.Auth.AuthOptions, IOptions(Of IdentityOptions))
-  nameWithType: AuthCookieAppLayer.AuthCookieAppLayer(AuthOptions, IOptions<IdentityOptions>)
-  nameWithType.vb: AuthCookieAppLayer.AuthCookieAppLayer(AuthOptions, IOptions(Of IdentityOptions))
+- uid: InfinniPlatform.Auth.Middlewares.AuthCookieAppLayer.#ctor(IOptions{IdentityOptions})
+  name: AuthCookieAppLayer(IOptions<IdentityOptions>)
+  href: reference/InfinniPlatform.Auth.Middlewares.AuthCookieAppLayer.html#InfinniPlatform_Auth_Middlewares_AuthCookieAppLayer__ctor_IOptions_IdentityOptions__
+  commentId: M:InfinniPlatform.Auth.Middlewares.AuthCookieAppLayer.#ctor(IOptions{IdentityOptions})
+  name.vb: AuthCookieAppLayer(IOptions(Of IdentityOptions))
+  fullName: InfinniPlatform.Auth.Middlewares.AuthCookieAppLayer.AuthCookieAppLayer(IOptions<IdentityOptions>)
+  fullName.vb: InfinniPlatform.Auth.Middlewares.AuthCookieAppLayer.AuthCookieAppLayer(IOptions(Of IdentityOptions))
+  nameWithType: AuthCookieAppLayer.AuthCookieAppLayer(IOptions<IdentityOptions>)
+  nameWithType.vb: AuthCookieAppLayer.AuthCookieAppLayer(IOptions(Of IdentityOptions))
 - uid: InfinniPlatform.Auth.Middlewares.AuthCookieAppLayer.#ctor*
   name: AuthCookieAppLayer
   href: reference/InfinniPlatform.Auth.Middlewares.AuthCookieAppLayer.html#InfinniPlatform_Auth_Middlewares_AuthCookieAppLayer__ctor_
@@ -4079,12 +4431,15 @@ references:
   commentId: T:InfinniPlatform.Cache.RedisConnectionFactory
   fullName: InfinniPlatform.Cache.RedisConnectionFactory
   nameWithType: RedisConnectionFactory
-- uid: InfinniPlatform.Cache.RedisConnectionFactory.#ctor(InfinniPlatform.Cache.RedisSharedCacheOptions)
-  name: RedisConnectionFactory(RedisSharedCacheOptions)
-  href: reference/InfinniPlatform.Cache.RedisConnectionFactory.html#InfinniPlatform_Cache_RedisConnectionFactory__ctor_InfinniPlatform_Cache_RedisSharedCacheOptions_
-  commentId: M:InfinniPlatform.Cache.RedisConnectionFactory.#ctor(InfinniPlatform.Cache.RedisSharedCacheOptions)
-  fullName: InfinniPlatform.Cache.RedisConnectionFactory.RedisConnectionFactory(InfinniPlatform.Cache.RedisSharedCacheOptions)
-  nameWithType: RedisConnectionFactory.RedisConnectionFactory(RedisSharedCacheOptions)
+- uid: InfinniPlatform.Cache.RedisConnectionFactory.#ctor(InfinniPlatform.Cache.RedisSharedCacheOptions,ILogger{InfinniPlatform.Cache.RedisConnectionFactory})
+  name: RedisConnectionFactory(RedisSharedCacheOptions, ILogger<RedisConnectionFactory>)
+  href: reference/InfinniPlatform.Cache.RedisConnectionFactory.html#InfinniPlatform_Cache_RedisConnectionFactory__ctor_InfinniPlatform_Cache_RedisSharedCacheOptions_ILogger_InfinniPlatform_Cache_RedisConnectionFactory__
+  commentId: M:InfinniPlatform.Cache.RedisConnectionFactory.#ctor(InfinniPlatform.Cache.RedisSharedCacheOptions,ILogger{InfinniPlatform.Cache.RedisConnectionFactory})
+  name.vb: RedisConnectionFactory(RedisSharedCacheOptions, ILogger(Of RedisConnectionFactory))
+  fullName: InfinniPlatform.Cache.RedisConnectionFactory.RedisConnectionFactory(InfinniPlatform.Cache.RedisSharedCacheOptions, ILogger<InfinniPlatform.Cache.RedisConnectionFactory>)
+  fullName.vb: InfinniPlatform.Cache.RedisConnectionFactory.RedisConnectionFactory(InfinniPlatform.Cache.RedisSharedCacheOptions, ILogger(Of InfinniPlatform.Cache.RedisConnectionFactory))
+  nameWithType: RedisConnectionFactory.RedisConnectionFactory(RedisSharedCacheOptions, ILogger<RedisConnectionFactory>)
+  nameWithType.vb: RedisConnectionFactory.RedisConnectionFactory(RedisSharedCacheOptions, ILogger(Of RedisConnectionFactory))
 - uid: InfinniPlatform.Cache.RedisConnectionFactory.#ctor*
   name: RedisConnectionFactory
   href: reference/InfinniPlatform.Cache.RedisConnectionFactory.html#InfinniPlatform_Cache_RedisConnectionFactory__ctor_
@@ -13365,54 +13720,30 @@ references:
   commentId: Overload:InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.#ctor
   fullName: InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.MongoDocumentStorageOptions
   nameWithType: MongoDocumentStorageOptions.MongoDocumentStorageOptions
+- uid: InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.ConnectionString
+  name: ConnectionString
+  href: reference/InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.html#InfinniPlatform_DocumentStorage_MongoDocumentStorageOptions_ConnectionString
+  commentId: P:InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.ConnectionString
+  fullName: InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.ConnectionString
+  nameWithType: MongoDocumentStorageOptions.ConnectionString
+- uid: InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.ConnectionString*
+  name: ConnectionString
+  href: reference/InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.html#InfinniPlatform_DocumentStorage_MongoDocumentStorageOptions_ConnectionString_
+  commentId: Overload:InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.ConnectionString
+  fullName: InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.ConnectionString
+  nameWithType: MongoDocumentStorageOptions.ConnectionString
 - uid: InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.Default
   name: Default
   href: reference/InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.html#InfinniPlatform_DocumentStorage_MongoDocumentStorageOptions_Default
   commentId: F:InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.Default
   fullName: InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.Default
   nameWithType: MongoDocumentStorageOptions.Default
-- uid: InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.Nodes
-  name: Nodes
-  href: reference/InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.html#InfinniPlatform_DocumentStorage_MongoDocumentStorageOptions_Nodes
-  commentId: P:InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.Nodes
-  fullName: InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.Nodes
-  nameWithType: MongoDocumentStorageOptions.Nodes
-- uid: InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.Nodes*
-  name: Nodes
-  href: reference/InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.html#InfinniPlatform_DocumentStorage_MongoDocumentStorageOptions_Nodes_
-  commentId: Overload:InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.Nodes
-  fullName: InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.Nodes
-  nameWithType: MongoDocumentStorageOptions.Nodes
-- uid: InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.Password
-  name: Password
-  href: reference/InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.html#InfinniPlatform_DocumentStorage_MongoDocumentStorageOptions_Password
-  commentId: P:InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.Password
-  fullName: InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.Password
-  nameWithType: MongoDocumentStorageOptions.Password
-- uid: InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.Password*
-  name: Password
-  href: reference/InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.html#InfinniPlatform_DocumentStorage_MongoDocumentStorageOptions_Password_
-  commentId: Overload:InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.Password
-  fullName: InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.Password
-  nameWithType: MongoDocumentStorageOptions.Password
 - uid: InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.SectionName
   name: SectionName
   href: reference/InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.html#InfinniPlatform_DocumentStorage_MongoDocumentStorageOptions_SectionName
   commentId: F:InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.SectionName
   fullName: InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.SectionName
   nameWithType: MongoDocumentStorageOptions.SectionName
-- uid: InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.UserName
-  name: UserName
-  href: reference/InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.html#InfinniPlatform_DocumentStorage_MongoDocumentStorageOptions_UserName
-  commentId: P:InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.UserName
-  fullName: InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.UserName
-  nameWithType: MongoDocumentStorageOptions.UserName
-- uid: InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.UserName*
-  name: UserName
-  href: reference/InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.html#InfinniPlatform_DocumentStorage_MongoDocumentStorageOptions_UserName_
-  commentId: Overload:InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.UserName
-  fullName: InfinniPlatform.DocumentStorage.MongoDocumentStorageOptions.UserName
-  nameWithType: MongoDocumentStorageOptions.UserName
 - uid: InfinniPlatform.DocumentStorage.QueryFactories
   name: InfinniPlatform.DocumentStorage.QueryFactories
   href: reference/InfinniPlatform.DocumentStorage.QueryFactories.html
@@ -18307,6 +18638,60 @@ references:
   commentId: N:InfinniPlatform.MessageQueue
   fullName: InfinniPlatform.MessageQueue
   nameWithType: InfinniPlatform.MessageQueue
+- uid: InfinniPlatform.MessageQueue.BasicPropertiesProvider
+  name: BasicPropertiesProvider
+  href: reference/InfinniPlatform.MessageQueue.BasicPropertiesProvider.html
+  commentId: T:InfinniPlatform.MessageQueue.BasicPropertiesProvider
+  fullName: InfinniPlatform.MessageQueue.BasicPropertiesProvider
+  nameWithType: BasicPropertiesProvider
+- uid: InfinniPlatform.MessageQueue.BasicPropertiesProvider.#ctor(InfinniPlatform.AppOptions,InfinniPlatform.Serialization.IJsonObjectSerializer)
+  name: BasicPropertiesProvider(AppOptions, IJsonObjectSerializer)
+  href: reference/InfinniPlatform.MessageQueue.BasicPropertiesProvider.html#InfinniPlatform_MessageQueue_BasicPropertiesProvider__ctor_InfinniPlatform_AppOptions_InfinniPlatform_Serialization_IJsonObjectSerializer_
+  commentId: M:InfinniPlatform.MessageQueue.BasicPropertiesProvider.#ctor(InfinniPlatform.AppOptions,InfinniPlatform.Serialization.IJsonObjectSerializer)
+  fullName: InfinniPlatform.MessageQueue.BasicPropertiesProvider.BasicPropertiesProvider(InfinniPlatform.AppOptions, InfinniPlatform.Serialization.IJsonObjectSerializer)
+  nameWithType: BasicPropertiesProvider.BasicPropertiesProvider(AppOptions, IJsonObjectSerializer)
+- uid: InfinniPlatform.MessageQueue.BasicPropertiesProvider.#ctor*
+  name: BasicPropertiesProvider
+  href: reference/InfinniPlatform.MessageQueue.BasicPropertiesProvider.html#InfinniPlatform_MessageQueue_BasicPropertiesProvider__ctor_
+  commentId: Overload:InfinniPlatform.MessageQueue.BasicPropertiesProvider.#ctor
+  fullName: InfinniPlatform.MessageQueue.BasicPropertiesProvider.BasicPropertiesProvider
+  nameWithType: BasicPropertiesProvider.BasicPropertiesProvider
+- uid: InfinniPlatform.MessageQueue.BasicPropertiesProvider.Get
+  name: Get()
+  href: reference/InfinniPlatform.MessageQueue.BasicPropertiesProvider.html#InfinniPlatform_MessageQueue_BasicPropertiesProvider_Get
+  commentId: M:InfinniPlatform.MessageQueue.BasicPropertiesProvider.Get
+  fullName: InfinniPlatform.MessageQueue.BasicPropertiesProvider.Get()
+  nameWithType: BasicPropertiesProvider.Get()
+- uid: InfinniPlatform.MessageQueue.BasicPropertiesProvider.Get*
+  name: Get
+  href: reference/InfinniPlatform.MessageQueue.BasicPropertiesProvider.html#InfinniPlatform_MessageQueue_BasicPropertiesProvider_Get_
+  commentId: Overload:InfinniPlatform.MessageQueue.BasicPropertiesProvider.Get
+  fullName: InfinniPlatform.MessageQueue.BasicPropertiesProvider.Get
+  nameWithType: BasicPropertiesProvider.Get
+- uid: InfinniPlatform.MessageQueue.BasicPropertiesProvider.GetHeaders(InfinniPlatform.MessageQueue.IMessage)
+  name: GetHeaders(IMessage)
+  href: reference/InfinniPlatform.MessageQueue.BasicPropertiesProvider.html#InfinniPlatform_MessageQueue_BasicPropertiesProvider_GetHeaders_InfinniPlatform_MessageQueue_IMessage_
+  commentId: M:InfinniPlatform.MessageQueue.BasicPropertiesProvider.GetHeaders(InfinniPlatform.MessageQueue.IMessage)
+  fullName: InfinniPlatform.MessageQueue.BasicPropertiesProvider.GetHeaders(InfinniPlatform.MessageQueue.IMessage)
+  nameWithType: BasicPropertiesProvider.GetHeaders(IMessage)
+- uid: InfinniPlatform.MessageQueue.BasicPropertiesProvider.GetHeaders*
+  name: GetHeaders
+  href: reference/InfinniPlatform.MessageQueue.BasicPropertiesProvider.html#InfinniPlatform_MessageQueue_BasicPropertiesProvider_GetHeaders_
+  commentId: Overload:InfinniPlatform.MessageQueue.BasicPropertiesProvider.GetHeaders
+  fullName: InfinniPlatform.MessageQueue.BasicPropertiesProvider.GetHeaders
+  nameWithType: BasicPropertiesProvider.GetHeaders
+- uid: InfinniPlatform.MessageQueue.BasicPropertiesProvider.GetPersistent
+  name: GetPersistent()
+  href: reference/InfinniPlatform.MessageQueue.BasicPropertiesProvider.html#InfinniPlatform_MessageQueue_BasicPropertiesProvider_GetPersistent
+  commentId: M:InfinniPlatform.MessageQueue.BasicPropertiesProvider.GetPersistent
+  fullName: InfinniPlatform.MessageQueue.BasicPropertiesProvider.GetPersistent()
+  nameWithType: BasicPropertiesProvider.GetPersistent()
+- uid: InfinniPlatform.MessageQueue.BasicPropertiesProvider.GetPersistent*
+  name: GetPersistent
+  href: reference/InfinniPlatform.MessageQueue.BasicPropertiesProvider.html#InfinniPlatform_MessageQueue_BasicPropertiesProvider_GetPersistent_
+  commentId: Overload:InfinniPlatform.MessageQueue.BasicPropertiesProvider.GetPersistent
+  fullName: InfinniPlatform.MessageQueue.BasicPropertiesProvider.GetPersistent
+  nameWithType: BasicPropertiesProvider.GetPersistent
 - uid: InfinniPlatform.MessageQueue.BroadcastConsumerBase`1
   name: BroadcastConsumerBase<T>
   href: reference/InfinniPlatform.MessageQueue.BroadcastConsumerBase-1.html
@@ -18440,6 +18825,60 @@ references:
   commentId: Overload:InfinniPlatform.MessageQueue.Hosting.DefaultConsumerSource.GetConsumers
   fullName: InfinniPlatform.MessageQueue.Hosting.DefaultConsumerSource.GetConsumers
   nameWithType: DefaultConsumerSource.GetConsumers
+- uid: InfinniPlatform.MessageQueue.Hosting.MessageQueueConsumersManager
+  name: MessageQueueConsumersManager
+  href: reference/InfinniPlatform.MessageQueue.Hosting.MessageQueueConsumersManager.html
+  commentId: T:InfinniPlatform.MessageQueue.Hosting.MessageQueueConsumersManager
+  fullName: InfinniPlatform.MessageQueue.Hosting.MessageQueueConsumersManager
+  nameWithType: MessageQueueConsumersManager
+- uid: InfinniPlatform.MessageQueue.Hosting.MessageQueueConsumersManager.#ctor(InfinniPlatform.MessageQueue.Hosting.MessageQueueThreadPool,InfinniPlatform.MessageQueue.IMessageSerializer,InfinniPlatform.MessageQueue.Management.RabbitMqManager,ILogger{InfinniPlatform.MessageQueue.Hosting.MessageQueueConsumersManager},InfinniPlatform.Logging.IPerformanceLogger{InfinniPlatform.MessageQueue.Hosting.MessageQueueConsumersManager})
+  name: MessageQueueConsumersManager(MessageQueueThreadPool, IMessageSerializer, RabbitMqManager, ILogger<MessageQueueConsumersManager>, IPerformanceLogger<MessageQueueConsumersManager>)
+  href: reference/InfinniPlatform.MessageQueue.Hosting.MessageQueueConsumersManager.html#InfinniPlatform_MessageQueue_Hosting_MessageQueueConsumersManager__ctor_InfinniPlatform_MessageQueue_Hosting_MessageQueueThreadPool_InfinniPlatform_MessageQueue_IMessageSerializer_InfinniPlatform_MessageQueue_Management_RabbitMqManager_ILogger_InfinniPlatform_MessageQueue_Hosting_MessageQueueConsumersManager__InfinniPlatform_Logging_IPerformanceLogger_InfinniPlatform_MessageQueue_Hosting_MessageQueueConsumersManager__
+  commentId: M:InfinniPlatform.MessageQueue.Hosting.MessageQueueConsumersManager.#ctor(InfinniPlatform.MessageQueue.Hosting.MessageQueueThreadPool,InfinniPlatform.MessageQueue.IMessageSerializer,InfinniPlatform.MessageQueue.Management.RabbitMqManager,ILogger{InfinniPlatform.MessageQueue.Hosting.MessageQueueConsumersManager},InfinniPlatform.Logging.IPerformanceLogger{InfinniPlatform.MessageQueue.Hosting.MessageQueueConsumersManager})
+  name.vb: MessageQueueConsumersManager(MessageQueueThreadPool, IMessageSerializer, RabbitMqManager, ILogger(Of MessageQueueConsumersManager), IPerformanceLogger(Of MessageQueueConsumersManager))
+  fullName: InfinniPlatform.MessageQueue.Hosting.MessageQueueConsumersManager.MessageQueueConsumersManager(InfinniPlatform.MessageQueue.Hosting.MessageQueueThreadPool, InfinniPlatform.MessageQueue.IMessageSerializer, InfinniPlatform.MessageQueue.Management.RabbitMqManager, ILogger<InfinniPlatform.MessageQueue.Hosting.MessageQueueConsumersManager>, InfinniPlatform.Logging.IPerformanceLogger<InfinniPlatform.MessageQueue.Hosting.MessageQueueConsumersManager>)
+  fullName.vb: InfinniPlatform.MessageQueue.Hosting.MessageQueueConsumersManager.MessageQueueConsumersManager(InfinniPlatform.MessageQueue.Hosting.MessageQueueThreadPool, InfinniPlatform.MessageQueue.IMessageSerializer, InfinniPlatform.MessageQueue.Management.RabbitMqManager, ILogger(Of InfinniPlatform.MessageQueue.Hosting.MessageQueueConsumersManager), InfinniPlatform.Logging.IPerformanceLogger(Of InfinniPlatform.MessageQueue.Hosting.MessageQueueConsumersManager))
+  nameWithType: MessageQueueConsumersManager.MessageQueueConsumersManager(MessageQueueThreadPool, IMessageSerializer, RabbitMqManager, ILogger<MessageQueueConsumersManager>, IPerformanceLogger<MessageQueueConsumersManager>)
+  nameWithType.vb: MessageQueueConsumersManager.MessageQueueConsumersManager(MessageQueueThreadPool, IMessageSerializer, RabbitMqManager, ILogger(Of MessageQueueConsumersManager), IPerformanceLogger(Of MessageQueueConsumersManager))
+- uid: InfinniPlatform.MessageQueue.Hosting.MessageQueueConsumersManager.#ctor*
+  name: MessageQueueConsumersManager
+  href: reference/InfinniPlatform.MessageQueue.Hosting.MessageQueueConsumersManager.html#InfinniPlatform_MessageQueue_Hosting_MessageQueueConsumersManager__ctor_
+  commentId: Overload:InfinniPlatform.MessageQueue.Hosting.MessageQueueConsumersManager.#ctor
+  fullName: InfinniPlatform.MessageQueue.Hosting.MessageQueueConsumersManager.MessageQueueConsumersManager
+  nameWithType: MessageQueueConsumersManager.MessageQueueConsumersManager
+- uid: InfinniPlatform.MessageQueue.Hosting.MessageQueueConsumersManager.RegisterConsumer(System.String,InfinniPlatform.MessageQueue.IConsumer)
+  name: RegisterConsumer(String, IConsumer)
+  href: reference/InfinniPlatform.MessageQueue.Hosting.MessageQueueConsumersManager.html#InfinniPlatform_MessageQueue_Hosting_MessageQueueConsumersManager_RegisterConsumer_System_String_InfinniPlatform_MessageQueue_IConsumer_
+  commentId: M:InfinniPlatform.MessageQueue.Hosting.MessageQueueConsumersManager.RegisterConsumer(System.String,InfinniPlatform.MessageQueue.IConsumer)
+  fullName: InfinniPlatform.MessageQueue.Hosting.MessageQueueConsumersManager.RegisterConsumer(System.String, InfinniPlatform.MessageQueue.IConsumer)
+  nameWithType: MessageQueueConsumersManager.RegisterConsumer(String, IConsumer)
+- uid: InfinniPlatform.MessageQueue.Hosting.MessageQueueConsumersManager.RegisterConsumer*
+  name: RegisterConsumer
+  href: reference/InfinniPlatform.MessageQueue.Hosting.MessageQueueConsumersManager.html#InfinniPlatform_MessageQueue_Hosting_MessageQueueConsumersManager_RegisterConsumer_
+  commentId: Overload:InfinniPlatform.MessageQueue.Hosting.MessageQueueConsumersManager.RegisterConsumer
+  fullName: InfinniPlatform.MessageQueue.Hosting.MessageQueueConsumersManager.RegisterConsumer
+  nameWithType: MessageQueueConsumersManager.RegisterConsumer
+- uid: InfinniPlatform.MessageQueue.Hosting.MessageQueueInitializer
+  name: MessageQueueInitializer
+  href: reference/InfinniPlatform.MessageQueue.Hosting.MessageQueueInitializer.html
+  commentId: T:InfinniPlatform.MessageQueue.Hosting.MessageQueueInitializer
+  fullName: InfinniPlatform.MessageQueue.Hosting.MessageQueueInitializer
+  nameWithType: MessageQueueInitializer
+- uid: InfinniPlatform.MessageQueue.Hosting.MessageQueueInitializer.#ctor(InfinniPlatform.MessageQueue.IMessageQueueConsumersManager,IEnumerable{InfinniPlatform.MessageQueue.IConsumerSource},InfinniPlatform.MessageQueue.Management.RabbitMqManager,ILogger{InfinniPlatform.MessageQueue.Hosting.MessageQueueInitializer})
+  name: MessageQueueInitializer(IMessageQueueConsumersManager, IEnumerable<IConsumerSource>, RabbitMqManager, ILogger<MessageQueueInitializer>)
+  href: reference/InfinniPlatform.MessageQueue.Hosting.MessageQueueInitializer.html#InfinniPlatform_MessageQueue_Hosting_MessageQueueInitializer__ctor_InfinniPlatform_MessageQueue_IMessageQueueConsumersManager_IEnumerable_InfinniPlatform_MessageQueue_IConsumerSource__InfinniPlatform_MessageQueue_Management_RabbitMqManager_ILogger_InfinniPlatform_MessageQueue_Hosting_MessageQueueInitializer__
+  commentId: M:InfinniPlatform.MessageQueue.Hosting.MessageQueueInitializer.#ctor(InfinniPlatform.MessageQueue.IMessageQueueConsumersManager,IEnumerable{InfinniPlatform.MessageQueue.IConsumerSource},InfinniPlatform.MessageQueue.Management.RabbitMqManager,ILogger{InfinniPlatform.MessageQueue.Hosting.MessageQueueInitializer})
+  name.vb: MessageQueueInitializer(IMessageQueueConsumersManager, IEnumerable(Of IConsumerSource), RabbitMqManager, ILogger(Of MessageQueueInitializer))
+  fullName: InfinniPlatform.MessageQueue.Hosting.MessageQueueInitializer.MessageQueueInitializer(InfinniPlatform.MessageQueue.IMessageQueueConsumersManager, IEnumerable<InfinniPlatform.MessageQueue.IConsumerSource>, InfinniPlatform.MessageQueue.Management.RabbitMqManager, ILogger<InfinniPlatform.MessageQueue.Hosting.MessageQueueInitializer>)
+  fullName.vb: InfinniPlatform.MessageQueue.Hosting.MessageQueueInitializer.MessageQueueInitializer(InfinniPlatform.MessageQueue.IMessageQueueConsumersManager, IEnumerable(Of InfinniPlatform.MessageQueue.IConsumerSource), InfinniPlatform.MessageQueue.Management.RabbitMqManager, ILogger(Of InfinniPlatform.MessageQueue.Hosting.MessageQueueInitializer))
+  nameWithType: MessageQueueInitializer.MessageQueueInitializer(IMessageQueueConsumersManager, IEnumerable<IConsumerSource>, RabbitMqManager, ILogger<MessageQueueInitializer>)
+  nameWithType.vb: MessageQueueInitializer.MessageQueueInitializer(IMessageQueueConsumersManager, IEnumerable(Of IConsumerSource), RabbitMqManager, ILogger(Of MessageQueueInitializer))
+- uid: InfinniPlatform.MessageQueue.Hosting.MessageQueueInitializer.#ctor*
+  name: MessageQueueInitializer
+  href: reference/InfinniPlatform.MessageQueue.Hosting.MessageQueueInitializer.html#InfinniPlatform_MessageQueue_Hosting_MessageQueueInitializer__ctor_
+  commentId: Overload:InfinniPlatform.MessageQueue.Hosting.MessageQueueInitializer.#ctor
+  fullName: InfinniPlatform.MessageQueue.Hosting.MessageQueueInitializer.MessageQueueInitializer
+  nameWithType: MessageQueueInitializer.MessageQueueInitializer
 - uid: InfinniPlatform.MessageQueue.Hosting.MessageQueueThreadPool
   name: MessageQueueThreadPool
   href: reference/InfinniPlatform.MessageQueue.Hosting.MessageQueueThreadPool.html
@@ -18473,60 +18912,48 @@ references:
   commentId: Overload:InfinniPlatform.MessageQueue.Hosting.MessageQueueThreadPool.Enqueue
   fullName: InfinniPlatform.MessageQueue.Hosting.MessageQueueThreadPool.Enqueue
   nameWithType: MessageQueueThreadPool.Enqueue
-- uid: InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueConsumersManager
-  name: RabbitMqMessageQueueConsumersManager
-  href: reference/InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueConsumersManager.html
-  commentId: T:InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueConsumersManager
-  fullName: InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueConsumersManager
-  nameWithType: RabbitMqMessageQueueConsumersManager
-- uid: InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueConsumersManager.#ctor(InfinniPlatform.MessageQueue.Hosting.MessageQueueThreadPool,InfinniPlatform.MessageQueue.IRabbitMqMessageSerializer,InfinniPlatform.MessageQueue.Management.RabbitMqManager,ILogger{InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueConsumersManager},InfinniPlatform.Logging.IPerformanceLogger{InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueConsumersManager})
-  name: RabbitMqMessageQueueConsumersManager(MessageQueueThreadPool, IRabbitMqMessageSerializer, RabbitMqManager, ILogger<RabbitMqMessageQueueConsumersManager>, IPerformanceLogger<RabbitMqMessageQueueConsumersManager>)
-  href: reference/InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueConsumersManager.html#InfinniPlatform_MessageQueue_Hosting_RabbitMqMessageQueueConsumersManager__ctor_InfinniPlatform_MessageQueue_Hosting_MessageQueueThreadPool_InfinniPlatform_MessageQueue_IRabbitMqMessageSerializer_InfinniPlatform_MessageQueue_Management_RabbitMqManager_ILogger_InfinniPlatform_MessageQueue_Hosting_RabbitMqMessageQueueConsumersManager__InfinniPlatform_Logging_IPerformanceLogger_InfinniPlatform_MessageQueue_Hosting_RabbitMqMessageQueueConsumersManager__
-  commentId: M:InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueConsumersManager.#ctor(InfinniPlatform.MessageQueue.Hosting.MessageQueueThreadPool,InfinniPlatform.MessageQueue.IRabbitMqMessageSerializer,InfinniPlatform.MessageQueue.Management.RabbitMqManager,ILogger{InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueConsumersManager},InfinniPlatform.Logging.IPerformanceLogger{InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueConsumersManager})
-  name.vb: RabbitMqMessageQueueConsumersManager(MessageQueueThreadPool, IRabbitMqMessageSerializer, RabbitMqManager, ILogger(Of RabbitMqMessageQueueConsumersManager), IPerformanceLogger(Of RabbitMqMessageQueueConsumersManager))
-  fullName: InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueConsumersManager.RabbitMqMessageQueueConsumersManager(InfinniPlatform.MessageQueue.Hosting.MessageQueueThreadPool, InfinniPlatform.MessageQueue.IRabbitMqMessageSerializer, InfinniPlatform.MessageQueue.Management.RabbitMqManager, ILogger<InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueConsumersManager>, InfinniPlatform.Logging.IPerformanceLogger<InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueConsumersManager>)
-  fullName.vb: InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueConsumersManager.RabbitMqMessageQueueConsumersManager(InfinniPlatform.MessageQueue.Hosting.MessageQueueThreadPool, InfinniPlatform.MessageQueue.IRabbitMqMessageSerializer, InfinniPlatform.MessageQueue.Management.RabbitMqManager, ILogger(Of InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueConsumersManager), InfinniPlatform.Logging.IPerformanceLogger(Of InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueConsumersManager))
-  nameWithType: RabbitMqMessageQueueConsumersManager.RabbitMqMessageQueueConsumersManager(MessageQueueThreadPool, IRabbitMqMessageSerializer, RabbitMqManager, ILogger<RabbitMqMessageQueueConsumersManager>, IPerformanceLogger<RabbitMqMessageQueueConsumersManager>)
-  nameWithType.vb: RabbitMqMessageQueueConsumersManager.RabbitMqMessageQueueConsumersManager(MessageQueueThreadPool, IRabbitMqMessageSerializer, RabbitMqManager, ILogger(Of RabbitMqMessageQueueConsumersManager), IPerformanceLogger(Of RabbitMqMessageQueueConsumersManager))
-- uid: InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueConsumersManager.#ctor*
-  name: RabbitMqMessageQueueConsumersManager
-  href: reference/InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueConsumersManager.html#InfinniPlatform_MessageQueue_Hosting_RabbitMqMessageQueueConsumersManager__ctor_
-  commentId: Overload:InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueConsumersManager.#ctor
-  fullName: InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueConsumersManager.RabbitMqMessageQueueConsumersManager
-  nameWithType: RabbitMqMessageQueueConsumersManager.RabbitMqMessageQueueConsumersManager
-- uid: InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueConsumersManager.RegisterConsumer(System.String,InfinniPlatform.MessageQueue.IConsumer)
-  name: RegisterConsumer(String, IConsumer)
-  href: reference/InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueConsumersManager.html#InfinniPlatform_MessageQueue_Hosting_RabbitMqMessageQueueConsumersManager_RegisterConsumer_System_String_InfinniPlatform_MessageQueue_IConsumer_
-  commentId: M:InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueConsumersManager.RegisterConsumer(System.String,InfinniPlatform.MessageQueue.IConsumer)
-  fullName: InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueConsumersManager.RegisterConsumer(System.String, InfinniPlatform.MessageQueue.IConsumer)
-  nameWithType: RabbitMqMessageQueueConsumersManager.RegisterConsumer(String, IConsumer)
-- uid: InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueConsumersManager.RegisterConsumer*
-  name: RegisterConsumer
-  href: reference/InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueConsumersManager.html#InfinniPlatform_MessageQueue_Hosting_RabbitMqMessageQueueConsumersManager_RegisterConsumer_
-  commentId: Overload:InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueConsumersManager.RegisterConsumer
-  fullName: InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueConsumersManager.RegisterConsumer
-  nameWithType: RabbitMqMessageQueueConsumersManager.RegisterConsumer
-- uid: InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueInitializer
-  name: RabbitMqMessageQueueInitializer
-  href: reference/InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueInitializer.html
-  commentId: T:InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueInitializer
-  fullName: InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueInitializer
-  nameWithType: RabbitMqMessageQueueInitializer
-- uid: InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueInitializer.#ctor(InfinniPlatform.MessageQueue.IMessageQueueConsumersManager,IEnumerable{InfinniPlatform.MessageQueue.IConsumerSource},InfinniPlatform.MessageQueue.Management.RabbitMqManager,ILogger{InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueInitializer})
-  name: RabbitMqMessageQueueInitializer(IMessageQueueConsumersManager, IEnumerable<IConsumerSource>, RabbitMqManager, ILogger<RabbitMqMessageQueueInitializer>)
-  href: reference/InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueInitializer.html#InfinniPlatform_MessageQueue_Hosting_RabbitMqMessageQueueInitializer__ctor_InfinniPlatform_MessageQueue_IMessageQueueConsumersManager_IEnumerable_InfinniPlatform_MessageQueue_IConsumerSource__InfinniPlatform_MessageQueue_Management_RabbitMqManager_ILogger_InfinniPlatform_MessageQueue_Hosting_RabbitMqMessageQueueInitializer__
-  commentId: M:InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueInitializer.#ctor(InfinniPlatform.MessageQueue.IMessageQueueConsumersManager,IEnumerable{InfinniPlatform.MessageQueue.IConsumerSource},InfinniPlatform.MessageQueue.Management.RabbitMqManager,ILogger{InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueInitializer})
-  name.vb: RabbitMqMessageQueueInitializer(IMessageQueueConsumersManager, IEnumerable(Of IConsumerSource), RabbitMqManager, ILogger(Of RabbitMqMessageQueueInitializer))
-  fullName: InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueInitializer.RabbitMqMessageQueueInitializer(InfinniPlatform.MessageQueue.IMessageQueueConsumersManager, IEnumerable<InfinniPlatform.MessageQueue.IConsumerSource>, InfinniPlatform.MessageQueue.Management.RabbitMqManager, ILogger<InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueInitializer>)
-  fullName.vb: InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueInitializer.RabbitMqMessageQueueInitializer(InfinniPlatform.MessageQueue.IMessageQueueConsumersManager, IEnumerable(Of InfinniPlatform.MessageQueue.IConsumerSource), InfinniPlatform.MessageQueue.Management.RabbitMqManager, ILogger(Of InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueInitializer))
-  nameWithType: RabbitMqMessageQueueInitializer.RabbitMqMessageQueueInitializer(IMessageQueueConsumersManager, IEnumerable<IConsumerSource>, RabbitMqManager, ILogger<RabbitMqMessageQueueInitializer>)
-  nameWithType.vb: RabbitMqMessageQueueInitializer.RabbitMqMessageQueueInitializer(IMessageQueueConsumersManager, IEnumerable(Of IConsumerSource), RabbitMqManager, ILogger(Of RabbitMqMessageQueueInitializer))
-- uid: InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueInitializer.#ctor*
-  name: RabbitMqMessageQueueInitializer
-  href: reference/InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueInitializer.html#InfinniPlatform_MessageQueue_Hosting_RabbitMqMessageQueueInitializer__ctor_
-  commentId: Overload:InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueInitializer.#ctor
-  fullName: InfinniPlatform.MessageQueue.Hosting.RabbitMqMessageQueueInitializer.RabbitMqMessageQueueInitializer
-  nameWithType: RabbitMqMessageQueueInitializer.RabbitMqMessageQueueInitializer
+- uid: InfinniPlatform.MessageQueue.IBasicPropertiesProvider
+  name: IBasicPropertiesProvider
+  href: reference/InfinniPlatform.MessageQueue.IBasicPropertiesProvider.html
+  commentId: T:InfinniPlatform.MessageQueue.IBasicPropertiesProvider
+  fullName: InfinniPlatform.MessageQueue.IBasicPropertiesProvider
+  nameWithType: IBasicPropertiesProvider
+- uid: InfinniPlatform.MessageQueue.IBasicPropertiesProvider.Get
+  name: Get()
+  href: reference/InfinniPlatform.MessageQueue.IBasicPropertiesProvider.html#InfinniPlatform_MessageQueue_IBasicPropertiesProvider_Get
+  commentId: M:InfinniPlatform.MessageQueue.IBasicPropertiesProvider.Get
+  fullName: InfinniPlatform.MessageQueue.IBasicPropertiesProvider.Get()
+  nameWithType: IBasicPropertiesProvider.Get()
+- uid: InfinniPlatform.MessageQueue.IBasicPropertiesProvider.Get*
+  name: Get
+  href: reference/InfinniPlatform.MessageQueue.IBasicPropertiesProvider.html#InfinniPlatform_MessageQueue_IBasicPropertiesProvider_Get_
+  commentId: Overload:InfinniPlatform.MessageQueue.IBasicPropertiesProvider.Get
+  fullName: InfinniPlatform.MessageQueue.IBasicPropertiesProvider.Get
+  nameWithType: IBasicPropertiesProvider.Get
+- uid: InfinniPlatform.MessageQueue.IBasicPropertiesProvider.GetHeaders(InfinniPlatform.MessageQueue.IMessage)
+  name: GetHeaders(IMessage)
+  href: reference/InfinniPlatform.MessageQueue.IBasicPropertiesProvider.html#InfinniPlatform_MessageQueue_IBasicPropertiesProvider_GetHeaders_InfinniPlatform_MessageQueue_IMessage_
+  commentId: M:InfinniPlatform.MessageQueue.IBasicPropertiesProvider.GetHeaders(InfinniPlatform.MessageQueue.IMessage)
+  fullName: InfinniPlatform.MessageQueue.IBasicPropertiesProvider.GetHeaders(InfinniPlatform.MessageQueue.IMessage)
+  nameWithType: IBasicPropertiesProvider.GetHeaders(IMessage)
+- uid: InfinniPlatform.MessageQueue.IBasicPropertiesProvider.GetHeaders*
+  name: GetHeaders
+  href: reference/InfinniPlatform.MessageQueue.IBasicPropertiesProvider.html#InfinniPlatform_MessageQueue_IBasicPropertiesProvider_GetHeaders_
+  commentId: Overload:InfinniPlatform.MessageQueue.IBasicPropertiesProvider.GetHeaders
+  fullName: InfinniPlatform.MessageQueue.IBasicPropertiesProvider.GetHeaders
+  nameWithType: IBasicPropertiesProvider.GetHeaders
+- uid: InfinniPlatform.MessageQueue.IBasicPropertiesProvider.GetPersistent
+  name: GetPersistent()
+  href: reference/InfinniPlatform.MessageQueue.IBasicPropertiesProvider.html#InfinniPlatform_MessageQueue_IBasicPropertiesProvider_GetPersistent
+  commentId: M:InfinniPlatform.MessageQueue.IBasicPropertiesProvider.GetPersistent
+  fullName: InfinniPlatform.MessageQueue.IBasicPropertiesProvider.GetPersistent()
+  nameWithType: IBasicPropertiesProvider.GetPersistent()
+- uid: InfinniPlatform.MessageQueue.IBasicPropertiesProvider.GetPersistent*
+  name: GetPersistent
+  href: reference/InfinniPlatform.MessageQueue.IBasicPropertiesProvider.html#InfinniPlatform_MessageQueue_IBasicPropertiesProvider_GetPersistent_
+  commentId: Overload:InfinniPlatform.MessageQueue.IBasicPropertiesProvider.GetPersistent
+  fullName: InfinniPlatform.MessageQueue.IBasicPropertiesProvider.GetPersistent
+  nameWithType: IBasicPropertiesProvider.GetPersistent
 - uid: InfinniPlatform.MessageQueue.IBroadcastConsumer
   name: IBroadcastConsumer
   href: reference/InfinniPlatform.MessageQueue.IBroadcastConsumer.html
@@ -18750,6 +19177,54 @@ references:
   commentId: Overload:InfinniPlatform.MessageQueue.IMessageQueueConsumersManager.RegisterConsumer
   fullName: InfinniPlatform.MessageQueue.IMessageQueueConsumersManager.RegisterConsumer
   nameWithType: IMessageQueueConsumersManager.RegisterConsumer
+- uid: InfinniPlatform.MessageQueue.IMessageSerializer
+  name: IMessageSerializer
+  href: reference/InfinniPlatform.MessageQueue.IMessageSerializer.html
+  commentId: T:InfinniPlatform.MessageQueue.IMessageSerializer
+  fullName: InfinniPlatform.MessageQueue.IMessageSerializer
+  nameWithType: IMessageSerializer
+- uid: InfinniPlatform.MessageQueue.IMessageSerializer.BytesToMessage(BasicDeliverEventArgs,Type)
+  name: BytesToMessage(BasicDeliverEventArgs, Type)
+  href: reference/InfinniPlatform.MessageQueue.IMessageSerializer.html#InfinniPlatform_MessageQueue_IMessageSerializer_BytesToMessage_BasicDeliverEventArgs_Type_
+  commentId: M:InfinniPlatform.MessageQueue.IMessageSerializer.BytesToMessage(BasicDeliverEventArgs,Type)
+  fullName: InfinniPlatform.MessageQueue.IMessageSerializer.BytesToMessage(BasicDeliverEventArgs, Type)
+  nameWithType: IMessageSerializer.BytesToMessage(BasicDeliverEventArgs, Type)
+- uid: InfinniPlatform.MessageQueue.IMessageSerializer.BytesToMessage*
+  name: BytesToMessage
+  href: reference/InfinniPlatform.MessageQueue.IMessageSerializer.html#InfinniPlatform_MessageQueue_IMessageSerializer_BytesToMessage_
+  commentId: Overload:InfinniPlatform.MessageQueue.IMessageSerializer.BytesToMessage
+  fullName: InfinniPlatform.MessageQueue.IMessageSerializer.BytesToMessage
+  nameWithType: IMessageSerializer.BytesToMessage
+- uid: InfinniPlatform.MessageQueue.IMessageSerializer.BytesToMessage``1(BasicDeliverEventArgs)
+  name: BytesToMessage<T>(BasicDeliverEventArgs)
+  href: reference/InfinniPlatform.MessageQueue.IMessageSerializer.html#InfinniPlatform_MessageQueue_IMessageSerializer_BytesToMessage__1_BasicDeliverEventArgs_
+  commentId: M:InfinniPlatform.MessageQueue.IMessageSerializer.BytesToMessage``1(BasicDeliverEventArgs)
+  name.vb: BytesToMessage(Of T)(BasicDeliverEventArgs)
+  fullName: InfinniPlatform.MessageQueue.IMessageSerializer.BytesToMessage<T>(BasicDeliverEventArgs)
+  fullName.vb: InfinniPlatform.MessageQueue.IMessageSerializer.BytesToMessage(Of T)(BasicDeliverEventArgs)
+  nameWithType: IMessageSerializer.BytesToMessage<T>(BasicDeliverEventArgs)
+  nameWithType.vb: IMessageSerializer.BytesToMessage(Of T)(BasicDeliverEventArgs)
+- uid: InfinniPlatform.MessageQueue.IMessageSerializer.BytesToMessage``1(BasicGetResult)
+  name: BytesToMessage<T>(BasicGetResult)
+  href: reference/InfinniPlatform.MessageQueue.IMessageSerializer.html#InfinniPlatform_MessageQueue_IMessageSerializer_BytesToMessage__1_BasicGetResult_
+  commentId: M:InfinniPlatform.MessageQueue.IMessageSerializer.BytesToMessage``1(BasicGetResult)
+  name.vb: BytesToMessage(Of T)(BasicGetResult)
+  fullName: InfinniPlatform.MessageQueue.IMessageSerializer.BytesToMessage<T>(BasicGetResult)
+  fullName.vb: InfinniPlatform.MessageQueue.IMessageSerializer.BytesToMessage(Of T)(BasicGetResult)
+  nameWithType: IMessageSerializer.BytesToMessage<T>(BasicGetResult)
+  nameWithType.vb: IMessageSerializer.BytesToMessage(Of T)(BasicGetResult)
+- uid: InfinniPlatform.MessageQueue.IMessageSerializer.MessageToBytes(System.Object)
+  name: MessageToBytes(Object)
+  href: reference/InfinniPlatform.MessageQueue.IMessageSerializer.html#InfinniPlatform_MessageQueue_IMessageSerializer_MessageToBytes_System_Object_
+  commentId: M:InfinniPlatform.MessageQueue.IMessageSerializer.MessageToBytes(System.Object)
+  fullName: InfinniPlatform.MessageQueue.IMessageSerializer.MessageToBytes(System.Object)
+  nameWithType: IMessageSerializer.MessageToBytes(Object)
+- uid: InfinniPlatform.MessageQueue.IMessageSerializer.MessageToBytes*
+  name: MessageToBytes
+  href: reference/InfinniPlatform.MessageQueue.IMessageSerializer.html#InfinniPlatform_MessageQueue_IMessageSerializer_MessageToBytes_
+  commentId: Overload:InfinniPlatform.MessageQueue.IMessageSerializer.MessageToBytes
+  fullName: InfinniPlatform.MessageQueue.IMessageSerializer.MessageToBytes
+  nameWithType: IMessageSerializer.MessageToBytes
 - uid: InfinniPlatform.MessageQueue.IoC
   name: InfinniPlatform.MessageQueue.IoC
   href: reference/InfinniPlatform.MessageQueue.IoC.html
@@ -18807,96 +19282,6 @@ references:
   fullName.vb: InfinniPlatform.MessageQueue.IOnDemandConsumer.Consume(Of T)(System.String)
   nameWithType: IOnDemandConsumer.Consume<T>(String)
   nameWithType.vb: IOnDemandConsumer.Consume(Of T)(String)
-- uid: InfinniPlatform.MessageQueue.IRabbitMqBasicPropertiesProvider
-  name: IRabbitMqBasicPropertiesProvider
-  href: reference/InfinniPlatform.MessageQueue.IRabbitMqBasicPropertiesProvider.html
-  commentId: T:InfinniPlatform.MessageQueue.IRabbitMqBasicPropertiesProvider
-  fullName: InfinniPlatform.MessageQueue.IRabbitMqBasicPropertiesProvider
-  nameWithType: IRabbitMqBasicPropertiesProvider
-- uid: InfinniPlatform.MessageQueue.IRabbitMqBasicPropertiesProvider.Get
-  name: Get()
-  href: reference/InfinniPlatform.MessageQueue.IRabbitMqBasicPropertiesProvider.html#InfinniPlatform_MessageQueue_IRabbitMqBasicPropertiesProvider_Get
-  commentId: M:InfinniPlatform.MessageQueue.IRabbitMqBasicPropertiesProvider.Get
-  fullName: InfinniPlatform.MessageQueue.IRabbitMqBasicPropertiesProvider.Get()
-  nameWithType: IRabbitMqBasicPropertiesProvider.Get()
-- uid: InfinniPlatform.MessageQueue.IRabbitMqBasicPropertiesProvider.Get*
-  name: Get
-  href: reference/InfinniPlatform.MessageQueue.IRabbitMqBasicPropertiesProvider.html#InfinniPlatform_MessageQueue_IRabbitMqBasicPropertiesProvider_Get_
-  commentId: Overload:InfinniPlatform.MessageQueue.IRabbitMqBasicPropertiesProvider.Get
-  fullName: InfinniPlatform.MessageQueue.IRabbitMqBasicPropertiesProvider.Get
-  nameWithType: IRabbitMqBasicPropertiesProvider.Get
-- uid: InfinniPlatform.MessageQueue.IRabbitMqBasicPropertiesProvider.GetHeaders(InfinniPlatform.MessageQueue.IMessage)
-  name: GetHeaders(IMessage)
-  href: reference/InfinniPlatform.MessageQueue.IRabbitMqBasicPropertiesProvider.html#InfinniPlatform_MessageQueue_IRabbitMqBasicPropertiesProvider_GetHeaders_InfinniPlatform_MessageQueue_IMessage_
-  commentId: M:InfinniPlatform.MessageQueue.IRabbitMqBasicPropertiesProvider.GetHeaders(InfinniPlatform.MessageQueue.IMessage)
-  fullName: InfinniPlatform.MessageQueue.IRabbitMqBasicPropertiesProvider.GetHeaders(InfinniPlatform.MessageQueue.IMessage)
-  nameWithType: IRabbitMqBasicPropertiesProvider.GetHeaders(IMessage)
-- uid: InfinniPlatform.MessageQueue.IRabbitMqBasicPropertiesProvider.GetHeaders*
-  name: GetHeaders
-  href: reference/InfinniPlatform.MessageQueue.IRabbitMqBasicPropertiesProvider.html#InfinniPlatform_MessageQueue_IRabbitMqBasicPropertiesProvider_GetHeaders_
-  commentId: Overload:InfinniPlatform.MessageQueue.IRabbitMqBasicPropertiesProvider.GetHeaders
-  fullName: InfinniPlatform.MessageQueue.IRabbitMqBasicPropertiesProvider.GetHeaders
-  nameWithType: IRabbitMqBasicPropertiesProvider.GetHeaders
-- uid: InfinniPlatform.MessageQueue.IRabbitMqBasicPropertiesProvider.GetPersistent
-  name: GetPersistent()
-  href: reference/InfinniPlatform.MessageQueue.IRabbitMqBasicPropertiesProvider.html#InfinniPlatform_MessageQueue_IRabbitMqBasicPropertiesProvider_GetPersistent
-  commentId: M:InfinniPlatform.MessageQueue.IRabbitMqBasicPropertiesProvider.GetPersistent
-  fullName: InfinniPlatform.MessageQueue.IRabbitMqBasicPropertiesProvider.GetPersistent()
-  nameWithType: IRabbitMqBasicPropertiesProvider.GetPersistent()
-- uid: InfinniPlatform.MessageQueue.IRabbitMqBasicPropertiesProvider.GetPersistent*
-  name: GetPersistent
-  href: reference/InfinniPlatform.MessageQueue.IRabbitMqBasicPropertiesProvider.html#InfinniPlatform_MessageQueue_IRabbitMqBasicPropertiesProvider_GetPersistent_
-  commentId: Overload:InfinniPlatform.MessageQueue.IRabbitMqBasicPropertiesProvider.GetPersistent
-  fullName: InfinniPlatform.MessageQueue.IRabbitMqBasicPropertiesProvider.GetPersistent
-  nameWithType: IRabbitMqBasicPropertiesProvider.GetPersistent
-- uid: InfinniPlatform.MessageQueue.IRabbitMqMessageSerializer
-  name: IRabbitMqMessageSerializer
-  href: reference/InfinniPlatform.MessageQueue.IRabbitMqMessageSerializer.html
-  commentId: T:InfinniPlatform.MessageQueue.IRabbitMqMessageSerializer
-  fullName: InfinniPlatform.MessageQueue.IRabbitMqMessageSerializer
-  nameWithType: IRabbitMqMessageSerializer
-- uid: InfinniPlatform.MessageQueue.IRabbitMqMessageSerializer.BytesToMessage(BasicDeliverEventArgs,Type)
-  name: BytesToMessage(BasicDeliverEventArgs, Type)
-  href: reference/InfinniPlatform.MessageQueue.IRabbitMqMessageSerializer.html#InfinniPlatform_MessageQueue_IRabbitMqMessageSerializer_BytesToMessage_BasicDeliverEventArgs_Type_
-  commentId: M:InfinniPlatform.MessageQueue.IRabbitMqMessageSerializer.BytesToMessage(BasicDeliverEventArgs,Type)
-  fullName: InfinniPlatform.MessageQueue.IRabbitMqMessageSerializer.BytesToMessage(BasicDeliverEventArgs, Type)
-  nameWithType: IRabbitMqMessageSerializer.BytesToMessage(BasicDeliverEventArgs, Type)
-- uid: InfinniPlatform.MessageQueue.IRabbitMqMessageSerializer.BytesToMessage*
-  name: BytesToMessage
-  href: reference/InfinniPlatform.MessageQueue.IRabbitMqMessageSerializer.html#InfinniPlatform_MessageQueue_IRabbitMqMessageSerializer_BytesToMessage_
-  commentId: Overload:InfinniPlatform.MessageQueue.IRabbitMqMessageSerializer.BytesToMessage
-  fullName: InfinniPlatform.MessageQueue.IRabbitMqMessageSerializer.BytesToMessage
-  nameWithType: IRabbitMqMessageSerializer.BytesToMessage
-- uid: InfinniPlatform.MessageQueue.IRabbitMqMessageSerializer.BytesToMessage``1(BasicDeliverEventArgs)
-  name: BytesToMessage<T>(BasicDeliverEventArgs)
-  href: reference/InfinniPlatform.MessageQueue.IRabbitMqMessageSerializer.html#InfinniPlatform_MessageQueue_IRabbitMqMessageSerializer_BytesToMessage__1_BasicDeliverEventArgs_
-  commentId: M:InfinniPlatform.MessageQueue.IRabbitMqMessageSerializer.BytesToMessage``1(BasicDeliverEventArgs)
-  name.vb: BytesToMessage(Of T)(BasicDeliverEventArgs)
-  fullName: InfinniPlatform.MessageQueue.IRabbitMqMessageSerializer.BytesToMessage<T>(BasicDeliverEventArgs)
-  fullName.vb: InfinniPlatform.MessageQueue.IRabbitMqMessageSerializer.BytesToMessage(Of T)(BasicDeliverEventArgs)
-  nameWithType: IRabbitMqMessageSerializer.BytesToMessage<T>(BasicDeliverEventArgs)
-  nameWithType.vb: IRabbitMqMessageSerializer.BytesToMessage(Of T)(BasicDeliverEventArgs)
-- uid: InfinniPlatform.MessageQueue.IRabbitMqMessageSerializer.BytesToMessage``1(BasicGetResult)
-  name: BytesToMessage<T>(BasicGetResult)
-  href: reference/InfinniPlatform.MessageQueue.IRabbitMqMessageSerializer.html#InfinniPlatform_MessageQueue_IRabbitMqMessageSerializer_BytesToMessage__1_BasicGetResult_
-  commentId: M:InfinniPlatform.MessageQueue.IRabbitMqMessageSerializer.BytesToMessage``1(BasicGetResult)
-  name.vb: BytesToMessage(Of T)(BasicGetResult)
-  fullName: InfinniPlatform.MessageQueue.IRabbitMqMessageSerializer.BytesToMessage<T>(BasicGetResult)
-  fullName.vb: InfinniPlatform.MessageQueue.IRabbitMqMessageSerializer.BytesToMessage(Of T)(BasicGetResult)
-  nameWithType: IRabbitMqMessageSerializer.BytesToMessage<T>(BasicGetResult)
-  nameWithType.vb: IRabbitMqMessageSerializer.BytesToMessage(Of T)(BasicGetResult)
-- uid: InfinniPlatform.MessageQueue.IRabbitMqMessageSerializer.MessageToBytes(System.Object)
-  name: MessageToBytes(Object)
-  href: reference/InfinniPlatform.MessageQueue.IRabbitMqMessageSerializer.html#InfinniPlatform_MessageQueue_IRabbitMqMessageSerializer_MessageToBytes_System_Object_
-  commentId: M:InfinniPlatform.MessageQueue.IRabbitMqMessageSerializer.MessageToBytes(System.Object)
-  fullName: InfinniPlatform.MessageQueue.IRabbitMqMessageSerializer.MessageToBytes(System.Object)
-  nameWithType: IRabbitMqMessageSerializer.MessageToBytes(Object)
-- uid: InfinniPlatform.MessageQueue.IRabbitMqMessageSerializer.MessageToBytes*
-  name: MessageToBytes
-  href: reference/InfinniPlatform.MessageQueue.IRabbitMqMessageSerializer.html#InfinniPlatform_MessageQueue_IRabbitMqMessageSerializer_MessageToBytes_
-  commentId: Overload:InfinniPlatform.MessageQueue.IRabbitMqMessageSerializer.MessageToBytes
-  fullName: InfinniPlatform.MessageQueue.IRabbitMqMessageSerializer.MessageToBytes
-  nameWithType: IRabbitMqMessageSerializer.MessageToBytes
 - uid: InfinniPlatform.MessageQueue.ITaskConsumer
   name: ITaskConsumer
   href: reference/InfinniPlatform.MessageQueue.ITaskConsumer.html
@@ -20008,60 +20393,6 @@ references:
   commentId: Overload:InfinniPlatform.MessageQueue.QueuesExtentions.RegisterConsumers
   fullName: InfinniPlatform.MessageQueue.QueuesExtentions.RegisterConsumers
   nameWithType: QueuesExtentions.RegisterConsumers
-- uid: InfinniPlatform.MessageQueue.RabbitMqBasicPropertiesProvider
-  name: RabbitMqBasicPropertiesProvider
-  href: reference/InfinniPlatform.MessageQueue.RabbitMqBasicPropertiesProvider.html
-  commentId: T:InfinniPlatform.MessageQueue.RabbitMqBasicPropertiesProvider
-  fullName: InfinniPlatform.MessageQueue.RabbitMqBasicPropertiesProvider
-  nameWithType: RabbitMqBasicPropertiesProvider
-- uid: InfinniPlatform.MessageQueue.RabbitMqBasicPropertiesProvider.#ctor(InfinniPlatform.AppOptions,InfinniPlatform.Serialization.IJsonObjectSerializer)
-  name: RabbitMqBasicPropertiesProvider(AppOptions, IJsonObjectSerializer)
-  href: reference/InfinniPlatform.MessageQueue.RabbitMqBasicPropertiesProvider.html#InfinniPlatform_MessageQueue_RabbitMqBasicPropertiesProvider__ctor_InfinniPlatform_AppOptions_InfinniPlatform_Serialization_IJsonObjectSerializer_
-  commentId: M:InfinniPlatform.MessageQueue.RabbitMqBasicPropertiesProvider.#ctor(InfinniPlatform.AppOptions,InfinniPlatform.Serialization.IJsonObjectSerializer)
-  fullName: InfinniPlatform.MessageQueue.RabbitMqBasicPropertiesProvider.RabbitMqBasicPropertiesProvider(InfinniPlatform.AppOptions, InfinniPlatform.Serialization.IJsonObjectSerializer)
-  nameWithType: RabbitMqBasicPropertiesProvider.RabbitMqBasicPropertiesProvider(AppOptions, IJsonObjectSerializer)
-- uid: InfinniPlatform.MessageQueue.RabbitMqBasicPropertiesProvider.#ctor*
-  name: RabbitMqBasicPropertiesProvider
-  href: reference/InfinniPlatform.MessageQueue.RabbitMqBasicPropertiesProvider.html#InfinniPlatform_MessageQueue_RabbitMqBasicPropertiesProvider__ctor_
-  commentId: Overload:InfinniPlatform.MessageQueue.RabbitMqBasicPropertiesProvider.#ctor
-  fullName: InfinniPlatform.MessageQueue.RabbitMqBasicPropertiesProvider.RabbitMqBasicPropertiesProvider
-  nameWithType: RabbitMqBasicPropertiesProvider.RabbitMqBasicPropertiesProvider
-- uid: InfinniPlatform.MessageQueue.RabbitMqBasicPropertiesProvider.Get
-  name: Get()
-  href: reference/InfinniPlatform.MessageQueue.RabbitMqBasicPropertiesProvider.html#InfinniPlatform_MessageQueue_RabbitMqBasicPropertiesProvider_Get
-  commentId: M:InfinniPlatform.MessageQueue.RabbitMqBasicPropertiesProvider.Get
-  fullName: InfinniPlatform.MessageQueue.RabbitMqBasicPropertiesProvider.Get()
-  nameWithType: RabbitMqBasicPropertiesProvider.Get()
-- uid: InfinniPlatform.MessageQueue.RabbitMqBasicPropertiesProvider.Get*
-  name: Get
-  href: reference/InfinniPlatform.MessageQueue.RabbitMqBasicPropertiesProvider.html#InfinniPlatform_MessageQueue_RabbitMqBasicPropertiesProvider_Get_
-  commentId: Overload:InfinniPlatform.MessageQueue.RabbitMqBasicPropertiesProvider.Get
-  fullName: InfinniPlatform.MessageQueue.RabbitMqBasicPropertiesProvider.Get
-  nameWithType: RabbitMqBasicPropertiesProvider.Get
-- uid: InfinniPlatform.MessageQueue.RabbitMqBasicPropertiesProvider.GetHeaders(InfinniPlatform.MessageQueue.IMessage)
-  name: GetHeaders(IMessage)
-  href: reference/InfinniPlatform.MessageQueue.RabbitMqBasicPropertiesProvider.html#InfinniPlatform_MessageQueue_RabbitMqBasicPropertiesProvider_GetHeaders_InfinniPlatform_MessageQueue_IMessage_
-  commentId: M:InfinniPlatform.MessageQueue.RabbitMqBasicPropertiesProvider.GetHeaders(InfinniPlatform.MessageQueue.IMessage)
-  fullName: InfinniPlatform.MessageQueue.RabbitMqBasicPropertiesProvider.GetHeaders(InfinniPlatform.MessageQueue.IMessage)
-  nameWithType: RabbitMqBasicPropertiesProvider.GetHeaders(IMessage)
-- uid: InfinniPlatform.MessageQueue.RabbitMqBasicPropertiesProvider.GetHeaders*
-  name: GetHeaders
-  href: reference/InfinniPlatform.MessageQueue.RabbitMqBasicPropertiesProvider.html#InfinniPlatform_MessageQueue_RabbitMqBasicPropertiesProvider_GetHeaders_
-  commentId: Overload:InfinniPlatform.MessageQueue.RabbitMqBasicPropertiesProvider.GetHeaders
-  fullName: InfinniPlatform.MessageQueue.RabbitMqBasicPropertiesProvider.GetHeaders
-  nameWithType: RabbitMqBasicPropertiesProvider.GetHeaders
-- uid: InfinniPlatform.MessageQueue.RabbitMqBasicPropertiesProvider.GetPersistent
-  name: GetPersistent()
-  href: reference/InfinniPlatform.MessageQueue.RabbitMqBasicPropertiesProvider.html#InfinniPlatform_MessageQueue_RabbitMqBasicPropertiesProvider_GetPersistent
-  commentId: M:InfinniPlatform.MessageQueue.RabbitMqBasicPropertiesProvider.GetPersistent
-  fullName: InfinniPlatform.MessageQueue.RabbitMqBasicPropertiesProvider.GetPersistent()
-  nameWithType: RabbitMqBasicPropertiesProvider.GetPersistent()
-- uid: InfinniPlatform.MessageQueue.RabbitMqBasicPropertiesProvider.GetPersistent*
-  name: GetPersistent
-  href: reference/InfinniPlatform.MessageQueue.RabbitMqBasicPropertiesProvider.html#InfinniPlatform_MessageQueue_RabbitMqBasicPropertiesProvider_GetPersistent_
-  commentId: Overload:InfinniPlatform.MessageQueue.RabbitMqBasicPropertiesProvider.GetPersistent
-  fullName: InfinniPlatform.MessageQueue.RabbitMqBasicPropertiesProvider.GetPersistent
-  nameWithType: RabbitMqBasicPropertiesProvider.GetPersistent
 - uid: InfinniPlatform.MessageQueue.RabbitMqMessageQueueOptions
   name: RabbitMqMessageQueueOptions
   href: reference/InfinniPlatform.MessageQueue.RabbitMqMessageQueueOptions.html

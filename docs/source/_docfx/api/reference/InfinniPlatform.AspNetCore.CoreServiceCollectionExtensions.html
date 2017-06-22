@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class RabbitMqMessageQueueExtensions
+    <title>Class CoreServiceCollectionExtensions
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class RabbitMqMessageQueueExtensions
+    <meta name="title" content="Class CoreServiceCollectionExtensions
    ">
     <meta name="generator" content="docfx 2.17.7.15">
     
@@ -69,37 +69,38 @@
             <article class="content wrap" id="_content">
               
               
-              <h1 id="InfinniPlatform_AspNetCore_RabbitMqMessageQueueExtensions" data-uid="InfinniPlatform.AspNetCore.RabbitMqMessageQueueExtensions">Class RabbitMqMessageQueueExtensions
+              <h1 id="InfinniPlatform_AspNetCore_CoreServiceCollectionExtensions" data-uid="InfinniPlatform.AspNetCore.CoreServiceCollectionExtensions">Class CoreServiceCollectionExtensions
               </h1>
               <div class="markdown level0 summary"></div>
               <div class="markdown level0 conceptual"></div>
               <div class="inheritance">
                 <h5>Inheritance</h5>
                   <div class="level0"><span class="xref">System.Object</span></div>
-                  <div class="level1"><span class="xref">RabbitMqMessageQueueExtensions</span></div>
+                  <div class="level1"><span class="xref">CoreServiceCollectionExtensions</span></div>
               </div>
               <h6><strong>Namespace</strong>:InfinniPlatform.AspNetCore</h6>
-              <h6><strong>Assembly</strong>:InfinniPlatform.MessageQueue.RabbitMQ.dll</h6>
-              <h5 id="InfinniPlatform_AspNetCore_RabbitMqMessageQueueExtensions_syntax">Syntax</h5>
+              <h6><strong>Assembly</strong>:InfinniPlatform.Core.dll</h6>
+              <h5 id="InfinniPlatform_AspNetCore_CoreServiceCollectionExtensions_syntax">Syntax</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public static class RabbitMqMessageQueueExtensions : object</code></pre>
+                <pre><code class="lang-csharp hljs">public static class CoreServiceCollectionExtensions : object</code></pre>
               </div>
               <h3 id="methods">Methods
               </h3>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_AspNetCore_RabbitMqMessageQueueExtensions_AddRabbitMqMessageQueue_IServiceCollection_.md&amp;value=---%0Auid%3A%20InfinniPlatform.AspNetCore.RabbitMqMessageQueueExtensions.AddRabbitMqMessageQueue(IServiceCollection)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_AspNetCore_CoreServiceCollectionExtensions_BuildProvider_IServiceCollection_IConfigurationRoot_IEnumerable_InfinniPlatform_IoC_IContainerModule__.md&amp;value=---%0Auid%3A%20InfinniPlatform.AspNetCore.CoreServiceCollectionExtensions.BuildProvider(IServiceCollection%2CIConfigurationRoot%2CIEnumerable%7BInfinniPlatform.IoC.IContainerModule%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.MessageQueue.RabbitMQ/AspNetCore/RabbitMqMessageQueueExtensions.cs/#L12">View Source</a>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Core/AspNetCore/CoreServiceCollectionExtensions.cs/#L33">View Source</a>
               </span>
-              <a id="InfinniPlatform_AspNetCore_RabbitMqMessageQueueExtensions_AddRabbitMqMessageQueue_" data-uid="InfinniPlatform.AspNetCore.RabbitMqMessageQueueExtensions.AddRabbitMqMessageQueue*"></a>
-              <h4 id="InfinniPlatform_AspNetCore_RabbitMqMessageQueueExtensions_AddRabbitMqMessageQueue_IServiceCollection_" data-uid="InfinniPlatform.AspNetCore.RabbitMqMessageQueueExtensions.AddRabbitMqMessageQueue(IServiceCollection)">AddRabbitMqMessageQueue(IServiceCollection)</h4>
-              <div class="markdown level1 summary"></div>
+              <a id="InfinniPlatform_AspNetCore_CoreServiceCollectionExtensions_BuildProvider_" data-uid="InfinniPlatform.AspNetCore.CoreServiceCollectionExtensions.BuildProvider*"></a>
+              <h4 id="InfinniPlatform_AspNetCore_CoreServiceCollectionExtensions_BuildProvider_IServiceCollection_IConfigurationRoot_IEnumerable_InfinniPlatform_IoC_IContainerModule__" data-uid="InfinniPlatform.AspNetCore.CoreServiceCollectionExtensions.BuildProvider(IServiceCollection,IConfigurationRoot,IEnumerable{InfinniPlatform.IoC.IContainerModule})">BuildProvider(IServiceCollection, IConfigurationRoot, IEnumerable&lt;IContainerModule&gt;)</h4>
+              <div class="markdown level1 summary"><p>Builds <see cref="!:IServiceProvider"></see> based on registered services.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public static IServiceCollection AddRabbitMqMessageQueue(this IServiceCollection services)</code></pre>
+                <pre><code class="lang-csharp hljs">public static IServiceProvider BuildProvider(this IServiceCollection services, IConfigurationRoot configuration, IEnumerable&lt;IContainerModule&gt; containerModules = null)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -114,59 +115,20 @@
                   <tr>
                     <td><span class="xref">IServiceCollection</span></td>
                     <td><span class="parametername">services</span></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <h5 class="returns">Returns</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><span class="xref">IServiceCollection</span></td>
-                    <td></td>
-                  </tr>
-                </tbody>
-              </table>
-              <span class="small pull-right mobile-hide">
-                <span class="divider">|</span>
-                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_AspNetCore_RabbitMqMessageQueueExtensions_AddRabbitMqMessageQueue_IServiceCollection_IConfigurationRoot_.md&amp;value=---%0Auid%3A%20InfinniPlatform.AspNetCore.RabbitMqMessageQueueExtensions.AddRabbitMqMessageQueue(IServiceCollection%2CIConfigurationRoot)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-              </span>
-              <span class="small pull-right mobile-hide">
-                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.MessageQueue.RabbitMQ/AspNetCore/RabbitMqMessageQueueExtensions.cs/#L19">View Source</a>
-              </span>
-              <a id="InfinniPlatform_AspNetCore_RabbitMqMessageQueueExtensions_AddRabbitMqMessageQueue_" data-uid="InfinniPlatform.AspNetCore.RabbitMqMessageQueueExtensions.AddRabbitMqMessageQueue*"></a>
-              <h4 id="InfinniPlatform_AspNetCore_RabbitMqMessageQueueExtensions_AddRabbitMqMessageQueue_IServiceCollection_IConfigurationRoot_" data-uid="InfinniPlatform.AspNetCore.RabbitMqMessageQueueExtensions.AddRabbitMqMessageQueue(IServiceCollection,IConfigurationRoot)">AddRabbitMqMessageQueue(IServiceCollection, IConfigurationRoot)</h4>
-              <div class="markdown level1 summary"></div>
-              <div class="markdown level1 conceptual"></div>
-              <h5 class="decalaration">Declaration</h5>
-              <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public static IServiceCollection AddRabbitMqMessageQueue(this IServiceCollection services, IConfigurationRoot configuration)</code></pre>
-              </div>
-              <h5 class="parameters">Parameters</h5>
-              <table class="table table-bordered table-striped table-condensed">
-                <thead>
-                  <tr>
-                    <th>Type</th>
-                    <th>Name</th>
-                    <th>Description</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td><span class="xref">IServiceCollection</span></td>
-                    <td><span class="parametername">services</span></td>
-                    <td></td>
+                    <td><p>Collection of registered services.</p>
+</td>
                   </tr>
                   <tr>
                     <td><span class="xref">IConfigurationRoot</span></td>
                     <td><span class="parametername">configuration</span></td>
-                    <td></td>
+                    <td><p>Application configuration.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="InfinniPlatform.IoC.IContainerModule.html">IContainerModule</a>&gt;</td>
+                    <td><span class="parametername">containerModules</span></td>
+                    <td><p>Registered IoC-container modules.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -180,25 +142,26 @@
                 </thead>
                 <tbody>
                   <tr>
-                    <td><span class="xref">IServiceCollection</span></td>
+                    <td><span class="xref">IServiceProvider</span></td>
                     <td></td>
                   </tr>
                 </tbody>
               </table>
               <span class="small pull-right mobile-hide">
                 <span class="divider">|</span>
-                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_AspNetCore_RabbitMqMessageQueueExtensions_AddRabbitMqMessageQueue_IServiceCollection_InfinniPlatform_MessageQueue_RabbitMqMessageQueueOptions_.md&amp;value=---%0Auid%3A%20InfinniPlatform.AspNetCore.RabbitMqMessageQueueExtensions.AddRabbitMqMessageQueue(IServiceCollection%2CInfinniPlatform.MessageQueue.RabbitMqMessageQueueOptions)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_AspNetCore_CoreServiceCollectionExtensions_BuildProvider_IServiceCollection_IEnumerable_InfinniPlatform_IoC_IContainerModule__.md&amp;value=---%0Auid%3A%20InfinniPlatform.AspNetCore.CoreServiceCollectionExtensions.BuildProvider(IServiceCollection%2CIEnumerable%7BInfinniPlatform.IoC.IContainerModule%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
               </span>
               <span class="small pull-right mobile-hide">
-                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.MessageQueue.RabbitMQ/AspNetCore/RabbitMqMessageQueueExtensions.cs/#L26">View Source</a>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Core/AspNetCore/CoreServiceCollectionExtensions.cs/#L20">View Source</a>
               </span>
-              <a id="InfinniPlatform_AspNetCore_RabbitMqMessageQueueExtensions_AddRabbitMqMessageQueue_" data-uid="InfinniPlatform.AspNetCore.RabbitMqMessageQueueExtensions.AddRabbitMqMessageQueue*"></a>
-              <h4 id="InfinniPlatform_AspNetCore_RabbitMqMessageQueueExtensions_AddRabbitMqMessageQueue_IServiceCollection_InfinniPlatform_MessageQueue_RabbitMqMessageQueueOptions_" data-uid="InfinniPlatform.AspNetCore.RabbitMqMessageQueueExtensions.AddRabbitMqMessageQueue(IServiceCollection,InfinniPlatform.MessageQueue.RabbitMqMessageQueueOptions)">AddRabbitMqMessageQueue(IServiceCollection, RabbitMqMessageQueueOptions)</h4>
-              <div class="markdown level1 summary"></div>
+              <a id="InfinniPlatform_AspNetCore_CoreServiceCollectionExtensions_BuildProvider_" data-uid="InfinniPlatform.AspNetCore.CoreServiceCollectionExtensions.BuildProvider*"></a>
+              <h4 id="InfinniPlatform_AspNetCore_CoreServiceCollectionExtensions_BuildProvider_IServiceCollection_IEnumerable_InfinniPlatform_IoC_IContainerModule__" data-uid="InfinniPlatform.AspNetCore.CoreServiceCollectionExtensions.BuildProvider(IServiceCollection,IEnumerable{InfinniPlatform.IoC.IContainerModule})">BuildProvider(IServiceCollection, IEnumerable&lt;IContainerModule&gt;)</h4>
+              <div class="markdown level1 summary"><p>Builds <see cref="!:IServiceProvider"></see> based on registered services.</p>
+</div>
               <div class="markdown level1 conceptual"></div>
               <h5 class="decalaration">Declaration</h5>
               <div class="codewrapper">
-                <pre><code class="lang-csharp hljs">public static IServiceCollection AddRabbitMqMessageQueue(this IServiceCollection services, RabbitMqMessageQueueOptions options)</code></pre>
+                <pre><code class="lang-csharp hljs">public static IServiceProvider BuildProvider(this IServiceCollection services, IEnumerable&lt;IContainerModule&gt; containerModules = null)</code></pre>
               </div>
               <h5 class="parameters">Parameters</h5>
               <table class="table table-bordered table-striped table-condensed">
@@ -213,12 +176,14 @@
                   <tr>
                     <td><span class="xref">IServiceCollection</span></td>
                     <td><span class="parametername">services</span></td>
-                    <td></td>
+                    <td><p>Collection of registered services.</p>
+</td>
                   </tr>
                   <tr>
-                    <td><a class="xref" href="InfinniPlatform.MessageQueue.RabbitMqMessageQueueOptions.html">RabbitMqMessageQueueOptions</a></td>
-                    <td><span class="parametername">options</span></td>
-                    <td></td>
+                    <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="InfinniPlatform.IoC.IContainerModule.html">IContainerModule</a>&gt;</td>
+                    <td><span class="parametername">containerModules</span></td>
+                    <td><p>Registered IoC-container modules.</p>
+</td>
                   </tr>
                 </tbody>
               </table>
@@ -232,7 +197,68 @@
                 </thead>
                 <tbody>
                   <tr>
+                    <td><span class="xref">IServiceProvider</span></td>
+                    <td></td>
+                  </tr>
+                </tbody>
+              </table>
+              <span class="small pull-right mobile-hide">
+                <span class="divider">|</span>
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_AspNetCore_CoreServiceCollectionExtensions_BuildProvider_IServiceCollection_InfinniPlatform_AppOptions_IEnumerable_InfinniPlatform_IoC_IContainerModule__.md&amp;value=---%0Auid%3A%20InfinniPlatform.AspNetCore.CoreServiceCollectionExtensions.BuildProvider(IServiceCollection%2CInfinniPlatform.AppOptions%2CIEnumerable%7BInfinniPlatform.IoC.IContainerModule%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+              </span>
+              <span class="small pull-right mobile-hide">
+                <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Core/AspNetCore/CoreServiceCollectionExtensions.cs/#L47">View Source</a>
+              </span>
+              <a id="InfinniPlatform_AspNetCore_CoreServiceCollectionExtensions_BuildProvider_" data-uid="InfinniPlatform.AspNetCore.CoreServiceCollectionExtensions.BuildProvider*"></a>
+              <h4 id="InfinniPlatform_AspNetCore_CoreServiceCollectionExtensions_BuildProvider_IServiceCollection_InfinniPlatform_AppOptions_IEnumerable_InfinniPlatform_IoC_IContainerModule__" data-uid="InfinniPlatform.AspNetCore.CoreServiceCollectionExtensions.BuildProvider(IServiceCollection,InfinniPlatform.AppOptions,IEnumerable{InfinniPlatform.IoC.IContainerModule})">BuildProvider(IServiceCollection, AppOptions, IEnumerable&lt;IContainerModule&gt;)</h4>
+              <div class="markdown level1 summary"><p>Builds <see cref="!:IServiceProvider"></see> based on registered services.</p>
+</div>
+              <div class="markdown level1 conceptual"></div>
+              <h5 class="decalaration">Declaration</h5>
+              <div class="codewrapper">
+                <pre><code class="lang-csharp hljs">public static IServiceProvider BuildProvider(this IServiceCollection services, AppOptions options, IEnumerable&lt;IContainerModule&gt; containerModules = null)</code></pre>
+              </div>
+              <h5 class="parameters">Parameters</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Name</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
                     <td><span class="xref">IServiceCollection</span></td>
+                    <td><span class="parametername">services</span></td>
+                    <td><p>Collection of registered services.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><a class="xref" href="InfinniPlatform.AppOptions.html">AppOptions</a></td>
+                    <td><span class="parametername">options</span></td>
+                    <td><p>Application options.</p>
+</td>
+                  </tr>
+                  <tr>
+                    <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="InfinniPlatform.IoC.IContainerModule.html">IContainerModule</a>&gt;</td>
+                    <td><span class="parametername">containerModules</span></td>
+                    <td><p>Registered IoC-container modules.</p>
+</td>
+                  </tr>
+                </tbody>
+              </table>
+              <h5 class="returns">Returns</h5>
+              <table class="table table-bordered table-striped table-condensed">
+                <thead>
+                  <tr>
+                    <th>Type</th>
+                    <th>Description</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><span class="xref">IServiceProvider</span></td>
                     <td></td>
                   </tr>
                 </tbody>
@@ -245,10 +271,10 @@
               <div class="contribution">
                 <ul class="nav">
                   <li>
-                    <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_AspNetCore_RabbitMqMessageQueueExtensions.md&amp;value=---%0Auid%3A%20InfinniPlatform.AspNetCore.RabbitMqMessageQueueExtensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                    <a href="https://github.com/InfinniPlatform/InfinniPlatform/new/master/apiSpec/new?filename=InfinniPlatform_AspNetCore_CoreServiceCollectionExtensions.md&amp;value=---%0Auid%3A%20InfinniPlatform.AspNetCore.CoreServiceCollectionExtensions%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
                   </li>
                   <li>
-                    <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.MessageQueue.RabbitMQ/AspNetCore/RabbitMqMessageQueueExtensions.cs/#L10" class="contribution-link">View Source</a>
+                    <a href="https://github.com/InfinniPlatform/InfinniPlatform/blob/master/InfinniPlatform.Core/AspNetCore/CoreServiceCollectionExtensions.cs/#L13" class="contribution-link">View Source</a>
                   </li>
                 </ul>
               </div>
