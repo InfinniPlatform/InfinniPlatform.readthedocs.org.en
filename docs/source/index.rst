@@ -31,9 +31,9 @@ to use as well to all.
    blob-storage/index.rst
    cache/index.rst
    queues/index.rst
-   print-view/index.rst
-   security/index.rst
+   auth/index.rst
    scheduler/index.rst
+   print-view/index.rst
    API Reference <../api/reference/index.html#://>
    release-notes/index.rst
 
