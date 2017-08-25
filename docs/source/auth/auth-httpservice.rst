@@ -36,7 +36,7 @@ There is predefined HTTP service for authentication.
 
 After that next authentication API will be available via HTTP.
 
-.. http:post:: /auth/SignIn/
+.. http:post:: /Auth/SignIn/
 
     Authenticates the user based on the specified user key and password and starts user session.
     User's id, username, email or phone number can be used as user key.
@@ -48,8 +48,8 @@ After that next authentication API will be available via HTTP.
 
         curl -X POST \
              -H "Content-Type: application/json" \
-             -d '{"UserKey":"user1","password":"qwerty"}' \
-             http://localhost:5000/auth/SignIn
+             -d '{"UserKey":"user1","Password":"qwerty"}' \
+             http://localhost:5000/Auth/SignIn
 
     :reqheader Content-Type: application/json
     :resheader Content-Type: application/json
@@ -58,7 +58,7 @@ After that next authentication API will be available via HTTP.
     :statuscode 400: Validation Error
     :statuscode 500: Internal Server Error
 
-.. http:post:: /auth/SignInById/
+.. http:post:: /Auth/SignInById/
 
     Authenticates the user based on the specified name and password and starts user session.
 
@@ -68,8 +68,8 @@ After that next authentication API will be available via HTTP.
 
         curl -X POST \
              -H "Content-Type: application/json" \
-             -d '{"Id":"9d63e3d2-cf06-4c85-a8d3-ca634dfc0131","password":"qwerty"}' \
-             http://localhost:5000/auth/SignInById
+             -d '{"Id":"9d63e3d2-cf06-4c85-a8d3-ca634dfc0131","Password":"qwerty"}' \
+             http://localhost:5000/Auth/SignInById
 
     :reqheader Content-Type: application/json
     :resheader Content-Type: application/json
@@ -78,7 +78,7 @@ After that next authentication API will be available via HTTP.
     :statuscode 400: Validation Error
     :statuscode 500: Internal Server Error
 
-.. http:post:: /auth/SignInByUserName/
+.. http:post:: /Auth/SignInByUserName/
 
     Authenticates the user based on the specified id and password and starts user session.
 
@@ -88,8 +88,8 @@ After that next authentication API will be available via HTTP.
 
         curl -X POST \
              -H "Content-Type: application/json" \
-             -d '{"UserName":"user1","password":"qwerty"}' \
-             http://localhost:5000/auth/SignInInternal
+             -d '{"UserName":"user1","Password":"qwerty"}' \
+             http://localhost:5000/Auth/SignInInternal
 
     :reqheader Content-Type: application/json
     :resheader Content-Type: application/json
@@ -98,7 +98,7 @@ After that next authentication API will be available via HTTP.
     :statuscode 400: Validation Error
     :statuscode 500: Internal Server Error
 
-.. http:post:: /auth/SignInByEmail/
+.. http:post:: /Auth/SignInByEmail/
 
     Authenticates the user based on the specified email and password and starts user session.
 
@@ -108,8 +108,8 @@ After that next authentication API will be available via HTTP.
 
         curl -X POST \
              -H "Content-Type: application/json" \
-             -d '{"Email":"user1@infinni.ru","password":"qwerty"}' \
-             http://localhost:5000/auth/SignInByEmail
+             -d '{"Email":"user1@infinni.ru","Password":"qwerty"}' \
+             http://localhost:5000/Auth/SignInByEmail
 
     :reqheader Content-Type: application/json
     :resheader Content-Type: application/json
@@ -118,7 +118,7 @@ After that next authentication API will be available via HTTP.
     :statuscode 400: Validation Error
     :statuscode 500: Internal Server Error
 
-.. http:post:: /auth/SignInByPhoneNumber/
+.. http:post:: /Auth/SignInByPhoneNumber/
 
     Authenticates the user based on the specified phone number and password and starts user session.
 
@@ -128,8 +128,8 @@ After that next authentication API will be available via HTTP.
 
         curl -X POST \
              -H "Content-Type: application/json" \
-             -d '{"PhoneNumber":"+73216549877","password":"qwerty"}' \
-             http://localhost:5000/auth/SignInByPhoneNumber
+             -d '{"PhoneNumber":"+73216549877","Password":"qwerty"}' \
+             http://localhost:5000/Auth/SignInByPhoneNumber
 
     :reqheader Content-Type: application/json
     :resheader Content-Type: application/json
@@ -138,7 +138,7 @@ After that next authentication API will be available via HTTP.
     :statuscode 400: Validation Error
     :statuscode 500: Internal Server Error
 
-.. http:post:: /auth/SignOut/
+.. http:post:: /Auth/SignOut/
 
     Terminates the user session.
 
@@ -146,7 +146,7 @@ After that next authentication API will be available via HTTP.
 
     .. code-block:: bash
 
-        curl -X POST http://localhost:5000/auth/SignOut
+        curl -X POST http://localhost:5000/Auth/SignOut
 
     :resheader Set-Cookie:
     :statuscode 200: OK
